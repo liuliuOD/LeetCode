@@ -4,7 +4,7 @@
 
 Method 1 :
 ```sql
-select MAX(Salary) as SecondHighestSalary 
+select MAX(Salary) as 'SecondHighestSalary'
 from Employee
 where Salary not in (
     select MAX(Salary)
@@ -20,5 +20,5 @@ select (
     ORDER BY Salary DESC
     LIMIT 1
     OFFSET 1
-) as SecondHighestSalary
+) as 'SecondHighestSalary'
 ```
