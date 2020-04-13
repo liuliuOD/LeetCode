@@ -7,5 +7,7 @@ This project will be used to store my solved problem in [LeetCode](https://leetc
 Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
 ### Database
-- [Combine Two Tables](READMEs/Databases/CombineTwoTables.md)
-- [Second Highest Salary](READMEs/Databases/SecondHighestSalary.md)
+- EASY
+    - [Combine Two Tables](READMEs/Databases/CombineTwoTables.md)
+    - [Second Highest Salary](READMEs/Databases/SecondHighestSalary.md)
+    - [Employees Earning More Than Their Managers](READMEs/Databases/EmployeesEarningMoreThanTheirManagers.md)

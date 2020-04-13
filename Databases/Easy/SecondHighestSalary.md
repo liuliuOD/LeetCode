@@ -12,7 +12,7 @@ where Salary not in (
 )
 ```
 
-Method 2 :
+Method 2 : (flexible)
 ```sql
 select (
     select DISTINCT Salary
