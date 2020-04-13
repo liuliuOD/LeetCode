@@ -8,3 +8,4 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
 ### Database
 - [Combine Two Tables](READMEs/Databases/CombineTwoTables.md)
+- [Second Highest Salary](READMEs/Databases/SecondHighestSalary.md)
