@@ -12,3 +12,4 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Second Highest Salary](READMEs/Databases/SecondHighestSalary.md)
     - [Employees Earning More Than Their Managers](READMEs/Databases/EmployeesEarningMoreThanTheirManagers.md)
     - [Delete Duplicate Emails](READMEs/Databases/DeleteDuplicateEmails.md)
+    - [Duplicate Emails](READMEs/Databases/DuplicateEmails.md)
