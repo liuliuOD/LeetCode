@@ -15,3 +15,4 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Duplicate Emails](READMEs/Databases/DuplicateEmails.md)
     - [Customers Who Never Order](READMEs/Databases/CustomersWhoNeverOrder.md)
     - [Big Countries](READMEs/Databases/BigCountries.md)
+    - [Classes More Than 5 Students](READMEs/Databases/ClassesMoreThan5Students.md)
