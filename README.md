@@ -25,3 +25,4 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Rank Scores](READMEs/Databases/RankScores.md)
     - [Consecutive Numbers](READMEs/Databases/ConsecutiveNumbers.md)
     - [Department Highest Salary](READMEs/Databases/DepartmentHighestSalary.md)
+    - [Exchange Seats](READMEs/Databases/ExchangeSeats.md)
