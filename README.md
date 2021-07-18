@@ -26,3 +26,6 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Consecutive Numbers](READMEs/Databases/ConsecutiveNumbers.md)
     - [Department Highest Salary](READMEs/Databases/DepartmentHighestSalary.md)
     - [Exchange Seats](READMEs/Databases/ExchangeSeats.md)
+
+- Hard
+    - [Department Top Three Salaries](READMEs/Databases/DepartmentTopThreeSalaries.md)
