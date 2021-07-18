@@ -8,24 +8,24 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
 ### Database
 - EASY
-    - [Combine Two Tables](READMEs/Databases/CombineTwoTables.md)
-    - [Second Highest Salary](READMEs/Databases/SecondHighestSalary.md)
-    - [Employees Earning More Than Their Managers](READMEs/Databases/EmployeesEarningMoreThanTheirManagers.md)
-    - [Delete Duplicate Emails](READMEs/Databases/DeleteDuplicateEmails.md)
-    - [Duplicate Emails](READMEs/Databases/DuplicateEmails.md)
-    - [Customers Who Never Order](READMEs/Databases/CustomersWhoNeverOrder.md)
-    - [Big Countries](READMEs/Databases/BigCountries.md)
-    - [Classes More Than 5 Students](READMEs/Databases/ClassesMoreThan5Students.md)
-    - [Not Boring Movies](READMEs/Databases/NotBoringMovies.md)
-    - [Swap Salary](READMEs/Databases/SwapSalary.md)
-    - [Reformat Department Table](READMEs/Databases/ReformatDepartmentTable.md)
+    - [Combine Two Tables](Databases/Easy/CombineTwoTables.md)
+    - [Second Highest Salary](Databases/Easy/SecondHighestSalary.md)
+    - [Employees Earning More Than Their Managers](Databases/Easy/EmployeesEarningMoreThanTheirManagers.md)
+    - [Delete Duplicate Emails](Databases/Easy/DeleteDuplicateEmails.md)
+    - [Duplicate Emails](Databases/Easy/DuplicateEmails.md)
+    - [Customers Who Never Order](Databases/Easy/CustomersWhoNeverOrder.md)
+    - [Big Countries](Databases/Easy/BigCountries.md)
+    - [Classes More Than 5 Students](Databases/Easy/ClassesMoreThan5Students.md)
+    - [Not Boring Movies](Databases/Easy/NotBoringMovies.md)
+    - [Swap Salary](Databases/Easy/SwapSalary.md)
+    - [Reformat Department Table](Databases/Easy/ReformatDepartmentTable.md)
 
 - MEDIUM
-    - [Nth Highest Salary](READMEs/Databases/NthHighestSalary.md)
-    - [Rank Scores](READMEs/Databases/RankScores.md)
-    - [Consecutive Numbers](READMEs/Databases/ConsecutiveNumbers.md)
-    - [Department Highest Salary](READMEs/Databases/DepartmentHighestSalary.md)
-    - [Exchange Seats](READMEs/Databases/ExchangeSeats.md)
+    - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
+    - [Rank Scores](Databases/Medium/RankScores.md)
+    - [Consecutive Numbers](Databases/Medium/ConsecutiveNumbers.md)
+    - [Department Highest Salary](Databases/Medium/DepartmentHighestSalary.md)
+    - [Exchange Seats](Databases/Medium/ExchangeSeats.md)
 
 - Hard
-    - [Department Top Three Salaries](READMEs/Databases/DepartmentTopThreeSalaries.md)
+    - [Department Top Three Salaries](Databases/Hard/DepartmentTopThreeSalaries.md)
