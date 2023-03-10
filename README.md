@@ -29,3 +29,4 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
 
 - Hard
     - [Department Top Three Salaries](Databases/Hard/DepartmentTopThreeSalaries.md)
+    - [Trips And Users](Databases/Hard/TripsAndUsers.md)
