@@ -19,6 +19,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Not Boring Movies](Databases/Easy/NotBoringMovies.md)
     - [Swap Salary](Databases/Easy/SwapSalary.md)
     - [Reformat Department Table](Databases/Easy/ReformatDepartmentTable.md)
+    - [Rising Temperature](Databases/Easy/RisingTemperature.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
