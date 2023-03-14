@@ -20,6 +20,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Swap Salary](Databases/Easy/SwapSalary.md)
     - [Reformat Department Table](Databases/Easy/ReformatDepartmentTable.md)
     - [Rising Temperature](Databases/Easy/RisingTemperature.md)
+    - [Find Customer Referee](Databases/Easy/FindCustomerReferee.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
