@@ -2,9 +2,18 @@
 
 ### Solution :
 
+Method 1 :
 ```sql
 SELECT class
 FROM courses
 GROUP BY class
 HAVING COUNT(DISTINCT student) >= 5;
+```
+
+Method 2 :
+```sql
+SELECT class
+FROM courses
+GROUP BY class
+HAVING COUNT(*) >= 5;
 ```
