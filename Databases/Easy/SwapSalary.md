@@ -18,3 +18,9 @@ Method 2 :
 UPDATE Salary
 SET sex = IF(sex = 'f', 'm', 'f');
 ```
+
+Method 3 :
+```sql
+UPDATE salary
+SET sex = REPLACE('fm', sex, '');
+```
