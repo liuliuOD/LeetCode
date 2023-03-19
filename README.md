@@ -24,6 +24,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Customer Placing the Largest Number of Orders](Databases/Easy/CustomerPlacingTheLargestNumberOfOrders.md)
     - [Sales Person](Databases/Easy/SalesPerson.md)
     - [Actors And Directors Who Cooperated At Least Three Times](Databases/Easy/ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes.md)
+    - [Sales Analysis III](Databases/Easy/SalesAnalysisIII.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
