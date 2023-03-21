@@ -26,6 +26,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Actors And Directors Who Cooperated At Least Three Times](Databases/Easy/ActorsAndDirectorsWhoCooperatedAtLeastThreeTimes.md)
     - [Sales Analysis III](Databases/Easy/SalesAnalysisIII.md)
     - [Game Play Analysis I](Databases/Easy/GamePlayAnalysisI.md)
+    - [User Activity For The Past 30 Days I](Databases/Easy/UserActivityForThePast30DaysI.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
