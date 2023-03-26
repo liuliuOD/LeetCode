@@ -28,6 +28,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Game Play Analysis I](Databases/Easy/GamePlayAnalysisI.md)
     - [User Activity For The Past 30 Days I](Databases/Easy/UserActivityForThePast30DaysI.md)
     - [Article Views I](Databases/Easy/ArticleViewsI.md)
+    - [Top Travellers](Databases/Easy/TopTravellers.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
