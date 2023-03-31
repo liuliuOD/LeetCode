@@ -31,6 +31,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Top Travellers](Databases/Easy/TopTravellers.md)
     - [Group Sold Products By The Date](Databases/Easy/GroupSoldProductsByTheDate.md)
     - [Patients With A Condition](Databases/Easy/PatientsWithACondition.md)
+    - [Customer Who Visited But Did Not Make Any Transactions](Databases/Easy/CustomerWhoVisitedButDidNotMakeAnyTransactions.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
