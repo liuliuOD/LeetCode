@@ -33,6 +33,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Patients With A Condition](Databases/Easy/PatientsWithACondition.md)
     - [Customer Who Visited But Did Not Make Any Transactions](Databases/Easy/CustomerWhoVisitedButDidNotMakeAnyTransactions.md)
     - [Bank Account Summary II](Databases/Easy/BankAccountSummaryII.md)
+    - [Triangle Judgement](Databases/Easy/TriangleJudgement.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
