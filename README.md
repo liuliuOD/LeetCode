@@ -36,6 +36,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Triangle Judgement](Databases/Easy/TriangleJudgement.md)
     - [Employee Bonus](Databases/Easy/EmployeeBonus.md)
     - [Biggest Single Number](Databases/Easy/BiggestSingleNumber.md)
+    - [Product Sales Analysis I](Databases/Easy/ProductSalesAnalysisI.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
