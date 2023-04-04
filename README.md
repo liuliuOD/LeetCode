@@ -39,6 +39,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Product Sales Analysis I](Databases/Easy/ProductSalesAnalysisI.md)
     - [Project Employees I](Databases/Easy/ProjectEmployeesI.md)
     - [Queries Quality And Percentage](Databases/Easy/QueriesQualityAndPercentage.md)
+    - [Average Selling Price](Databases/Easy/AverageSellingPrice.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
