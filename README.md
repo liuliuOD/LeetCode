@@ -38,6 +38,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Biggest Single Number](Databases/Easy/BiggestSingleNumber.md)
     - [Product Sales Analysis I](Databases/Easy/ProductSalesAnalysisI.md)
     - [Project Employees I](Databases/Easy/ProjectEmployeesI.md)
+    - [Queries Quality And Percentage](Databases/Easy/QueriesQualityAndPercentage.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
