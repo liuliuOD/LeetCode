@@ -43,6 +43,7 @@ Use [Travis-CI](https://travis-ci.org) to run test automatically.
     - [Students And Examinations](Databases/Easy/StudentsAndExaminations.md)
     - [List The Products Ordered In A Period](Databases/Easy/ListTheProductsOrderedInAPeriod.md)
     - [Replace Employee ID With The Unique Identifier](Databases/Easy/ReplaceEmployeeIDWithTheUniqueIdentifier.md)
+    - [Find Users With Valid EMails](Databases/Easy/FindUsersWithValidEMails.md)
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
