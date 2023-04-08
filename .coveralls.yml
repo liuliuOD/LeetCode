@@ -1,3 +1,0 @@
-coverage_clover: coverage-clover/logs/clover.xml
-json_path: coverage-clover/logs/clover-upload.json
-service_name: travis-ci
