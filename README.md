@@ -2,12 +2,12 @@
 ![language-MySQL](https://img.shields.io/badge/language-MySQL-%23e89533)
 ![language-RUST](https://img.shields.io/badge/language-RUST-8d4004)
 
-LeetCode
+# LeetCode
 ===
 This project will be used to record my solved problems in [LeetCode](https://leetcode.com).
 ---
 
-### Database
+## Database
 
 EASY|||||
 | :- | :- | :- | :- | :- |
@@ -31,3 +31,8 @@ EASY|||||
 - Hard
     - [Department Top Three Salaries](Databases/Hard/DepartmentTopThreeSalaries.md)
     - [Trips And Users](Databases/Hard/TripsAndUsers.md)
+
+## Algorithm
+
+- Easy
+    - [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
