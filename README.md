@@ -36,3 +36,4 @@ EASY|||||
 
 - Easy
     - [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
+    - [Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)
