@@ -19,7 +19,8 @@ EASY|||||
 |[Triangle Judgement](Databases/Easy/TriangleJudgement.md)|[Employee Bonus](Databases/Easy/EmployeeBonus.md)|[Biggest Single Number](Databases/Easy/BiggestSingleNumber.md)|[Product Sales Analysis I](Databases/Easy/ProductSalesAnalysisI.md)|[Project Employees I](Databases/Easy/ProjectEmployeesI.md)|
 |[Queries Quality And Percentage](Databases/Easy/QueriesQualityAndPercentage.md)|[Average Selling Price](Databases/Easy/AverageSellingPrice.md)|[Students And Examinations](Databases/Easy/StudentsAndExaminations.md)|[List The Products Ordered In A Period](Databases/Easy/ListTheProductsOrderedInAPeriod.md)|[Replace Employee ID With The Unique Identifier](Databases/Easy/ReplaceEmployeeIDWithTheUniqueIdentifier.md)|
 |[Find Users With Valid EMails](Databases/Easy/FindUsersWithValidEMails.md)|[Percentage Of Users Attended A Contest](Databases/Easy/PercentageOfUsersAttendedAContest.md)|[Average Time Of Process Per Machine](Databases/Easy/AverageTimeOfProcessPerMachine.md)|[Fix Names In A Table](Databases/Easy/FixNamesInATable.md)|[Invalid Tweets](Databases/Easy/InvalidTweets.md)|
-|[Daily Leads And Partners](Databases/Easy/DailyLeadsAndPartners.md)|[Find Followers Count](Databases/Easy/FindFollowersCount.md)|[The Number of Employees Which Report to Each Employee](Databases/Easy/TheNumberOfEmployeesWhichReportToEachEmployee.md)|[Find Total Time Spent By Each Employee](Databases/Easy/FindTotalTimeSpentByEachEmployee.md)||
+|[Daily Leads And Partners](Databases/Easy/DailyLeadsAndPartners.md)|[Find Followers Count](Databases/Easy/FindFollowersCount.md)|[The Number of Employees Which Report to Each Employee](Databases/Easy/TheNumberOfEmployeesWhichReportToEachEmployee.md)|[Find Total Time Spent By Each Employee](Databases/Easy/FindTotalTimeSpentByEachEmployee.md)|[Recyclable And Low Fat Products](Databases/Easy/RecyclableAndLowFatProducts.md)|
+||||||
 
 - MEDIUM
     - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
