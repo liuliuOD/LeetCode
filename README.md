@@ -39,3 +39,4 @@ EASY|||||
     - [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
     - [Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)
     - [Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)
+    - [Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)
