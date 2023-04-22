@@ -42,3 +42,4 @@ EASY|||||
     - [Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)
     - [Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)
     - [Remove Element](Algorithms/Rust/Easy/RemoveElement.md)
+    - [Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)
