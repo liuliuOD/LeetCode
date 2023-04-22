@@ -41,3 +41,4 @@ EASY|||||
     - [Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)
     - [Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)
     - [Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)
+    - [Remove Element](Algorithms/Rust/Easy/RemoveElement.md)
