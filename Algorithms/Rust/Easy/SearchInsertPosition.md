@@ -40,7 +40,7 @@ impl Solution {
 }
 ```
 
-Method 3 (binary search in standard, time complexity: O(log n)) :
+Method 3 (binary search in standard library, time complexity: O(log n)) :
 ```rust
 use std::cmp::Ordering;
 

@@ -44,3 +44,4 @@ EASY|||||
     - [Remove Element](Algorithms/Rust/Easy/RemoveElement.md)
     - [Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)
     - [Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)
+    - [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
