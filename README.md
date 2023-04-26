@@ -36,6 +36,7 @@ EASY|||||
 ## Algorithm
 
 - Easy
+    - [Add Binary](Algorithms/Rust/Easy/AddBinary.md)
     - [Merge Two Sorted Lists](Algorithms/Rust/Easy/MergeTwoSortedLists.md)
     - [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
     - [Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)
