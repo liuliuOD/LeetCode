@@ -48,3 +48,4 @@ EASY|||||
     - [Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)
     - [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
     - [Plus One](Algorithms/Rust/Easy/PlusOne.md)
+    - [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
