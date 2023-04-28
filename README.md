@@ -3,13 +3,16 @@
 ![language-RUST](https://img.shields.io/badge/language-RUST-8d4004)
 
 # LeetCode
-===
+---
 This project will be used to record my solved problems in [LeetCode](https://leetcode.com).
 ---
 
 ## Database
 
-EASY|||||
+<details open>
+<summary>EASY</summary>
+
+||||||
 | :- | :- | :- | :- | :- |
 |[Combine Two Tables](Databases/Easy/CombineTwoTables.md)|[Second Highest Salary](Databases/Easy/SecondHighestSalary.md)|[Employees Earning More Than Their Managers](Databases/Easy/EmployeesEarningMoreThanTheirManagers.md)|[Delete Duplicate Emails](Databases/Easy/DeleteDuplicateEmails.md)|[Duplicate Emails](Databases/Easy/DuplicateEmails.md)|
 |[Customers Who Never Order](Databases/Easy/CustomersWhoNeverOrder.md)|[Big Countries](Databases/Easy/BigCountries.md)|[Classes More Than 5 Students](Databases/Easy/ClassesMoreThan5Students.md)|[Not Boring Movies](Databases/Easy/NotBoringMovies.md)|[Swap Salary](Databases/Easy/SwapSalary.md)
@@ -22,32 +25,56 @@ EASY|||||
 |[Daily Leads And Partners](Databases/Easy/DailyLeadsAndPartners.md)|[Find Followers Count](Databases/Easy/FindFollowersCount.md)|[The Number of Employees Which Report to Each Employee](Databases/Easy/TheNumberOfEmployeesWhichReportToEachEmployee.md)|[Find Total Time Spent By Each Employee](Databases/Easy/FindTotalTimeSpentByEachEmployee.md)|[Recyclable And Low Fat Products](Databases/Easy/RecyclableAndLowFatProducts.md)|
 |[Primary Department For Each Employee](Databases/Easy/PrimaryDepartmentForEachEmployee.md)|[Rearrange Products Table](Databases/Easy/RearrangeProductsTable.md)|[Calculate Special Bonus](Databases/Easy/CalculateSpecialBonus.md)|||
 
-- MEDIUM
-    - [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
-    - [Rank Scores](Databases/Medium/RankScores.md)
-    - [Consecutive Numbers](Databases/Medium/ConsecutiveNumbers.md)
-    - [Department Highest Salary](Databases/Medium/DepartmentHighestSalary.md)
-    - [Exchange Seats](Databases/Medium/ExchangeSeats.md)
+</details>
 
-- Hard
-    - [Department Top Three Salaries](Databases/Hard/DepartmentTopThreeSalaries.md)
-    - [Trips And Users](Databases/Hard/TripsAndUsers.md)
+<details open>
+<summary>MEDIUM</summary>
+
+- [Nth Highest Salary](Databases/Medium/NthHighestSalary.md)
+- [Rank Scores](Databases/Medium/RankScores.md)
+- [Consecutive Numbers](Databases/Medium/ConsecutiveNumbers.md)
+- [Department Highest Salary](Databases/Medium/DepartmentHighestSalary.md)
+- [Exchange Seats](Databases/Medium/ExchangeSeats.md)
+
+</details>
+
+<details open>
+<summary>HARD</summary>
+
+- [Department Top Three Salaries](Databases/Hard/DepartmentTopThreeSalaries.md)
+- [Trips And Users](Databases/Hard/TripsAndUsers.md)
+
+</details>
 
 ## Algorithm
 
-- Easy
-    - [Add Binary](Algorithms/Rust/Easy/AddBinary.md)
-    - [Merge Two Sorted Lists](Algorithms/Rust/Easy/MergeTwoSortedLists.md)
-    - [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
-    - [Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)
-    - [Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)
-    - [Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)
-    - [Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)
-    - [Remove Element](Algorithms/Rust/Easy/RemoveElement.md)
-    - [Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)
-    - [Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)
-    - [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
-    - [Plus One](Algorithms/Rust/Easy/PlusOne.md)
-    - [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
-- Medium
-    - [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
+<details open>
+<summary>EASY</summary>
+
+- [Add Binary](Algorithms/Rust/Easy/AddBinary.md)
+- [Merge Two Sorted Lists](Algorithms/Rust/Easy/MergeTwoSortedLists.md)
+- [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
+- [Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)
+- [Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)
+- [Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)
+- [Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)
+- [Remove Element](Algorithms/Rust/Easy/RemoveElement.md)
+- [Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)
+- [Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)
+- [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
+- [Plus One](Algorithms/Rust/Easy/PlusOne.md)
+- [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
+
+</details>
+
+<details open>
+<summary>MEDIUM</summary>
+
+- [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
+
+</details>
+
+<details open>
+<summary>HARD</summary>
+
+</details>
