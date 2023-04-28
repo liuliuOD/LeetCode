@@ -49,3 +49,5 @@ EASY|||||
     - [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
     - [Plus One](Algorithms/Rust/Easy/PlusOne.md)
     - [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
+- Medium
+    - [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
