@@ -64,6 +64,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)
 - [Plus One](Algorithms/Rust/Easy/PlusOne.md)
 - [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
+- [Sqrt(x)](Algorithms/Rust/Easy/Sqrt(x).md)
 
 </details>
 
