@@ -76,6 +76,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)
 - [Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)
 - [Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)
+- [Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)
 
 </details>
 
