@@ -65,6 +65,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Plus One](Algorithms/Rust/Easy/PlusOne.md)
 - [Add Digits](Algorithms/Rust/Easy/AddDigits.md)
 - [Sqrt(x)](Algorithms/Rust/Easy/Sqrt(x).md)
+- [Average Salary Excluding The Minimum And Maximum Salary](Algorithms/Rust/Easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.md)
 
 </details>
 
