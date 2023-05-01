@@ -2,7 +2,7 @@
 
 ### Solution :
 
-Method 1 (In biweely contest 103 (keep the original input)):
+Method 1 (In biweekly contest 103 (keep the original input)):
 ```rust
 impl Solution {
     pub fn find_max_fish(mut grid: Vec<Vec<i32>>) -> i32 {

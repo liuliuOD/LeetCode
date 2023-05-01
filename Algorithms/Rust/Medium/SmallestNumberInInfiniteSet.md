@@ -1,4 +1,4 @@
-## [Smallest Number In Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set/description)
+## [Smallest Number In Infinite Set](https://leetcode.com/problems/smallest-number-in-infinite-set)
 
 ### Solution :
 
