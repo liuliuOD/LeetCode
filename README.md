@@ -74,6 +74,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 
 - [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
 - [Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)
+- [Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)
 
 </details>
 
