@@ -69,6 +69,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)
 - [Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)
 - [Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)
+- [Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)
 
 </details>
 
