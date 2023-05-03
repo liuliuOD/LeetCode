@@ -63,6 +63,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 <details open>
 <summary>MEDIUM</summary>
 
+- [Bulb Switcher](Algorithms/Rust/Medium/BulbSwitcher.md)
 - [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
 - [Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)
 - [Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)
