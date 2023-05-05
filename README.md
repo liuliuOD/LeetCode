@@ -71,6 +71,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)
 - [Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)
 - [Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)
+- [Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)
 
 </details>
 
