@@ -74,6 +74,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)
 - [Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)
 - [Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)
+- [Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)
 
 </details>
 
