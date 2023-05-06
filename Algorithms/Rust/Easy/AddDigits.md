@@ -1,4 +1,4 @@
-## [Add Digits](https://leetcode.com/problems/add-digits/description)
+## [Add Digits](https://leetcode.com/problems/add-digits)
 
 ### Solution :
 

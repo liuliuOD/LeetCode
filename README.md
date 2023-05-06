@@ -57,7 +57,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 |[Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)|[Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)|[Remove Element](Algorithms/Rust/Easy/RemoveElement.md)|[Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)|[Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)|
 |[Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)|[Plus One](Algorithms/Rust/Easy/PlusOne.md)|[Add Digits](Algorithms/Rust/Easy/AddDigits.md)|[Sqrt(x)](Algorithms/Rust/Easy/Sqrt(x).md)|[Average Salary Excluding The Minimum And Maximum Salary](Algorithms/Rust/Easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.md)|
 |[Sign Of The Product Of An Array](Algorithms/Rust/Easy/SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](Algorithms/Rust/Easy/DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](Algorithms/Rust/Easy/MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](Algorithms/Rust/Easy/FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](Algorithms/Rust/Easy/ContainsDuplicateII.md)|
-|[Maximum Average Subarray I](Algorithms/Rust/Easy/MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](Algorithms/Rust/Easy/FindTheKBeautyOfANumber.md)||||
+|[Maximum Average Subarray I](Algorithms/Rust/Easy/MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](Algorithms/Rust/Easy/FindTheKBeautyOfANumber.md)|[Longest Nice Substring](Algorithms/Rust/Easy/LongestNiceSubstring.md)|||
 
 </details>
 
