@@ -78,6 +78,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)
 - [Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)
 - [Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)
+- [Make Costs Of Paths Equal In A Binary Tree](Algorithms/Rust/Medium/MakeCostsOfPathsEqualInABinaryTree.md)
 
 </details>
 
