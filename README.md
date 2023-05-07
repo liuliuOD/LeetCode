@@ -81,4 +81,6 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 <details open>
 <summary>HARD</summary>
 
+- [Find The Longest Valid Obstacle Course At Each Position](Algorithms/Rust/Hard/FindTheLongestValidObstacleCourseAtEachPosition.md)
+
 </details>
