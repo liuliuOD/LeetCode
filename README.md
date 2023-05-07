@@ -77,6 +77,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 - [Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)
 - [Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)
 - [Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)
+- [Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)
 
 </details>
 
