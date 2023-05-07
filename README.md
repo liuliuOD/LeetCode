@@ -65,20 +65,12 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 <details open>
 <summary>MEDIUM</summary>
 
-- [Bulb Switcher](Algorithms/Rust/Medium/BulbSwitcher.md)
-- [Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)
-- [Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)
-- [Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)
-- [Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)
-- [Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)
-- [Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)
-- [Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)
-- [Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)
-- [Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)
-- [Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)
-- [Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)
-- [Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)
-- [Make Costs Of Paths Equal In A Binary Tree](Algorithms/Rust/Medium/MakeCostsOfPathsEqualInABinaryTree.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Bulb Switcher](Algorithms/Rust/Medium/BulbSwitcher.md)|[Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)|[Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)|[Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)|[Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)|
+|[Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)|[Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)|[Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)|[Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)|
+|[Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](Algorithms/Rust/Medium/MakeCostsOfPathsEqualInABinaryTree.md)||
+||||||
 
 </details>
 
