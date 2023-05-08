@@ -89,4 +89,6 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 <details open>
 <summary>EASY</summary>
 
+- [Two Sum](Algorithms/Python3/Easy/TwoSum.md)
+
 </details>
