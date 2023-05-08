@@ -1,7 +1,6 @@
-![language-PHP](https://img.shields.io/badge/language-PHP-%238a93bc)
-![language-MySQL](https://img.shields.io/badge/language-MySQL-%23e89533)
-![language-RUST](https://img.shields.io/badge/language-RUST-8d4004)
-
+![language-MySQL](https://img.shields.io/badge/%20-MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 # LeetCode
 ---
 This project will be used to record my solved problems in [LeetCode](https://leetcode.com).
@@ -9,7 +8,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 
 ## Database
 
-<details open>
+<details>
 <summary>EASY</summary>
 
 ||||||
@@ -48,40 +47,46 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 
 ## Algorithm
 
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+
 <details open>
-<summary>RUST</summary>
+<summary>EASY</summary>
 
-  <details open>
-  <summary>EASY</summary>
+||||||
+| :- | :- | :- | :- | :- |
+|[Add Binary](Algorithms/Rust/Easy/AddBinary.md)|[Merge Two Sorted Lists](Algorithms/Rust/Easy/MergeTwoSortedLists.md)|[Two Sum](Algorithms/Rust/Easy/TwoSum.md)|[Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)|[Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)|
+|[Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)|[Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)|[Remove Element](Algorithms/Rust/Easy/RemoveElement.md)|[Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)|[Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)|
+|[Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)|[Plus One](Algorithms/Rust/Easy/PlusOne.md)|[Add Digits](Algorithms/Rust/Easy/AddDigits.md)|[Sqrt(x)](Algorithms/Rust/Easy/Sqrt(x).md)|[Average Salary Excluding The Minimum And Maximum Salary](Algorithms/Rust/Easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.md)|
+|[Sign Of The Product Of An Array](Algorithms/Rust/Easy/SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](Algorithms/Rust/Easy/DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](Algorithms/Rust/Easy/MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](Algorithms/Rust/Easy/FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](Algorithms/Rust/Easy/ContainsDuplicateII.md)|
+|[Maximum Average Subarray I](Algorithms/Rust/Easy/MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](Algorithms/Rust/Easy/FindTheKBeautyOfANumber.md)|[Longest Nice Substring](Algorithms/Rust/Easy/LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](Algorithms/Rust/Easy/BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](Algorithms/Rust/Easy/FindTheDistinctDifferenceArray.md)|
+|[Climbing Stairs](Algorithms/Rust/Easy/ClimbingStairs.md)|||||
 
-  ||||||
-  | :- | :- | :- | :- | :- |
-  |[Add Binary](Algorithms/Rust/Easy/AddBinary.md)|[Merge Two Sorted Lists](Algorithms/Rust/Easy/MergeTwoSortedLists.md)|[Two Sum](Algorithms/Rust/Easy/TwoSum.md)|[Palindrome Number](Algorithms/Rust/Easy/PalindromeNumber.md)|[Roman To Integer](Algorithms/Rust/Easy/RomanToInteger.md)|
-  |[Longest Common Prefix](Algorithms/Rust/Easy/LongestCommonPrefix.md)|[Valid Parentheses](Algorithms/Rust/Easy/ValidParentheses.md)|[Remove Element](Algorithms/Rust/Easy/RemoveElement.md)|[Find The Index Of The First Occurrence In A String](Algorithms/Rust/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)|[Search Insert Position](Algorithms/Rust/Easy/SearchInsertPosition.md)|
-  |[Remove Duplicates From Sorted Array](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedArray.md)|[Plus One](Algorithms/Rust/Easy/PlusOne.md)|[Add Digits](Algorithms/Rust/Easy/AddDigits.md)|[Sqrt(x)](Algorithms/Rust/Easy/Sqrt(x).md)|[Average Salary Excluding The Minimum And Maximum Salary](Algorithms/Rust/Easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.md)|
-  |[Sign Of The Product Of An Array](Algorithms/Rust/Easy/SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](Algorithms/Rust/Easy/DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](Algorithms/Rust/Easy/MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](Algorithms/Rust/Easy/FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](Algorithms/Rust/Easy/ContainsDuplicateII.md)|
-  |[Maximum Average Subarray I](Algorithms/Rust/Easy/MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](Algorithms/Rust/Easy/FindTheKBeautyOfANumber.md)|[Longest Nice Substring](Algorithms/Rust/Easy/LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](Algorithms/Rust/Easy/BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](Algorithms/Rust/Easy/FindTheDistinctDifferenceArray.md)|
-  |[Climbing Stairs](Algorithms/Rust/Easy/ClimbingStairs.md)|||||
+</details>
 
-  </details>
+<details open>
+<summary>MEDIUM</summary>
 
-  <details open>
-  <summary>MEDIUM</summary>
+||||||
+| :- | :- | :- | :- | :- |
+|[Bulb Switcher](Algorithms/Rust/Medium/BulbSwitcher.md)|[Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)|[Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)|[Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)|[Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)|
+|[Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)|[Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)|[Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)|[Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)|
+|[Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](Algorithms/Rust/Medium/MakeCostsOfPathsEqualInABinaryTree.md)||
+||||||
 
-  ||||||
-  | :- | :- | :- | :- | :- |
-  |[Bulb Switcher](Algorithms/Rust/Medium/BulbSwitcher.md)|[Smallest Number In Infinite Set](Algorithms/Rust/Medium/SmallestNumberInInfiniteSet.md)|[Maximum Number Of Fish In A Grid](Algorithms/Rust/Medium/MaximumNumberOfFishInAGrid.md)|[Number Of Ways To Arrive At Destination](Algorithms/Rust/Medium/NumberOfWaysToArriveAtDestination.md)|[Minimum Cost of a Path With Special Roads](Algorithms/Rust/Medium/MinimumCostOfAPathWithSpecialRoads.md)|
-  |[Network Delay Time](Algorithms/Rust/Medium/NetworkDelayTime.md)|[Cheapest Flights Within K Stops](Algorithms/Rust/Medium/CheapestFlightsWithinKStops.md)|[Path With Maximum Probability](Algorithms/Rust/Medium/PathWithMaximumProbability.md)|[Maximum Number of Vowels in a Substring of Given Length](Algorithms/Rust/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Algorithms/Rust/Medium/Dota2Senate.md)|
-  |[Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Rust/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](Algorithms/Rust/Medium/FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](Algorithms/Rust/Medium/NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](Algorithms/Rust/Medium/MakeCostsOfPathsEqualInABinaryTree.md)||
-  ||||||
+</details>
 
-  </details>
+<details open>
+<summary>HARD</summary>
 
-  <details open>
-  <summary>HARD</summary>
+- [Find The Longest Valid Obstacle Course At Each Position](Algorithms/Rust/Hard/FindTheLongestValidObstacleCourseAtEachPosition.md)
 
-  - [Find The Longest Valid Obstacle Course At Each Position](Algorithms/Rust/Hard/FindTheLongestValidObstacleCourseAtEachPosition.md)
+</details>
 
-  </details>
+---
+
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+
+<details open>
+<summary>EASY</summary>
 
 </details>
