@@ -14,7 +14,7 @@ impl Solution {
 }
 ```
 
-Method 2 (Dynamic Programming) :
+Method 2 (Dynamic Programming, Top to Bottom) :
 ```rust
 use std::collections::HashMap;
 impl Solution {
@@ -35,6 +35,22 @@ impl Solution {
                 return *hm.get(&n).unwrap()
             },
         }
+    }
+}
+```
+
+Method 3 (Bottom to Top) :
+```rust
+impl Solution {
+
+    pub fn climb_stairs(n: i32) -> i32 {
+        let mut start = [(0, 1), (1, 1)];
+        while start[1].0 < n {
+            let sum = start[0].1 + start[1].1;
+            start[0] = (start[0].0 + 1, start[1].1);
+            start[1] = (start[1].0 + 1, sum);
+        }
+        start[1].1
     }
 }
 ```
