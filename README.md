@@ -8,6 +8,8 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 
 ## Database
 
+![language-MySQL](https://img.shields.io/badge/%20-MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
+
 <details>
 <summary>EASY</summary>
 
