@@ -1,4 +1,4 @@
-## [The Number of Employees Which Report to Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee)
+## [The Number Of Employees Which Report To Each Employee](https://leetcode.com/problems/the-number-of-employees-which-report-to-each-employee)
 
 ### Solution :
 
