@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Find The Longest Valid Obstacle Course At Each Position](https://leetcode.com/problems/find-the-longest-valid-obstacle-course-at-each-position)
 
 ### Solution :
