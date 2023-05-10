@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Bulb Switcher](https://leetcode.com/problems/bulb-switcher)
 
 ### Solution :

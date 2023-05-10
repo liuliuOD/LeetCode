@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Dota2 Senate](https://leetcode.com/problems/dota2-senate)
 
 ### Solution :

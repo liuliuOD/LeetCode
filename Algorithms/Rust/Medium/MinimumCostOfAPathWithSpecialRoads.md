@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Minimum Cost Of A Path With Special Roads](https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads)
 
 ### Solution :

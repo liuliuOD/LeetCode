@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Spiral Matrix](https://leetcode.com/problems/spiral-matrix)
 
 ### Solution :
