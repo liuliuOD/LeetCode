@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Sqrt(x)](https://leetcode.com/problems/sqrtx)
 
 ### Solution :

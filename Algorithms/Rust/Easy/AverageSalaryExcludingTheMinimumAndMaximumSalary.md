@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Average Salary Excluding The Minimum And Maximum Salary](https://leetcode.com/problems/average-salary-excluding-the-minimum-and-maximum-salary)
 
 ### Solution :

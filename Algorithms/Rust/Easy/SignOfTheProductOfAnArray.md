@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Sign Of The Product Of An Array](https://leetcode.com/problems/sign-of-the-product-of-an-array)
 
 ### Solution :

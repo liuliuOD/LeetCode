@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Determine The Winner Of A Bowling Game](https://leetcode.com/problems/determine-the-winner-of-a-bowling-game)
 
 ### Solution :

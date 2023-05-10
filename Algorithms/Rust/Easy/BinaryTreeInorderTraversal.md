@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
 
 ### Solution :

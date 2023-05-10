@@ -1,3 +1,6 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+---
+
 ## [Roman To Integer](https://leetcode.com/problems/roman-to-integer)
 
 ### Solution :
