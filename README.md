@@ -51,48 +51,14 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 
-<details open>
-<summary>EASY</summary>
-
-||||||
-| :- | :- | :- | :- | :- |
-|[Add Binary](Algorithms/Easy/AddBinary.md)|[Merge Two Sorted Lists](Algorithms/Easy/MergeTwoSortedLists.md)|[Two Sum](Algorithms/Easy/TwoSum.md)|[Palindrome Number](Algorithms/Easy/PalindromeNumber.md)|[Roman To Integer](Algorithms/Easy/RomanToInteger.md)|
-|[Longest Common Prefix](Algorithms/Easy/LongestCommonPrefix.md)|[Valid Parentheses](Algorithms/Easy/ValidParentheses.md)|[Remove Element](Algorithms/Easy/RemoveElement.md)|[Find The Index Of The First Occurrence In A String](Algorithms/Easy/FindTheIndexOfTheFirstOccurrenceInAString.md)|[Search Insert Position](Algorithms/Easy/SearchInsertPosition.md)|
-|[Remove Duplicates From Sorted Array](Algorithms/Easy/RemoveDuplicatesFromSortedArray.md)|[Plus One](Algorithms/Easy/PlusOne.md)|[Add Digits](Algorithms/Easy/AddDigits.md)|[Sqrt(x)](Algorithms/Easy/Sqrt(x).md)|[Average Salary Excluding The Minimum And Maximum Salary](Algorithms/Easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.md)|
-|[Sign Of The Product Of An Array](Algorithms/Easy/SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](Algorithms/Easy/DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](Algorithms/Easy/MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](Algorithms/Easy/FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](Algorithms/Easy/ContainsDuplicateII.md)|
-|[Maximum Average Subarray I](Algorithms/Easy/MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](Algorithms/Easy/FindTheKBeautyOfANumber.md)|[Longest Nice Substring](Algorithms/Easy/LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](Algorithms/Easy/BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](Algorithms/Easy/FindTheDistinctDifferenceArray.md)|
-|[Climbing Stairs](Algorithms/Easy/ClimbingStairs.md)|[Matrix Diagonal Sum](Algorithms/Easy/MatrixDiagonalSum.md)|[Remove Duplicates From Sorted List](Algorithms/Easy/RemoveDuplicatesFromSortedList.md)|[Next Greater Element I](Algorithms/Easy/NextGreaterElementI.md)|[Final Prices With A Special Discount In A Shop](Algorithms/Easy/FinalPricesWithASpecialDiscountInAShop.md)|
-||||||
-
-</details>
-
-<details open>
-<summary>MEDIUM</summary>
-
-||||||
-| :- | :- | :- | :- | :- |
-|[Bulb Switcher](Algorithms/Medium/BulbSwitcher.md)|[Smallest Number In Infinite Set](Algorithms/Medium/SmallestNumberInInfiniteSet.md)|[Maximum Number Of Fish In A Grid](Algorithms/Medium/MaximumNumberOfFishInAGrid.md)|[Number Of Ways To Arrive At Destination](Algorithms/Medium/NumberOfWaysToArriveAtDestination.md)|[Minimum Cost Of A Path With Special Roads](Algorithms/Medium/MinimumCostOfAPathWithSpecialRoads.md)|
-|[Network Delay Time](Algorithms/Medium/NetworkDelayTime.md)|[Cheapest Flights Within K Stops](Algorithms/Medium/CheapestFlightsWithinKStops.md)|[Path With Maximum Probability](Algorithms/Medium/PathWithMaximumProbability.md)|[Maximum Number Of Vowels In A Substring Of Given Length](Algorithms/Medium/MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Algorithms/Medium/Dota2Senate.md)|
-|[Number Of Subsequences That Satisfy The Given Sum Condition](Algorithms/Medium/NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](Algorithms/Medium/FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](Algorithms/Medium/NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](Algorithms/Medium/MakeCostsOfPathsEqualInABinaryTree.md)|[Spiral Matrix](Algorithms/Medium/SpiralMatrix.md)|
-|[Spiral Matrix II](Algorithms/Medium/SpiralMatrixII.md)|||||
-
-</details>
-
-<details open>
-<summary>HARD</summary>
-
-- [Find The Longest Valid Obstacle Course At Each Position](Algorithms/Hard/FindTheLongestValidObstacleCourseAtEachPosition.md)
-
-</details>
+- [EASY](Algorithms/Easy/README.md#rust)
+- [MEDIUM](Algorithms/Medium/README.md#rust)
+- [HARD](Algorithms/Hard/README.md#rust)
 
 ---
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 
-<details open>
-<summary>EASY</summary>
-
-- [Two Sum](Algorithms/Easy/TwoSum.md)
-- [Remove Duplicates From Sorted List](Algorithms/Easy/RemoveDuplicatesFromSortedList.md)
-
-</details>
+- [EASY](Algorithms/Easy/README.md#python-3)
+- [MEDIUM](Algorithms/Medium/README.md#python-3)
+- [HARD](Algorithms/Hard/README.md#python-3)
