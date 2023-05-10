@@ -92,7 +92,7 @@ This project will be used to record my solved problems in [LeetCode](https://lee
 <details open>
 <summary>EASY</summary>
 
-- [Two Sum](Algorithms/Python3/Easy/TwoSum.md)
-- [Remove Duplicates From Sorted List](Algorithms/Python3/Easy/RemoveDuplicatesFromSortedList.md)
+- [Two Sum](Algorithms/Rust/Easy/TwoSum.md)
+- [Remove Duplicates From Sorted List](Algorithms/Rust/Easy/RemoveDuplicatesFromSortedList.md)
 
 </details>
