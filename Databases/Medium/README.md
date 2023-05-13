@@ -11,3 +11,4 @@
 - [Consecutive Numbers](ConsecutiveNumbers.md)
 - [Department Highest Salary](DepartmentHighestSalary.md)
 - [Exchange Seats](ExchangeSeats.md)
+- [Managers With At Least 5 Direct Reports](ManagersWithAtLeast5DirectReports.md)
