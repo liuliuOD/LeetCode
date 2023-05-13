@@ -23,3 +23,4 @@
 - [Two Sum](TwoSum.md)
 - [Remove Duplicates From Sorted List](RemoveDuplicatesFromSortedList.md)
 - [Linked List Cycle](LinkedListCycle.md)
+- [Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)
