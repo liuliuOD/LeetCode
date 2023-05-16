@@ -20,3 +20,4 @@
 ## Python 3
 
 - [Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)
+- [Swap Nodes In Pairs](SwapNodesInPairs.md)
