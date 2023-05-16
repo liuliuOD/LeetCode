@@ -30,3 +30,17 @@ class Solution:
         head.next = None
         return dummy
 ```
+
+Method 2 (Dummy Pointer) :
+```python
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = None
+        cur = head
+        while cur:
+            temp = cur.next
+            cur.next = dummy
+            cur, dummy = temp, cur
+
+        return dummy
+```
