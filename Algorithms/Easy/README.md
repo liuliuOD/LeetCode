@@ -28,3 +28,4 @@
 - [Reverse Linked List](ReverseLinkedList.md)
 - [Palindrome Linked List](PalindromeLinkedList.md)
 - [Design Hash Set](DesignHashSet.md)
+- [Design Hash Map](DesignHashMap.md)
