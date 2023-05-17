@@ -21,3 +21,4 @@
 
 - [Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)
 - [Swap Nodes In Pairs](SwapNodesInPairs.md)
+- [Maximum Twin Sum Of A Linked List](MaximumTwinSumOfALinkedList.md)
