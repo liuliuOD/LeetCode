@@ -13,7 +13,7 @@
 #         self.next = next
 ```
 
-Method 1 :
+Method 1 (dummy) :
 ```python
 class Solution:
     def swapPairs(self, head: Optional[ListNode]) -> Optional[ListNode]:
