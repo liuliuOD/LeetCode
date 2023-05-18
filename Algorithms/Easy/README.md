@@ -30,3 +30,4 @@
 - [Design Hash Set](DesignHashSet.md)
 - [Design Hash Map](DesignHashMap.md)
 - [Middle Of The Linked List](MiddleOfTheLinkedList.md)
+- [Convert Binary Number In A Linked List To Integer](ConvertBinaryNumberInALinkedListToInteger.md)
