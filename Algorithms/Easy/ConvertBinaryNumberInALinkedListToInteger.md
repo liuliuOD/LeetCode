@@ -5,6 +5,60 @@
 
 ### Solution :
 
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+// 
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+```
+
+Method 1 (Vector) :
+```rust
+impl Solution {
+    pub fn get_decimal_value(head: Option<Box<ListNode>>) -> i32 {
+        let mut binary = vec![];
+        let mut node = head;
+        while let Some(temp) = node {
+            binary.push(temp.val);
+            node = temp.next;
+        }
+
+        return binary.iter().fold(0, |acc, digit| (acc << 1) | digit)
+    }
+}
+```
+
+Method 2 (binary to decimal) :
+```rust
+impl Solution {
+    pub fn get_decimal_value(head: Option<Box<ListNode>>) -> i32 {
+        let mut decimal: i32 = 0;
+        let mut node = head;
+        while let Some(temp) = node {
+            decimal <<= 1;
+            decimal |= temp.val;
+            node = temp.next;
+        }
+
+        return decimal
+    }
+}
+```
+
+### Solution :
+
 ```python
 # Definition for singly-linked list.
 # class ListNode:
