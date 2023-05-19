@@ -23,3 +23,4 @@
 - [Swap Nodes In Pairs](SwapNodesInPairs.md)
 - [Maximum Twin Sum Of A Linked List](MaximumTwinSumOfALinkedList.md)
 - [Minimum Number Of Vertices To Reach All Nodes](MinimumNumberOfVerticesToReachAllNodes.md)
+- [Is Graph Bipartite?](IsGraphBipartite.md)
