@@ -22,6 +22,7 @@
 - [Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)
 - [Swap Nodes In Pairs](SwapNodesInPairs.md)
 - [Maximum Twin Sum Of A Linked List](MaximumTwinSumOfALinkedList.md)
+- [Find The Punishment Number Of An Integer](FindThePunishmentNumberOfAnInteger.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
