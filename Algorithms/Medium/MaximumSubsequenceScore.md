@@ -1,7 +1,47 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2542. [Maximum Subsequence Score](https://leetcode.com/problems/maximum-subsequence-score)
+
+### Solution :
+
+Method 1 (Minimum Heap) :
+```rust
+use std::collections::BinaryHeap;
+use std::cmp::{ Reverse, max };
+
+impl Solution {
+    pub fn max_score(nums1: Vec<i32>, nums2: Vec<i32>, k: i32) -> i64 {
+        let mut nums: Vec<(i32, i32)> = vec![];
+        for (&n1, &n2) in nums1.iter().zip(nums2.iter()) {
+            nums.push((n1, n2));
+        }
+        nums.sort_by_key(|item| -item.1);
+
+        let mut heap: BinaryHeap<Reverse<i32>> = BinaryHeap::new();
+        let mut temp = 0;
+        let mut result = 0;
+        for &(n1, n2) in nums.iter() {
+            temp += n1 as i64;
+            heap.push(Reverse(n1));
+
+            if heap.len() < k as usize {
+                continue;
+            }
+
+            if heap.len() > k as usize {
+                if let Some(Reverse(item)) = heap.pop() {
+                    temp -= item as i64;
+                }
+            }
+            result = max(result, temp * n2 as i64);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
