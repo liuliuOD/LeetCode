@@ -41,3 +41,4 @@
 - [Convert Binary Number In A Linked List To Integer](ConvertBinaryNumberInALinkedListToInteger.md)
 - [Kth Largest Element In A Stream](KthLargestElementInAStream.md)
 - [Design Parking System](DesignParkingSystem.md)
+- [Design Hash Set](DesignHashSet.md)

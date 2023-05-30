@@ -1,7 +1,49 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 705. [Design Hash Set](https://leetcode.com/problems/design-hashset)
+
+### Solution :
+
+```rust
+/**
+ * Your MyHashSet object will be instantiated and called as such:
+ * let obj = MyHashSet::new();
+ * obj.add(key);
+ * obj.remove(key);
+ * let ret_3: bool = obj.contains(key);
+ */
+```
+
+Method 1 (Array) :
+```rust
+const SET_LENGTH:usize = 10_usize.pow(6) + 1;
+struct MyHashSet {
+    set: [bool; SET_LENGTH],
+}
+
+impl MyHashSet {
+
+    fn new() -> Self {
+        Self {
+            set: [false; SET_LENGTH],
+        }
+    }
+    
+    fn add(&mut self, key: i32) {
+        self.set[key as usize] = true;
+    }
+    
+    fn remove(&mut self, key: i32) {
+        self.set[key as usize] = false;
+    }
+    
+    fn contains(&self, key: i32) -> bool {
+        return self.set[key as usize]
+    }
+}
+```
 
 ### Solution :
 
