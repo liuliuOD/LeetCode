@@ -24,7 +24,6 @@
 - [Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)
 - [Reverse Linked List](ReverseLinkedList.md)
 - [Palindrome Linked List](PalindromeLinkedList.md)
-- [Design Hash Set](DesignHashSet.md)
 - [Design Hash Map](DesignHashMap.md)
 - [Middle Of The Linked List](MiddleOfTheLinkedList.md)
 - [Minimum String Length After Removing Substrings](MinimumStringLengthAfterRemovingSubstrings.md)
