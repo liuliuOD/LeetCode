@@ -42,3 +42,4 @@
 - [Shortest Bridge](ShortestBridge.md)
 - [Top K Frequent Elements](TopKFrequentElements.md)
 - [Maximum Subsequence Score](MaximumSubsequenceScore.md)
+- [Number Of Provinces](NumberOfProvinces.md)
