@@ -42,3 +42,4 @@
 - [Kth Largest Element In A Stream](KthLargestElementInAStream.md)
 - [Design Parking System](DesignParkingSystem.md)
 - [Design Hash Set](DesignHashSet.md)
+- [Check If It Is A Straight Line](CheckIfItIsAStraightLine.md)
