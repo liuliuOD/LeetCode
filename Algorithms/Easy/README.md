@@ -43,3 +43,4 @@
 - [Design Parking System](DesignParkingSystem.md)
 - [Design Hash Set](DesignHashSet.md)
 - [Check If It Is A Straight Line](CheckIfItIsAStraightLine.md)
+- [Can Make Arithmetic Progression From Sequence](CanMakeArithmeticProgressionFromSequence.md)
