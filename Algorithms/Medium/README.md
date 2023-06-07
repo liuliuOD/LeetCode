@@ -43,3 +43,4 @@
 - [Top K Frequent Elements](TopKFrequentElements.md)
 - [Maximum Subsequence Score](MaximumSubsequenceScore.md)
 - [Number Of Provinces](NumberOfProvinces.md)
+- [Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)
