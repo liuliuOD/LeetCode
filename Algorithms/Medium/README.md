@@ -31,6 +31,7 @@
 - [Shortest Path In Binary Matrix](ShortestPathInBinaryMatrix.md)
 - [Detonate The Maximum Bombs](DetonateTheMaximumBombs.md)
 - [Difference Of Number Of Distinct Values On Diagonals](DifferenceOfNumberOfDistinctValuesOnDiagonals.md)
+- [Sum Of Matrix After Queries](SumOfMatrixAfterQueries.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
