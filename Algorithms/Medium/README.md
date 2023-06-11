@@ -35,6 +35,7 @@
 - [Maximum Value At A Given Index In A Bounded Array](MaximumValueAtAGivenIndexInABoundedArray.md)
 - [Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)
 - [Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)
+- [Movement Of Robots](MovementOfRobots.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
