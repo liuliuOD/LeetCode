@@ -13,3 +13,4 @@
 ## Python 3
 
 - [Power Of Heroes](PowerOfHeroes.md)
+- [Number Of Ways To Reorder Array To Get Same BST](NumberOfWaysToReorderArrayToGetSameBST.md)
