@@ -14,3 +14,4 @@
 
 - [Power Of Heroes](PowerOfHeroes.md)
 - [Number Of Ways To Reorder Array To Get Same BST](NumberOfWaysToReorderArrayToGetSameBST.md)
+- [Number Of Increasing Paths In A Grid](NumberOfIncreasingPathsInAGrid.md)
