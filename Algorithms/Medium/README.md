@@ -42,6 +42,7 @@
 - [Maximum Level Sum Of A Binary Tree](MaximumLevelSumOfABinaryTree.md)
 - [Search In Rotated Sorted Array II](SearchInRotatedSortedArrayII.md)
 - [Longest Arithmetic Subsequence](LongestArithmeticSubsequence.md)
+- [Find The Value Of The Partition](FindTheValueOfThePartition.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
