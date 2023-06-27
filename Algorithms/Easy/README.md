@@ -15,7 +15,7 @@
 |[Sign Of The Product Of An Array](SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](ContainsDuplicateII.md)|
 |[Maximum Average Subarray I](MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](FindTheKBeautyOfANumber.md)|[Longest Nice Substring](LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](FindTheDistinctDifferenceArray.md)|
 |[Climbing Stairs](ClimbingStairs.md)|[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|
-|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle](PascalsTriangle.md)||||
+|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle](PascalsTriangle.md)|[Pascal's Triangle II](PascalsTriangleII.md)|||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
