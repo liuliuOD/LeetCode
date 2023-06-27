@@ -62,3 +62,4 @@
 - [Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)
 - [K Radius Subarray Averages](KRadiusSubarrayAverages.md)
 - [Special Permutations](SpecialPermutations.md)
+- [Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)
