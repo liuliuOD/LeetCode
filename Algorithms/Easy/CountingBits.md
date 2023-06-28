@@ -68,3 +68,23 @@ class Solution:
         
         return self.memoization[value]
 ```
+
+Method 4 (Dynamic Programming):
+```python
+class Solution:
+    def countBits(self, n: int) -> List[int]:
+        self.memoization = {0: 0, 1: 1}
+        result = []
+        for value in range(n+1):
+            result.append(self.dfs(value))
+        return result
+
+    def dfs(self, value: int) -> int:
+        if value in self.memoization:
+            return self.memoization[value]
+
+        # bitwise right side move, if first bit is 1 then need to record in memoization to save the amount of number 1
+        self.memoization[value] = value % 2 + self.dfs(value >> 1)
+
+        return self.memoization[value]
+```
