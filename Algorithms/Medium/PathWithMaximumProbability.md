@@ -74,3 +74,33 @@ impl Solution {
     }
 }
 ```
+
+### Solution :
+
+Method 1 (Dijkstra) :
+```python
+class Solution:
+    def maxProbability(self, n: int, edges: List[List[int]], succProb: List[float], start: int, end: int) -> float:
+        self.mapping = defaultdict(list)
+        for edge, prob in zip(edges, succProb):
+            self.mapping[edge[0]].append((edge[1], prob))
+            self.mapping[edge[1]].append((edge[0], prob))
+
+        maximum_prob = defaultdict(int)
+        maximum_prob[start] = 1
+        heap = [(-1, start)]
+        while heap:
+            current_prob, current_node = heapq.heappop(heap)
+            current_prob *= -1
+
+            if current_node == end:
+                return current_prob
+
+            for target_node, target_prob in self.mapping[current_node]:
+                current_to_target_prob = current_prob * target_prob
+                if maximum_prob[target_node] >= current_to_target_prob:
+                    continue
+                maximum_prob[target_node] = current_to_target_prob
+                heapq.heappush(heap, (-current_to_target_prob, target_node))
+        return 0.0
+```
