@@ -48,6 +48,7 @@
 - [Ways To Split Array Into Good Subarrays](WaysToSplitArrayIntoGoodSubarrays.md)
 - [Total Cost To Hire K Workers](TotalCostToHireKWorkers.md)
 - [Fair Distribution Of Cookies](FairDistributionOfCookies.md)
+- [Prime Pairs With Target Sum](PrimePairsWithTargetSum.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
