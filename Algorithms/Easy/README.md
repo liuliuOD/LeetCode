@@ -27,7 +27,7 @@
 |[Minimize String Length](MinimizeStringLength.md)|[Semi-Ordered Permutation](SemiOrderedPermutation.md)|[Missing Number](MissingNumber.md)|[Valid Perfect Square](ValidPerfectSquare.md)|[Arranging Coins](ArrangingCoins.md)|
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
 |[Find The Highest Altitude](FindTheHighestAltitude.md)|[Total Distance Traveled](TotalDistanceTraveled.md)|[Find Maximum Number Of String Pairs](FindMaximumNumberOfStringPairs.md)|[Number Of Beautiful Pairs](NumberOfBeautifulPairs.md)|[Counting Bits](CountingBits.md)|
-|[Is Subsequence](IsSubsequence.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|||
+|[Is Subsequence](IsSubsequence.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
