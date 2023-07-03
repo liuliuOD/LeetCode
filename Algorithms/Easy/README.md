@@ -47,3 +47,4 @@
 - [Find Smallest Letter Greater Than Target](FindSmallestLetterGreaterThanTarget.md)
 - [Summary Ranges](SummaryRanges.md)
 - [Best Time To Buy And Sell Stock](BestTimeToBuyAndSellStock.md)
+- [Nth Tribonacci Number](NthTribonacciNumber.md)
