@@ -52,6 +52,7 @@
 - [Single Number II](SingleNumberII.md)
 - [Longest Palindromic Substring](LongestPalindromicSubstring.md)
 - [Longest Subarray Of 1's After Deleting One Element](LongestSubarrayOf1sAfterDeletingOneElement.md)
+- [Minimum Size Subarray Sum](MinimumSizeSubarraySum.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
