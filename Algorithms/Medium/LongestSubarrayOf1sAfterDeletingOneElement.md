@@ -89,3 +89,48 @@ class Solution:
         
         return result
 ```
+
+Method 4 (Dynamic Programming) :
+```python
+class Solution:
+    def longestSubarray(self, nums: List[int]) -> int:
+        n = len(nums)
+
+        if sum(nums) == n:
+            return n - 1
+
+        result = 0
+        memoization = [[0]*2 for _ in range(n+1)]
+
+        for index, num in enumerate(nums):
+            index_memoization = index + 1
+
+            memoization[index_memoization][0] = memoization[index_memoization-1][0] + 1 if num == 1 else 0
+            memoization[index_memoization][1] = memoization[index_memoization-1][1] + 1 if num == 1 else memoization[index_memoization-1][0]
+
+            result = max(result, memoization[index_memoization][0], memoization[index_memoization][1])
+
+        return result
+```
+
+Method 5 (Dynamic Programming) :
+```python
+class Solution:
+    def longestSubarray(self, nums: List[int]) -> int:
+        n = len(nums)
+        result = 0
+        memoization = [[0]*2 for _ in range(n+1)]
+
+        for index, num in enumerate(nums):
+            index_memoization = index + 1
+
+            memoization[index_memoization][0] = memoization[index_memoization-1][0] + 1 if num == 1 else 0
+            memoization[index_memoization][1] = memoization[index_memoization-1][1] + 1 if num == 1 else memoization[index_memoization-1][0]
+
+            result = max(result, memoization[index_memoization][0], memoization[index_memoization][1])
+
+        if result == n:
+            result -= 1
+
+        return result
+```
