@@ -55,6 +55,7 @@
 - [Minimum Size Subarray Sum](MinimumSizeSubarraySum.md)
 - [Maximize The Confusion Of An Exam](MaximizeTheConfusionOfAnExam.md)
 - [Decremental String Concatenation](DecrementalStringConcatenation.md)
+- [Relocate Marbles](RelocateMarbles.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
