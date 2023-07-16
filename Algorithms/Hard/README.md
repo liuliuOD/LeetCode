@@ -19,6 +19,7 @@
 - [Last Day Where You Can Still Cross](LastDayWhereYouCanStillCross.md)
 - [Maximum Number Of Achievable Transfer Requests](MaximumNumberOfAchievableTransferRequests.md)
 - [Maximum Number Of Events That Can Be Attended II](MaximumNumberOfEventsThatCanBeAttendedII.md)
+- [Smallest Sufficient Team](SmallestSufficientTeam.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
