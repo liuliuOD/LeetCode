@@ -30,6 +30,7 @@
 |[Single Number II](SingleNumberII.md)|[Longest Palindromic Substring](LongestPalindromicSubstring.md)|[Longest Subarray Of 1's After Deleting One Element](LongestSubarrayOf1sAfterDeletingOneElement.md)|[Minimum Size Subarray Sum](MinimumSizeSubarraySum.md)|[Maximize The Confusion Of An Exam](MaximizeTheConfusionOfAnExam.md)|
 |[Decremental String Concatenation](DecrementalStringConcatenation.md)|[Relocate Marbles](RelocateMarbles.md)|[All Nodes Distance K In Binary Tree](AllNodesDistanceKInBinaryTree.md)|[Find Eventual Safe States](FindEventualSafeStates.md)|[Course Schedule](CourseSchedule.md)|
 |[Longest Arithmetic Subsequence Of Given Difference](LongestArithmeticSubsequenceOfGivenDifference.md)|[Generate Parentheses](GenerateParentheses.md)|[Add Two Numbers II](AddTwoNumbersII.md)|[LRU Cache](LRUCache.md)|[Maximum Beauty Of An Array After Applying Operation](MaximumBeautyOfAnArrayAfterApplyingOperation.md)|
+|[Non Overlapping Intervals](NonOverlappingIntervals.md)|||||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
