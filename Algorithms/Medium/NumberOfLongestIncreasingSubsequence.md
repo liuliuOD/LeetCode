@@ -1,7 +1,47 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 673. [Number Of Longest Increasing Subsequence](https://leetcode.com/problems/number-of-longest-increasing-subsequence)
+
+### Solution :
+
+Method 1 (Dynamic Programming) :
+```rust
+use std::cmp::max;
+impl Solution {
+    pub fn find_number_of_lis(nums: Vec<i32>) -> i32 {
+        let n: usize = nums.len();
+        let mut memoization: Vec<i32> = vec![1; n];
+        let mut times: Vec<i32> = vec![1; n];
+        let mut maximum: i32 = 0;
+        for index in 0..n {
+            for index_previous in 0..index {
+                if nums[index] <= nums[index_previous] {
+                    continue;
+                }
+
+                if memoization[index_previous] >= memoization[index] {
+                    memoization[index] = memoization[index_previous] + 1;
+                    times[index] = times[index_previous];
+                } else if memoization[index_previous]+1 == memoization[index] {
+                    times[index] += times[index_previous];
+                }
+            }
+            maximum = max(maximum, memoization[index]);
+        }
+
+        let mut result: i32 = 0;
+        for index in 0..n {
+            if memoization[index] == maximum {
+                result += times[index];
+            }
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
@@ -32,7 +72,7 @@ class Solution:
         return result
 ```
 
-Method 2 () :
+Method 2 (Dynamic Programming) :
 ```python
 class Solution:
     def findNumberOfLIS(self, nums: List[int]) -> int:
