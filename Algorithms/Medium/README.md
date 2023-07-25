@@ -49,3 +49,4 @@
 - [Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)
 - [Path With Maximum Probability](PathWithMaximumProbability.md)
 - [Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)
+- [Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)
