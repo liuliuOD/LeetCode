@@ -50,3 +50,4 @@
 - [Path With Maximum Probability](PathWithMaximumProbability.md)
 - [Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)
 - [Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)
+- [Predict The Winner](PredictTheWinner.md)
