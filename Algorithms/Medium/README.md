@@ -53,3 +53,4 @@
 - [Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)
 - [Predict The Winner](PredictTheWinner.md)
 - [Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)
+- [Combinations](Combinations.md)
