@@ -54,3 +54,4 @@
 - [Predict The Winner](PredictTheWinner.md)
 - [Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)
 - [Combinations](Combinations.md)
+- [Permutations](Permutations.md)
