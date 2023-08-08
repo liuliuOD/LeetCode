@@ -23,7 +23,7 @@
 | :- | :- | :- | :- | :- |
 |[Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)|[Swap Nodes In Pairs](SwapNodesInPairs.md)|[Maximum Twin Sum Of A Linked List](MaximumTwinSumOfALinkedList.md)|[Find The Punishment Number Of An Integer](FindThePunishmentNumberOfAnInteger.md)|[Add Two Numbers](AddTwoNumbers.md)|
 |[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Maximum Strength Of A Group](MaximumStrengthOfAGroup.md)|[Design Underground System](DesignUndergroundSystem.md)|[Shortest Path In Binary Matrix](ShortestPathInBinaryMatrix.md)|
-|[Detonate The Maximum Bombs](DetonateTheMaximumBombs.md)|[Difference Of Number Of Distinct Values On Diagonals](DifferenceOfNumberOfDistinctValuesOnDiagonals.md)|[Sum Of Matrix After Queries](SumOfMatrixAfterQueries.md)|[Maximum Value At A Given Index In A Bounded Array](MaximumValueAtAGivenIndexInABoundedArray.md)|[Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)|
+|[Detonate The Maximum Bombs](DetonateTheMaximumBombs.md)|[Difference Of Number Of Distinct Values On Diagonals](DifferenceOfNumberOfDistinctValuesOnDiagonals.md)|[Sum Of Matrix After Queries](SumOfMatrixAfterQueries.md)|[Maximum Value At A Given Index In A Bounded Array](MaximumValueAtAGivenIndexInABoundedArray.md)|[Check If It Is Possible To Split Array](CheckIfItIsPossibleToSplitArray.md)|
 |[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|[Movement Of Robots](MovementOfRobots.md)|[Find The Longest Semi-Repetitive Substring](FindTheLongestSemiRepetitiveSubstring.md)|[Lexicographically Smallest String After Substring Operation](LexicographicallySmallestStringAfterSubstringOperation.md)|[Equal Row And Column Pairs](EqualRowAndColumnPairs.md)|
 |[Maximum Level Sum Of A Binary Tree](MaximumLevelSumOfABinaryTree.md)|[Search In Rotated Sorted Array II](SearchInRotatedSortedArrayII.md)|[Longest Arithmetic Subsequence](LongestArithmeticSubsequence.md)|[Find The Value Of The Partition](FindTheValueOfThePartition.md)|[Count Zero Request Servers](CountZeroRequestServers.md)|
 |[Construct The Longest New String](ConstructTheLongestNewString.md)|[Ways To Split Array Into Good Subarrays](WaysToSplitArrayIntoGoodSubarrays.md)|[Total Cost To Hire K Workers](TotalCostToHireKWorkers.md)|[Fair Distribution Of Cookies](FairDistributionOfCookies.md)|[Prime Pairs With Target Sum](PrimePairsWithTargetSum.md)|
@@ -31,7 +31,7 @@
 |[Decremental String Concatenation](DecrementalStringConcatenation.md)|[Relocate Marbles](RelocateMarbles.md)|[All Nodes Distance K In Binary Tree](AllNodesDistanceKInBinaryTree.md)|[Find Eventual Safe States](FindEventualSafeStates.md)|[Course Schedule](CourseSchedule.md)|
 |[Longest Arithmetic Subsequence Of Given Difference](LongestArithmeticSubsequenceOfGivenDifference.md)|[Generate Parentheses](GenerateParentheses.md)|[Add Two Numbers II](AddTwoNumbersII.md)|[LRU Cache](LRUCache.md)|[Maximum Beauty Of An Array After Applying Operation](MaximumBeautyOfAnArrayAfterApplyingOperation.md)|
 |[Non Overlapping Intervals](NonOverlappingIntervals.md)|[Jump Game II](JumpGameII.md)|[Knight Probability In Chessboard](KnightProbabilityInChessboard.md)|[Pow(x, n)](Pow.md)|[Minimum Speed To Arrive On Time](MinimumSpeedToArriveOnTime.md)|
-|[Soup Servings](SoupServings.md)|[Minimum ASCII Delete Sum For Two Strings](MinimumASCIIDeleteSumForTwoStrings.md)|[Shortest String That Contains Three Strings](ShortestStringThatContainsThreeStrings.md)|[Check If It Is Possible To Split Array](CheckIfItIsPossibleToSplitArray.md)||
+|[Soup Servings](SoupServings.md)|[Minimum ASCII Delete Sum For Two Strings](MinimumASCIIDeleteSumForTwoStrings.md)|[Shortest String That Contains Three Strings](ShortestStringThatContainsThreeStrings.md)|||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
@@ -57,3 +57,4 @@
 - [Permutations](Permutations.md)
 - [Letter Combinations Of A Phone Number](LetterCombinationsOfAPhoneNumber.md)
 - [Search A 2D Matrix](SearchA2DMatrix.md)
+- [Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)
