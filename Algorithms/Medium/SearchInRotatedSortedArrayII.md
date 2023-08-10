@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Binary Search) :
+Method 1 (Find Pivot by Brute Force + Binary Search) :
 ```python
 class Solution:
     def search(self, nums: List[int], target: int) -> bool:
@@ -30,4 +30,35 @@ class Solution:
 
             return index + 1
         return 0
+```
+
+Method 2 (Binary Search) :
+```python
+class Solution:
+    def search(self, nums: List[int], target: int) -> bool:
+        n = len(nums)
+        left = 0
+        right = n - 1
+        while left <= right:
+            middle = left + (right-left)//2
+
+            if nums[middle] == target:
+                return True
+
+            if nums[middle] == nums[left]:
+                left += 1
+                continue
+
+            if nums[middle] > nums[left]:
+                if nums[left] <= target < nums[middle]:
+                    right = middle - 1
+                else:
+                    left = middle + 1
+            elif nums[middle] < nums[left]:
+                if nums[middle] < target <= nums[right]:
+                    left = middle + 1
+                else:
+                    right = middle - 1
+
+        return False
 ```
