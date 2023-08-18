@@ -93,20 +93,19 @@ class Solution:
 
         visited = set()
         while queue:
-            for _ in range(len(queue)):
-                index_m, index_n, distance = queue.popleft()
+            index_m, index_n, distance = queue.popleft()
 
-                visited.add((index_m, index_n))
+            visited.add((index_m, index_n))
 
-                result[index_m][index_n] = distance
+            result[index_m][index_n] = distance
 
-                for offset_m, offset_n in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
-                    index_m_next, index_n_next = index_m+offset_m, index_n+offset_n
-                    if index_m_next < 0 or index_m_next >= m or index_n_next < 0 or index_n_next >= n or (index_m_next, index_n_next) in visited or mat[index_m_next][index_n_next] == 0:
-                        continue
+            for offset_m, offset_n in [(1, 0), (0, 1), (-1, 0), (0, -1)]:
+                index_m_next, index_n_next = index_m+offset_m, index_n+offset_n
+                if index_m_next < 0 or index_m_next >= m or index_n_next < 0 or index_n_next >= n or (index_m_next, index_n_next) in visited or mat[index_m_next][index_n_next] == 0:
+                    continue
 
-                    queue.append((index_m_next, index_n_next, distance+1))
-                    visited.add((index_m_next, index_n_next))
+                queue.append((index_m_next, index_n_next, distance+1))
+                visited.add((index_m_next, index_n_next))
 
         return result
 ```
