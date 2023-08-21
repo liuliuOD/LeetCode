@@ -49,3 +49,4 @@
 - [Summary Ranges](SummaryRanges.md)
 - [Best Time To Buy And Sell Stock](BestTimeToBuyAndSellStock.md)
 - [Nth Tribonacci Number](NthTribonacciNumber.md)
+- [Repeated Substring Pattern](RepeatedSubstringPattern.md)
