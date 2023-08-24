@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
@@ -43,4 +44,72 @@ class Solution:
             cur, dummy = temp, cur
 
         return dummy
+```
+
+### Solution :
+
+```php
+/**
+ * Definition for a singly-linked list.
+ * class ListNode {
+ *     public $val = 0;
+ *     public $next = null;
+ *     function __construct($val = 0, $next = null) {
+ *         $this->val = $val;
+ *         $this->next = $next;
+ *     }
+ * }
+ */
+```
+
+Method 1 (Recursive) :
+```php
+class Solution {
+    protected $headReverse;
+
+    /**
+     * @param ListNode $head
+     * @return ListNode
+     */
+    function reverseList($head) {
+        $this->reverse(null, $head);
+
+        return $this->headReverse;
+    }
+
+    function reverse($previous, $current) {
+        if ($current == null) {
+            return null;
+        } else if ($current->next == null) {
+            $this->headReverse = $current;
+        } else {
+            $this->reverse($current, $current->next);
+        }
+
+        $current->next = $previous;
+    }
+}
+```
+
+Method 2 (Dummy Pointer) :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @return ListNode
+     */
+    function reverseList($head) {
+        $previous = null;
+        $current = $head;
+        while ($current) {
+            $temp = $current->next;
+            $current->next = $previous;
+            $previous = $current;
+            $current = $temp;
+        }
+
+        return $previous;
+    }
+}
 ```

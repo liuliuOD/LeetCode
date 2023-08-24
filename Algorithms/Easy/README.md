@@ -16,14 +16,14 @@
 |[Sign Of The Product Of An Array](SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](ContainsDuplicateII.md)|
 |[Maximum Average Subarray I](MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](FindTheKBeautyOfANumber.md)|[Longest Nice Substring](LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](FindTheDistinctDifferenceArray.md)|
 |[Climbing Stairs](ClimbingStairs.md)|[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|
-|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle](PascalsTriangle.md)|[Pascal's Triangle II](PascalsTriangleII.md)|||
+|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle](PascalsTriangle.md)||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Reverse Linked List](ReverseLinkedList.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Design Hash Map](DesignHashMap.md)|
+|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Pascal's Triangle II](PascalsTriangleII.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Design Hash Map](DesignHashMap.md)|
 |[Middle Of The Linked List](MiddleOfTheLinkedList.md)|[Minimum String Length After Removing Substrings](MinimumStringLengthAfterRemovingSubstrings.md)|[Lexicographically Smallest Palindrome](LexicographicallySmallestPalindrome.md)|[Buy Two Chocolates](BuyTwoChocolates.md)|[Remove Trailing Zeros From A String](RemoveTrailingZerosFromAString.md)|
 |[Minimize String Length](MinimizeStringLength.md)|[Semi-Ordered Permutation](SemiOrderedPermutation.md)|[Missing Number](MissingNumber.md)|[Valid Perfect Square](ValidPerfectSquare.md)|[Arranging Coins](ArrangingCoins.md)|
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
@@ -37,6 +37,7 @@
 ## Python 3 + PHP
 
 - [Linked List Cycle](LinkedListCycle.md)
+- [Reverse Linked List](ReverseLinkedList.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
