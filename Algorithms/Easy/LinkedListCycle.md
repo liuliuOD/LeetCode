@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 141. [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
@@ -44,4 +45,42 @@ class Solution:
             if pointer_fast == pointer_slow:
                 return True
         return False
+```
+
+### Solution :
+
+```php
+/**
+ * Definition for a singly-linked list.
+ * class ListNode {
+ *     public $val = 0;
+ *     public $next = null;
+ *     function __construct($val) { $this->val = $val; }
+ * }
+ */
+```
+
+Method 1 (Slow & Fast Pointers) :
+```php
+class Solution {
+    /**
+     * @param ListNode $head
+     * @return Boolean
+     */
+    function hasCycle($head) {
+        $slow = $fast = new ListNode(0);
+        $slow->next = $head;
+
+        while ($fast && $fast->next) {
+            $slow = $slow->next;
+            $fast = $fast->next->next;
+
+            if ($slow === $fast) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+}
 ```
