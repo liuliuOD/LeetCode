@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 215. [Kth Largest Element In An Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
@@ -179,4 +180,52 @@ class Solution:
                 pointer += 1
         nums[right], nums[pointer] = nums[pointer], nums[right]
         return pointer
+```
+
+### Solution :
+
+Method 1 (Min Heap) :
+```php
+class Solution {
+
+    /**
+     * @param Integer[] $nums
+     * @param Integer $k
+     * @return Integer
+     */
+    function findKthLargest($nums, $k) {
+        $minHeap = new SplMinHeap();
+        foreach ($nums as $num) {
+            $minHeap->insert($num);
+            if ($minHeap->count() > $k) {
+                $minHeap->extract();
+            }
+        }
+
+        return $minHeap->top();
+    }
+}
+```
+
+Method 2 (Min Heap) :
+```php
+class Solution {
+
+    /**
+     * @param Integer[] $nums
+     * @param Integer $k
+     * @return Integer
+     */
+    function findKthLargest($nums, $k) {
+        $minHeap = new SplMaxHeap();
+        foreach ($nums as $num) {
+            $minHeap->insert(-$num);
+            if ($minHeap->count() > $k) {
+                $minHeap->extract();
+            }
+        }
+
+        return -$minHeap->top();
+    }
+}
 ```
