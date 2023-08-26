@@ -98,6 +98,7 @@ class Solution:
         if len_1+len_2 != len_3:
             return False
 
+        # dp[contribution amount of s1][contribution amount of s2]
         dp = [[False]*(len_2+1) for _ in range(len_1+1)]
         dp[0][0] = True
         for index in range(0, len_1):
