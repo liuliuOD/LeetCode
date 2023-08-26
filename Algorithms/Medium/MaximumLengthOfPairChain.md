@@ -100,7 +100,7 @@ class Solution {
 }
 ```
 
-Method 2 (Greedy) :
+Method 2 (Greedy, sort by pair right with ascending order) :
 ```php
 class Solution {
 
@@ -118,6 +118,40 @@ class Solution {
         foreach ($pairs as $pair) {
             if ($pair[0] > $current) {
                 $current = $pair[1];
+                $result++;
+            }
+        }
+
+        return $result;
+    }
+}
+```
+
+Method 3 (Greedy, sort by pair left with descending order) :
+```php
+class Solution {
+
+    /**
+     * @param Integer[][] $pairs
+     * @return Integer
+     */
+    function findLongestChain($pairs) {
+        // descending
+        usort($pairs, function ($left, $right) {
+            if ($left[0] == $right[0]) {
+                return 0;
+            }
+
+            return $left[0] < $right[0]
+                ? 1
+                : -1;
+        });
+
+        $current = 1001;
+        $result = 0;
+        foreach ($pairs as $pair) {
+            if ($pair[1] < $current) {
+                $current = $pair[0];
                 $result++;
             }
         }
