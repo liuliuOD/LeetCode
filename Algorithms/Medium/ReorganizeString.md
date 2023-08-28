@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 767. [Reorganize String](https://leetcode.com/problems/reorganize-string)
@@ -60,4 +61,61 @@ class Solution:
 
         last_item = max_heap[0]
         return result + last_item[1] if -last_item[0] == 1 else ''
+```
+
+### Solution :
+
+Method 1 (Max Heap) :
+```php
+class Solution {
+
+    /**
+     * @param String $s
+     * @return String
+     */
+    function reorganizeString($s) {
+        $mapping = [];
+        foreach (str_split($s) as $char) {
+            isset($mapping[$char])
+                ? $mapping[$char] += 1
+                : $mapping[$char] = 1;
+        }
+
+        $maxHeap = new SplMaxHeap();
+        foreach ($mapping as $key => $amount) {
+            $maxHeap->insert([$amount, $key]);
+        }
+
+        $result = [];
+        while (count($maxHeap) > 1) {
+            [$top1Value, $top1Key] = $maxHeap->extract();
+            [$top2Value, $top2Key] = $maxHeap->extract();
+
+            $top1Value--;
+            $top2Value--;
+
+            $result[] = $top1Key;
+            $result[] = $top2Key;
+
+            if ($top1Value > 0) {
+                $maxHeap->insert([$top1Value, $top1Key]);
+            }
+            if ($top2Value > 0) {
+                $maxHeap->insert([$top2Value, $top2Key]);
+            }
+        }
+
+        if (count($maxHeap)) {
+            [$remainValue, $remainKey] = $maxHeap->extract();
+
+            if ($remainValue > 1 || $remainKey == $result[count($result)-1]) {
+                return '';
+            }
+
+            $result[] = $remainKey;
+        }
+
+        return implode('', $result);
+    }
+}
 ```
