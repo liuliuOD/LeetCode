@@ -31,3 +31,11 @@ This project is used to record my [LeetCode](https://leetcode.com) solved proble
 - [EASY](Algorithms/Easy/README.md#python-3)
 - [MEDIUM](Algorithms/Medium/README.md#python-3)
 - [HARD](Algorithms/Hard/README.md#python-3)
+
+---
+
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+
+- [EASY](Algorithms/Easy/README.md#php)
+- [MEDIUM](Algorithms/Medium/README.md#php)
+- [HARD](Algorithms/Hard/README.md#php)
