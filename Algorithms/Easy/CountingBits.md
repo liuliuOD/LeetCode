@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 338. [Counting Bits](https://leetcode.com/problems/counting-bits)
@@ -87,4 +88,64 @@ class Solution:
         self.memoization[value] = value % 2 + self.dfs(value >> 1)
 
         return self.memoization[value]
+```
+
+### Solution :
+
+Method 1 (Brute Force) :
+```php
+class Solution {
+
+    /**
+     * @param Integer $n
+     * @return Integer[]
+     */
+    function countBits($n) {
+        $result = [];
+        for ($num=0; $num <= $n; $num++) {
+            $amount = 0;
+            $temp = $num;
+            while ($temp) {
+                $amount += intval($temp & 1);
+                $temp = $temp >> 1;
+            }
+            $result[] = $amount;
+        }
+
+        return $result;
+    }
+}
+```
+
+Method 2 (Dynamic Programming) :
+```php
+class Solution {
+
+    /**
+     * @param Integer $n
+     * @return Integer[]
+     */
+    function countBits($n) {
+        $memoization = [];
+        $result = [];
+        for ($num=0; $num <= $n; $num++) {
+            $amount = 0;
+            $temp = $num;
+            while ($temp) {
+                if (isset($memoization[$temp])) {
+                    $amount += $memoization[$temp];
+                    break;
+                }
+
+                $amount += intval($temp & 1);
+                $temp = $temp >> 1;
+            }
+
+            $memoization[$temp] = $amount;
+            $result[] = $amount;
+        }
+
+        return $result;
+    }
+}
 ```
