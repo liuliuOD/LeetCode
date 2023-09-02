@@ -52,6 +52,7 @@
 - [Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)
 - [Extra Characters In A String](ExtraCharactersInAString.md)
 - [Maximum Subarray](MaximumSubarray.md)
+- [Jump Game](JumpGame.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
