@@ -38,6 +38,28 @@ class Solution:
 
 Method 2 (Dynamic Programming) :
 ```python
+class Solution:
+    def minTaps(self, n: int, ranges: List[int]) -> int:
+        len_ranges = len(ranges)
+
+        # calculate the farthest length of watered garden in each start position
+        tap_ranges = [0] * len_ranges
+        for index, offset in enumerate(ranges):
+            if offset == 0:
+                continue
+
+            start = max(0, index - offset)
+            end = min(len_ranges, index + offset + 1)
+            tap_ranges[start] = max(tap_ranges[start], end)
+
+        # calculate minimum amount of tap we need to open at each watered garden between `index` and `farthest in current opened tap` if opened tap at position `index`
+        dp = [float('inf')] * len_ranges
+        dp[0] = 0
+        for index in range(len_ranges):
+            for index_dp in range(index+1, tap_ranges[index]):
+                dp[index_dp] = min(dp[index_dp], 1+dp[index])
+
+        return -1 if dp[-1] == float('inf') else dp[-1]
 ```
 
 ### Solution :
