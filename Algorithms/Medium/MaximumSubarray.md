@@ -70,6 +70,18 @@ class Solution:
         return max(dp)
 ```
 
+Method 4 (Dynamic Programming) :
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        previous = result = nums[0]
+        for index in range(1, len(nums)):
+            previous = max(previous+nums[index], nums[index])
+            result = max(result, previous)
+
+        return result
+```
+
 ### Solution :
 
 Method 1 (DFS + Memoization) :
