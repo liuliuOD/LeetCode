@@ -84,3 +84,27 @@ class Solution {
     }
 }
 ```
+
+Method 2 (Hash Table) :
+```php
+class Solution {
+    /**
+     * @param ListNode $head
+     * @return Boolean
+     */
+    function hasCycle($head) {
+        $mapping = [];
+        while ($head) {
+            // used third parameter to valid type
+            if (in_array($head, $mapping, true)) {
+                return true;
+            }
+
+            $mapping[] = $head;
+            $head = $head->next;
+        }
+
+        return false;
+    }
+}
+```
