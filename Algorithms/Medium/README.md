@@ -38,7 +38,6 @@
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
 
-- [Reverse Linked List II](ReverseLinkedListII.md)
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
@@ -56,6 +55,7 @@
 - [Unique Paths](UniquePaths.md)
 - [Copy List With Random Pointer](CopyListWithRandomPointer.md)
 - [Split Linked List In Parts](SplitLinkedListInParts.md)
+- [Reverse Linked List II](ReverseLinkedListII.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
