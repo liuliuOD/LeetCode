@@ -16,20 +16,20 @@
 |[Sign Of The Product Of An Array](SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](ContainsDuplicateII.md)|
 |[Maximum Average Subarray I](MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](FindTheKBeautyOfANumber.md)|[Longest Nice Substring](LongestNiceSubstring.md)|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Find The Distinct Difference Array](FindTheDistinctDifferenceArray.md)|
 |[Climbing Stairs](ClimbingStairs.md)|[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|
-|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle](PascalsTriangle.md)||||
+|[Length Of Last Word](LengthOfLastWord.md)|[Pascal's Triangle II](PascalsTriangleII.md)||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Pascal's Triangle II](PascalsTriangleII.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Design Hash Map](DesignHashMap.md)|
+|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Split Strings By Separator](SplitStringsBySeparator.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Design Hash Map](DesignHashMap.md)|
 |[Count Pairs Whose Sum Is Less Than Target](CountPairsWhoseSumIsLessThanTarget.md)|[Minimum String Length After Removing Substrings](MinimumStringLengthAfterRemovingSubstrings.md)|[Lexicographically Smallest Palindrome](LexicographicallySmallestPalindrome.md)|[Buy Two Chocolates](BuyTwoChocolates.md)|[Remove Trailing Zeros From A String](RemoveTrailingZerosFromAString.md)|
 |[Minimize String Length](MinimizeStringLength.md)|[Semi-Ordered Permutation](SemiOrderedPermutation.md)|[Missing Number](MissingNumber.md)|[Valid Perfect Square](ValidPerfectSquare.md)|[Arranging Coins](ArrangingCoins.md)|
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
 |[Find The Highest Altitude](FindTheHighestAltitude.md)|[Total Distance Traveled](TotalDistanceTraveled.md)|[Find Maximum Number Of String Pairs](FindMaximumNumberOfStringPairs.md)|[Number Of Beautiful Pairs](NumberOfBeautifulPairs.md)|[Faulty Keyboard](FaultyKeyboard.md)|
 |[Is Subsequence](IsSubsequence.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)|[Divisor Game](DivisorGame.md)|
-|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|[Split Strings By Separator](SplitStringsBySeparator.md)||
+|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|||
 ||||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
@@ -62,3 +62,10 @@
 - [Nth Tribonacci Number](NthTribonacciNumber.md)
 - [Repeated Substring Pattern](RepeatedSubstringPattern.md)
 - [Excel Sheet Column Title](ExcelSheetColumnTitle.md)
+
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+## Rust + Python 3 + PHP
+
+- [Pascal's Triangle](PascalsTriangle.md)
