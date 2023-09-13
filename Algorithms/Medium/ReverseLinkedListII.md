@@ -120,3 +120,144 @@ class Solution {
     }
 }
 ```
+
+Method 2 (Record Previous & After Nodes) :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @param Integer $left
+     * @param Integer $right
+     * @return ListNode
+     */
+    function reverseBetween($head, $left, $right) {
+        if (is_null($head)) {
+            return $head;
+        }
+
+        $nodeLeft = $head;
+        for ($_ = 1; $_ < $left; $_++) {
+            $nodeLeft = $nodeLeft->next;
+        }
+
+        $nodeRight = $head;
+        for ($_ = 1; $_ < $right; $_++) {
+            $nodeRight = $nodeRight->next;
+        }
+
+        $nodeBeforeLeft = null;
+        $nodeAfterRight = null;
+        $nodeReverse = null;
+        $nodeDummy = $node = new ListNode(0, $head);
+        while ($node) {
+            if ($node->next === $nodeLeft) {
+                $nodeBeforeLeft = $node;
+                $nodeReverse = $node;
+            }
+
+            if ($node === $nodeRight) {
+                $nodeAfterRight = $node->next;
+            }
+
+            if (is_null($nodeReverse) || $nodeReverse === $node) {
+                $node = $node->next;
+                continue;
+            }
+
+            $nodeNext = $node->next;
+            $node->next = $nodeReverse;
+
+            if ($node === $nodeRight) {
+                break;
+            }
+
+            $nodeReverse = $node;
+            $node = $nodeNext;
+        }
+        if ($nodeBeforeLeft) {
+            $nodeBeforeLeft->next = $nodeRight;
+        }
+        $nodeLeft->next = $nodeAfterRight ?? NULL;
+
+        return $nodeDummy->next;
+    }
+}
+```
+
+Method 3 (Record Previous Node) :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @param Integer $left
+     * @param Integer $right
+     * @return ListNode
+     */
+    function reverseBetween($head, $left, $right) {
+        if (is_null($head) || $left == $right) {
+            return $head;
+        }
+
+        $nodeDummy = $nodeBeforeLeft = new ListNode(0, $head);
+        for ($_ = 0; $_ < $left-1; $_++) {
+            $nodeBeforeLeft = $nodeBeforeLeft->next;
+        }
+
+        $nodeLeft = $nodeBeforeLeft->next;
+        $nodeRight = $nodeLeft;
+        $nodePrevious = NULL;
+        for ($_ = 0; $_ < $right-$left+1; $_++) {
+            $nodeBeforeLeft->next = $nodeRight;
+
+            $nodeNext = $nodeRight->next;
+            $nodeRight->next = $nodePrevious;
+            $nodePrevious = $nodeRight;
+            $nodeRight = $nodeNext;
+        }
+        $nodeLeft->next = $nodeNext;
+
+        return $nodeDummy->next;
+    }
+}
+```
+
+Method 4 (Record Reversed Node Tail) :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @param Integer $left
+     * @param Integer $right
+     * @return ListNode
+     */
+    function reverseBetween($head, $left, $right) {
+        if (is_null($head) || $left == $right) {
+            return $head;
+        }
+
+        $nodeDummy = $nodeBeforeLeft = new ListNode(0, $head);
+        for ($_ = 0; $_ < $left-1; $_++) {
+            $nodeBeforeLeft = $nodeBeforeLeft->next;
+        }
+
+        $nodeCurrent = $nodeBeforeLeft->next;
+        for ($_ = 0; $_ < $right-$left; $_++) {
+            /**
+             * eg: 0 -> 1 -> 2 -> 3 -> 4
+             * nodeBeforeLeft: 0
+             * nodeCurrent: 1
+             * nodeNext: 2
+             */
+            $nodeNext = $nodeCurrent->next;
+            $nodeCurrent->next = $nodeNext->next;
+            $nodeNext->next = $nodeBeforeLeft->next;
+            $nodeBeforeLeft->next = $nodeNext;
+        }
+
+        return $nodeDummy->next;
+    }
+}
+```
