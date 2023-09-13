@@ -102,7 +102,7 @@ class Solution {
     function reverseList($head) {
         $previous = null;
         $current = $head;
-        while ($current) {
+        while($current) {
             $temp = $current->next;
             $current->next = $previous;
             $previous = $current;
@@ -110,6 +110,29 @@ class Solution {
         }
 
         return $previous;
+    }
+}
+```
+
+Method 3 (Dummy Pointer) :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @return ListNode
+     */
+    function reverseList($head) {
+        $nodeDummy = new ListNode(0, $head);
+        $nodeCurrent = $nodeDummy->next;
+        while($nodeCurrent->next) {
+            $nodeNext = $nodeCurrent->next;
+            $nodeCurrent->next = $nodeNext->next;
+            $nodeNext->next = $nodeDummy->next;
+            $nodeDummy->next = $nodeNext;
+        }
+
+        return $nodeDummy->next;
     }
 }
 ```
