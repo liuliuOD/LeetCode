@@ -51,7 +51,7 @@
 |[Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)|[Interleaving String](InterleavingString.md)|[Maximum Length Of Pair Chain](MaximumLengthOfPairChain.md)|[Make String A Subsequence Using Cyclic Increments](MakeStringASubsequenceUsingCyclicIncrements.md)|[Reorganize String](ReorganizeString.md)|
 |[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
 |[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
-|[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)||
+|[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
