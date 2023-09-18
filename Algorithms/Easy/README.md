@@ -41,6 +41,7 @@
 - [Middle Of The Linked List](MiddleOfTheLinkedList.md)
 - [Implement Stack Using Queues](ImplementStackUsingQueues.md)
 - [Counting Bits](CountingBits.md)
+- [The K Weakest Rows In A Matrix](TheKWeakestRowsInAMatrix.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
