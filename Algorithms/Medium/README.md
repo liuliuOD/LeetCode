@@ -35,7 +35,7 @@
 |[Soup Servings](SoupServings.md)|[Minimum ASCII Delete Sum For Two Strings](MinimumASCIIDeleteSumForTwoStrings.md)|[Shortest String That Contains Three Strings](ShortestStringThatContainsThreeStrings.md)|[Minimize The Maximum Difference Of Pairs](MinimizeTheMaximumDifferenceOfPairs.md)|[Coin Change II](CoinChangeII.md)|
 |[Check If There Is A Valid Partition For The Array](CheckIfThereIsAValidPartitionForTheArray.md)|[Partition List](PartitionList.md)|[01 Matrix](01Matrix.md)|[Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.md)|[Combination Sum](CombinationSum.md)|
 |[Rotate Image](RotateImage.md)|[Group Anagrams](GroupAnagrams.md)|[Merge Intervals](MergeIntervals.md)|[Insert Interval](InsertInterval.md)|[Clone Graph](CloneGraph.md)|
-|[Set Matrix Zeroes](SetMatrixZeroes.md)|||||
+|[Set Matrix Zeroes](SetMatrixZeroes.md)|[3 Sum](3Sum.md)|[Container With Most Water](ContainerWithMostWater.md)|||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -53,7 +53,7 @@
 |[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
 |[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
 |[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
-|[3 Sum](3Sum.md)|[Container With Most Water](ContainerWithMostWater.md)||||
+|[Word Search](WordSearch.md)|||||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
