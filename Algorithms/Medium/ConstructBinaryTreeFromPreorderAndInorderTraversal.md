@@ -15,7 +15,7 @@
 
 ### Solution :
 
-Method 1 (Divide & Conquer) :
+Method 1 (Divide & Conquer + Hash Map, Time Complexity: $O(N)$) :
 ```python
 class Solution:
     def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
@@ -41,6 +41,19 @@ class Solution:
         return node
 ```
 
+Method 2 (Recursive, Time Complexity: $O(N^2)$) :
+```python
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        if len(inorder) == 0:
+            return None
+
+        val_node = preorder.pop(0)
+        index_node = inorder.index(val_node)
+
+        return TreeNode(val_node, left=self.buildTree(preorder, inorder[:index_node]), right=self.buildTree(preorder, inorder[index_node+1:]))
+```
+
 ### Solution :
 
 ```php
@@ -59,7 +72,7 @@ class Solution:
  */
 ```
 
-Method 1 (Divide & Conquer) :
+Method 1 (Divide & Conquer + Hash Map) :
 ```php
 class Solution {
 
