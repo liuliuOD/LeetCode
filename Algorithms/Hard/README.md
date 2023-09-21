@@ -38,6 +38,7 @@
 - [Merge K Sorted Lists](MergeKSortedLists.md)
 - [Candy](Candy.md)
 - [Reverse Nodes In K Group](ReverseNodesInKGroup.md)
+- [Median Of Two Sorted Arrays](MedianOfTwoSortedArrays.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
