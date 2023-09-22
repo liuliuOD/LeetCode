@@ -28,8 +28,8 @@
 |[Minimize String Length](MinimizeStringLength.md)|[Semi-Ordered Permutation](SemiOrderedPermutation.md)|[Missing Number](MissingNumber.md)|[Valid Perfect Square](ValidPerfectSquare.md)|[Arranging Coins](ArrangingCoins.md)|
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
 |[Find The Highest Altitude](FindTheHighestAltitude.md)|[Total Distance Traveled](TotalDistanceTraveled.md)|[Find Maximum Number Of String Pairs](FindMaximumNumberOfStringPairs.md)|[Number Of Beautiful Pairs](NumberOfBeautifulPairs.md)|[Faulty Keyboard](FaultyKeyboard.md)|
-|[Is Subsequence](IsSubsequence.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)|[Divisor Game](DivisorGame.md)|
-|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|||
+|[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)|[Divisor Game](DivisorGame.md)|
+|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)||||
 ||||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
@@ -45,6 +45,7 @@
 - [Same Tree](SameTree.md)
 - [Maximum Depth Of Binary Tree](MaximumDepthOfBinaryTree.md)
 - [Valid Palindrome](ValidPalindrome.md)
+- [Is Subsequence](IsSubsequence.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)

@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 392. [Is Subsequence](https://leetcode.com/problems/is-subsequence)
@@ -14,7 +15,7 @@ class Solution:
             for ch_s in s:
                 if ch_s == ch_t:
                     mapping[ch_s].append(index_t)
-        
+
         temp = -1
         for ch_s in s:
             if ch_s not in mapping:
@@ -72,10 +73,119 @@ class Solution:
         # add '=' to position 0, to set init status when either `s` or `t` is empty string
         s = '=' + s
         t = '=' + t
-        memoization = [[1] + [0] * len_s for _ in range(len_t+1)]
+        dp = [[1] + [0] * len_s for _ in range(len_t+1)]
 
         for index_t, index_s in product(range(1, len_t+1), range(1, len_s+1)):
-            memoization[index_t][index_s] = memoization[index_t-1][index_s-1] if t[index_t] == s[index_s] else memoization[index_t-1][index_s]
+            dp[index_t][index_s] = dp[index_t-1][index_s-1] if t[index_t] == s[index_s] else dp[index_t-1][index_s]
+
+        return dp[-1][-1]
+```
+
+Method 5 (Hash Map) :
+```python
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        m = len(s)
+        n = len(t)
+        if m > n:
+            return False
+
+        mapping = defaultdict(list)
+        for index, char in enumerate(t):
+            mapping[char].append(index)
+
+        index_previous = -1
+        for char in s:
+            if char not in mapping:
+                return False
+
+            index_temp = float('inf')
+            for index_next in mapping[char]:
+                if index_next <= index_previous:
+                    continue
+
+                index_temp = min(index_temp, index_next)
+
+            if index_temp == float('inf'):
+                return False
+            index_previous = index_temp
+
+        return True
+```
+
+### Solution:
+
+Method 1 (Two Pointer, Time Complexity: $O(M+N)$) :
+```php
+class Solution {
+
+    /**
+     * @param String $s
+     * @param String $t
+     * @return Boolean
+     */
+    function isSubsequence($s, $t) {
+        $m = strlen($s);
+        $n = strlen($t);
+        if ($m > $n) {
+            return false;
+        }
+
+        $pointerS = $pointerT = 0;
+        while ($pointerS < $m) {
+            if ($pointerT >= $n) {
+                return false;
+            }
+
+            # Option 1
+            if ($s[$pointerS] == $t[$pointerT]) {
+                $pointerS++;
+                $pointerT++;
+            } else {
+                $pointerT++;
+            }
+            /**
+             * # Option 2
+             *
+             * if ($s[$pointerS] == $t[$pointerT]) {
+             *     $pointerS++;
+             * }
+             *
+             * $pointerT++;
+             */
+        }
+
+        return true;
+    }
+}
+```
+
+Method 2 (Dynamic Programming, Time Complexity: $O(N^2)$) :
+```php
+class Solution {
+
+    /**
+     * @param String $s
+     * @param String $t
+     * @return Boolean
+     */
+    function isSubsequence($s, $t) {
+        $m = strlen($s);
+        $n = strlen($t);
+        $dp = array_fill(0, $m+1, []);
         
-        return memoization[-1][-1]
+        /**
+         * dp[m][n] means how many characters that the first `m` characters in $s, included in the first `n` characters in $t.
+         */
+        for ($indexM = 1; $indexM <= $m; $indexM++) {
+            for ($indexN = 1; $indexN <= $n; $indexN++) {
+                $dp[$indexM][$indexN] = $s[$indexM-1] == $t[$indexN-1]
+                    ? 1 + $dp[$indexM-1][$indexN-1]
+                    : max($dp[$indexM-1][$indexN], $dp[$indexM][$indexN-1]);
+            }
+        }
+
+        return $dp[$m][$n] == $m;
+    }
+}
 ```
