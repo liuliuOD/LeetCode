@@ -100,7 +100,7 @@ class Solution {
      */
     function removeNodes($head) {
         $stack = [];
-        $node = $dummyHead = new ListNode(0, $head);
+        $node = new ListNode(0, $head);
         while($node) {
             while(count($stack) && end($stack) < $node->val) {
                 array_pop($stack);

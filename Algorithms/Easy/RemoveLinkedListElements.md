@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 203. [Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)
@@ -71,4 +72,44 @@ class Solution:
             node = node.next
 
         return dummy.next
+```
+
+### Solution :
+
+```php
+/**
+ * Definition for a singly-linked list.
+ * class ListNode {
+ *     public $val = 0;
+ *     public $next = null;
+ *     function __construct($val = 0, $next = null) {
+ *         $this->val = $val;
+ *         $this->next = $next;
+ *     }
+ * }
+ */
+```
+
+Method 1 :
+```php
+class Solution {
+
+    /**
+     * @param ListNode $head
+     * @param Integer $val
+     * @return ListNode
+     */
+    function removeElements($head, $val) {
+        $node = $dummyHead = new ListNode(NULL, $head);
+        while($node->next) {
+            if ($node->next->val == $val) {
+                $node->next = $node->next->next;
+            } else {
+                $node = $node->next;
+            }
+        }
+
+        return $dummyHead->next;
+    }
+}
 ```
