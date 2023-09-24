@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 15. [3 Sum](https://leetcode.com/problems/3sum)
@@ -37,6 +38,7 @@ class Solution:
             mapping[num] += 1
         """
         # Option 2
+
         mapping = Counter(nums)
         """
 

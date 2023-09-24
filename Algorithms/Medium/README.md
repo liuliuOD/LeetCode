@@ -35,7 +35,7 @@
 |[Soup Servings](SoupServings.md)|[Minimum ASCII Delete Sum For Two Strings](MinimumASCIIDeleteSumForTwoStrings.md)|[Shortest String That Contains Three Strings](ShortestStringThatContainsThreeStrings.md)|[Minimize The Maximum Difference Of Pairs](MinimizeTheMaximumDifferenceOfPairs.md)|[Coin Change II](CoinChangeII.md)|
 |[Check If There Is A Valid Partition For The Array](CheckIfThereIsAValidPartitionForTheArray.md)|[Partition List](PartitionList.md)|[01 Matrix](01Matrix.md)|[Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.md)|[Combination Sum](CombinationSum.md)|
 |[Rotate Image](RotateImage.md)|[Group Anagrams](GroupAnagrams.md)|[Merge Intervals](MergeIntervals.md)|[Insert Interval](InsertInterval.md)|[Clone Graph](CloneGraph.md)|
-|[Set Matrix Zeroes](SetMatrixZeroes.md)|[3 Sum](3Sum.md)|[Container With Most Water](ContainerWithMostWater.md)|||
+|[Set Matrix Zeroes](SetMatrixZeroes.md)|[Champagne Tower](ChampagneTower.md)||||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -56,7 +56,7 @@
 |[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
 |[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
 |[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
-|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|||||
+|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
