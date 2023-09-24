@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 2684. [Maximum Number Of Moves In A Grid](https://leetcode.com/problems/maximum-number-of-moves-in-a-grid)
@@ -40,6 +41,52 @@ impl Solution {
         hm.insert((i, j), temp);
         
         return temp + 1
+    }
+}
+```
+
+### Solution :
+
+Method 1 (DFS + Memoization) :
+```php
+class Solution {
+
+    /**
+     * @param Integer[][] $grid
+     * @return Integer
+     */
+    function maxMoves($grid) {
+        $this->m = count($grid);
+        $this->n = count($grid[0]);
+
+        $memoization = array_fill(0, $this->m, array_fill(0, $this->n, -1));
+        $result = 0;
+        for ($index = 0; $index < $this->m; $index++) {
+            $result = max($result, $this->dfs($index, 0, $memoization, $grid));
+        }
+
+        return $result;
+    }
+
+    function dfs($x, $y, &$memoization, $grid) : Int {
+        if ($memoization[$x][$y] != -1) {
+            return $memoization[$x][$y];
+        }
+
+        $result = 0;
+        foreach([[$x-1, $y+1], [$x, $y+1], [$x+1, $y+1]] as list($xNext, $yNext)) {
+            if ($xNext >= $this->m || $xNext < 0 || $yNext >= $this->n || $yNext < 0) {
+                continue;
+            }
+
+            if ($grid[$x][$y] >= $grid[$xNext][$yNext]) {
+                continue;
+            }
+
+            $result = max($result, 1 + $this->dfs($xNext, $yNext, $memoization, $grid));
+        }
+
+        return $memoization[$x][$y] = $result;
     }
 }
 ```
