@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## [Remove Duplicate Letters](https://leetcode.com/problems/remove-duplicate-letters)
@@ -40,4 +41,26 @@ impl Solution {
         result.iter().collect()
     }
 }
+```
+
+### Solution :
+
+Method 1 (Monotonic Stack) :
+```python
+class Solution:
+    def removeDuplicateLetters(self, s: str) -> str:
+        mapping = Counter(s)
+        visited = defaultdict(int)
+        stack = []
+        for char in s:
+            visited[char] += 1
+            if char in stack:
+                continue
+
+            while stack and stack[-1] >= char and visited[stack[-1]] < mapping[stack[-1]]:
+                stack.pop()
+
+            stack.append(char)
+
+        return ''.join(stack)
 ```
