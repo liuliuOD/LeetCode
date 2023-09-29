@@ -29,7 +29,7 @@
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
 |[Find The Highest Altitude](FindTheHighestAltitude.md)|[Total Distance Traveled](TotalDistanceTraveled.md)|[Find Maximum Number Of String Pairs](FindMaximumNumberOfStringPairs.md)|[Number Of Beautiful Pairs](NumberOfBeautifulPairs.md)|[Faulty Keyboard](FaultyKeyboard.md)|
 |[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)|[Divisor Game](DivisorGame.md)|
-|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Best Poker Hand](BestPokerHand.md)|[Sort Array By Parity](SortArrayByParity.md)||
+|[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Best Poker Hand](BestPokerHand.md)|[Sort Array By Parity](SortArrayByParity.md)|[Monotonic Array](MonotonicArray.md)|
 ||||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
