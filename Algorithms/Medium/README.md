@@ -57,7 +57,7 @@
 |[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
 |[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
 |[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
-|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|||
+|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
