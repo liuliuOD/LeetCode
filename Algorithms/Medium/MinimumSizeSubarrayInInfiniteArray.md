@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (In weekly contest 365, Prefix Sum + Two Pointer) :
+Method 1 (In weekly contest 365, Prefix Sum + Two Pointer, rejected after the contest finished, ERROR: "Time Limit Exceeded") :
 ```python
 class Solution:
     def minSizeSubarray(self, nums: List[int], target: int) -> int:
