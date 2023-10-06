@@ -36,7 +36,7 @@
 |[Check If There Is A Valid Partition For The Array](CheckIfThereIsAValidPartitionForTheArray.md)|[Partition List](PartitionList.md)|[01 Matrix](01Matrix.md)|[Longest Substring Without Repeating Characters](LongestSubstringWithoutRepeatingCharacters.md)|[Combination Sum](CombinationSum.md)|
 |[Rotate Image](RotateImage.md)|[Group Anagrams](GroupAnagrams.md)|[Merge Intervals](MergeIntervals.md)|[Insert Interval](InsertInterval.md)|[Clone Graph](CloneGraph.md)|
 |[Set Matrix Zeroes](SetMatrixZeroes.md)|[Champagne Tower](ChampagneTower.md)|[Beautiful Towers II](BeautifulTowersII.md)|[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Remove Colored Pieces If Both Neighbors Are The Same Color](RemoveColoredPiecesIfBothNeighborsAreTheSameColor.md)|
-|[Minimum Size Subarray In Infinite Array](MinimumSizeSubarrayInInfiniteArray.md)|||||
+|[Minimum Size Subarray In Infinite Array](MinimumSizeSubarrayInInfiniteArray.md)|[Integer Break](IntegerBreak.md)||||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
