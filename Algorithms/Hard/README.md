@@ -24,6 +24,7 @@
 - [Text Justification](TextJustification.md)
 - [Build Array Where You Can Find The Maximum Exactly K Comparisons](BuildArrayWhereYouCanFindTheMaximumExactlyKComparisons.md)
 - [Minimum Number Of Operations To Make Array Continuous](MinimumNumberOfOperationsToMakeArrayContinuous.md)
+- [Number Of Flowers In Full Bloom](NumberOfFlowersInFullBloom.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
