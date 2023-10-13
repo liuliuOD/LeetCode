@@ -70,5 +70,6 @@ class Solution:
             remainder = prefix_sum % k
             result += mapping[remainder] + (remainder == 0)
             mapping[remainder] += 1
+
         return result
 ```
