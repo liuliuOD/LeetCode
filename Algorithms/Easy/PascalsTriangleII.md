@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 119. [Pascal's Triangle II](https://leetcode.com/problems/pascals-triangle-ii)
@@ -28,4 +29,29 @@ impl Solution {
         return result
     }
 }
+```
+
+### Solution :
+
+Method 1 (Dynamic Programming, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def getRow(self, row_index: int) -> List[int]:
+        dp = [1]
+        for amount in range(1, row_index+2):
+            temp = []
+            for index in range(amount):
+                item = 0
+                if index == 0:
+                    item += dp[0]
+                elif index >= len(dp):
+                    item += dp[-1]
+                else:
+                    item += dp[index-1] + dp[index]
+
+                temp.append(item)
+
+            dp = temp
+
+        return dp
 ```
