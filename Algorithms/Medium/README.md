@@ -37,7 +37,7 @@
 |[Rotate Image](RotateImage.md)|[Group Anagrams](GroupAnagrams.md)|[Merge Intervals](MergeIntervals.md)|[Insert Interval](InsertInterval.md)|[Clone Graph](CloneGraph.md)|
 |[Set Matrix Zeroes](SetMatrixZeroes.md)|[Champagne Tower](ChampagneTower.md)|[Beautiful Towers II](BeautifulTowersII.md)|[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Remove Colored Pieces If Both Neighbors Are The Same Color](RemoveColoredPiecesIfBothNeighborsAreTheSameColor.md)|
 |[Minimum Size Subarray In Infinite Array](MinimumSizeSubarrayInInfiniteArray.md)|[Integer Break](IntegerBreak.md)|[Asteroid Collision](AsteroidCollision.md)|[Word Break](WordBreak.md)|[Subarray Sums Divisible By K](SubarraySumsDivisibleByK.md)|
-|[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Maximum Number Of Alloys](MaximumNumberOfAlloys.md)|[Construct Product Matrix](ConstructProductMatrix.md)|[Product Of Array Except Self](ProductOfArrayExceptSelf.md)||
+|[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Maximum Number Of Alloys](MaximumNumberOfAlloys.md)|[Construct Product Matrix](ConstructProductMatrix.md)|||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -89,6 +89,7 @@
 - [Sliding Window Maximum](SlidingWindowMaximum.md)
 - [Remove Duplicate Letters](RemoveDuplicateLetters.md)
 - [132 Pattern](132Pattern.md)
+- [Product Of Array Except Self](ProductOfArrayExceptSelf.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
