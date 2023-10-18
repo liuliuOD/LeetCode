@@ -45,7 +45,7 @@ class Solution:
         return f'{target}-{need}'
 ```
 
-Method 2 (BFS + Topological SortKahn's Algorithm) :
+Method 2 (BFS + Topological Sort (Kahn's Algorithm)) :
 ```python
 class Solution:
     def canFinish(self, num_courses: int, prerequisites: List[List[int]]) -> bool:
