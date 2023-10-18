@@ -28,6 +28,7 @@
 - [Find In Mountain Array](FindInMountainArray.md)
 - [Painting The Walls](PaintingTheWalls.md)
 - [Number Of Ways To Stay In The Same Place After Some Steps](NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.md)
+- [Parallel Courses III](ParallelCoursesIII.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
