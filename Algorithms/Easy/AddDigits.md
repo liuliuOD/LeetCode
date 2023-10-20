@@ -25,7 +25,7 @@ impl Solution {
 }
 ```
 
-Method 2 (time complexity: O(1)) :
+Method 2 (Time Complexity: $O(1)$) :
 ```rust
 impl Solution {
     pub fn add_digits(mut num: i32) -> i32 {

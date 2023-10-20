@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (time complexity: O(n)) :
+Method 1 (Time Complexity: $O(N)$) :
 ```rust
 impl Solution {
     pub fn search_insert(nums: Vec<i32>, target: i32) -> i32 {

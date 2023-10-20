@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (time complexity: O(n**2)):
+Method 1 (Time Complexity: $O(N^2)$):
 ```rust
 impl Solution {
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
