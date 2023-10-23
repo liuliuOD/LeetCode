@@ -21,12 +21,21 @@ class Solution:
             temp = 0
             for target in counter.values():
                 temp_amount = self.sumAmount(target, m, m+1, memoization)
+                # Option 1
                 if temp_amount != inf:
                     temp += temp_amount
                     continue
 
                 temp = inf
                 break
+                """
+                # Option 2
+
+                temp += temp_amount
+                if temp == inf:
+                  break
+                """
+
             result = min(result, temp)
 
         return result
@@ -46,4 +55,28 @@ class Solution:
         memoization[key] = result
 
         return memoization[key]
+```
+
+Method 2 ([Mathematic](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment/)):
+```python
+class Solution:
+    def minGroupsForValidAssignment(self, nums: List[int]) -> int:
+        counter = Counter(nums)
+        minimum = min(counter.values())
+        result = inf
+        for amount_group_m in reversed(range(1, minimum+1)):
+            temp = 0
+            found = True
+            for amount_total_c in counter.values():
+                amount_all_g = (amount_total_c-1) // (amount_group_m+1) + 1
+                if amount_all_g*amount_group_m > amount_total_c:
+                    found = False
+                    break
+
+                temp += amount_all_g
+
+            if found:
+                return temp
+
+        return len(nums)
 ```
