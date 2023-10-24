@@ -6,7 +6,7 @@
 
 ### Solution :
 
-Method 1 (Bitmask) :
+Method 1 (Bitmask + DFS + Memoization) :
 ```rust
 use std::collections::HashMap;
 
@@ -56,7 +56,7 @@ impl Solution {
 
 ### Solution :
 
-Method 1 (Bitmask) :
+Method 1 (Bitmask + DFS + Built-In Cache) :
 ```python
 MOD = 10**9 + 7
 class Solution:
@@ -82,4 +82,42 @@ class Solution:
             if self.nums[index_previous] % self.nums[index_target] == 0 or self.nums[index_target] % self.nums[index_previous] == 0:
                 permutation_amount = (permutation_amount + self.bitMask(index_target, mask | mask_target)) % MOD
         return permutation_amount
+```
+
+Method 2 (Bitmask + DFS + Memoization) :
+```python
+MODULO = 1_000_000_007
+
+class Solution:
+    def specialPerm(self, nums: List[int]) -> int:
+        self.nums = nums
+        n = len(nums)
+        memoization = defaultdict(int)
+        result = 0
+        for index in range(n):
+            result = (result + self.dfs(index, 1<<index, memoization, nums)) % MODULO
+
+        return result
+
+    def dfs(self, index: int, mask: int, memoization: Dict[str, int], nums: List[int]) -> int:
+        key = f'{index}-{mask}'
+        if key in memoization:
+            return memoization[key]
+
+        n = len(nums)
+        if mask == ((1<<n) - 1):
+            return 1
+
+        result = 0
+        for index_next in range(n):
+            mask_current = (1<<index_next)
+            if (mask & mask_current) != 0:
+                continue
+            if nums[index]%nums[index_next] != 0 and nums[index_next]%nums[index] != 0:
+                continue
+
+            result = (result + self.dfs(index_next, mask | mask_current, memoization, nums)) % MODULO
+
+        memoization[key] = result
+        return result
 ```
