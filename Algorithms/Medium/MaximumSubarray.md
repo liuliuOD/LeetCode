@@ -57,7 +57,7 @@ class Solution:
         return result
 ```
 
-Method 3 (Dynamic Programming) :
+Method 3 (Dynamic Programming, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
@@ -70,7 +70,7 @@ class Solution:
         return max(dp)
 ```
 
-Method 4 (Dynamic Programming) :
+Method 4 (Kadane's (Dynamic Programming), Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
@@ -78,6 +78,19 @@ class Solution:
         for index in range(1, len(nums)):
             previous = max(previous+nums[index], nums[index])
             result = max(result, previous)
+
+        return result
+```
+
+Method 5 (Kadane's) :
+```python
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        total = -inf
+        result = -inf
+        for num in nums:
+            total = max(num, num+total)
+            result = max(result, total)
 
         return result
 ```
