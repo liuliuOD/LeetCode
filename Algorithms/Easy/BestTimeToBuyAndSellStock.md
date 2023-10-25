@@ -26,7 +26,7 @@ impl Solution {
 
 ### Solution :
 
-Method 1 :
+Method 1 (Left to Right, Time Complexity: $O(N)$) :
 ```python
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
@@ -37,6 +37,51 @@ class Solution:
             minimum_price = min(minimum_price, price)
             sold_now_profit = price - minimum_price
             result = max(result, sold_now_profit)
+
+        return result
+```
+
+Method 2 (Left to Right, Time Complexity: $O(N)$) :
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        minimum = inf
+        result = 0
+        for price in prices:
+            if price > minimum:
+                result = max(result, price - minimum)
+
+            minimum = min(minimum, price)
+
+        return result
+```
+
+Method 3 (Right to Left, Time Complexity: $O(N)$) :
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        maximum = -inf
+        result = 0
+        for price in reversed(prices):
+            if price < maximum:
+                result = max(result, maximum - price)
+
+            maximum = max(maximum, price)
+
+        return result
+```
+
+Method 4 (Left to Right, Time Complexity: $O(N*Log(N))$) :
+```python
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        heap = []
+        result = 0
+        for price in prices:
+            if heap and price > heap[0]:
+                result = max(result, price - heap[0])
+
+            heapq.heappush(heap, price)
 
         return result
 ```
