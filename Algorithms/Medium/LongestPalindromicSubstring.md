@@ -32,7 +32,7 @@ class Solution:
         return self.isPalindrome(left+1, right-1, s)
 ```
 
-Method 2 (DFS, Cost Runtime: 9929 ms, Cost Memory: 24.2 MB) :
+Method 2 (DFS + Pruning, Cost Runtime: 9929 ms, Cost Memory: 24.2 MB) :
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -65,7 +65,32 @@ class Solution:
         return self.memoization[pointer_left][pointer_right]
 ```
 
-Method 3 (DFS + Memoization (by Dictionary), Cost Runtime: 6851 ms, Cost Memory: 80.9 MB) :
+Method 3 (Two Pointers + Pruning, Time Complexity: $O(N^3)$, Cost Runtime: 3688 ms, Cost Memory: 16.2 MB) :
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        # search palindrome in the substrings from the longest to the shortest
+        for offset in reversed(range(n)):
+            for index_start in range(n-offset):
+                index_end = index_start + offset
+                if self.isPalindrome(index_start, index_end, s):
+                    return s[index_start:index_end+1]
+
+        return ''
+
+    def isPalindrome(self, start: int, end: int, s: str) -> bool:
+        while start < end:
+            if s[start] != s[end]:
+                return False
+
+            start += 1
+            end -= 1
+
+        return True
+```
+
+Method 4 (DFS + Memoization (by Dictionary), Time Complexity: $O(N^3)$, Cost Runtime: 6851 ms, Cost Memory: 80.9 MB) :
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -98,7 +123,7 @@ class Solution:
         return memoization[key]
 ```
 
-Method 4 (DFS + Memoization (by List), Cost Runtime: 3838 ms, Cost Memory: 24.7 MB) :
+Method 5 (DFS + Memoization (by List), Time Complexity: $O(N^3)$, Cost Runtime: 3838 ms, Cost Memory: 24.7 MB) :
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -130,7 +155,7 @@ class Solution:
         return memoization[left][right]
 ```
 
-Method 5 (From Center to 2 sides) :
+Method 6 (From Center + Two Pointers, Time Complexity: $O(N^2)$) :
 ```python
 class Solution:
     def longestPalindrome(self, s: str) -> str:
@@ -153,4 +178,56 @@ class Solution:
         if (pointer_right - pointer_left - 1) > (self.result_end - self.result_start + 1):
             self.result_start = pointer_left + 1
             self.result_end = pointer_right - 1
+```
+
+Method 7 (From Center + Two Pointers, Time Complexity: $O(N^3)$) :
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        result = ''
+        for index_center in range(n):
+            temp = self.maximumPalindrome(index_center, index_center, s)
+            if index_center < n-1:
+                temp_even = self.maximumPalindrome(index_center, index_center+1, s)
+                if len(temp_even) > len(temp):
+                    temp = temp_even
+
+            if len(result) < len(temp):
+                result = temp
+
+        return result
+
+    def maximumPalindrome(self, index_center_left: int, index_center_right: int, s: str) -> str:
+        n = len(s)
+        while index_center_left >= 0 and index_center_right < n and s[index_center_left] == s[index_center_right]:
+            index_center_left -= 1
+            index_center_right += 1
+
+        return s[index_center_left+1:index_center_right]
+```
+
+Method 8 (Dynamic Programming, Time Complexity: $O(N^2)$) :
+```python
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        n = len(s)
+        result = [0, 0]
+        dp = [[False]*n for _ in range(n)]
+        dp[-1][-1] = True
+        for index in range(n-1):
+            dp[index][index] = True
+            if s[index] == s[index+1]:
+                dp[index][index+1] = True
+                result = [index, index+1]
+
+        # iteratively search the substrings in the range of [index_start, index_end] are palindromes or not
+        for offset in range(2, n):
+            for index_start in range(n-offset):
+                index_end = index_start + offset
+                if s[index_start] == s[index_end] and dp[index_start+1][index_end-1]:
+                    dp[index_start][index_end] = True
+                    result = [index_start, index_end]
+
+        return s[result[0]:result[1]+1]
 ```
