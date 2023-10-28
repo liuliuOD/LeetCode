@@ -30,6 +30,7 @@
 - [Number Of Ways To Stay In The Same Place After Some Steps](NumberOfWaysToStayInTheSamePlaceAfterSomeSteps.md)
 - [Parallel Courses III](ParallelCoursesIII.md)
 - [Constrained Subsequence Sum](ConstrainedSubsequenceSum.md)
+- [Count Vowels Permutation](CountVowelsPermutation.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
