@@ -38,3 +38,20 @@ class Solution:
 
         return result
 ```
+
+Method 2 :
+```python
+class Solution:
+    def minSum(self, nums1: List[int], nums2: List[int]) -> int:
+        amount_zero1 = nums1.count(0)
+        amount_zero2 = nums2.count(0)
+        sum1 = sum(nums1) + amount_zero1
+        sum2 = sum(nums2) + amount_zero2
+
+        if sum1 > sum2 and amount_zero2 == 0:
+            return -1
+        elif sum1 < sum2 and amount_zero1 == 0:
+            return -1
+
+        return max(sum1, sum2)
+```
