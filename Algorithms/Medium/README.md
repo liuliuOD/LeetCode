@@ -40,7 +40,7 @@
 |[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Maximum Number Of Alloys](MaximumNumberOfAlloys.md)|[Construct Product Matrix](ConstructProductMatrix.md)|[Validate Binary Tree Nodes](ValidateBinaryTreeNodes.md)|[Reorder List](ReorderList.md)|
 |[Course Schedule II](CourseScheduleII.md)|[Minimum Height Trees](MinimumHeightTrees.md)|[Loud And Rich](LoudAndRich.md)|[Course Schedule IV](CourseScheduleIV.md)|[Flatten Nested List Iterator](FlattenNestedListIterator.md)|
 |[Array Nesting](ArrayNesting.md)|[Minimum Number Of Groups To Create A Valid Assignment](MinimumNumberOfGroupsToCreateAValidAssignment.md)|[Find Largest Value In Each Tree Row](FindLargestValueInEachTreeRow.md)|[K-th Symbol In Grammar](KthSymbolInGrammar.md)|[Maximum Product Subarray](MaximumProductSubarray.md)|
-|[Binary Trees With Factors](BinaryTreesWithFactors.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)|||
+|[Binary Trees With Factors](BinaryTreesWithFactors.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)||||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -95,6 +95,7 @@
 - [Product Of Array Except Self](ProductOfArrayExceptSelf.md)
 - [Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)
 - [Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)
+- [Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)

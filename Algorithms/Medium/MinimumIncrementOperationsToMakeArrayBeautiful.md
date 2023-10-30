@@ -1,7 +1,57 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2919. [Minimum Increment Operations To Make Array Beautiful](https://leetcode.com/problems/minimum-increment-operations-to-make-array-beautiful)
+
+### Solution :
+
+Method 1 (DFS + Memoization) :
+```rust
+use std::cmp::{min, max};
+
+impl Solution {
+    pub fn min_increment_operations(nums: Vec<i32>, k: i32) -> i64 {
+        let n: usize = nums.len();
+        let mut memoization: Vec<i64> = vec![-1; n];
+        return Self::dfs(0, &mut memoization, k, &nums)
+    }
+
+    fn dfs(index: usize, memoization: &mut Vec<i64>, k: i32, nums: &Vec<i32>) -> i64 {
+        let n: usize = nums.len();
+        if index < n && memoization[index] >= 0 {
+            return memoization[index]
+        }
+
+        if index > n-3 {
+            return 0
+        }
+
+        let temp: i64 = *[
+            (0.max(k-nums[index]) as i64) + Self::dfs(index+1, memoization, k, nums),
+            (0.max(k-nums[index+1]) as i64) + Self::dfs(index+2, memoization, k, nums),
+            (0.max(k-nums[index+2]) as i64) + Self::dfs(index+3, memoization, k, nums),
+        ].iter().min().unwrap();
+        memoization[index] = temp;
+        return temp
+    }
+}
+```
+
+Method 2 (Dynamic Programming) :
+```rust
+impl Solution {
+    pub fn min_increment_operations(nums: Vec<i32>, k: i32) -> i64 {
+        let mut dp: Vec<i64> = vec![0.max((k-nums[0]) as i64), 0.max((k-nums[1]) as i64), 0.max((k-nums[2]) as i64)];
+        for index in 3..nums.len() {
+            let temp: i64 = 0.max((k-nums[index]) as i64) + *dp.iter().min().unwrap();
+            dp = vec![dp[1], dp[2], temp];
+        }
+
+        return *dp.iter().min().unwrap()
+    }
+}
+```
 
 ### Solution :
 
