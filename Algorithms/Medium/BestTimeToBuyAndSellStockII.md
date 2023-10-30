@@ -10,7 +10,7 @@ Method 1 :
 ```rust
 impl Solution {
     pub fn max_profit(prices: Vec<i32>) -> i32 {
-        // Option 1
+        /* Option 1 */
         let mut result: i32 = 0;
         for index in 1..prices.len() {
             if prices[index-1] < prices[index] {

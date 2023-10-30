@@ -11,7 +11,7 @@ Method 1 (Prefix Sum + Suffix Sum) :
 impl Solution {
     pub fn product_except_self(nums: Vec<i32>) -> Vec<i32> {
         let n: usize = nums.len();
-        // Option 1
+        /* Option 1 */
         let mut result: Vec<i32> = vec![1];
         for index in 1..n {
             result.push(result[index-1]*nums[index-1]);
