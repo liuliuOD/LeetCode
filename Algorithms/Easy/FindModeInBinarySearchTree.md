@@ -82,7 +82,7 @@ Method 4 (In-Order DFS + List, Time Complexity: $O(N)$, Space Complexity: $O(N)$
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
         """
-        Hint: in most conditions, list use less memory space and execution time than hash map
+        Hint: in most cases, a list consumes less memory space and executes faster than a hash map
         """
         nodes_sorted = []
         self.dfs(root, nodes_sorted)
@@ -113,4 +113,39 @@ class Solution:
         self.dfs(node.left, nodes_sorted)
         nodes_sorted.append(node.val)
         self.dfs(node.right, nodes_sorted)
+```
+
+Method 5 (In-Order DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (if we use the calculation method from the description, then we can say this method has $O(1)$ space complexity)) :
+```python
+class Solution:
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        self.current = -inf
+        self.amount_current = 0
+        self.amount_maximum = 0
+        self.result = []
+
+        self.dfs(root)
+
+        return self.result
+
+    def dfs(self, node: Optional[TreeNode]):
+        if not node:
+            return
+
+        self.dfs(node.left)
+
+        if node.val == self.current:
+            self.amount_current += 1
+        else:
+            self.current = node.val
+            self.amount_current = 1
+
+        if self.amount_maximum < self.amount_current:
+            self.result = []
+            self.amount_maximum = self.amount_current
+
+        if self.amount_maximum == self.amount_current:
+            self.result.append(self.current)
+
+        self.dfs(node.right)
 ```
