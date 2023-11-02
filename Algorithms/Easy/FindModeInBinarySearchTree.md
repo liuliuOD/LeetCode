@@ -115,7 +115,7 @@ class Solution:
         self.dfs(node.right, nodes_sorted)
 ```
 
-Method 5 (In-Order DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (if we use the calculation method from the description, then we can say this method has $O(1)$ space complexity)) :
+Method 5 (Recursive In-Order DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (if we use the calculation method from the description, then we can say this method has $O(1)$ space complexity)) :
 ```python
 class Solution:
     def findMode(self, root: Optional[TreeNode]) -> List[int]:
@@ -148,4 +148,82 @@ class Solution:
             self.result.append(self.current)
 
         self.dfs(node.right)
+```
+
+Method 6 (Iterative In-Order DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        amount_maximum = 0
+        amount_current = 0
+        current = 0
+        result = []
+
+        stack = []
+        node = root
+        while node or stack:
+            while node:
+                stack.append(node)
+                node = node.left
+
+            node = stack.pop()
+            if current == node.val:
+                amount_current += 1
+            else:
+                amount_current = 1
+                current = node.val
+
+            if amount_maximum < amount_current:
+                result = []
+                amount_maximum = amount_current
+
+            if amount_maximum == amount_current:
+                result.append(node.val)
+
+            node = node.right
+
+        return result
+```
+
+Method 7 (Morris Traversal, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def findMode(self, root: Optional[TreeNode]) -> List[int]:
+        amount_maximum = 0
+        amount_current = 0
+        current = 0
+        result = []
+        node = root
+        while node:
+            # find `friend node` of current node
+            if node.left:
+                node_friend = node.left
+                while node_friend.right:
+                    node_friend = node_friend.right
+
+                node_friend.right = node
+
+                # remove the connection between node and left child
+                node_temp = node.left
+                node.left = None
+                node = node_temp
+                continue
+
+            # calculate the result in the in-order traverse
+            if current == node.val:
+                amount_current += 1
+            else:
+                amount_current = 1
+                current = node.val
+
+            if amount_maximum < amount_current:
+                amount_maximum = amount_current
+                result = []
+
+            if amount_maximum == amount_current:
+                result.append(node.val)
+
+            node = node.right
+
+        return result
 ```
