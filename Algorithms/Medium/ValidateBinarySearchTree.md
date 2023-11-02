@@ -15,7 +15,7 @@
 #         self.right = right
 ```
 
-Method 1 (In-Order + Record Values) :
+Method 1 (Recursive In-Order DFS + List) :
 ```python
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
@@ -43,7 +43,7 @@ class Solution:
         return result
 ```
 
-Method 2 (In-Order + Record Values) :
+Method 2 (Recursive In-Order DFS + List) :
 ```python
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
@@ -52,6 +52,7 @@ class Solution:
         for index in range(1, len(orders)):
             if orders[index] <= orders[index-1]:
                 return False
+
         return True
 
     def inOrder(self, node, orders):
@@ -105,7 +106,7 @@ class Solution:
         """
 ```
 
-Method 5 (Iterative DFS) :
+Method 5 (Iterative DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
@@ -124,7 +125,7 @@ class Solution:
         return True
 ```
 
-Method 6 (Iterative DFS + Previous Node) :
+Method 6 (Iterative In-Order DFS + Previous Node, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def isValidBST(self, root: Optional[TreeNode]) -> bool:
@@ -146,6 +147,34 @@ class Solution:
                 return False
 
             node_previous = node
+            node = node.right
+
+        return True
+```
+
+Method 7 (Morris Traversal, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        previous = -inf
+        node = root
+        while node:
+            if node.left:
+                node_friend = node.left
+                while node_friend.right:
+                    node_friend = node_friend.right
+
+                node_friend.right = node
+
+                node_temp = node.left
+                node.left = None
+                node = node_temp
+                continue
+
+            if node.val <= previous:
+                return False
+
+            previous = node.val
             node = node.right
 
         return True
