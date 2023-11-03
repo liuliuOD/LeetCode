@@ -73,6 +73,7 @@
 - [Pascal's Triangle II](PascalsTriangleII.md)
 - [Mean Of Array After Removing Some Elements](MeanOfArrayAfterRemovingSomeElements.md)
 - [Sort Integers By The Number Of 1 Bits](SortIntegersByTheNumberOf1Bits.md)
+- [Minimum Operations To Collect Elements](MinimumOperationsToCollectElements.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
