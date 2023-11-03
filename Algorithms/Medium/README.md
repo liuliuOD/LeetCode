@@ -97,6 +97,7 @@
 - [Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)
 - [Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)
 - [Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)
+- [Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
