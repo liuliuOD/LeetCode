@@ -40,6 +40,21 @@ impl Solution {
             }
         }
         */
+        /* Option 3
+
+        arr.iter().skip(1).for_each(|&item| {
+            if win == k {
+                return
+            }
+
+            if result > item {
+                win += 1;
+            } else {
+                win = 1;
+                result = item;
+            }
+        });
+        */
 
         return result
     }
