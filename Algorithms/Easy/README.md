@@ -38,7 +38,6 @@
 ## Python 3 + PHP
 
 - [Linked List Cycle](LinkedListCycle.md)
-- [Reverse Linked List](ReverseLinkedList.md)
 - [Middle Of The Linked List](MiddleOfTheLinkedList.md)
 - [Implement Stack Using Queues](ImplementStackUsingQueues.md)
 - [Counting Bits](CountingBits.md)
@@ -81,3 +80,4 @@
 ## Rust + Python 3 + PHP
 
 - [Pascal's Triangle](PascalsTriangle.md)
+- [Reverse Linked List](ReverseLinkedList.md)

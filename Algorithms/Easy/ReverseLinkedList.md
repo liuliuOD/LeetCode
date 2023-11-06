@@ -1,8 +1,73 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
+
+### Solution :
+
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+//
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+```
+
+Method 1 (Dummy Pointer) :
+```rust
+impl Solution {
+    pub fn reverse_list(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut result: Option<Box<ListNode>> = None;
+        let mut current: Option<Box<ListNode>> = head;
+        while let Some(mut node) = current {
+            current = node.next;
+            /* Option 1 */
+            node.next = result;
+            /* Option 2
+
+            node.next = result.take();
+            */
+            result = Some(node);
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 :
+```rust
+impl Solution {
+    pub fn reverse_list(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let mut result: Option<Box<ListNode>> = None;
+        while let Some(mut node) = head {
+            /* Option 1 */
+            head = node.next;
+            node.next = result.take();
+            /* Option 2
+
+            head = std::mem::replace(&mut node.next, result.take());
+            */
+            result = Some(node);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
