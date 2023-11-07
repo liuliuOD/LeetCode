@@ -25,6 +25,10 @@ impl Solution {
 
         return nums.into_iter().step_by(2).reduce(|a, b| a + b).unwrap()
         */
+        /* Option 3
+
+        return nums.iter().step_by(2).fold(0, |a, b| a + b)
+        */
     }
 }
 ```
