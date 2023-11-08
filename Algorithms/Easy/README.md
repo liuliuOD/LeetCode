@@ -75,6 +75,7 @@
 - [Minimum Operations To Collect Elements](MinimumOperationsToCollectElements.md)
 - [Array Partition](ArrayPartition.md)
 - [Unique Morse Code Words](UniqueMorseCodeWords.md)
+- [Element Appearing More Than 25% In Sorted Array](ElementAppearingMoreThan25InSortedArray.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
