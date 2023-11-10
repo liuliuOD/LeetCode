@@ -67,43 +67,16 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Rust + Python 3
 
-- [Minimum Number Of Vertices To Reach All Nodes](MinimumNumberOfVerticesToReachAllNodes.md)
-- [Is Graph Bipartite?](IsGraphBipartite.md)
-- [Evaluate Division](EvaluateDivision.md)
-- [Shortest Bridge](ShortestBridge.md)
-- [Top K Frequent Elements](TopKFrequentElements.md)
-- [Maximum Subsequence Score](MaximumSubsequenceScore.md)
-- [Number Of Provinces](NumberOfProvinces.md)
-- [Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)
-- [K Radius Subarray Averages](KRadiusSubarrayAverages.md)
-- [Special Permutations](SpecialPermutations.md)
-- [Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)
-- [Path With Maximum Probability](PathWithMaximumProbability.md)
-- [Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)
-- [Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)
-- [Predict The Winner](PredictTheWinner.md)
-- [Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)
-- [Combinations](Combinations.md)
-- [Permutations](Permutations.md)
-- [Letter Combinations Of A Phone Number](LetterCombinationsOfAPhoneNumber.md)
-- [Search A 2D Matrix](SearchA2DMatrix.md)
-- [Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)
-- [Unique Paths II](UniquePathsII.md)
-- [Sliding Window Maximum](SlidingWindowMaximum.md)
-- [Remove Duplicate Letters](RemoveDuplicateLetters.md)
-- [132 Pattern](132Pattern.md)
-- [Product Of Array Except Self](ProductOfArrayExceptSelf.md)
-- [Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)
-- [Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)
-- [Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)
-- [Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)
-- [Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)
-- [Last Moment Before All Ants Fall Out Of A Plank](LastMomentBeforeAllAntsFallOutOfAPlank.md)
-- [Find The Winner Of An Array Game](FindTheWinnerOfAnArrayGame.md)
-- [Seat Reservation Manager](SeatReservationManager.md)
-- [Eliminate Maximum Number Of Monsters](EliminateMaximumNumberOfMonsters.md)
-- [Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)
-- [Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Minimum Number Of Vertices To Reach All Nodes](MinimumNumberOfVerticesToReachAllNodes.md)|[Is Graph Bipartite?](IsGraphBipartite.md)|[Evaluate Division](EvaluateDivision.md)|[Shortest Bridge](ShortestBridge.md)|[Top K Frequent Elements](TopKFrequentElements.md)|
+|[Maximum Subsequence Score](MaximumSubsequenceScore.md)|[Number Of Provinces](NumberOfProvinces.md)|[Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)|[K Radius Subarray Averages](KRadiusSubarrayAverages.md)|[Special Permutations](SpecialPermutations.md)|
+|[Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)|[Path With Maximum Probability](PathWithMaximumProbability.md)|[Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)|[Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)|[Predict The Winner](PredictTheWinner.md)|
+|[Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)|[Combinations](Combinations.md)|[Permutations](Permutations.md)|[Letter Combinations Of A Phone Number](LetterCombinationsOfAPhoneNumber.md)|[Search A 2D Matrix](SearchA2DMatrix.md)|
+|[Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)|[Unique Paths II](UniquePathsII.md)|[Sliding Window Maximum](SlidingWindowMaximum.md)|[Remove Duplicate Letters](RemoveDuplicateLetters.md)|[132 Pattern](132Pattern.md)|
+|[Product Of Array Except Self](ProductOfArrayExceptSelf.md)|[Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)|[Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)|[Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)|[Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)|
+|[Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)|[Last Moment Before All Ants Fall Out Of A Plank](LastMomentBeforeAllAntsFallOutOfAPlank.md)|[Find The Winner Of An Array Game](FindTheWinnerOfAnArrayGame.md)|[Seat Reservation Manager](SeatReservationManager.md)|[Eliminate Maximum Number Of Monsters](EliminateMaximumNumberOfMonsters.md)|
+|[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)||||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
