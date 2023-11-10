@@ -76,7 +76,7 @@
 |[Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)|[Unique Paths II](UniquePathsII.md)|[Sliding Window Maximum](SlidingWindowMaximum.md)|[Remove Duplicate Letters](RemoveDuplicateLetters.md)|[132 Pattern](132Pattern.md)|
 |[Product Of Array Except Self](ProductOfArrayExceptSelf.md)|[Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)|[Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)|[Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)|[Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)|
 |[Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)|[Last Moment Before All Ants Fall Out Of A Plank](LastMomentBeforeAllAntsFallOutOfAPlank.md)|[Find The Winner Of An Array Game](FindTheWinnerOfAnArrayGame.md)|[Seat Reservation Manager](SeatReservationManager.md)|[Eliminate Maximum Number Of Monsters](EliminateMaximumNumberOfMonsters.md)|
-|[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)||||
+|[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)|[Restore The Array From Adjacent Pairs](RestoreTheArrayFromAdjacentPairs.md)|||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
