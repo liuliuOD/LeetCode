@@ -55,3 +55,4 @@
 ## Rust + Python 3
 
 - [Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)
+- [Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)
