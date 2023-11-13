@@ -33,6 +33,42 @@ impl Solution {
 }
 ```
 
+Method 2 (Counting Sort) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn sort_vowels(s: String) -> String {
+        let ORDER_LIST: [char; 10] = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u',];
+        let mut vowels: HashMap<char, i32> = HashMap::new();
+        for (index, ch) in s.chars().enumerate() {
+            if ORDER_LIST.contains(&ch) {
+                vowels.entry(ch).and_modify(|item| *item += 1).or_insert(1);
+            }
+        }
+
+        let mut result: Vec<char> = vec![];
+        let mut index_order: usize = 0;
+        for ch in s.chars() {
+            if ORDER_LIST.contains(&ch) {
+                let mut char_update: char = ORDER_LIST[index_order];
+                while !vowels.contains_key(&char_update) || vowels[&char_update] == 0 {
+                    index_order += 1;
+                    char_update = ORDER_LIST[index_order];
+                }
+
+                vowels.entry(char_update).and_modify(|item| *item -= 1);
+                result.push(char_update);
+            } else {
+                result.push(ch);
+            }
+        }
+
+        return result.iter().collect::<String>()
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
@@ -75,4 +111,33 @@ class Solution:
             index_vowel += 1
 
         return ''.join(result)
+```
+
+Method 3 (Counting Sort, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def sortVowels(self, s: str) -> str:
+        ORDER_VOWEL = ['A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u']
+        vowels = defaultdict(int)
+        for index, char in enumerate(s):
+            if char not in ORDER_VOWEL:
+                continue
+
+            vowels[char] += 1
+
+        result = ''
+        index_order = 0
+        for index in range(len(s)):
+            if s[index] in ORDER_VOWEL:
+                char = ORDER_VOWEL[index_order]
+                while vowels[char] == 0:
+                    index_order += 1
+                    char = ORDER_VOWEL[index_order]
+
+                vowels[char] -= 1
+                result += char
+            else:
+                result += s[index]
+
+        return result
 ```
