@@ -40,7 +40,7 @@
 |[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Maximum Number Of Alloys](MaximumNumberOfAlloys.md)|[Construct Product Matrix](ConstructProductMatrix.md)|[Validate Binary Tree Nodes](ValidateBinaryTreeNodes.md)|[Reorder List](ReorderList.md)|
 |[Course Schedule II](CourseScheduleII.md)|[Minimum Height Trees](MinimumHeightTrees.md)|[Loud And Rich](LoudAndRich.md)|[Course Schedule IV](CourseScheduleIV.md)|[Flatten Nested List Iterator](FlattenNestedListIterator.md)|
 |[Array Nesting](ArrayNesting.md)|[Minimum Number Of Groups To Create A Valid Assignment](MinimumNumberOfGroupsToCreateAValidAssignment.md)|[Find Largest Value In Each Tree Row](FindLargestValueInEachTreeRow.md)|[K-th Symbol In Grammar](KthSymbolInGrammar.md)|[Maximum Product Subarray](MaximumProductSubarray.md)|
-|[Binary Trees With Factors](BinaryTreesWithFactors.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Count Nodes Equal To Average Of Subtree](CountNodesEqualToAverageOfSubtree.md)|[Unique Length-3 Palindromic Subsequences](UniqueLength3PalindromicSubsequences.md)||
+|[Binary Trees With Factors](BinaryTreesWithFactors.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Count Nodes Equal To Average Of Subtree](CountNodesEqualToAverageOfSubtree.md)|||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -77,6 +77,7 @@
 |[Product Of Array Except Self](ProductOfArrayExceptSelf.md)|[Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)|[Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)|[Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)|[Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)|
 |[Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)|[Last Moment Before All Ants Fall Out Of A Plank](LastMomentBeforeAllAntsFallOutOfAPlank.md)|[Find The Winner Of An Array Game](FindTheWinnerOfAnArrayGame.md)|[Seat Reservation Manager](SeatReservationManager.md)|[Eliminate Maximum Number Of Monsters](EliminateMaximumNumberOfMonsters.md)|
 |[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)|[Restore The Array From Adjacent Pairs](RestoreTheArrayFromAdjacentPairs.md)|[Sort Vowels In A String](SortVowelsInAString.md)|[Maximum Element After Decreasing And Rearranging](MaximumElementAfterDecreasingAndRearranging.md)|
+|[Unique Length-3 Palindromic Subsequences](UniqueLength3PalindromicSubsequences.md)|||||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)

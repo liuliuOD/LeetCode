@@ -1,7 +1,57 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1930. [Unique Length-3 Palindromic Subsequences](https://leetcode.com/problems/unique-length-3-palindromic-subsequences)
+
+### Solution :
+
+Method 1 (Hash Map + Set) :
+```rust
+use std::iter::FromIterator;
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn count_palindromic_subsequence(s: String) -> i32 {
+        let s: Vec<char> = s.chars().into_iter().collect::<Vec<char>>();
+        let mut result: i32 = 0;
+        for ch in HashSet::<char>::from_iter(s.clone()) {
+            let index_left: usize = s.iter().position(|&item| item == ch).unwrap();
+            let index_right: usize = s.iter().rposition(|&item| item == ch).unwrap();
+            if index_left+1 >= index_right {
+                continue;
+            }
+
+            result += (HashSet::<&char>::from_iter(&s[index_left+1..index_right])).len() as i32;
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 :
+```rust
+use std::iter::FromIterator;
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn count_palindromic_subsequence(s: String) -> i32 {
+        let mut result: i32 = 0;
+        for ch in HashSet::<char>::from_iter(s.chars()) {
+            let index_left: usize = s.find(ch).unwrap();
+            let index_right: usize = s.rfind(ch).unwrap();
+            if index_left+1 >= index_right {
+                continue;
+            }
+
+            result += HashSet::<char>::from_iter((&s[index_left+1..index_right]).chars()).len() as i32;
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
