@@ -76,6 +76,7 @@
 - [Unique Morse Code Words](UniqueMorseCodeWords.md)
 - [Element Appearing More Than 25% In Sorted Array](ElementAppearingMoreThan25InSortedArray.md)
 - [Longest Common Prefix](LongestCommonPrefix.md)
+- [Number Of 1 Bits](NumberOf1Bits.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
