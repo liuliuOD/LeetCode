@@ -20,7 +20,6 @@ class Solution:
             ingress[start] += 1
             ingress[end] += 1
 
-        result = []
         queue = deque()
         for index in range(n):
             """
@@ -32,6 +31,7 @@ class Solution:
                 queue.append(index)
                 ingress[index] -= 1
 
+        result = []
         while queue:
             result = []
             amount = len(queue)
