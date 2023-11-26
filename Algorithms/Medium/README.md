@@ -80,6 +80,7 @@
 |[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)|[Restore The Array From Adjacent Pairs](RestoreTheArrayFromAdjacentPairs.md)|[Sort Vowels In A String](SortVowelsInAString.md)|[Maximum Element After Decreasing And Rearranging](MaximumElementAfterDecreasingAndRearranging.md)|
 |[Unique Length-3 Palindromic Subsequences](UniqueLength3PalindromicSubsequences.md)|[Find Unique Binary String](FindUniqueBinaryString.md)|[Minimize Maximum Pair Sum In Array](MinimizeMaximumPairSumInArray.md)|[Count Nice Pairs In An Array](CountNicePairsInAnArray.md)|[Count Number Of Bad Pairs](CountNumberOfBadPairs.md)|
 |[Diagonal Traverse II](DiagonalTraverseII.md)|[Arithmetic Subarrays](ArithmeticSubarrays.md)|[Diagonal Traverse](DiagonalTraverse.md)|[Maximum Number Of Coins You Can Get](MaximumNumberOfCoinsYouCanGet.md)|[Sum Of Absolute Differences In A Sorted Array](SumOfAbsoluteDifferencesInASortedArray.md)|
+|[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|||||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
