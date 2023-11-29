@@ -39,6 +39,21 @@ impl Solution {
 }
 ```
 
+Method 3 (Bitwise) :
+```rust
+impl Solution {
+    pub fn hammingWeight (n: u32) -> i32 {
+        return (0..32).fold(0, |result, bit| {
+            return if (1 & (n>>bit)) == 1 {
+                result + 1
+            } else {
+                result
+            }
+        }) as _
+    }
+}
+```
+
 ### Solution :
 
 Method 1 :
