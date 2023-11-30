@@ -32,6 +32,7 @@
 - [Constrained Subsequence Sum](ConstrainedSubsequenceSum.md)
 - [Count Vowels Permutation](CountVowelsPermutation.md)
 - [Bus Routes](BusRoutes.md)
+- [Minimum One Bit Operations To Make Integers Zero](MinimumOneBitOperationsToMakeIntegersZero.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
