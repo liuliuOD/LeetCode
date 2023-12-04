@@ -14,7 +14,7 @@
 |[Network Delay Time](NetworkDelayTime.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)|[Neighboring Bitwise XOR](NeighboringBitwiseXOR.md)|[Maximum Number Of Vowels In A Substring Of Given Length](MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Dota2Senate.md)|
 |[Number Of Subsequences That Satisfy The Given Sum Condition](NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](MakeCostsOfPathsEqualInABinaryTree.md)|[Spiral Matrix](SpiralMatrix.md)|
 |[Spiral Matrix II](SpiralMatrixII.md)|[Remove K Digits](RemoveKDigits.md)|[Sum In A Matrix](SumInAMatrix.md)|[Uncrossed Lines](UncrossedLines.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
-|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)||||
+|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)|[Minimum Number Of Coins To Be Added](MinimumNumberOfCoinsToBeAdded.md)|||
 ||||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
