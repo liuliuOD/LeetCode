@@ -30,6 +30,22 @@ impl Solution {
 }
 ```
 
+Method 2 (Time Complexity: $O(1)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn total_money(mut n: i32) -> i32 {
+        let amount_full_week: i32 = n / 7;
+        let week_first: i32 = (1..=7).sum();
+        let mut result: i32 = (week_first*2+(amount_full_week-1)*7) * amount_full_week / 2;
+        if n % 7 != 0 {
+            result += (1..=(n%7)).sum::<i32>() + (n%7)*amount_full_week;
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
