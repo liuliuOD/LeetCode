@@ -85,6 +85,7 @@
 - [Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)
 - [Count Of Matches In Tournament](CountOfMatchesInTournament.md)
 - [Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)
+- [Largest Odd Number In String](LargestOddNumberInString.md)
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
