@@ -59,3 +59,4 @@
 - [Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)
 - [Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)
 - [Patching Array](PatchingArray.md)
+- [Count Complete Substrings](CountCompleteSubstrings.md)
