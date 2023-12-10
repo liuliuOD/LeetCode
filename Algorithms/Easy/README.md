@@ -51,43 +51,17 @@
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Rust + Python 3
 
-- [Two Sum](TwoSum.md)
-- [Remove Duplicates From Sorted List](RemoveDuplicatesFromSortedList.md)
-- [Remove Linked List Elements](RemoveLinkedListElements.md)
-- [Convert Binary Number In A Linked List To Integer](ConvertBinaryNumberInALinkedListToInteger.md)
-- [Kth Largest Element In A Stream](KthLargestElementInAStream.md)
-- [Design Parking System](DesignParkingSystem.md)
-- [Design Hash Set](DesignHashSet.md)
-- [Check If It Is A Straight Line](CheckIfItIsAStraightLine.md)
-- [Can Make Arithmetic Progression From Sequence](CanMakeArithmeticProgressionFromSequence.md)
-- [Count Negative Numbers in a Sorted Matrix](CountNegativeNumbersInASortedMatrix.md)
-- [Find Smallest Letter Greater Than Target](FindSmallestLetterGreaterThanTarget.md)
-- [Summary Ranges](SummaryRanges.md)
-- [Best Time To Buy And Sell Stock](BestTimeToBuyAndSellStock.md)
-- [Nth Tribonacci Number](NthTribonacciNumber.md)
-- [Repeated Substring Pattern](RepeatedSubstringPattern.md)
-- [Excel Sheet Column Title](ExcelSheetColumnTitle.md)
-- [Number Of Good Pairs](NumberOfGoodPairs.md)
-- [Pascal's Triangle II](PascalsTriangleII.md)
-- [Mean Of Array After Removing Some Elements](MeanOfArrayAfterRemovingSomeElements.md)
-- [Sort Integers By The Number Of 1 Bits](SortIntegersByTheNumberOf1Bits.md)
-- [Minimum Operations To Collect Elements](MinimumOperationsToCollectElements.md)
-- [Array Partition](ArrayPartition.md)
-- [Unique Morse Code Words](UniqueMorseCodeWords.md)
-- [Element Appearing More Than 25% In Sorted Array](ElementAppearingMoreThan25InSortedArray.md)
-- [Longest Common Prefix](LongestCommonPrefix.md)
-- [Number Of 1 Bits](NumberOf1Bits.md)
-- [Check If Two String Arrays Are Equivalent](CheckIfTwoStringArraysAreEquivalent.md)
-- [Reverse Bits](ReverseBits.md)
-- [Find Words That Can Be Formed By Characters](FindWordsThatCanBeFormedByCharacters.md)
-- [Minimum Time Visiting All Points](MinimumTimeVisitingAllPoints.md)
-- [Find The Peaks](FindThePeaks.md)
-- [Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)
-- [Count Of Matches In Tournament](CountOfMatchesInTournament.md)
-- [Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)
-- [Largest Odd Number In String](LargestOddNumberInString.md)
-- [Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)
-- [Transpose Matrix](TransposeMatrix.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Two Sum](TwoSum.md)|[Remove Duplicates From Sorted List](RemoveDuplicatesFromSortedList.md)|[Remove Linked List Elements](RemoveLinkedListElements.md)|[Convert Binary Number In A Linked List To Integer](ConvertBinaryNumberInALinkedListToInteger.md)|[Can Make Arithmetic Progression From Sequence](CanMakeArithmeticProgressionFromSequence.md)|
+|[Kth Largest Element In A Stream](KthLargestElementInAStream.md)|[Design Parking System](DesignParkingSystem.md)|[Design Hash Set](DesignHashSet.md)|[Check If It Is A Straight Line](CheckIfItIsAStraightLine.md)|[Count Negative Numbers in a Sorted Matrix](CountNegativeNumbersInASortedMatrix.md)|
+|[Find Smallest Letter Greater Than Target](FindSmallestLetterGreaterThanTarget.md)|[Summary Ranges](SummaryRanges.md)|[Best Time To Buy And Sell Stock](BestTimeToBuyAndSellStock.md)|[Nth Tribonacci Number](NthTribonacciNumber.md)|[Repeated Substring Pattern](RepeatedSubstringPattern.md)|
+|[Excel Sheet Column Title](ExcelSheetColumnTitle.md)|[Number Of Good Pairs](NumberOfGoodPairs.md)|[Pascal's Triangle II](PascalsTriangleII.md)|[Mean Of Array After Removing Some Elements](MeanOfArrayAfterRemovingSomeElements.md)|[Sort Integers By The Number Of 1 Bits](SortIntegersByTheNumberOf1Bits.md)|
+|[Element Appearing More Than 25% In Sorted Array](ElementAppearingMoreThan25InSortedArray.md)|[Minimum Operations To Collect Elements](MinimumOperationsToCollectElements.md)|[Array Partition](ArrayPartition.md)|[Unique Morse Code Words](UniqueMorseCodeWords.md)|[Longest Common Prefix](LongestCommonPrefix.md)|
+|[Number Of 1 Bits](NumberOf1Bits.md)|[Check If Two String Arrays Are Equivalent](CheckIfTwoStringArraysAreEquivalent.md)|[Reverse Bits](ReverseBits.md)|[Find Words That Can Be Formed By Characters](FindWordsThatCanBeFormedByCharacters.md)|[Minimum Time Visiting All Points](MinimumTimeVisitingAllPoints.md)|
+|[Find The Peaks](FindThePeaks.md)|[Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)|[Count Of Matches In Tournament](CountOfMatchesInTournament.md)|[Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)|[Largest Odd Number In String](LargestOddNumberInString.md)|
+|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)||||
+
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
