@@ -60,7 +60,7 @@
 |[Element Appearing More Than 25% In Sorted Array](ElementAppearingMoreThan25InSortedArray.md)|[Minimum Operations To Collect Elements](MinimumOperationsToCollectElements.md)|[Array Partition](ArrayPartition.md)|[Unique Morse Code Words](UniqueMorseCodeWords.md)|[Longest Common Prefix](LongestCommonPrefix.md)|
 |[Number Of 1 Bits](NumberOf1Bits.md)|[Check If Two String Arrays Are Equivalent](CheckIfTwoStringArraysAreEquivalent.md)|[Reverse Bits](ReverseBits.md)|[Find Words That Can Be Formed By Characters](FindWordsThatCanBeFormedByCharacters.md)|[Minimum Time Visiting All Points](MinimumTimeVisitingAllPoints.md)|
 |[Find The Peaks](FindThePeaks.md)|[Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)|[Count Of Matches In Tournament](CountOfMatchesInTournament.md)|[Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)|[Largest Odd Number In String](LargestOddNumberInString.md)|
-|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)||||
+|[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)|[Maximum Product Of Two Elements In An Array](MaximumProductOfTwoElementsInAnArray.md)|||
 
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
