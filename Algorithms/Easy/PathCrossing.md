@@ -60,3 +60,27 @@ class Solution:
 
         return False
 ```
+
+Method 2 (Time Complexity: $O(N^2)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def isPathCrossing(self, path: str) -> bool:
+        n = len(path)
+        for index_start in range(n):
+            x = y = 0
+            for index_next in range(index_start, n):
+                move = path[index_next]
+                if move == 'N':
+                    x += 1
+                if move == 'S':
+                    x -= 1
+                if move == 'E':
+                    y += 1
+                if move == 'W':
+                    y -= 1
+
+                if x == 0 == y:
+                    return True
+
+        return False
+```
