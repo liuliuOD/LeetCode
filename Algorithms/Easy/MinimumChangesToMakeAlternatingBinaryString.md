@@ -63,3 +63,19 @@ class Solution:
 
         return min(leading_zero, leading_one)
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def minOperations(self, s: str) -> int:
+        # when we choose an alternating format and think one position of `s` need to be changed, then in another alternating format this position of `s` is correct and don't need to be replaced.
+        result_0 = 0
+        n = len(s)
+        for index in range(n):
+            if index % 2 == 0 and s[index] == '1':
+                result_0 += 1
+            elif index % 2 == 1 and s[index] == '0':
+                result_0 += 1
+
+        return min(result_0, n - result_0)
+```
