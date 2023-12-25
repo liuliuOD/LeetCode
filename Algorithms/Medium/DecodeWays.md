@@ -31,7 +31,32 @@ class Solution:
         return result
 ```
 
-Method 2 (Dynamic Programming) :
+Method 2 (DFS + Memoization) :
+```python
+class Solution:
+    def numDecodings(self, s: str) -> int:
+        memoization = defaultdict(int)
+
+        return self.dfs(0, memoization, s)
+
+    def dfs(self, index: int, memoization: Dict[int, int], s: str) -> int:
+        if index >= len(s):
+            return 1
+
+        if index in memoization:
+            return memoization[index]
+
+        result = 0
+        if s[index] != '0':
+            result = self.dfs(index+1, memoization, s)
+        if index+1 < len(s) and (s[index] == '1' or (s[index] =='2' and s[index+1] in ['0', '1', '2', '3', '4', '5', '6',])):
+            result += self.dfs(index+2, memoization, s)
+
+        memoization[index] = result
+        return result
+```
+
+Method 3 (Dynamic Programming) :
 ```python
 class Solution:
     def numDecodings(self, s: str) -> int:
