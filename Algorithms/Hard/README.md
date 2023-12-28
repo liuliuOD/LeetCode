@@ -34,6 +34,7 @@
 - [Bus Routes](BusRoutes.md)
 - [Minimum One Bit Operations To Make Integers Zero](MinimumOneBitOperationsToMakeIntegersZero.md)
 - [Find The Closest Palindrome](FindTheClosestPalindrome.md)
+- [Apply Operations To Maximize Frequency Score](ApplyOperationsToMaximizeFrequencyScore.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
