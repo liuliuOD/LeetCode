@@ -30,7 +30,7 @@
 |[Minimum Depth Of Binary Tree](MinimumDepthOfBinaryTree.md)|[Min Cost Climbing Stairs](MinCostClimbingStairs.md)|[Fibonacci Number](FibonacciNumber.md)|[Buddy Strings](BuddyStrings.md)|[Divisor Game](DivisorGame.md)|
 |[Get Maximum In Generated Array](GetMaximumInGeneratedArray.md)|[Longest Alternating Subarray](LongestAlternatingSubarray.md)|[Best Poker Hand](BestPokerHand.md)|[Sort Array By Parity](SortArrayByParity.md)|[Monotonic Array](MonotonicArray.md)|
 |[Reverse Words In A String III](ReverseWordsInAStringIII.md)|[Merge Sorted Array](MergeSortedArray.md)|[Backspace String Compare](BackspaceStringCompare.md)|[Power Of Four](PowerOfFour.md)|[Maximum Product Of Three Numbers](MaximumProductOfThreeNumbers.md)|
-|[Find Mode In Binary Search Tree](FindModeInBinarySearchTree.md)|[Construct String From Binary Tree](ConstructStringFromBinaryTree.md)||||
+|[Find Mode In Binary Search Tree](FindModeInBinarySearchTree.md)|[Construct String From Binary Tree](ConstructStringFromBinaryTree.md)|[Redistribute Characters To Make All Strings Equal](RedistributeCharactersToMakeAllStringsEqual.md)|||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
