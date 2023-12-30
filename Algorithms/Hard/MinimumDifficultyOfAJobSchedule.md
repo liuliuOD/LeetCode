@@ -38,3 +38,52 @@ class Solution:
         memoization[key] = result
         return result
 ```
+
+Method 2 (Dynamic Programming) :
+```python
+class Solution:
+    def minDifficulty(self, job_difficulty: List[int], d: int) -> int:
+        n = len(job_difficulty)
+        if n < d:
+            return -1
+
+        dp = [[inf]*(n+1) for _ in range(d+1)]
+        dp[1][1] = job_difficulty[0]
+        for index in range(2, n+1):
+            dp[1][index] = max(dp[1][index-1], job_difficulty[index-1])
+
+        for day in range(2, d+1):
+            for index in range(day, n+1):
+                maximum_remaining = job_difficulty[index-1]
+                for index_previous in reversed(range(day, index+1)):
+                    maximum_remaining = max(maximum_remaining, job_difficulty[index_previous-1])
+                    dp[day][index] = min(dp[day][index], dp[day-1][index_previous-1] + maximum_remaining)
+
+        return -1 if dp[d][n] is inf else dp[d][n]
+```
+
+Method 3 (Dynamic Programming + Space Optimization) :
+```python
+class Solution:
+    def minDifficulty(self, job_difficulty: List[int], d: int) -> int:
+        n = len(job_difficulty)
+        if n < d:
+            return -1
+
+        dp = [inf] * (n+1)
+        dp[1] = job_difficulty[0]
+        for index in range(2, n+1):
+            dp[index] = max(dp[index-1], job_difficulty[index-1])
+
+        for day in range(2, d+1):
+            temp = [inf] * (n+1)
+            for index in range(day, n+1):
+                maximum_remaining = job_difficulty[index-1]
+                for index_previous in reversed(range(day, index+1)):
+                    maximum_remaining = max(maximum_remaining, job_difficulty[index_previous-1])
+                    temp[index] = min(temp[index], dp[index_previous-1] + maximum_remaining)
+
+            dp = temp
+
+        return -1 if dp[n] is inf else dp[n]
+```
