@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Hash Map) :
+Method 1 (Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def findMatrix(self, nums: List[int]) -> List[List[int]]:
@@ -32,7 +32,7 @@ class Solution:
         return result
 ```
 
-Method 2 :
+Method 2 (Time Complexity: $O(N^2)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def findMatrix(self, nums: List[int]) -> List[List[int]]:
@@ -46,6 +46,29 @@ class Solution:
                 break
             else:
                 result.append([num])
+
+        return result
+```
+
+Method 3 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def findMatrix(self, nums: List[int]) -> List[List[int]]:
+        # Option 1
+        frequency = defaultdict(int)
+        """
+        # Option 2
+
+        n = len(nums)
+        frequency = [0] * (n + 1)
+        """
+        result = []
+        for num in nums:
+            if frequency[num] >= len(result):
+                result.append([])
+            result[frequency[num]].append(num)
+
+            frequency[num] += 1
 
         return result
 ```
