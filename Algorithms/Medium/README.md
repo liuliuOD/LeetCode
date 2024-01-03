@@ -41,7 +41,7 @@
 |[Course Schedule II](CourseScheduleII.md)|[Minimum Height Trees](MinimumHeightTrees.md)|[Loud And Rich](LoudAndRich.md)|[Course Schedule IV](CourseScheduleIV.md)|[Flatten Nested List Iterator](FlattenNestedListIterator.md)|
 |[Array Nesting](ArrayNesting.md)|[Minimum Number Of Groups To Create A Valid Assignment](MinimumNumberOfGroupsToCreateAValidAssignment.md)|[Find Largest Value In Each Tree Row](FindLargestValueInEachTreeRow.md)|[K-th Symbol In Grammar](KthSymbolInGrammar.md)|[Maximum Product Subarray](MaximumProductSubarray.md)|
 |[Binary Trees With Factors](BinaryTreesWithFactors.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Count Nodes Equal To Average Of Subtree](CountNodesEqualToAverageOfSubtree.md)|[Frequency Of The Most Frequent Element](FrequencyOfTheMostFrequentElement.md)|[Reduction Operations To Make The Array Elements Equal](ReductionOperationsToMakeTheArrayElementsEqual.md)|
-|[Minimum Amount Of Time To Collect Garbage](MinimumAmountOfTimeToCollectGarbage.md)|[Number Of Islands](NumberOfIslands.md)|[Design A Food Rating System](DesignAFoodRatingSystem.md)|[Convert An Array Into A 2D Array With Conditions](ConvertAnArrayIntoA2DArrayWithConditions.md)||
+|[Minimum Amount Of Time To Collect Garbage](MinimumAmountOfTimeToCollectGarbage.md)|[Number Of Islands](NumberOfIslands.md)|[Design A Food Rating System](DesignAFoodRatingSystem.md)|[Convert An Array Into A 2D Array With Conditions](ConvertAnArrayIntoA2DArrayWithConditions.md)|[Number Of Laser Beams In A Bank](NumberOfLaserBeamsInABank.md)|
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
