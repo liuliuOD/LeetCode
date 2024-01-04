@@ -82,7 +82,7 @@
 |[Diagonal Traverse II](DiagonalTraverseII.md)|[Arithmetic Subarrays](ArithmeticSubarrays.md)|[Diagonal Traverse](DiagonalTraverse.md)|[Maximum Number Of Coins You Can Get](MaximumNumberOfCoinsYouCanGet.md)|[Sum Of Absolute Differences In A Sorted Array](SumOfAbsoluteDifferencesInASortedArray.md)|
 |[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|[Knight Dialer](KnightDialer.md)|[Number Of Ways To Divide A Long Corridor](NumberOfWaysToDivideALongCorridor.md)|[Find Minimum In Rotated Sorted Array](FindMinimumInRotatedSortedArray.md)|[House Robber](HouseRobber.md)|
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
-|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)||||
+|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
