@@ -1,8 +1,46 @@
+![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)
+
+### Solution :
+
+Method 1 (DFS + Memoization) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn length_of_lis(nums: Vec<i32>) -> i32 {
+        let mut memoization: HashMap<usize, i32> = HashMap::new();
+        return Self::dfs(-10_001, 0, &mut memoization, &nums)
+    }
+
+    fn dfs(previous: i32, index: usize, memoization: &mut HashMap<usize, i32>, nums: &Vec<i32>) -> i32 {
+        let n: usize = nums.len();
+        if index >= n {
+            return 0
+        }
+
+        if memoization.contains_key(&index) {
+            return *memoization.get(&index).unwrap()
+        }
+
+        let mut result: i32 = 0;
+        for index_current in index..n {
+            if previous >= nums[index_current] {
+                continue;
+            }
+
+            result = result.max(1+Self::dfs(nums[index_current], index_current+1, memoization, nums)).max(Self::dfs(previous, index_current+1, memoization, nums));
+        }
+
+        memoization.insert(index, result);
+        return result
+    }
+}
+```
 
 ### Solution :
 
