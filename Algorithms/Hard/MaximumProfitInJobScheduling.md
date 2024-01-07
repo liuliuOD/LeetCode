@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (DFS + Memoization + Binary Search) :
+Method 1 (DFS + Memoization + Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def jobScheduling(self, start_time: List[int], end_time: List[int], profit: List[int]) -> int:
@@ -47,7 +47,7 @@ class Solution:
         return left
 ```
 
-Method 2 (Dynamic Programming + Binary Search) :
+Method 2 (Dynamic Programming + Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def jobScheduling(self, start_time: List[int], end_time: List[int], profit: List[int]) -> int:
@@ -78,7 +78,7 @@ class Solution:
         return left
 ```
 
-Method 3 (Dynamic Programming + Binary Search) :
+Method 3 (Dynamic Programming + Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def jobScheduling(self, start_time: List[int], end_time: List[int], profit: List[int]) -> int:
@@ -108,3 +108,77 @@ class Solution:
 
         return left
 ```
+
+Method 4 (Dynamic Programming + Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def jobScheduling(self, start_time: List[int], end_time: List[int], profit: List[int]) -> int:
+        n = len(start_time)
+        mapping = []
+        for index in range(n):
+            mapping.append((end_time[index], start_time[index], profit[index]))
+
+        mapping.sort()
+        dp = [0] * n
+        dp[0] = mapping[0][2]
+        for index in range(1, n):
+            index_previous = self.binarySearch(index, mapping)
+            dp[index] = mapping[index][2]
+            if index_previous >= 0:
+                dp[index] += dp[index_previous]
+            dp[index] = max(dp[index], dp[index-1])
+
+        return dp[-1]
+
+    def binarySearch(self, index: int, mapping: List[Tuple[int, int, int]]) -> int:
+        left = 0
+        right = index - 1
+        while left <= right:
+            middle = left + (right-left)//2
+            # previous end time > current start time
+            if mapping[middle][0] > mapping[index][1]:
+                right = middle - 1
+            else:
+                left = middle + 1
+
+        return right
+```
+
+Method 5 (Dynamic Programming + Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def jobScheduling(self, start_time: List[int], end_time: List[int], profit: List[int]) -> int:
+        n = len(start_time)
+        mapping = []
+        for index in range(n):
+            mapping.append((end_time[index], index))
+
+        mapping.sort()
+        dp = [0] * n
+        dp[0] = profit[mapping[0][1]]
+        for index in range(1, n):
+            index_previous = self.binarySearch(index, mapping, start_time)
+            dp[index] = profit[mapping[index][1]]
+            if index_previous >= 0:
+                dp[index] += dp[index_previous]
+            dp[index] = max(dp[index], dp[index-1])
+
+        return dp[-1]
+
+    def binarySearch(self, index: int, mapping: List[Tuple[int, int, int]], start_time: List[int]) -> int:
+        left = 0
+        right = index - 1
+        while left <= right:
+            middle = left + (right-left)//2
+            # previous end time > current start time
+            if mapping[middle][0] > start_time[mapping[index][1]]:
+                right = middle - 1
+            else:
+                left = middle + 1
+
+        return right
+```
+
+### Reference :
+
+- [Intuitions](https://www.techiedelight.com/weighted-interval-scheduling-problem)
