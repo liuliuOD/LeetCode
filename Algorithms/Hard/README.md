@@ -37,6 +37,7 @@
 - [Apply Operations To Maximize Frequency Score](ApplyOperationsToMaximizeFrequencyScore.md)
 - [Minimum Difficulty Of A Job Schedule](MinimumDifficultyOfAJobSchedule.md)
 - [Maximum Profit In Job Scheduling](MaximumProfitInJobScheduling.md)
+- [Arithmetic Slices II - Subsequence](ArithmeticSlicesIISubsequence.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
