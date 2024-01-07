@@ -38,6 +38,7 @@ class Solution:
         while left <= right:
             window = left + (right - left)//2
             is_invalid = True
+            # Option 1
             for index in range(n-window+1):
                 """
                 (median * amount_left - sum_left) + (sum_right - median * amount_right)
@@ -52,6 +53,36 @@ class Solution:
 
             if is_invalid:
                 right = window - 1
+            """
+            # Option 2
+
+            for index in range(n-window+1):
+                if (prefix_sum[index+window] - prefix_sum[index+(window+1)//2]) - (prefix_sum[index+window//2] - prefix_sum[index]) <= k:
+                    left = window + 1
+                    break
+            else:
+                right = window - 1
+            """
 
         return right
+```
+
+Method 3 ([Two Pointer](https://leetcode.com/problems/apply-operations-to-maximize-frequency-score/solutions/4419252/explained-with-dry-run-very-simple-easy-to-understand)) :
+```python
+class Solution:
+    def maxFrequencyScore(self, nums: List[int], k: int) -> int:
+        nums.sort()
+        operations = 0
+        result = 0
+        left = right = 0
+        while right < len(nums):
+            operations += nums[right] - nums[(left+right)//2]
+            while operations > k:
+                operations += nums[left] - nums[(left+right+1)//2]
+                left += 1
+
+            result = max(result, right - left + 1)
+            right += 1
+
+        return result
 ```
