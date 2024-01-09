@@ -29,3 +29,35 @@ class Solution:
 
         return self.traverse(node.left) + self.traverse(node.right)
 ```
+
+Method 2 :
+```python
+class Solution:
+    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
+        # Option 1
+        return list(self.traverse(root1)) == list(self.traverse(root2))
+        """
+        # Option 2
+
+        return all([node1 == node2 for node1, node2 in zip_longest(self.traverse(root1), self.traverse(root2))])
+        """
+        """
+        # Option 3
+
+        for node1, node2 in zip_longest(self.traverse(root1), self.traverse(root2)):
+            if node1 != node2:
+                return False
+
+        return True
+        """
+
+    def traverse(self, node: Optional[TreeNode]) -> Optional[int]:
+        if node is None:
+            return
+
+        if node.left == node.right and node.left is None:
+            yield node.val
+
+        yield from self.traverse(node.left)
+        yield from self.traverse(node.right)
+```
