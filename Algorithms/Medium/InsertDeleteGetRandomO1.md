@@ -37,3 +37,35 @@ class RandomizedSet:
     def getRandom(self) -> int:
         return random.choice(list(self.items))
 ```
+
+Method 2 (Hash Map) :
+```python
+class RandomizedSet:
+
+    def __init__(self):
+        self.items = []
+        self.mapping = dict()
+
+    def insert(self, val: int) -> bool:
+        if val in self.mapping:
+            return False
+
+        self.items.append(val)
+        self.mapping[val] = len(self.items) - 1
+        return True
+
+    def remove(self, val: int) -> bool:
+        if val not in self.mapping:
+            return False
+
+        index = self.mapping[val]
+        val_last = self.items[-1]
+        self.mapping[val_last] = index
+        del self.mapping[val]
+        self.items[index] = val_last
+        self.items.pop()
+        return True
+
+    def getRandom(self) -> int:
+        return random.choice(self.items)
+```
