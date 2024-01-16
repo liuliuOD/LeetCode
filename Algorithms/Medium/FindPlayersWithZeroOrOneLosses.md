@@ -28,3 +28,27 @@ class Solution:
 
         return [sorted(list(item)) for item in result]
 ```
+
+Method 2 :
+```python
+class Solution:
+    def findWinners(self, matches: List[List[int]]) -> List[List[int]]:
+        losers = [0] * 100_001
+        for winner, loser in matches:
+            if losers[winner] == 0:
+                losers[winner] = -1
+
+            if losers[loser] <= 0:
+                losers[loser] = 1
+            else:
+                losers[loser] += 1
+
+        result = [[], []]
+        for index, amount_lose in enumerate(losers):
+            if amount_lose == -1:
+                result[0].append(index)
+            elif amount_lose == 1:
+                result[1].append(index)
+
+        return result
+```
