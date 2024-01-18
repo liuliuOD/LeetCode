@@ -15,7 +15,7 @@
 |[Remove Duplicates From Sorted Array](RemoveDuplicatesFromSortedArray.md)|[Plus One](PlusOne.md)|[Add Digits](AddDigits.md)|[Sqrt(x)](Sqrt(x).md)|[Average Salary Excluding The Minimum And Maximum Salary](AverageSalaryExcludingTheMinimumAndMaximumSalary.md)|
 |[Sign Of The Product Of An Array](SignOfTheProductOfAnArray.md)|[Determine The Winner Of A Bowling Game](DetermineTheWinnerOfABowlingGame.md)|[Maximum Sum With Exactly K Elements](MaximumSumWithExactlyKElements.md)|[Find The Difference Of Two Arrays](FindTheDifferenceOfTwoArrays.md)|[Contains Duplicate II](ContainsDuplicateII.md)|
 |[Maximum Average Subarray I](MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](FindTheKBeautyOfANumber.md)|[Longest Nice Substring](LongestNiceSubstring.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|[Find The Distinct Difference Array](FindTheDistinctDifferenceArray.md)|
-|[Climbing Stairs](ClimbingStairs.md)|[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)||
+|[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)|||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -63,7 +63,7 @@
 |[Find The Peaks](FindThePeaks.md)|[Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)|[Count Of Matches In Tournament](CountOfMatchesInTournament.md)|[Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)|[Largest Odd Number In String](LargestOddNumberInString.md)|
 |[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)|[Maximum Product Of Two Elements In An Array](MaximumProductOfTwoElementsInAnArray.md)|[Special Positions In A Binary Matrix](SpecialPositionsInABinaryMatrix.md)|[Destination City](DestinationCity.md)|
 |[Valid Anagram](ValidAnagram.md)|[Maximum Product Difference Between Two Pairs](MaximumProductDifferenceBetweenTwoPairs.md)|[Image Smoother](ImageSmoother.md)|[Maximum Score After Splitting A String](MaximumScoreAfterSplittingAString.md)|[Path Crossing](PathCrossing.md)|
-|[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Determine If String Halves Are Alike](DetermineIfStringHalvesAreAlike.md)||||
+|[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Determine If String Halves Are Alike](DetermineIfStringHalvesAreAlike.md)|[Climbing Stairs](ClimbingStairs.md)|||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
