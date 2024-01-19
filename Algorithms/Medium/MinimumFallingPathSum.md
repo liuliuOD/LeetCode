@@ -34,3 +34,52 @@ class Solution:
         memoization[key] = result
         return result
 ```
+
+Method 2 (Dynamic Programming + Space Optimization, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def minFallingPathSum(self, matrix: List[List[int]]) -> int:
+        n = len(matrix)
+        # Option 1
+        dp = matrix[0][:]
+        for index_x in range(1, n):
+        """
+        # Option 2
+
+        dp = [0] * n
+        for index_x in range(n):
+        """
+            temp = []
+            for index_y in range(n):
+                current = matrix[index_x][index_y]
+                minimum = current + dp[index_y]
+                if index_y > 0:
+                    minimum = min(minimum, current+dp[index_y-1])
+                if index_y < n-1:
+                    minimum = min(minimum, current+dp[index_y+1])
+
+                temp.append(minimum)
+
+            dp = temp
+
+        return min(dp)
+```
+
+Method 3 (Dynamic Programming + Space Optimization, Time Complexity: $O(N^2)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def minFallingPathSum(self, matrix: List[List[int]]) -> int:
+        n = len(matrix)
+        for index_x in range(1, n):
+            for index_y in range(n):
+                current = matrix[index_x][index_y]
+                minimum = current + matrix[index_x-1][index_y]
+                if index_y > 0:
+                    minimum = min(minimum, current+matrix[index_x-1][index_y-1])
+                if index_y < n-1:
+                    minimum = min(minimum, current+matrix[index_x-1][index_y+1])
+
+                matrix[index_x][index_y] = minimum
+
+        return min(matrix[-1])
+```
