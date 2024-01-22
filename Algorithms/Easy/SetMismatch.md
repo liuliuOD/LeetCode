@@ -49,3 +49,27 @@ class Solution:
         sum_unique_nums = sum(set(nums))
         return [sum(nums) - sum_unique_nums, sum(range(1, n+1)) - sum_unique_nums]
 ```
+
+Method 4 (XOR, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def findErrorNums(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        """
+        a ^ a = 0, (a ^ b ^ c) ^ (a ^ b ^ c) = 0, (a ^ b ^ c) ^ (a ^ b ^ b) = b ^ c = duplicate ^ mismatch
+        """
+        xor_one_to_n = reduce(lambda a, b: a^b, range(1, n+1), 0)
+        xor_nums = reduce(lambda a, b: a^b, nums, 0)
+
+        duplicate = 0
+        for index in range(n):
+            origin = abs(nums[index])
+            if nums[origin-1] < 0:
+                duplicate = origin
+                break
+
+            # set visited num to negative
+            nums[origin-1] *= -1
+
+        return [duplicate, xor_one_to_n ^ xor_nums ^ duplicate]
+```
