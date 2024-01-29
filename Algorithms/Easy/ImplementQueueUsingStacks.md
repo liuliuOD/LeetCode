@@ -49,3 +49,37 @@ class MyQueue:
     def empty(self) -> bool:
         return len(self.stack) == 0
 ```
+
+Method 2 (Stack, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class MyQueue:
+
+    def __init__(self):
+        self.stack = []
+        self.first = None
+
+    def push(self, x: int) -> None:
+        if not self.stack:
+            self.first = x
+
+        temp = []
+        while self.stack:
+            temp.append(self.stack.pop())
+        temp.append(x)
+        while temp:
+            self.stack.append(temp.pop())
+
+    def pop(self) -> int:
+        result = self.stack.pop()
+        if self.stack:
+            self.first = self.stack.pop()
+            self.stack.append(self.first)
+
+        return result
+
+    def peek(self) -> int:
+        return self.first
+
+    def empty(self) -> bool:
+        return len(self.stack) == 0
+```
