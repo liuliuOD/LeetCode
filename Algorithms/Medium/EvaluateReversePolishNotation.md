@@ -5,14 +5,14 @@
 
 ### Solution :
 
-Method 1 (Loop)
+Method 1 (Loop) :
 ```python
 SYMBOLS = ('+', '-', '*', '/')
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
-        amount_number = 0
         stack = [int(token) if token not in SYMBOLS else token for token in tokens]
         while len(stack) > 1:
+            amount_number = 0
             temp = []
             for token in stack:
                 if token not in SYMBOLS:
@@ -39,6 +39,35 @@ class Solution:
                     temp.append(token)
 
             stack = temp
+
+        return stack[0]
+```
+
+Method 2 :
+```python
+SYMBOLS = ('+', '-', '*', '/')
+class Solution:
+    def evalRPN(self, tokens: List[str]) -> int:
+        stack = []
+        for token in tokens:
+            if token not in SYMBOLS:
+                stack.append(int(token))
+                continue
+
+            second = stack.pop()
+            first = stack.pop()
+            value = 0
+            if token == '+':
+                value = first + second
+            elif token == '-':
+                value = first - second
+            elif token == '*':
+                value = first * second
+            elif token == '/':
+                # can't use first // second, will get fault answer when one of the value is negative
+                value = int(first / second)
+
+            stack.append(value)
 
         return stack[0]
 ```
