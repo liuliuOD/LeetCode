@@ -41,3 +41,19 @@ class Solution:
 
         return result
 ```
+
+Method 3 (Loop, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def divideArray(self, nums: List[int], k: int) -> List[List[int]]:
+        nums.sort()
+        n = len(nums)
+        result = []
+        for index in range(0, n, 3):
+            if nums[index+2] - nums[index] > k:
+                return []
+
+            result.append(nums[index:index+3])
+
+        return result
+```
