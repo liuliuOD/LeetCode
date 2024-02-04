@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (DFS + Dynamic Programming + Memoization) :
+Method 1 (DFS + Memoization + Binary Search, Time Complexity: $O(K*N*Log(N))$ (N: length of `events`, K: value of `k`), Space Complexity: $O(N*K)$) :
 ```python
 class Solution:
     def maxValue(self, events: List[List[int]], k: int) -> int:
