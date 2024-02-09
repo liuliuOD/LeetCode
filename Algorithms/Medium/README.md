@@ -46,6 +46,7 @@
 |[Insert Delete GetRandom O(1)](InsertDeleteGetRandomO1.md)|[Minimum Falling Path Sum](MinimumFallingPathSum.md)|[Maximum Number That Sum Of The Prices Is Less Than Or Equal To K](MaximumNumberThatSumOfThePricesIsLessThanOrEqualToK.md)|[Maximum Length Of A Concatenated String With Unique Characters](MaximumLengthOfAConcatenatedStringWithUniqueCharacters.md)|[Pseudo-Palindromic Paths In A Binary Tree](PseudoPalindromicPathsInABinaryTree.md)|
 |[Longest Common Subsequence](LongestCommonSubsequence.md)|[Out Of Boundary Paths](OutOfBoundaryPaths.md)|[Evaluate Reverse Polish Notation](EvaluateReversePolishNotation.md)|[Daily Temperatures](DailyTemperatures.md)|[Find The Maximum Number Of Elements In Subset](FindTheMaximumNumberOfElementsInSubset.md)|
 |[Divide Array Into Arrays With Max Difference](DivideArrayIntoArraysWithMaxDifference.md)|[Sequential Digits](SequentialDigits.md)|[Partition Array For Maximum Sum](PartitionArrayForMaximumSum.md)|[Sort Characters By Frequency](SortCharactersByFrequency.md)|[Perfect Squares](PerfectSquares.md)|
+|[String To Integer (atoi)](StringToIntegerAToI.md)|||||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
