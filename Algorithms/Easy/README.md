@@ -32,7 +32,7 @@
 |[Reverse Words In A String III](ReverseWordsInAStringIII.md)|[Merge Sorted Array](MergeSortedArray.md)|[Backspace String Compare](BackspaceStringCompare.md)|[Power Of Four](PowerOfFour.md)|[Maximum Product Of Three Numbers](MaximumProductOfThreeNumbers.md)|
 |[Find Mode In Binary Search Tree](FindModeInBinarySearchTree.md)|[Construct String From Binary Tree](ConstructStringFromBinaryTree.md)|[Redistribute Characters To Make All Strings Equal](RedistributeCharactersToMakeAllStringsEqual.md)|[Largest Substring Between Two Equal Characters](LargestSubstringBetweenTwoEqualCharacters.md)|[Assign Cookies](AssignCookies.md)|
 |[Range Sum Of BST](RangeSumOfBST.md)|[Leaf-Similar Trees](LeafSimilarTrees.md)|[Unique Number Of Occurrences](UniqueNumberOfOccurrences.md)|[Set Mismatch](SetMismatch.md)|[Implement Queue Using Stacks](ImplementQueueUsingStacks.md)|
-|[First Unique Character In A String](FirstUniqueCharacterInAString.md)|[Majority Element](MajorityElement.md)||||
+|[First Unique Character In A String](FirstUniqueCharacterInAString.md)|[Majority Element](MajorityElement.md)|[Find First Palindromic String In The Array](FindFirstPalindromicStringInTheArray.md)|||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
