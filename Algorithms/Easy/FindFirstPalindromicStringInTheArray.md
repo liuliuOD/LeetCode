@@ -28,3 +28,14 @@ class Solution:
 
         return True
 ```
+
+Method 2 (Brute Force, Time Complexity: $O(M*N)$ (M: length of each word, N: length of `words`), Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def firstPalindrome(self, words: List[str]) -> str:
+        for word in words:
+            if word == word[::-1]:
+                return word
+
+        return ''
+```
