@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (DFS, ERROR: "Memory Limit Exceeded") :
+Method 1 (DFS, ERROR: "Memory Limit Exceeded", 11/78) :
 ```python
 class Solution:
     def furthestBuilding(self, buildings: List[int], bricks: int, ladders: int) -> int:
@@ -33,4 +33,67 @@ class Solution:
 
         memoization[key] = result
         return result
+```
+
+Method 2 (Brute Force, ERROR: "Time Limit Exceeded", 12/78) :
+```python
+class Solution:
+    def furthestBuilding(self, buildings: List[int], bricks: int, ladders: int) -> int:
+        n = len(buildings)
+        differences = [buildings[index] - buildings[index-1] if buildings[index] > buildings[index-1] else 0 for index in range(1, n)]
+        cost_bricks = sum(differences)
+        for index in reversed(range(1, n)):
+            if cost_bricks <= bricks:
+                return index
+
+            base = sorted(differences)
+            ladders_current = ladders
+            cost_current = cost_bricks
+            while ladders_current:
+                ladders_current -= 1
+                cost_current -= base.pop()
+                if cost_current <= bricks:
+                    return index
+
+            cost_bricks -= differences.pop()
+
+        return 0
+```
+
+Method 3 (Brute Force + Sorting, ERROR: "Time Limit Exceeded", 71/78) :
+```python
+class Solution:
+    def furthestBuilding(self, buildings: List[int], bricks: int, ladders: int) -> int:
+        n = len(buildings)
+        differences = sorted([buildings[index] - buildings[index-1] if buildings[index] > buildings[index-1] else 0 for index in range(1, n)])
+        for index in reversed(range(1, n)):
+            if sum(differences[:-ladders] if ladders else differences) <= bricks:
+                return index
+
+            target = buildings[index] - buildings[index-1] if buildings[index] > buildings[index-1] else 0
+            index_remove = bisect.bisect_left(differences, target)
+            differences.pop(index_remove)
+
+        return 0
+```
+
+Method 4 :
+```python
+class Solution:
+    def furthestBuilding(self, buildings: List[int], bricks: int, ladders: int) -> int:
+        n = len(buildings)
+        differences = sorted([buildings[index] - buildings[index-1] if buildings[index] > buildings[index-1] else 0 for index in range(1, n)])
+        cost = sum(differences)
+        for index in reversed(range(1, n)):
+            if ladders and (cost - sum(differences[max(0, len(differences)-ladders):])) <= bricks:
+                return index
+            elif ladders == 0 and cost <= bricks:
+                return index
+
+            target = buildings[index] - buildings[index-1] if buildings[index] > buildings[index-1] else 0
+            cost -= target
+            index_remove = bisect.bisect_left(differences, target)
+            differences.pop(index_remove)
+
+        return 0
 ```
