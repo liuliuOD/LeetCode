@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Simple Loop) :
+Method 1 (Sort, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
@@ -17,7 +17,19 @@ class Solution:
         return result
 ```
 
-Method 2 (Binary Search) :
+Method 2 (Sort, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        for index, num in enumerate(nums):
+            if index != num:
+                return index
+
+        return len(nums)
+```
+
+Method 3 (Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def missingNumber(self, nums: List[int]) -> int:
