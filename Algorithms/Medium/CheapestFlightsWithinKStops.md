@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops)
@@ -161,4 +162,32 @@ impl Solution {
         }
     }
 }
+```
+
+### Solution :
+
+Method 1 (Dijkstra) :
+```python
+class Solution:
+    def findCheapestPrice(self, n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:
+        graph = [[] for _ in range(n)]
+        prices = defaultdict(lambda: inf)
+        for source, destination, price in flights:
+            graph[source].append(destination)
+            prices[(source, destination)] = min(prices[(source, destination)], price)
+
+        heap = [(0, k, src)]
+        visited = [0] * n
+        while heap:
+            price_current, k_current, index_current = heapq.heappop(heap)
+            if index_current == dst:
+                return price_current
+
+            if visited[index_current] > k_current:
+                continue
+            visited[index_current] = k_current
+            for index_next in graph[index_current]:
+                heapq.heappush(heap, (price_current+prices[(index_current, index_next)], k_current-1, index_next))
+
+        return -1
 ```

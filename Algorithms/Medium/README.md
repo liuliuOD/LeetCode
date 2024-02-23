@@ -11,11 +11,10 @@
 ||||||
 | :- | :- | :- | :- | :- |
 |[Bulb Switcher](BulbSwitcher.md)|[Smallest Number In Infinite Set](SmallestNumberInInfiniteSet.md)|[Maximum Number Of Fish In A Grid](MaximumNumberOfFishInAGrid.md)|[Number Of Ways To Arrive At Destination](NumberOfWaysToArriveAtDestination.md)|[Minimum Cost Of A Path With Special Roads](MinimumCostOfAPathWithSpecialRoads.md)|
-|[Network Delay Time](NetworkDelayTime.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)|[Neighboring Bitwise XOR](NeighboringBitwiseXOR.md)|[Maximum Number Of Vowels In A Substring Of Given Length](MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Dota2Senate.md)|
+|[Network Delay Time](NetworkDelayTime.md)|[Minimum Number Of Coins To Be Added](MinimumNumberOfCoinsToBeAdded.md)|[Neighboring Bitwise XOR](NeighboringBitwiseXOR.md)|[Maximum Number Of Vowels In A Substring Of Given Length](MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Dota2Senate.md)|
 |[Number Of Subsequences That Satisfy The Given Sum Condition](NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](MakeCostsOfPathsEqualInABinaryTree.md)|[Spiral Matrix](SpiralMatrix.md)|
 |[Spiral Matrix II](SpiralMatrixII.md)|[Remove K Digits](RemoveKDigits.md)|[Sum In A Matrix](SumInAMatrix.md)|[Uncrossed Lines](UncrossedLines.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
-|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)|[Minimum Number Of Coins To Be Added](MinimumNumberOfCoinsToBeAdded.md)|||
-||||||
+|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)||||
 
 ![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -87,7 +86,7 @@
 |[Diagonal Traverse II](DiagonalTraverseII.md)|[Arithmetic Subarrays](ArithmeticSubarrays.md)|[Diagonal Traverse](DiagonalTraverse.md)|[Maximum Number Of Coins You Can Get](MaximumNumberOfCoinsYouCanGet.md)|[Sum Of Absolute Differences In A Sorted Array](SumOfAbsoluteDifferencesInASortedArray.md)|
 |[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|[Knight Dialer](KnightDialer.md)|[Number Of Ways To Divide A Long Corridor](NumberOfWaysToDivideALongCorridor.md)|[Find Minimum In Rotated Sorted Array](FindMinimumInRotatedSortedArray.md)|[House Robber](HouseRobber.md)|
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
-|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|||
+|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)||
 
 ![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
