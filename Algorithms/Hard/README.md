@@ -43,6 +43,7 @@
 - [Minimum Window Substring](MinimumWindowSubstring.md)
 - [Cherry Pickup II](CherryPickupII.md)
 - [Meeting Rooms III](MeetingRoomsIII.md)
+- [Find All People With Secret](FindAllPeopleWithSecret.md)
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
