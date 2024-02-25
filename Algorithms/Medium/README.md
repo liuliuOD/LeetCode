@@ -46,7 +46,7 @@
 |[Longest Common Subsequence](LongestCommonSubsequence.md)|[Out Of Boundary Paths](OutOfBoundaryPaths.md)|[Evaluate Reverse Polish Notation](EvaluateReversePolishNotation.md)|[Daily Temperatures](DailyTemperatures.md)|[Find The Maximum Number Of Elements In Subset](FindTheMaximumNumberOfElementsInSubset.md)|
 |[Divide Array Into Arrays With Max Difference](DivideArrayIntoArraysWithMaxDifference.md)|[Sequential Digits](SequentialDigits.md)|[Partition Array For Maximum Sum](PartitionArrayForMaximumSum.md)|[Sort Characters By Frequency](SortCharactersByFrequency.md)|[Perfect Squares](PerfectSquares.md)|
 |[String To Integer (atoi)](StringToIntegerAToI.md)|[Palindromic Substrings](PalindromicSubstrings.md)|[Rearrange Array Elements By Sign](RearrangeArrayElementsBySign.md)|[Find Polygon With The Largest Perimeter](FindPolygonWithTheLargestPerimeter.md)|[Valid Triangle Number](ValidTriangleNumber.md)|
-|[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|||
+|[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)||
 
 ![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
