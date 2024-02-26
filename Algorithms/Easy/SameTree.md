@@ -37,6 +37,19 @@ class Solution:
         return True
 ```
 
+Method 2 (Recursive, Time Complexity: $O(MIN(M, N))$ (M: `amount` of p nodes, N: `amount` of q nodes), Space Complexity: $O(MIN(Hm, Hn))$) (Hm: `height` of tree p, Hn: `height` of tree q) :
+```python
+class Solution:
+    def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        if p is None and q is None:
+            return True
+
+        if p and q and p.val == q.val:
+            return self.isSameTree(p.left, q.left) and self.isSameTree(p.right, q.right)
+
+        return False
+```
+
 ### Solution :
 
 ```php
