@@ -12,12 +12,22 @@ class Solution:
         left = 0
         right = len(s) - 1
         while left < right and s[left] == s[right]:
+            # Option 1
             target_right = s[right]
             target_left = s[left]
             while left < right and s[left] == target_right:
                 left += 1
             while left <= right and s[right] == target_left:
                 right -= 1
+            """
+            # Option 2
+
+            target = s[right]
+            while left < right and s[left] == target:
+                left += 1
+            while left <= right and s[right] == target:
+                right -= 1
+            """
 
         return 0 if right < left else right - left + 1
 ```
