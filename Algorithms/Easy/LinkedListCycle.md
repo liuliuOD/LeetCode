@@ -47,6 +47,22 @@ class Solution:
         return False
 ```
 
+Method 2 (Slow & Fast Pointers, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def hasCycle(self, head: Optional[ListNode]) -> bool:
+        dummy = ListNode(0)
+        dummy.next = head
+        slow = fast = dummy
+        while fast.next and fast.next.next:
+            fast = fast.next.next
+            slow = slow.next
+            if fast == slow:
+                return True
+
+        return False
+```
+
 ### Solution :
 
 ```php
