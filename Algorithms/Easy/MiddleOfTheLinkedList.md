@@ -14,7 +14,7 @@
 #         self.next = next
 ```
 
-Method 1 (Slow & Fast Pointers) :
+Method 1 (Slow & Fast Pointers, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -24,6 +24,21 @@ class Solution:
             pointer_slow = pointer_slow.next
             pointer_fast = pointer_fast.next.next
         return pointer_slow
+```
+
+Method 2 (Slow & Fast Pointers, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode(next=head)
+        slow = fast = dummy
+        while fast:
+            fast = fast.next
+            if fast:
+                fast = fast.next
+            slow = slow.next
+
+        return slow
 ```
 
 ### Solution :
