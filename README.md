@@ -1,6 +1,8 @@
 ![language-MySQL](https://img.shields.io/badge/MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 # LeetCode
@@ -39,3 +41,11 @@ This project is used to record my [LeetCode](https://leetcode.com) solved proble
 - [EASY](Algorithms/Easy/README.md#php)
 - [MEDIUM](Algorithms/Medium/README.md#php)
 - [HARD](Algorithms/Hard/README.md#php)
+
+---
+
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
+
+- [EASY](Algorithms/Easy/README.md#go)
+- [MEDIUM](Algorithms/Medium/README.md#go)
+- [HARD](Algorithms/Hard/README.md#go)
