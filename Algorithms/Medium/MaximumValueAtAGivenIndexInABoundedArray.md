@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1802. [Maximum Value At A Given Index In A Bounded Array](https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array)

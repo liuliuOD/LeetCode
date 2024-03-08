@@ -1,4 +1,4 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## [Next Greater Element I](https://leetcode.com/problems/next-greater-element-i)

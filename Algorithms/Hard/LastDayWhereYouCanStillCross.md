@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1970. [Last Day Where You Can Still Cross](https://leetcode.com/problems/last-day-where-you-can-still-cross)

@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2828. [Check If A String Is An Acronym Of Words](https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words)

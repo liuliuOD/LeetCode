@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2910. [Minimum Number Of Groups To Create A Valid Assignment](https://leetcode.com/problems/minimum-number-of-groups-to-create-a-valid-assignment)

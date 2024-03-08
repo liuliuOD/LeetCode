@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 712. [Minimum ASCII Delete Sum For Two Strings](https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings)

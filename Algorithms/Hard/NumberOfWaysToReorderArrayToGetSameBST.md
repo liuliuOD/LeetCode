@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1569. [Number Of Ways To Reorder Array To Get Same BST](https://leetcode.com/problems/number-of-ways-to-reorder-array-to-get-same-bst)

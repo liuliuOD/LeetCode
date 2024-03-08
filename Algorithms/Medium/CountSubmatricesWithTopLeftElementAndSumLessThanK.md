@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 3070. [Count Submatrices With Top-Left Element And Sum Less Than K](https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k)

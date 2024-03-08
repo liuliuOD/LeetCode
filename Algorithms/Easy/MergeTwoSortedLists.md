@@ -1,4 +1,4 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)

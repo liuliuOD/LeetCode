@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2009. [Minimum Number Of Operations To Make Array Continuous](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-continuous)

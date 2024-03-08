@@ -1,4 +1,4 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## 2682. [Find The Losers Of The Circular Game](https://leetcode.com/problems/find-the-losers-of-the-circular-game)

@@ -1,4 +1,4 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## 2952. [Minimum Number Of Coins To Be Added](https://leetcode.com/problems/minimum-number-of-coins-to-be-added)

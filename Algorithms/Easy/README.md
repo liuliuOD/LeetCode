@@ -1,11 +1,11 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 # Algorithm
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ## Rust
 
 ||||||
@@ -17,7 +17,7 @@
 |[Maximum Average Subarray I](MaximumAverageSubarrayI.md)|[Find The K-Beauty Of A Number](FindTheKBeautyOfANumber.md)|[Longest Nice Substring](LongestNiceSubstring.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|[Find The Distinct Difference Array](FindTheDistinctDifferenceArray.md)|
 |[Matrix Diagonal Sum](MatrixDiagonalSum.md)|[Find The Losers Of The Circular Game](FindTheLosersOfTheCircularGame.md)|[Next Greater Element I](NextGreaterElementI.md)|||
 
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
 
 ||||||
@@ -35,8 +35,8 @@
 |[First Unique Character In A String](FirstUniqueCharacterInAString.md)|[Majority Element](MajorityElement.md)|[Find First Palindromic String In The Array](FindFirstPalindromicStringInTheArray.md)|[Power Of Two](PowerOfTwo.md)|[Find The Town Judge](FindTheTownJudge.md)|
 |[Diameter Of Binary Tree](DiameterOfBinaryTree.md)|[Maximum Odd Binary Number](MaximumOddBinaryNumber.md)|[Squares Of A Sorted Array](SquaresOfASortedArray.md)|||
 
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Python 3 + PHP
 
 - [Linked List Cycle](LinkedListCycle.md)
@@ -50,8 +50,8 @@
 - [Is Subsequence](IsSubsequence.md)
 - [Find The Difference](FindTheDifference.md)
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Rust + Python 3
 
 ||||||
@@ -67,16 +67,16 @@
 |[Valid Anagram](ValidAnagram.md)|[Maximum Product Difference Between Two Pairs](MaximumProductDifferenceBetweenTwoPairs.md)|[Image Smoother](ImageSmoother.md)|[Maximum Score After Splitting A String](MaximumScoreAfterSplittingAString.md)|[Path Crossing](PathCrossing.md)|
 |[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Determine If String Halves Are Alike](DetermineIfStringHalvesAreAlike.md)|[Climbing Stairs](ClimbingStairs.md)|||
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Rust + Python 3 + PHP
 
 - [Pascal's Triangle](PascalsTriangle.md)
 - [Reverse Linked List](ReverseLinkedList.md)
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ## Rust + Python 3 + Go
 

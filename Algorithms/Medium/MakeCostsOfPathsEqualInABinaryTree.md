@@ -1,4 +1,4 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## [Make Costs Of Paths Equal In A Binary Tree](https://leetcode.com/problems/make-costs-of-paths-equal-in-a-binary-tree)

@@ -1,4 +1,4 @@
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 3020. [Find The Maximum Number Of Elements In Subset](https://leetcode.com/problems/find-the-maximum-number-of-elements-in-subset)

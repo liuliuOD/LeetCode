@@ -1,4 +1,4 @@
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 332. [Reconstruct Itinerary](https://leetcode.com/problems/reconstruct-itinerary)

@@ -1,11 +1,11 @@
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 # Algorithm
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ## Rust
 
 ||||||
@@ -16,7 +16,7 @@
 |[Spiral Matrix II](SpiralMatrixII.md)|[Remove K Digits](RemoveKDigits.md)|[Sum In A Matrix](SumInAMatrix.md)|[Uncrossed Lines](UncrossedLines.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
 |[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)||||
 
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
 
 ||||||
@@ -49,14 +49,14 @@
 |[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Find Bottom Left Tree Value](FindBottomLeftTreeValue.md)|
 |[Even Odd Tree](EvenOddTree.md)|[Count Submatrices With Top-Left Element And Sum Less Than K](CountSubmatricesWithTopLeftElementAndSumLessThanK.md)|[Bag Of Tokens](BagOfTokens.md)|[Minimum Length Of String After Deleting Similar Ends](MinimumLengthOfStringAfterDeletingSimilarEnds.md)||
 
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
 
 - [Min Cost To Connect All Points](MinCostToConnectAllPoints.md)
 - [Reverse Nodes In Even Length Groups](ReverseNodesInEvenLengthGroups.md)
 
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Python 3 + PHP
 
 ||||||
@@ -69,8 +69,8 @@
 |[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
 |[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Rust + Python 3
 
 ||||||
@@ -89,15 +89,15 @@
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
 |[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)||
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Rust + PHP
 
 - [Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)
 
-![language-RUST](https://img.shields.io/badge/%20-RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/%20-Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Rust + Python 3 + PHP
 
 - [Kth Largest Element In An Array](KthLargestElementInAnArray.md)

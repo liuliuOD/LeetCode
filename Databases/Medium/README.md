@@ -1,9 +1,9 @@
-![language-MySQL](https://img.shields.io/badge/%20-MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
+![language-MySQL](https://img.shields.io/badge/MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
 ---
 
 # Databases
 
-![language-MySQL](https://img.shields.io/badge/%20-MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
+![language-MySQL](https://img.shields.io/badge/MySQL-%23e89533?style=for-the-badge&logo=MYSQL)
 ## MySQL
 
 - [Nth Highest Salary](NthHighestSalary.md)

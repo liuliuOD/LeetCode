@@ -1,4 +1,4 @@
-![language-PHP](https://img.shields.io/badge/%20-PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 1584. [Min Cost To Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points)
