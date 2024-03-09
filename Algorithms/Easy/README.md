@@ -42,6 +42,8 @@
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ## Go
 
+- [Minimum Common Value](MinimumCommonValue.md)
+
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## Python 3 + PHP
