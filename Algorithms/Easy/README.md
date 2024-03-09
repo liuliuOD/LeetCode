@@ -43,6 +43,7 @@
 ## Go
 
 - [Minimum Common Value](MinimumCommonValue.md)
+- [Intersection Of Two Arrays](IntersectionOfTwoArrays.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
