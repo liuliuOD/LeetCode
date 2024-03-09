@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 3047. [Find The Largest Area Of Square Inside Two Rectangles](https://leetcode.com/problems/find-the-largest-area-of-square-inside-two-rectangles)
@@ -34,4 +35,43 @@ class Solution:
                     result = max(result, min(x_next_end-x_start, x_end-x_start, x_next_end-x_next_start, min(y_end, y_next_end)-max(y_start, y_next_start))**2)
 
         return result
+```
+
+### Solution :
+
+Method 1 (Brute Force) :
+```go
+func largestSquareArea(bottomLeft [][]int, topRight [][]int) int64 {
+    var result int64
+    n := len(bottomLeft)
+    for index1 := 0; index1 < n; index1++ {
+        for index2 := index1+1; index2 < n; index2++ {
+            length := minimumLength(bottomLeft[index1], bottomLeft[index2], topRight[index1], topRight[index2])
+            if length*length > result {
+                result = length * length
+            }
+        }
+    }
+
+    return result
+}
+
+/* Option 1 */
+func minimumLength(bl1 []int, bl2 []int, tr1 []int, tr2 []int) int64 {
+/*
+Option 2
+func minimumLength(bl1, bl2, tr1, tr2 []int) int64 {
+*/
+    minimum_x := max(bl1[0], bl2[0])
+    minimum_y := max(bl1[1], bl2[1])
+    maximum_x := min(tr1[0], tr2[0])
+    maximum_y := min(tr1[1], tr2[1])
+
+    length := 0
+    if minimum_x < maximum_x && minimum_y < maximum_y {
+        length = min(maximum_x-minimum_x, maximum_y-minimum_y)
+    }
+
+    return int64(length)
+}
 ```

@@ -47,8 +47,8 @@
 |[Longest Common Subsequence](LongestCommonSubsequence.md)|[Out Of Boundary Paths](OutOfBoundaryPaths.md)|[Evaluate Reverse Polish Notation](EvaluateReversePolishNotation.md)|[Daily Temperatures](DailyTemperatures.md)|[Find The Maximum Number Of Elements In Subset](FindTheMaximumNumberOfElementsInSubset.md)|
 |[Divide Array Into Arrays With Max Difference](DivideArrayIntoArraysWithMaxDifference.md)|[Sequential Digits](SequentialDigits.md)|[Partition Array For Maximum Sum](PartitionArrayForMaximumSum.md)|[Sort Characters By Frequency](SortCharactersByFrequency.md)|[Perfect Squares](PerfectSquares.md)|
 |[String To Integer (atoi)](StringToIntegerAToI.md)|[Palindromic Substrings](PalindromicSubstrings.md)|[Rearrange Array Elements By Sign](RearrangeArrayElementsBySign.md)|[Find Polygon With The Largest Perimeter](FindPolygonWithTheLargestPerimeter.md)|[Valid Triangle Number](ValidTriangleNumber.md)|
-|[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Find Bottom Left Tree Value](FindBottomLeftTreeValue.md)|
-|[Even Odd Tree](EvenOddTree.md)|[Count Submatrices With Top-Left Element And Sum Less Than K](CountSubmatricesWithTopLeftElementAndSumLessThanK.md)|[Bag Of Tokens](BagOfTokens.md)|[Minimum Length Of String After Deleting Similar Ends](MinimumLengthOfStringAfterDeletingSimilarEnds.md)||
+|[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|[Bag Of Tokens](BagOfTokens.md)|[Minimum Length Of String After Deleting Similar Ends](MinimumLengthOfStringAfterDeletingSimilarEnds.md)|[Find Bottom Left Tree Value](FindBottomLeftTreeValue.md)|
+|[Even Odd Tree](EvenOddTree.md)|[Count Submatrices With Top-Left Element And Sum Less Than K](CountSubmatricesWithTopLeftElementAndSumLessThanK.md)|||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -98,6 +98,12 @@
 ## Rust + PHP
 
 - [Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)
+
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
+## Python 3 + Go
+
+- [Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)
 
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
