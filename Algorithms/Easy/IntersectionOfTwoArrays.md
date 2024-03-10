@@ -5,6 +5,15 @@
 
 ### Solution :
 
+Method 1 (Hash Set, Time Complexity: $O(M+N)$ (M: length of `nums1`, N: length of `nums2`), Space Complexity: $O(M+N)$) :
+```python
+class Solution:
+    def intersection(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        return set(nums1).intersection(set(nums2))
+```
+
+### Solution :
+
 Method 1 (Brute Force, Time Complexity: $O(M*N)$ (M: length of `nums1`, N: length of `nums2`), Space Complexity: $O(N)$) :
 ```go
 func intersection(nums1 []int, nums2 []int) []int {
