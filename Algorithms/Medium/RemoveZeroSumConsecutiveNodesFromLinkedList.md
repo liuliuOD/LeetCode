@@ -35,6 +35,37 @@ class Solution:
         return dummy.next
 ```
 
+Method 2 (Prefix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def removeZeroSumSublists(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode(val=0,next=head)
+
+        prefix_sum = {}
+        summarize = 0
+        current = dummy
+        while current:
+            summarize += current.val
+            if summarize in prefix_sum:
+                target = current
+                current = prefix_sum[summarize].next
+                summarize_temp = summarize
+                while current is not target:
+                    summarize_temp += current.val
+                    if summarize_temp in prefix_sum:
+                        del prefix_sum[summarize_temp]
+
+                    current = current.next
+
+                prefix_sum[summarize].next = current.next
+            else:
+                prefix_sum[summarize] = current
+
+            current = current.next
+
+        return dummy.next
+```
+
 ### Solution :
 
 ```go
