@@ -43,3 +43,29 @@ func pivotInteger(n int) int {
     return -1
 }
 ```
+
+Method 2 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func pivotInteger(n int) int {
+    left := 0
+    right := n + 1
+    leftSum := 0
+    rightSum := 0
+    for left < right {
+        if leftSum < rightSum {
+            left++
+            leftSum += left
+        } else if leftSum > rightSum {
+            right--
+            rightSum += right
+        } else if left+1 == right-1 {
+            return left + 1
+        } else {
+            left++
+            leftSum += left
+        }
+    }
+
+    return -1
+}
+```
