@@ -54,3 +54,28 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Greedy, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def productExceptSelf(self, nums: List[int]) -> List[int]:
+        zero = 0
+        multiply = 1
+        for num in nums:
+            if num == 0:
+                zero += 1
+            else:
+                multiply *= num
+
+        result = []
+        for num in nums:
+            value = 0
+            if num == 0 and zero == 1:
+                value = multiply
+            elif num != 0 and zero == 0:
+                value = multiply // num
+
+            result.append(value)
+
+        return result
+```
