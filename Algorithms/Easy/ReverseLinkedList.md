@@ -1,6 +1,7 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 206. [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)
@@ -199,5 +200,37 @@ class Solution {
 
         return $nodeDummy->next;
     }
+}
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+```
+
+Method 1 (Dummy Pointer) :
+```go
+func reverseList(head *ListNode) *ListNode {
+    var dummy *ListNode
+    for head != nil {
+        temp := head.Next
+        head.Next = dummy
+
+        /* Option 1 */
+        dummy = head
+        head = temp
+        /* Option 2
+
+        head, dummy = temp, head
+        */
+    }
+    return dummy
 }
 ```

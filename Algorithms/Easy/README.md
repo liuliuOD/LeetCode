@@ -89,7 +89,6 @@
 ## Rust + Python 3 + PHP
 
 - [Pascal's Triangle](PascalsTriangle.md)
-- [Reverse Linked List](ReverseLinkedList.md)
 
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
@@ -97,3 +96,11 @@
 ## Rust + Python 3 + Go
 
 - [Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)
+
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
+## Rust + Python 3 + PHP + Go
+
+- [Reverse Linked List](ReverseLinkedList.md)
