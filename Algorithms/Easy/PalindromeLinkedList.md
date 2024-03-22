@@ -82,3 +82,41 @@ func isPalindrome(head *ListNode) bool {
     return true
 }
 ```
+
+Method 2 (Slow & Fast Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func isPalindrome(head *ListNode) bool {
+    if head.Next == nil {
+        return true
+    }
+
+    var slow, fast *ListNode
+    slow, fast = head, head.Next
+    for fast != nil && fast.Next != nil {
+        slow = slow.Next
+        fast = fast.Next.Next
+    }
+    temp := slow
+    slow = slow.Next
+    temp.Next = nil
+
+    var head_reverse *ListNode
+    for slow != nil {
+        temp := slow.Next
+        slow.Next = head_reverse
+        head_reverse = slow
+        slow = temp
+    }
+
+    for head_reverse != nil {
+        if head.Val != head_reverse.Val {
+            return false
+        }
+
+        head = head.Next
+        head_reverse = head_reverse.Next
+    }
+
+    return true
+}
+```
