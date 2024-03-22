@@ -23,7 +23,7 @@
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Split Strings By Separator](SplitStringsBySeparator.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Design Hash Map](DesignHashMap.md)|
+|[Check If A String Is An Acronym Of Words](CheckIfAStringIsAnAcronymOfWords.md)|[Intersection of Two Linked Lists](IntersectionOfTwoLinkedLists.md)|[Split Strings By Separator](SplitStringsBySeparator.md)|[Squares Of A Sorted Array](SquaresOfASortedArray.md)|[Design Hash Map](DesignHashMap.md)|
 |[Count Pairs Whose Sum Is Less Than Target](CountPairsWhoseSumIsLessThanTarget.md)|[Minimum String Length After Removing Substrings](MinimumStringLengthAfterRemovingSubstrings.md)|[Lexicographically Smallest Palindrome](LexicographicallySmallestPalindrome.md)|[Buy Two Chocolates](BuyTwoChocolates.md)|[Remove Trailing Zeros From A String](RemoveTrailingZerosFromAString.md)|
 |[Minimize String Length](MinimizeStringLength.md)|[Semi-Ordered Permutation](SemiOrderedPermutation.md)|[Missing Number](MissingNumber.md)|[Valid Perfect Square](ValidPerfectSquare.md)|[Arranging Coins](ArrangingCoins.md)|
 |[Check If N and Its Double Exist](CheckIfNAndItsDoubleExist.md)|[First Bad Version](FirstBadVersion.md)|[Check If The Number Is Fascinating](CheckIfTheNumberIsFascinating.md)|[Neither Minimum Nor Maximum](NeitherMinimumNorMaximum.md)|[Minimum Absolute Difference In BST](MinimumAbsoluteDifferenceInBST.md)|
@@ -34,7 +34,7 @@
 |[Find Mode In Binary Search Tree](FindModeInBinarySearchTree.md)|[Construct String From Binary Tree](ConstructStringFromBinaryTree.md)|[Redistribute Characters To Make All Strings Equal](RedistributeCharactersToMakeAllStringsEqual.md)|[Largest Substring Between Two Equal Characters](LargestSubstringBetweenTwoEqualCharacters.md)|[Assign Cookies](AssignCookies.md)|
 |[Range Sum Of BST](RangeSumOfBST.md)|[Leaf-Similar Trees](LeafSimilarTrees.md)|[Unique Number Of Occurrences](UniqueNumberOfOccurrences.md)|[Set Mismatch](SetMismatch.md)|[Implement Queue Using Stacks](ImplementQueueUsingStacks.md)|
 |[First Unique Character In A String](FirstUniqueCharacterInAString.md)|[Majority Element](MajorityElement.md)|[Find First Palindromic String In The Array](FindFirstPalindromicStringInTheArray.md)|[Power Of Two](PowerOfTwo.md)|[Find The Town Judge](FindTheTownJudge.md)|
-|[Diameter Of Binary Tree](DiameterOfBinaryTree.md)|[Maximum Odd Binary Number](MaximumOddBinaryNumber.md)|[Squares Of A Sorted Array](SquaresOfASortedArray.md)|||
+|[Diameter Of Binary Tree](DiameterOfBinaryTree.md)|[Maximum Odd Binary Number](MaximumOddBinaryNumber.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -50,6 +50,7 @@
 
 - [Intersection Of Two Arrays](IntersectionOfTwoArrays.md)
 - [Find The Pivot Integer](FindThePivotInteger.md)
+- [Palindrome Linked List](PalindromeLinkedList.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
