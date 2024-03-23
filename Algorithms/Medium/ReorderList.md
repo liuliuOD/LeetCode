@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 143. [Reorder List](https://leetcode.com/problems/reorder-list)
@@ -13,7 +14,7 @@
 #         self.next = next
 ```
 
-Method 1 (Hash Map) :
+Method 1 (List, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def reorderList(self, head: Optional[ListNode]) -> None:
@@ -83,4 +84,43 @@ class Solution:
             dummy.next = node_next
 
         return dummy.next
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+```
+
+Method 1 (List, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func reorderList(head *ListNode)  {
+    var list []*ListNode
+    pointer := head
+    for ;pointer != nil; pointer = pointer.Next {
+        list = append(list, pointer)
+    }
+
+    pointer = head
+    n := len(list)
+    left, right := 0, n
+    for left < right {
+        if left + right == n {
+            right--
+            pointer.Next = list[right]
+        } else {
+            left++
+            pointer.Next = list[left]
+        }
+
+        pointer = pointer.Next
+    }
+    pointer.Next = nil
+}
 ```
