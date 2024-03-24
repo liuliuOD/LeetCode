@@ -1,12 +1,13 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 287. [Find The Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 
 ### Constraints:
 
-- Solve the problem without modifying the array `num`.
+- Solve the problem without modifying the array `nums`.
 - Uses only constant extra space.
 
 ### Solution :
@@ -150,5 +151,31 @@ class Solution {
 
         return $result;
     }
+}
+```
+
+### Solution :
+
+Method 1 (Floyd's Hare-Tortoise Algorithm) :
+```go
+func findDuplicate(nums []int) int {
+    slow := nums[0]
+    fast := nums[0]
+    for {
+        slow = nums[slow]
+        fast = nums[nums[fast]]
+
+        if fast == slow {
+            break
+        }
+    }
+
+    slow = nums[0]
+    for slow != fast {
+        fast = nums[fast]
+        slow = nums[slow]
+    }
+
+    return slow
 }
 ```

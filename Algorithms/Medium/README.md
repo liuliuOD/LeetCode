@@ -70,9 +70,9 @@
 |[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
 |[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
 |[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
-|[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
+|[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
 |[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
-|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|
+|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)||
 
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
@@ -118,3 +118,10 @@
 - [Kth Largest Element In An Array](KthLargestElementInAnArray.md)
 - [Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)
 - [Longest Increasing Subsequence](LongestIncreasingSubsequence.md)
+
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
+## Python 3 + PHP + Go
+
+- [Find The Duplicate Number](FindTheDuplicateNumber.md)
