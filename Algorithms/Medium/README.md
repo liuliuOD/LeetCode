@@ -109,6 +109,7 @@
 - [Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)
 - [Contiguous Array](ContiguousArray.md)
 - [Reorder List](ReorderList.md)
+- [Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)
 
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
