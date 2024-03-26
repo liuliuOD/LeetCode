@@ -51,3 +51,37 @@ func firstMissingPositive(nums []int) int {
     return n + 1
 }
 ```
+
+Method 2 (Signal Reverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func firstMissingPositive(nums []int) int {
+    n := len(nums)
+    for index := 0; index < n; index++ {
+        val := nums[index]
+        if val <= 0 || val > n {
+            nums[index] = n + 1
+        }
+    }
+
+    for index := 0; index < n; index++ {
+        val := nums[index]
+        if val < 0 {
+            val *= -1
+        }
+
+        if 1 <= val && val <= n {
+            index_target := val - 1
+            if nums[index_target] > 0 {
+                nums[index_target] *= -1
+            }
+        }
+    }
+
+    for index, value := range nums {
+        if value > 0 {
+            return index + 1
+        }
+    }
+    return n + 1
+}
+```
