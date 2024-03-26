@@ -46,6 +46,7 @@
 - [Cherry Pickup II](CherryPickupII.md)
 - [Meeting Rooms III](MeetingRoomsIII.md)
 - [Find All People With Secret](FindAllPeopleWithSecret.md)
+- [First Missing Positive](FirstMissingPositive.md)
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
