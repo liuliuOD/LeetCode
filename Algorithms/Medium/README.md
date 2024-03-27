@@ -4,7 +4,7 @@
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
-# Algorithm
+# Algorithm - Medium
 
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ## Rust
@@ -15,7 +15,20 @@
 |[Network Delay Time](NetworkDelayTime.md)|[Minimum Number Of Coins To Be Added](MinimumNumberOfCoinsToBeAdded.md)|[Neighboring Bitwise XOR](NeighboringBitwiseXOR.md)|[Maximum Number Of Vowels In A Substring Of Given Length](MaximumNumberOfVowelsInASubstringOfGivenLength.md)|[Dota2 Senate](Dota2Senate.md)|
 |[Number Of Subsequences That Satisfy The Given Sum Condition](NumberOfSubsequencesThatSatisfyTheGivenSumCondition.md)|[Frequency Tracker](FrequencyTracker.md)|[Number Of Adjacent Elements With The Same Color](NumberOfAdjacentElementsWithTheSameColor.md)|[Make Costs Of Paths Equal In A Binary Tree](MakeCostsOfPathsEqualInABinaryTree.md)|[Spiral Matrix](SpiralMatrix.md)|
 |[Spiral Matrix II](SpiralMatrixII.md)|[Remove K Digits](RemoveKDigits.md)|[Sum In A Matrix](SumInAMatrix.md)|[Uncrossed Lines](UncrossedLines.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
-|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)||||
+|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|[Count Ways To Build Good Strings](CountWaysToBuildGoodStrings.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)|
+|[Minimum Number Of Vertices To Reach All Nodes](MinimumNumberOfVerticesToReachAllNodes.md)|[Is Graph Bipartite?](IsGraphBipartite.md)|[Evaluate Division](EvaluateDivision.md)|[Shortest Bridge](ShortestBridge.md)|[Top K Frequent Elements](TopKFrequentElements.md)|
+|[Maximum Subsequence Score](MaximumSubsequenceScore.md)|[Number Of Provinces](NumberOfProvinces.md)|[Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)|[K Radius Subarray Averages](KRadiusSubarrayAverages.md)|[Special Permutations](SpecialPermutations.md)|
+|[Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)|[Path With Maximum Probability](PathWithMaximumProbability.md)|[Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)|[Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)|[Predict The Winner](PredictTheWinner.md)|
+|[Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)|[Combinations](Combinations.md)|[Permutations](Permutations.md)|[Letter Combinations Of A Phone Number](LetterCombinationsOfAPhoneNumber.md)|[Search A 2D Matrix](SearchA2DMatrix.md)|
+|[Search In Rotated Sorted Array](SearchInRotatedSortedArray.md)|[Unique Paths II](UniquePathsII.md)|[Sliding Window Maximum](SlidingWindowMaximum.md)|[Remove Duplicate Letters](RemoveDuplicateLetters.md)|[132 Pattern](132Pattern.md)|
+|[Product Of Array Except Self](ProductOfArrayExceptSelf.md)|[Minimum Sum Of Mountain Triplets II](MinimumSumOfMountainTripletsII.md)|[Best Time To Buy And Sell Stock II](BestTimeToBuyAndSellStockII.md)|[Minimum Increment Operations To Make Array Beautiful](MinimumIncrementOperationsToMakeArrayBeautiful.md)|[Find The Original Array Of Prefix XOR](FindTheOriginalArrayOfPrefixXOR.md)|
+|[Build An Array With Stack Operations](BuildAnArrayWithStackOperations.md)|[Last Moment Before All Ants Fall Out Of A Plank](LastMomentBeforeAllAntsFallOutOfAPlank.md)|[Find The Winner Of An Array Game](FindTheWinnerOfAnArrayGame.md)|[Seat Reservation Manager](SeatReservationManager.md)|[Eliminate Maximum Number Of Monsters](EliminateMaximumNumberOfMonsters.md)|
+|[Determine If A Cell Is Reachable At A Given Time](DetermineIfACellIsReachableAtAGivenTime.md)|[Count Number Of Homogenous Substrings](CountNumberOfHomogenousSubstrings.md)|[Restore The Array From Adjacent Pairs](RestoreTheArrayFromAdjacentPairs.md)|[Sort Vowels In A String](SortVowelsInAString.md)|[Maximum Element After Decreasing And Rearranging](MaximumElementAfterDecreasingAndRearranging.md)|
+|[Unique Length-3 Palindromic Subsequences](UniqueLength3PalindromicSubsequences.md)|[Find Unique Binary String](FindUniqueBinaryString.md)|[Minimize Maximum Pair Sum In Array](MinimizeMaximumPairSumInArray.md)|[Count Nice Pairs In An Array](CountNicePairsInAnArray.md)|[Count Number Of Bad Pairs](CountNumberOfBadPairs.md)|
+|[Diagonal Traverse II](DiagonalTraverseII.md)|[Arithmetic Subarrays](ArithmeticSubarrays.md)|[Diagonal Traverse](DiagonalTraverse.md)|[Maximum Number Of Coins You Can Get](MaximumNumberOfCoinsYouCanGet.md)|[Sum Of Absolute Differences In A Sorted Array](SumOfAbsoluteDifferencesInASortedArray.md)|
+|[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|[Knight Dialer](KnightDialer.md)|[Number Of Ways To Divide A Long Corridor](NumberOfWaysToDivideALongCorridor.md)|[Find Minimum In Rotated Sorted Array](FindMinimumInRotatedSortedArray.md)|[House Robber](HouseRobber.md)|
+|[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
+|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -49,39 +62,7 @@
 |[String To Integer (atoi)](StringToIntegerAToI.md)|[Palindromic Substrings](PalindromicSubstrings.md)|[Rearrange Array Elements By Sign](RearrangeArrayElementsBySign.md)|[Find Polygon With The Largest Perimeter](FindPolygonWithTheLargestPerimeter.md)|[Valid Triangle Number](ValidTriangleNumber.md)|
 |[Least Number Of Unique Integers After K Removals](LeastNumberOfUniqueIntegersAfterKRemovals.md)|[Furthest Building You Can Reach](FurthestBuildingYouCanReach.md)|[Bitwise AND Of Numbers Range](BitwiseANDOfNumbersRange.md)|[Bag Of Tokens](BagOfTokens.md)|[Minimum Length Of String After Deleting Similar Ends](MinimumLengthOfStringAfterDeletingSimilarEnds.md)|[Find Bottom Left Tree Value](FindBottomLeftTreeValue.md)|
 |[Even Odd Tree](EvenOddTree.md)|[Count Submatrices With Top-Left Element And Sum Less Than K](CountSubmatricesWithTopLeftElementAndSumLessThanK.md)|[Binary Subarrays With Sum](BinarySubarraysWithSum.md)|[Minimum Deletions To Make String K-Special](MinimumDeletionsToMakeStringKSpecial.md)|
-|[Minimum Number Of Arrows To Burst Balloons](MinimumNumberOfArrowsToBurstBalloons.md)|[Task Scheduler](TaskScheduler.md)|[The Kth Factor Of N](TheKthFactorOfN.md)|[Subarray Product Less Than K](SubarrayProductLessThanK.md)||
-
-![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
-## PHP
-
-- [Min Cost To Connect All Points](MinCostToConnectAllPoints.md)
-- [Reverse Nodes In Even Length Groups](ReverseNodesInEvenLengthGroups.md)
-
-![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
-## Go
-
-- [Subarray Product Less Than K](SubarrayProductLessThanK.md)
-
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
-## Python 3 + PHP
-
-||||||
-| :- | :- | :- | :- | :- |
-|[Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)|[Interleaving String](InterleavingString.md)|[Maximum Length Of Pair Chain](MaximumLengthOfPairChain.md)|[Make String A Subsequence Using Cyclic Increments](MakeStringASubsequenceUsingCyclicIncrements.md)|[Reorganize String](ReorganizeString.md)|
-|[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
-|[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
-|[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
-|[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
-|[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
-|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)||
-
-![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
-## Rust + Python 3
-
-||||||
-| :- | :- | :- | :- | :- |
+|[Minimum Number Of Arrows To Burst Balloons](MinimumNumberOfArrowsToBurstBalloons.md)|[Task Scheduler](TaskScheduler.md)|[The Kth Factor Of N](TheKthFactorOfN.md)|[Subarray Product Less Than K](SubarrayProductLessThanK.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)|
 |[Minimum Number Of Vertices To Reach All Nodes](MinimumNumberOfVerticesToReachAllNodes.md)|[Is Graph Bipartite?](IsGraphBipartite.md)|[Evaluate Division](EvaluateDivision.md)|[Shortest Bridge](ShortestBridge.md)|[Top K Frequent Elements](TopKFrequentElements.md)|
 |[Maximum Subsequence Score](MaximumSubsequenceScore.md)|[Number Of Provinces](NumberOfProvinces.md)|[Minimum Flips To Make A OR B Equal To C](MinimumFlipsToMakeAORBEqualToC.md)|[K Radius Subarray Averages](KRadiusSubarrayAverages.md)|[Special Permutations](SpecialPermutations.md)|
 |[Find K Pairs With Smallest Sums](FindKPairsWithSmallestSums.md)|[Path With Maximum Probability](PathWithMaximumProbability.md)|[Number Of Longest Increasing Subsequence](NumberOfLongestIncreasingSubsequence.md)|[Peak Index In A Mountain Array](PeakIndexInAMountainArray.md)|[Predict The Winner](PredictTheWinner.md)|
@@ -94,37 +75,40 @@
 |[Diagonal Traverse II](DiagonalTraverseII.md)|[Arithmetic Subarrays](ArithmeticSubarrays.md)|[Diagonal Traverse](DiagonalTraverse.md)|[Maximum Number Of Coins You Can Get](MaximumNumberOfCoinsYouCanGet.md)|[Sum Of Absolute Differences In A Sorted Array](SumOfAbsoluteDifferencesInASortedArray.md)|
 |[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|[Knight Dialer](KnightDialer.md)|[Number Of Ways To Divide A Long Corridor](NumberOfWaysToDivideALongCorridor.md)|[Find Minimum In Rotated Sorted Array](FindMinimumInRotatedSortedArray.md)|[House Robber](HouseRobber.md)|
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
-|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|[Cheapest Flights Within K Stops](CheapestFlightsWithinKStops.md)||
+|[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Minimum Cost To Convert String I](MinimumCostToConvertStringI.md)|[Minimum Number Of Operations To Make Array Empty](MinimumNumberOfOperationsToMakeArrayEmpty.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)|
+|[Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)|[Interleaving String](InterleavingString.md)|[Maximum Length Of Pair Chain](MaximumLengthOfPairChain.md)|[Make String A Subsequence Using Cyclic Increments](MakeStringASubsequenceUsingCyclicIncrements.md)|[Reorganize String](ReorganizeString.md)|
+|[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
+|[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
+|[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
+|[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
+|[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
+|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Custom Sort String](CustomSortString.md)|[Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)|
+|[Contiguous Array](ContiguousArray.md)|[Reorder List](ReorderList.md)|[Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|
+|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)||||
 
-![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
-## Rust + PHP
+## PHP
 
-- [Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Swapping Nodes In A Linked List](SwappingNodesInALinkedList.md)|[Interleaving String](InterleavingString.md)|[Maximum Length Of Pair Chain](MaximumLengthOfPairChain.md)|[Make String A Subsequence Using Cyclic Increments](MakeStringASubsequenceUsingCyclicIncrements.md)|[Reorganize String](ReorganizeString.md)|
+|[Minimum Penalty For A Shop](MinimumPenaltyForAShop.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Maximum Subarray](MaximumSubarray.md)|[Jump Game](JumpGame.md)|[Unique Paths](UniquePaths.md)|
+|[Copy List With Random Pointer](CopyListWithRandomPointer.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Reverse Linked List II](ReverseLinkedListII.md)|[Flatten Binary Tree To Linked List](FlattenBinaryTreeToLinkedList.md)|[Split Array Into Fibonacci Sequence](SplitArrayIntoFibonacciSequence.md)|
+|[Add Two Numbers](AddTwoNumbers.md)|[Remove Nth Node From End Of List](RemoveNthNodeFromEndOfList.md)|[Rotate List](RotateList.md)|[Minimum Deletions To Make Character Frequencies Unique](MinimumDeletionsToMakeCharacterFrequenciesUnique.md)|[Path With Minimum Effort](PathWithMinimumEffort.md)|
+|[Word Search](WordSearch.md)|[Validate Binary Search Tree](ValidateBinarySearchTree.md)|[Find First And Last Position Of Element In Sorted Array](FindFirstAndLastPositionOfElementInSortedArray.md)|[Binary Tree Level Order Traversal](BinaryTreeLevelOrderTraversal.md)|[Minimum Operations To Reduce X To Zero](MinimumOperationsToReduceXToZero.md)|
+|[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
+|[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[3 Sum](3Sum.md)|[Delete The Middle Node Of A Linked List](DeleteTheMiddleNodeOfALinkedList.md)|[Min Cost To Connect All Points](MinCostToConnectAllPoints.md)|
+|[Reverse Nodes In Even Length Groups](ReverseNodesInEvenLengthGroups.md)|[Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|
+|[Find The Duplicate Number](FindTheDuplicateNumber.md)|||||
 
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
-## Python 3 + Go
+## Go
 
+- [Subarray Product Less Than K](SubarrayProductLessThanK.md)
 - [Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)
 - [Custom Sort String](CustomSortString.md)
 - [Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)
 - [Contiguous Array](ContiguousArray.md)
 - [Reorder List](ReorderList.md)
 - [Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)
-
-![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
-## Rust + Python 3 + PHP
-
-- [Kth Largest Element In An Array](KthLargestElementInAnArray.md)
-- [Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)
-- [Longest Increasing Subsequence](LongestIncreasingSubsequence.md)
-
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
-![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
-![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
-## Python 3 + PHP + Go
-
 - [Find The Duplicate Number](FindTheDuplicateNumber.md)
