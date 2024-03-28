@@ -84,7 +84,7 @@
 |[Construct Binary Tree From Preorder And Inorder Traversal](ConstructBinaryTreeFromPreorderAndInorderTraversal.md)|[Steps To Make Array Non-decreasing](StepsToMakeArrayNonDecreasing.md)|[Longest Consecutive Sequence](LongestConsecutiveSequence.md)|[Longest String Chain](LongestStringChain.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
 |[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Custom Sort String](CustomSortString.md)|[Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)|
 |[Contiguous Array](ContiguousArray.md)|[Reorder List](ReorderList.md)|[Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|
-|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)||||
+|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)|||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
