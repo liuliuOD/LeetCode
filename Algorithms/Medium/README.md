@@ -113,3 +113,4 @@
 - [Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)
 - [Find The Duplicate Number](FindTheDuplicateNumber.md)
 - [Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)
+- [Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)

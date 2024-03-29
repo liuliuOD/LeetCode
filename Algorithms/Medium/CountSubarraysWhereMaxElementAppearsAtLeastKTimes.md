@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2962. [Count Subarrays Where Max Element Appears At Least K Times](https://leetcode.com/problems/count-subarrays-where-max-element-appears-at-least-k-times)
@@ -112,4 +113,61 @@ class Solution:
                 left += 1
 
         return result
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func countSubarrays(nums []int, k int) int64 {
+    /* Option 1 */
+    maximum := 0
+    for _, num := range nums {
+        /* Option 1 */
+        if num > maximum {
+            maximum = num
+        }
+        /* Option 2
+
+        maximum = max(maximum, num)
+        */
+    }
+    /* Option 2
+
+    maximum := slices.Max(nums)
+    */
+
+    counter := 0
+    left := 0
+    n := len(nums)
+    result := 0
+    for right, num := range nums {
+        if num == maximum {
+            counter++
+        }
+
+        /* Option 1 */
+        for counter >= k {
+            result += n - right
+
+            if nums[left] == maximum {
+                counter--
+            }
+
+            left++
+        }
+        /* Option 2
+
+        for ; counter >= k; left++ {
+            result += n - right
+
+            if nums[left] == maximum {
+                counter--
+            }
+        }
+        */
+    }
+
+    return int64(result)
+}
 ```
