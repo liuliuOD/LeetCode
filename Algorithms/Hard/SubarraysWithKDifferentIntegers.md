@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 992. [Subarrays With K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)
@@ -92,4 +93,73 @@ class Solution:
             result += right - left + 1
 
         return result
+```
+
+### Solution :
+
+Method 1 (Two Pointers, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func subarraysWithKDistinct(nums []int, k int) int {
+    return subarraysWithMostKDistinct(k, nums) - subarraysWithMostKDistinct(k-1, nums)
+}
+
+func subarraysWithMostKDistinct(k int, nums []int) int {
+    result := 0
+    left := 0
+    counter := make(map[int]int)
+    for right, num := range nums {
+        /* Option 1 */
+        current, ok := counter[num]
+        if !ok {
+            current = 0
+        }
+        counter[num] = current + 1
+        /* Option 2
+
+        counter[num]++
+        */
+
+        for ; len(counter) > k; left++ {
+            current, _ := counter[nums[left]]
+            if current - 1 == 0 {
+                delete(counter, nums[left])
+            } else {
+                counter[nums[left]] = current - 1
+            }
+        }
+
+        result += right - left + 1
+    }
+
+    return result
+}
+```
+
+Method 2 (Two Pointers + Call By References, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func subarraysWithKDistinct(nums []int, k int) int {
+    return subarraysWithMostKDistinct(k, &nums) - subarraysWithMostKDistinct(k-1, &nums)
+}
+
+func subarraysWithMostKDistinct(k int, nums *[]int) int {
+    result := 0
+    left := 0
+    counter := make(map[int]int)
+    for right, num := range *nums {
+        counter[num]++
+
+        for ; len(counter) > k; left++ {
+            current, _ := counter[(*nums)[left]]
+            if current - 1 == 0 {
+                delete(counter, (*nums)[left])
+            } else {
+                counter[(*nums)[left]] = current - 1
+            }
+        }
+
+        result += right - left + 1
+    }
+
+    return result
+}
 ```
