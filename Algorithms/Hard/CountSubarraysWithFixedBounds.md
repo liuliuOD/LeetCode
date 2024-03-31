@@ -27,3 +27,33 @@ class Solution:
 
         return result
 ```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func countSubarrays(nums []int, minK int, maxK int) int64 {
+    indexMin, indexMax, indexStart := -1, -1, 0
+    result := 0
+    for index, num := range nums {
+        if num < minK || num > maxK {
+            indexStart = index + 1
+            indexMin = -1
+            indexMax = -1
+        }
+
+        if num == minK {
+            indexMin = index
+        }
+        if num == maxK {
+            indexMax = index
+        }
+
+        if indexMin > -1 && indexMax > -1 {
+            result += min(indexMin, indexMax) - indexStart + 1
+        }
+    }
+
+    return int64(result)
+}
+```

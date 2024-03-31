@@ -49,3 +49,4 @@
 
 - [First Missing Positive](FirstMissingPositive.md)
 - [Subarrays With K Different Integers](SubarraysWithKDifferentIntegers.md)
+- [Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)
