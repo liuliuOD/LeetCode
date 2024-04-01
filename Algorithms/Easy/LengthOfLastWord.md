@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## [Length Of Last Word](https://leetcode.com/problems/length-of-last-word)
@@ -29,5 +30,18 @@ impl Solution {
         }
         0
     }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+import "strings"
+
+func lengthOfLastWord(s string) int {
+    split := strings.Split(strings.TrimSpace(s), " ")
+
+    return len(split[len(split)-1])
 }
 ```
