@@ -35,7 +35,7 @@ impl Solution {
 
 ### Solution :
 
-Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Built-In Library, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```go
 import "strings"
 
@@ -43,5 +43,21 @@ func lengthOfLastWord(s string) int {
     split := strings.Split(strings.TrimSpace(s), " ")
 
     return len(split[len(split)-1])
+}
+```
+
+Method 2 (Built-In Library, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func lengthOfLastWord(s string) int {
+    result := 0
+    for index := len(s)-1; index >= 0; index-- {
+        if s[index] != ' ' {
+            result++
+        } else if result > 0 {
+            break
+        }
+    }
+
+    return result
 }
 ```
