@@ -52,3 +52,29 @@ class Solution:
         return result
     """
 ```
+
+### Solution :
+
+Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func isIsomorphic(s string, t string) bool {
+    return getOrder(s) == getOrder(t)
+}
+
+func getOrder(target string) string {
+    result := ""
+    mapping := make(map[rune]string)
+    symbol := 0
+    for _, char := range target {
+        value, ok := mapping[char]
+        if !ok {
+            mapping[char] = string(symbol)
+            symbol++
+        }
+
+        result += value + "-"
+    }
+
+    return result
+}
+```
