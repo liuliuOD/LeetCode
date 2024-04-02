@@ -53,6 +53,28 @@ class Solution:
     """
 ```
 
+Method 2 (Array, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        mapping_s = [-1] * 128
+        mapping_t = [-1] * 128
+        n = len(s)
+        if n != len(t):
+            return False
+
+        for index in range(n):
+            ascii_s = ord(s[index])
+            ascii_t = ord(t[index])
+            if mapping_s[ascii_s] != mapping_t[ascii_t]:
+                return False
+
+            mapping_s[ascii_s] = index
+            mapping_t[ascii_t] = index
+
+        return True
+```
+
 ### Solution :
 
 Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
@@ -76,5 +98,30 @@ func getOrder(target string) string {
     }
 
     return result
+}
+```
+
+Method 2 (Array, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func isIsomorphic(s string, t string) bool {
+    var mappingS [128]int
+    var mappingT [128]int
+    n := len(s)
+    if n != len(t) {
+        return false
+    }
+
+    for index := 0; index < n; index++ {
+        asciiS := int(s[index])
+        asciiT := int(t[index])
+        if mappingS[asciiS] != mappingT[asciiT] {
+            return false
+        }
+
+        mappingS[asciiS] = index + 1
+        mappingT[asciiT] = index + 1
+    }
+
+    return true
 }
 ```
