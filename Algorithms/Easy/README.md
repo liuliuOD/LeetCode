@@ -66,7 +66,7 @@
 |[Find The Peaks](FindThePeaks.md)|[Largest 3-Same-Digit Number In String](Largest3SameDigitNumberInString.md)|[Count Of Matches In Tournament](CountOfMatchesInTournament.md)|[Calculate Money In Leetcode Bank](CalculateMoneyInLeetcodeBank.md)|[Largest Odd Number In String](LargestOddNumberInString.md)|
 |[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)|[Maximum Product Of Two Elements In An Array](MaximumProductOfTwoElementsInAnArray.md)|[Special Positions In A Binary Matrix](SpecialPositionsInABinaryMatrix.md)|[Destination City](DestinationCity.md)|
 |[Valid Anagram](ValidAnagram.md)|[Maximum Product Difference Between Two Pairs](MaximumProductDifferenceBetweenTwoPairs.md)|[Image Smoother](ImageSmoother.md)|[Maximum Score After Splitting A String](MaximumScoreAfterSplittingAString.md)|[Path Crossing](PathCrossing.md)|
-|[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Pascal's Triangle](PascalsTriangle.md)|[Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)|[Reverse Linked List](ReverseLinkedList.md)||
+|[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Pascal's Triangle](PascalsTriangle.md)|[Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)|[Reverse Linked List](ReverseLinkedList.md)|[Isomorphic Strings](IsomorphicStrings.md)|
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
