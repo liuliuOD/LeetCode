@@ -158,6 +158,7 @@ class Solution:
 
         m = len(board)
         n = len(board[0])
+        # Option 1
         if index_m > 0:
             temp = board[index_m-1][index_n]
             if temp == word[0]:
@@ -186,6 +187,69 @@ class Solution:
                 if self.valid(index_m, index_n+1, word[1:], board):
                     return True
                 board[index_m][index_n+1] = temp
+        """
+        # Option 2
+
+        for offset_m, offset_n in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            index_m_next = index_m + offset_m
+            index_n_next = index_n + offset_n
+            if index_m_next < 0 or index_m_next >= m:
+                continue
+            if index_n_next < 0 or index_n_next >= n:
+                continue
+
+            temp = board[index_m_next][index_n_next]
+            if temp != word[0]:
+                continue
+
+            board[index_m_next][index_n_next] = None
+            if self.valid(index_m_next, index_n_next, word[1:], board):
+                return True
+            board[index_m_next][index_n_next] = temp
+        """
+
+        return False
+```
+
+Method 5 (DFS + Backtracking) :
+```python
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        m = len(board)
+        n = len(board[0])
+        for index_m in range(m):
+            for index_n in range(n):
+                if self.valid(index_m, index_n, word, board):
+                    return True
+
+        return False
+
+    def valid(self, index_m: int, index_n: int, word: str, board: List[List[str]]) -> bool:
+        if word == "":
+            return True
+
+        if board[index_m][index_n] != word[0]:
+            return False
+        if len(word) == 1:
+            return True
+
+        temp = board[index_m][index_n]
+        board[index_m][index_n] = None
+
+        m = len(board)
+        n = len(board[0])
+        for offset_m, offset_n in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
+            index_m_next = index_m + offset_m
+            index_n_next = index_n + offset_n
+            if index_m_next < 0 or index_m_next >= m:
+                continue
+            if index_n_next < 0 or index_n_next >= n:
+                continue
+
+            if self.valid(index_m_next, index_n_next, word[1:], board):
+                return True
+
+        board[index_m][index_n] = temp
 
         return False
 ```
