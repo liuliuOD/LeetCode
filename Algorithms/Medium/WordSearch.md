@@ -133,6 +133,63 @@ class Solution:
         return False
 ```
 
+Method 4 (DFS + Backtracking) :
+```python
+class Solution:
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        m = len(board)
+        n = len(board[0])
+        for index_m in range(m):
+            for index_n in range(n):
+                temp = board[index_m][index_n]
+                if temp != word[0]:
+                    continue
+
+                board[index_m][index_n] = None
+                if self.valid(index_m, index_n, word[1:], board):
+                    return True
+                board[index_m][index_n] = temp
+
+        return False
+
+    def valid(self, index_m: int, index_n: int, word: str, board: List[List[str]]) -> bool:
+        if word == "":
+            return True
+
+        m = len(board)
+        n = len(board[0])
+        if index_m > 0:
+            temp = board[index_m-1][index_n]
+            if temp == word[0]:
+                board[index_m-1][index_n] = None
+                if self.valid(index_m-1, index_n, word[1:], board):
+                    return True
+                board[index_m-1][index_n] = temp
+        if index_m < m-1:
+            temp = board[index_m+1][index_n]
+            if temp == word[0]:
+                board[index_m+1][index_n] = None
+                if self.valid(index_m+1, index_n, word[1:], board):
+                    return True
+                board[index_m+1][index_n] = temp
+        if index_n > 0:
+            temp = board[index_m][index_n-1]
+            if temp == word[0]:
+                board[index_m][index_n-1] = None
+                if self.valid(index_m, index_n-1, word[1:], board):
+                    return True
+                board[index_m][index_n-1] = temp
+        if index_n < n-1:
+            temp = board[index_m][index_n+1]
+            if temp == word[0]:
+                board[index_m][index_n+1] = None
+                if self.valid(index_m, index_n+1, word[1:], board):
+                    return True
+                board[index_m][index_n+1] = temp
+
+        return False
+```
+
 ### Solution :
 
 Method 1 (DFS) :
