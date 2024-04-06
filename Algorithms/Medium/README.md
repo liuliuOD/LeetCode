@@ -116,3 +116,4 @@
 - [Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)
 - [Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)
 - [Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)
+- [Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)
