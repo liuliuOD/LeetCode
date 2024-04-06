@@ -37,3 +37,54 @@ class Solution:
 
         return result[::-1]
 ```
+
+Method 2 (Array, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        left = []
+        right = []
+        for index, char in enumerate(s):
+            if char == '(':
+                left.append(index)
+            if char == ')':
+                if left:
+                    left.pop()
+                else:
+                    right.append(index)
+
+        result = ""
+        for index in range(len(s)):
+            if index in left or index in right:
+                continue
+
+            result += s[index]
+
+        return result
+```
+
+Method 3 (Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def minRemoveToMakeValid(self, s: str) -> str:
+        left = []
+        right = []
+        for index, char in enumerate(s):
+            if char == '(':
+                left.append(index)
+            if char == ')':
+                if left:
+                    left.pop()
+                else:
+                    right.append(index)
+
+        result = ""
+        index_removal = set(left+right)
+        for index in range(len(s)):
+            if index in index_removal:
+                continue
+
+            result += s[index]
+
+        return result
+```
