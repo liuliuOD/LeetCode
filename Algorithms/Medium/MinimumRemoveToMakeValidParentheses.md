@@ -129,3 +129,38 @@ func minRemoveToMakeValid(s string) string {
     return string(result)
 }
 ```
+
+Method 2 (Stack, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+type parenthese struct {
+    isLeft bool
+    index int
+}
+func minRemoveToMakeValid(s string) string {
+    var stack []parenthese
+    for index, char := range s {
+        if char == '(' {
+            stack = append(stack, parenthese{true, index})
+        } else if char == ')' {
+            if len(stack) > 0 && stack[len(stack)-1].isLeft {
+                stack = stack[:len(stack)-1]
+            } else {
+                stack = append(stack, parenthese{false, index})
+            }
+        }
+    }
+
+    var result []byte
+    index_stack := 0
+    for index := 0; index < len(s); index++ {
+        if index_stack < len(stack) && stack[index_stack].index == index {
+            index_stack++
+            continue
+        }
+
+        result = append(result, s[index])
+    }
+
+    return string(result)
+}
+```
