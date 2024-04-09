@@ -99,3 +99,4 @@
 - [Maximum Nesting Depth Of The Parentheses](MaximumNestingDepthOfTheParentheses.md)
 - [Make The String Great](MakeTheStringGreat.md)
 - [Number Of Students Unable To Eat Lunch](NumberOfStudentsUnableToEatLunch.md)
+- [Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)
