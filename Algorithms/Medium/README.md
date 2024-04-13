@@ -29,7 +29,7 @@
 |[Largest Submatrix With Rearrangements](LargestSubmatrixWithRearrangements.md)|[Knight Dialer](KnightDialer.md)|[Number Of Ways To Divide A Long Corridor](NumberOfWaysToDivideALongCorridor.md)|[Find Minimum In Rotated Sorted Array](FindMinimumInRotatedSortedArray.md)|[House Robber](HouseRobber.md)|
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
 |[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|
-|[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|||||
+|[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|[Maximal Square](MaximalSquare.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -86,7 +86,7 @@
 |[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Container With Most Water](ContainerWithMostWater.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Custom Sort String](CustomSortString.md)|[Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)|
 |[Contiguous Array](ContiguousArray.md)|[Reorder List](ReorderList.md)|[Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|
 |[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)|[Maximum Of Absolute Value Expression](MaximumOfAbsoluteValueExpression.md)|[Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)|
-|[Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)|[Valid Parenthesis String](ValidParenthesisString.md)|[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|[Remove K Digits](RemoveKDigits.md)||
+|[Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)|[Valid Parenthesis String](ValidParenthesisString.md)|[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|[Remove K Digits](RemoveKDigits.md)|[Maximal Square](MaximalSquare.md)|
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
@@ -119,3 +119,4 @@
 - [Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)
 - [Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)
 - [Remove K Digits](RemoveKDigits.md)
+- [Maximal Square](MaximalSquare.md)
