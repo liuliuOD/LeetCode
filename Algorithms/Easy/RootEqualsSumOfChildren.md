@@ -32,10 +32,24 @@ use std::rc::Rc;
 use std::cell::RefCell;
 impl Solution {
     pub fn check_tree(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        /* Option 1 */
         let node = root.as_ref().unwrap().borrow();
         let val_left: i32 = node.left.as_ref().unwrap().borrow().val;
         let val_right: i32 = node.right.as_ref().unwrap().borrow().val;
         return node.val == val_left+val_right
+        /* Option 2
+
+        return root.as_ref().unwrap().borrow().val == root.as_ref().unwrap().borrow().left.as_ref().unwrap().borrow().val + root.as_ref().unwrap().borrow().right.as_ref().unwrap().borrow().val
+        */
+        /* Option 3
+
+        return match root {
+            None => true,
+            Some(node) => {
+                node.borrow().val == node.borrow().left.as_ref().unwrap().borrow().val + node.borrow().right.as_ref().unwrap().borrow().val
+            }
+        }
+        */
     }
 }
 ```
