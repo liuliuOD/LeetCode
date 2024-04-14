@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 938. [Range Sum Of BST](https://leetcode.com/problems/range-sum-of-bst)
@@ -111,4 +112,54 @@ class Solution:
 
         return root.val + left + right
         """
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+```
+
+Method 1 (Recursion, Time Complexity: $O(N)$, Space Complexity: $O(D)$ (D: depth of binary search tree)) :
+```go
+func rangeSumBST(root *TreeNode, low int, high int) int {
+    if root == nil {
+        return 0
+    }
+
+    /* Option 1 */
+    var result int
+    if low <= root.Val && root.Val <= high {
+        result += root.Val
+    }
+
+    if root.Val <= high {
+        result += rangeSumBST(root.Right, low, high)
+    }
+    if low <= root.Val {
+        result += rangeSumBST(root.Left, low, high)
+    }
+
+    return result
+    /*
+    // Option 2
+
+    if low <= root.Val && root.Val <= high {
+        return root.Val + rangeSumBST(root.Right, low, high) + rangeSumBST(root.Left, low, high)
+    } else if high < root.Val {
+        return rangeSumBST(root.Left, low, high)
+    } else if root.Val < low {
+        return rangeSumBST(root.Right, low, high)
+    }
+
+    return 0
+    */
+}
 ```
