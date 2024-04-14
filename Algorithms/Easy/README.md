@@ -27,7 +27,7 @@
 |[Binary Tree Inorder Traversal](BinaryTreeInorderTraversal.md)|[Transpose Matrix](TransposeMatrix.md)|[Maximum Product Of Two Elements In An Array](MaximumProductOfTwoElementsInAnArray.md)|[Special Positions In A Binary Matrix](SpecialPositionsInABinaryMatrix.md)|[Destination City](DestinationCity.md)|
 |[Valid Anagram](ValidAnagram.md)|[Maximum Product Difference Between Two Pairs](MaximumProductDifferenceBetweenTwoPairs.md)|[Image Smoother](ImageSmoother.md)|[Maximum Score After Splitting A String](MaximumScoreAfterSplittingAString.md)|[Path Crossing](PathCrossing.md)|
 |[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Pascal's Triangle](PascalsTriangle.md)|[Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)|[Reverse Linked List](ReverseLinkedList.md)|[Sum Of Left Leaves](SumOfLeftLeaves.md)|
-|[Range Sum Of BST](RangeSumOfBST.md)|||||
+|[Range Sum Of BST](RangeSumOfBST.md)|[Root Equals Sum Of Children](RootEqualsSumOfChildren.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
