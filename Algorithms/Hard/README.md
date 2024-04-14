@@ -31,7 +31,7 @@
 |[Meeting Rooms III](MeetingRoomsIII.md)|[Find All People With Secret](FindAllPeopleWithSecret.md)|[First Missing Positive](FirstMissingPositive.md)|[Frog Jump](FrogJump.md)|[Minimum Replacements To Sort The Array](MinimumReplacementsToSortTheArray.md)|
 |[Minimum Number Of Taps To Open To Water A Garden](MinimumNumberOfTapsToOpenToWaterAGarden.md)|[Merge K Sorted Lists](MergeKSortedLists.md)|[Candy](Candy.md)|[Reverse Nodes In K Group](ReverseNodesInKGroup.md)|[Median Of Two Sorted Arrays](MedianOfTwoSortedArrays.md)|
 |[Binary Tree Maximum Path Sum](BinaryTreeMaximumPathSum.md)|[Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)|[Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)|[Patching Array](PatchingArray.md)|[Count Complete Substrings](CountCompleteSubstrings.md)|
-|[Subarrays With K Different Integers](SubarraysWithKDifferentIntegers.md)|[Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)|[Trapping Rain Water](TrappingRainWater.md)|[Largest Rectangle In Histogram](LargestRectangleInHistogram.md)||
+|[Subarrays With K Different Integers](SubarraysWithKDifferentIntegers.md)|[Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)|[Trapping Rain Water](TrappingRainWater.md)|[Largest Rectangle In Histogram](LargestRectangleInHistogram.md)|[Maximal Rectangle](MaximalRectangle.md)|
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
