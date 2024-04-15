@@ -103,3 +103,4 @@
 - [Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)
 - [Sum Of Left Leaves](SumOfLeftLeaves.md)
 - [Range Sum Of BST](RangeSumOfBST.md)
+- [Merge Two Binary Trees](MergeTwoBinaryTrees.md)
