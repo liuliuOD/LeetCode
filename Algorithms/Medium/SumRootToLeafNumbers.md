@@ -1,4 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 129. [Sum Root To Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)
@@ -55,5 +57,78 @@ impl Solution {
             },
         }
     }
+}
+```
+
+### Solution :
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+```
+
+Method 1 (Recursive Traversal, Time Complexity: $O(N)$, Space Complexity: $O(D)$ (D: depth of the tree)) :
+```python
+class Solution:
+    def sumNumbers(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return 0
+        return self.traverse(root, 0)
+
+    def traverse(self, node: Optional[TreeNode], summarize: int) -> int:
+        summarize = summarize*10 + node.val
+        if node.left is None and node.right is None:
+            return summarize
+
+        result = 0
+        if node.left:
+            result += self.traverse(node.left, summarize)
+        if node.right:
+            result += self.traverse(node.right, summarize)
+
+        return result
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for a binary tree node.
+ * type TreeNode struct {
+ *     Val int
+ *     Left *TreeNode
+ *     Right *TreeNode
+ * }
+ */
+```
+
+Method 1 (Recursive Traversal, Time Complexity: $O(N)$, Space Complexity: $O(D)$ (D: depth of the tree)) :
+```go
+func sumNumbers(root *TreeNode) int {
+    if root == nil {
+        return 0
+    }
+    return traverse(root, 0)
+}
+
+func traverse(node *TreeNode, current int) int {
+    var next int = current * 10 + node.Val
+    if node.Left == nil && node.Right == nil {
+        return next
+    }
+
+    var result int
+    if node.Left != nil {
+        result += traverse(node.Left, next)
+    }
+    if node.Right != nil {
+        result += traverse(node.Right, next)
+    }
+
+    return result
 }
 ```
