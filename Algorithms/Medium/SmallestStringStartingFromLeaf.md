@@ -64,6 +64,41 @@ impl Solution {
 }
 ```
 
+Method 2 (Recursive DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+const BASE: u32 = 'a' as u32;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn smallest_from_leaf(root: Custom) -> String {
+        let mut result: String = "".to_string();
+        Self::traverse(root.clone(), &"".to_string(), &mut result);
+
+        return result
+    }
+
+    fn traverse(node: Custom, current: &String, result: &mut String) {
+        if node.is_none() {
+            return
+        }
+
+        let inner = node.as_ref().unwrap().borrow();
+        let current = format!("{}{}", char::from_u32(BASE+inner.val as u32).unwrap().to_string(), *current);
+        if inner.left.is_none() && inner.right.is_none() {
+            if *result == "" || *result > current {
+                *result = current;
+            }
+
+            return
+        }
+
+        Self::traverse(inner.left.clone(), &current, result);
+        Self::traverse(inner.right.clone(), &current, result);
+    }
+}
+```
+
 ### Solution :
 
 ```python
