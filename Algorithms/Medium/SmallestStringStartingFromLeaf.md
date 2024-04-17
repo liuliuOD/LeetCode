@@ -14,7 +14,7 @@
 #         self.right = right
 ```
 
-Method 1 (Recursive DFS, Time Complexity: $O(N)$, Space Complexity: $O()$) :
+Method 1 (Recursive DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 BASE: int = ord("a")
 class Solution:
@@ -27,10 +27,17 @@ class Solution:
     def traverse(self, node: Optional[TreeNode], string: str):
         string = chr(BASE+node.val) + string
         if node.left is None and node.right is None:
+            # Option 1
             if self.result is None:
                 self.result = string
             else:
                 self.result = min(self.result, string)
+            """
+            # Option 2
+
+            if self.result is None or self.result > string:
+                self.result = string
+            """
             return None
 
         if node.left:
