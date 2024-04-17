@@ -122,3 +122,4 @@
 - [Remove K Digits](RemoveKDigits.md)
 - [Maximal Square](MaximalSquare.md)
 - [Sum Root To Leaf Numbers](SumRootToLeafNumbers.md)
+- [Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)
