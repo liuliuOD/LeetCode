@@ -28,7 +28,6 @@
 
 Method 1 (In-Order DFS + List, Time Complexity: $O(N)$ (N: amount of nodes), Space Complexity: $O(N)$) :
 ```rust
-
 use std::rc::Rc;
 use std::cell::RefCell;
 type Custom = Option<Rc<RefCell<TreeNode>>>;
@@ -50,6 +49,7 @@ impl Solution {
     }
 
     fn traverse(nodes: &mut Vec<i32>, node: Custom) {
+        /* Option 1 */
         return match node {
             None => (),
             Some(node) => {
@@ -67,6 +67,23 @@ impl Solution {
                 }
             },
         }
+        /* Option 2
+
+        return if let Some(node) = node {
+            let node = node.borrow();
+            if node.left.is_none() && node.right.is_none() {
+                return nodes.push(node.val)
+            }
+
+            if node.left.is_some() {
+                Self::traverse(nodes, node.left.clone());
+            }
+            nodes.push(node.val);
+            if node.right.is_some() {
+                Self::traverse(nodes, node.right.clone());
+            }
+        }
+        */
     }
 }
 ```
