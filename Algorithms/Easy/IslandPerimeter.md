@@ -55,9 +55,42 @@ impl Solution {
 }
 ```
 
+Method 2 (Traverse, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn island_perimeter(grid: Vec<Vec<i32>>) -> i32 {
+        let mut result : i32 = 0;
+        let m: usize = grid.len();
+        let n: usize = grid[0].len();
+        for index_m in 0..m {
+            for index_n in 0..n {
+                if grid[index_m][index_n] == 0 {
+                    continue;
+                }
+
+                for (offset_m, offset_n) in [(0, -1), (0, 1), (-1, 0), (1, 0)] {
+                    let index_m_next: usize = ((index_m as i32) + offset_m) as usize;
+                    let index_n_next: usize = ((index_n as i32) + offset_n) as usize;
+                    if index_m_next < m && index_n_next < n {
+                        match grid[index_m_next][index_n_next] {
+                            0 => result += 1,
+                            _ => (),
+                        };
+                    } else {
+                        result += 1;
+                    }
+                }
+            }
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
-Method 1 (Brute Force, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+Method 1 (Traverse, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def islandPerimeter(self, grid: List[List[int]]) -> int:
