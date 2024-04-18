@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 463. [Island Perimeter](https://leetcode.com/problems/island-perimeter)
@@ -52,4 +53,29 @@ impl Solution {
         return amount * 4 - connected_amount * 2
     }
 }
+```
+
+### Solution :
+
+Method 1 (Brute Force, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def islandPerimeter(self, grid: List[List[int]]) -> int:
+        m = len(grid)
+        n = len(grid[0])
+        result: int = 0
+        for index_m in range(m):
+            for index_n in range(n):
+                if grid[index_m][index_n] == 0:
+                    continue
+
+                for offset_m, offset_n in [(0, -1), (0, 1), (-1, 0), (1, 0)]:
+                    index_m_next = index_m+offset_m
+                    index_n_next = index_n+offset_n
+                    if 0 <= index_m_next < m and 0 <= index_n_next < n:
+                        result += int(grid[index_m_next][index_n_next] == 0)
+                    else:
+                        result += 1
+
+        return result
 ```
