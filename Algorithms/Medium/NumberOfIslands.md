@@ -1,7 +1,127 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 200. [Number Of Islands](https://leetcode.com/problems/number-of-islands)
+
+### Solution :
+
+Method 1 (DFS) :
+```rust
+use std::collections::VecDeque;
+const BASE: u32 = '1' as u32;
+impl Solution {
+    pub fn num_islands(mut grid: Vec<Vec<char>>) -> i32 {
+        let m: usize = grid.len();
+        let n: usize = grid[0].len();
+        let mut result: i32 = 0;
+        /* Option 1 */
+        let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
+        for index_m in 0..m {
+            for index_n in 0..n {
+                if grid[index_m][index_n] == '0' {
+                    continue;
+                }
+
+                queue.push_back((index_m, index_n));
+            }
+        }
+
+        while queue.len() > 0 {
+            let (index_m, index_n) = queue.pop_front().unwrap();
+            if grid[index_m][index_n] != '1' {
+                continue;
+            }
+
+            result += 1;
+            let draw: char = std::char::from_u32(BASE + result as u32).unwrap();
+            let mut stack: Vec<(usize, usize)> = vec![(index_m, index_n)];
+            while stack.len() > 0 {
+                let (index_m, index_n) = stack.pop().unwrap();
+                for (offset_m, offset_n) in [(0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)] {
+                    let index_m_next: usize = ((index_m as i32) + offset_m) as usize;
+                    let index_n_next: usize = ((index_n as i32) + offset_n) as usize;
+                    if index_m_next >= m || index_n_next >= n || grid[index_m_next][index_n_next] != '1' {
+                        continue;
+                    }
+
+                    grid[index_m_next][index_n_next] = draw;
+                    stack.push((index_m_next, index_n_next));
+                }
+            }
+        }
+        /* Option 2
+
+        let mut queue: VecDeque<(usize, usize)> = VecDeque::new();
+        for index_m in 0..m {
+            for index_n in 0..n {
+                if grid[index_m][index_n] != '1' {
+                    continue;
+                }
+
+                result += 1;
+                let draw: char = std::char::from_u32(BASE + result as u32).unwrap();
+                let mut stack: Vec<(usize, usize)> = vec![(index_m, index_n)];
+                while stack.len() > 0 {
+                    let (index_m, index_n) = stack.pop().unwrap();
+                    for (offset_m, offset_n) in [(0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)] {
+                        let index_m_next: usize = ((index_m as i32) + offset_m) as usize;
+                        let index_n_next: usize = ((index_n as i32) + offset_n) as usize;
+                        if index_m_next >= m || index_n_next >= n || grid[index_m_next][index_n_next] != '1' {
+                            continue;
+                        }
+
+                        grid[index_m_next][index_n_next] = draw;
+                        stack.push((index_m_next, index_n_next));
+                    }
+                }
+            }
+        }
+        */
+
+        return result
+    }
+}
+```
+
+Method 2 (BFS) :
+```rust
+use std::collections::VecDeque;
+const BASE: u32 = '1' as u32;
+impl Solution {
+    pub fn num_islands(mut grid: Vec<Vec<char>>) -> i32 {
+        let m: usize = grid.len();
+        let n: usize = grid[0].len();
+        let mut result: i32 = 0;
+        for index_m in 0..m {
+            for index_n in 0..n {
+                if grid[index_m][index_n] != '1' {
+                    continue;
+                }
+
+                result += 1;
+                let draw: char = std::char::from_u32(BASE + result as u32).unwrap();
+                let mut queue: VecDeque<(usize, usize)> = VecDeque::from([(index_m, index_n)]);
+                while queue.len() > 0 {
+                    let (index_m, index_n) = queue.pop_front().unwrap();
+                    for (offset_m, offset_n) in [(0, 0), (-1, 0), (1, 0), (0, -1), (0, 1)] {
+                        let index_m_next: usize = ((index_m as i32) + offset_m) as usize;
+                        let index_n_next: usize = ((index_n as i32) + offset_n) as usize;
+                        if index_m_next >= m || index_n_next >= n || grid[index_m_next][index_n_next] != '1' {
+                            continue;
+                        }
+
+                        grid[index_m_next][index_n_next] = draw;
+                        queue.push_back((index_m_next, index_n_next));
+                    }
+                }
+            }
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
