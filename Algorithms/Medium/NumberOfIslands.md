@@ -6,7 +6,7 @@
 
 ### Solution :
 
-Method 1 (DFS) :
+Method 1 (DFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$) :
 ```rust
 use std::collections::VecDeque;
 const BASE: u32 = '1' as u32;
@@ -84,7 +84,7 @@ impl Solution {
 }
 ```
 
-Method 2 (BFS) :
+Method 2 (BFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$) :
 ```rust
 use std::collections::VecDeque;
 const BASE: u32 = '1' as u32;
@@ -125,7 +125,7 @@ impl Solution {
 
 ### Solution :
 
-Method 1 (DFS) :
+Method 1 (DFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$) :
 ```python
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
@@ -172,7 +172,7 @@ class Solution:
         return result
 ```
 
-Method 2 (BFS) :
+Method 2 (BFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$) :
 ```python
 class Solution:
     def numIslands(self, grid: List[List[str]]) -> int:
