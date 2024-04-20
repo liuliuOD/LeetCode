@@ -1,12 +1,43 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 1992. [Find All Groups Of Farmland](https://leetcode.com/problems/find-all-groups-of-farmland)
 
 ### Solution :
 
-Method 1 (DFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$) :
+Method 1 (Greedy, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
 ```rust
+impl Solution {
+    pub fn find_farmland(mut land: Vec<Vec<i32>>) -> Vec<Vec<i32>> {
+        let mut result: Vec<Vec<i32>> = vec![];
+        let m: usize = land.len();
+        let n: usize = land[0].len();
+        for r1 in 0..m {
+            for c1 in 0..n {
+                if land[r1][c1] == 0 {
+                    continue;
+                }
+
+                let mut r2: usize = r1;
+                let mut c2: usize = c1;
+                while r2 < m && land[r2][c1] == 1 {
+                    c2 = c1;
+                    while c2 < n && land[r2][c2] == 1 {
+                        land[r2][c2] = 0;
+                        c2 += 1;
+                    }
+                    r2 += 1;
+                }
+
+                result.push(vec![r1 as i32, c1 as i32, (r2 as i32)-1, (c2 as i32)-1]);
+            }
+        }
+
+        return result
+    }
+}
 ```
 
 ### Solution :
@@ -101,4 +132,36 @@ class Solution:
                 result.append([r1, c1, r2-1, c2-1])
 
         return result
+```
+
+### Solution :
+
+Method 1 (Greedy, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+```rust
+```go
+func findFarmland(land [][]int) [][]int {
+    var result [][]int
+    m := len(land)
+    n := len(land[0])
+    for r1 := 0; r1 < m; r1++ {
+        for c1 := 0; c1 < n; c1++ {
+            if land[r1][c1] == 0 {
+                continue
+            }
+
+            r2 := r1
+            c2 := c1
+            for ; r2 < m && land[r2][c1] == 1; r2++ {
+                c2 = c1
+                for ; c2 < n && land[r2][c2] == 1; c2++ {
+                    land[r2][c2] = 0;
+                }
+            }
+
+            result = append(result, []int{r1, c1, r2-1, c2-1})
+        }
+    }
+
+    return result
+}
 ```
