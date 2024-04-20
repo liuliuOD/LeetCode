@@ -126,3 +126,35 @@ class Solution:
 
         return result
 ```
+
+Method 2 (In-Order DFS, Time Complexity: $O(N)$ (N: amount of nodes), Space Complexity: $O(D)$ (D: depth of binary search tree)) :
+```python
+class Solution:
+    def increasingBST(self, root: TreeNode) -> TreeNode | None:
+        result, _ = self.in_order(root)
+        return result
+
+    def in_order(self, node: TreeNode) -> (TreeNode, TreeNode):
+        if node.left is None and node.right is None:
+            return node, node
+
+        result = None
+        current = TreeNode(node.val)
+        if node.left:
+            left, left_tail = self.in_order(node.left)
+            if left:
+                result = left
+                left_tail.right = current
+                left_tail = left_tail.right
+
+        if not result:
+            left_tail = result = current
+
+        if node.right:
+            right, right_tail = self.in_order(node.right)
+            if right:
+                left_tail.right = right
+
+            return result, right_tail
+        return result, left_tail
+```
