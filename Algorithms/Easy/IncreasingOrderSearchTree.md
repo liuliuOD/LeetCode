@@ -89,6 +89,34 @@ impl Solution {
 }
 ```
 
+Method 2 (In-Order DFS, Time Complexity: $O(N)$ (N: amount of nodes), Space Complexity: $O(D)$ (D: depth of binary search tree)) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn increasing_bst(root: Custom) -> Custom {
+        let mut result: Custom = None;
+        Solution::bst(root.clone(), &mut result);
+        return result
+    }
+
+    fn bst(node: Custom, result: &mut Custom) {
+        if node.is_some() {
+            let mut inner = node.as_ref().unwrap().borrow_mut();
+
+            /* right nodes */
+            Solution::bst(inner.right.clone(), result);
+
+            *result = Some(Rc::new(RefCell::new(TreeNode{val: inner.val, left: None, right: result.clone()})));
+
+            /* left nodes */
+            Solution::bst(inner.left.clone(), result);
+        }
+    }
+}
+```
+
 ### Solution :
 
 ```python
