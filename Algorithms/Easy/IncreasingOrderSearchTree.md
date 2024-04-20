@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 897. [Increasing Order Search Tree](https://leetcode.com/problems/increasing-order-search-tree)
@@ -86,4 +87,42 @@ impl Solution {
         */
     }
 }
+```
+
+### Solution :
+
+```python
+# Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+```
+
+Method 1 (In-Order DFS, Time Complexity: $O(N)$ (N: amount of nodes), Space Complexity: $O(D)$ (D: depth of binary search tree)) :
+```python
+class Solution:
+    def increasingBST(self, root: TreeNode) -> TreeNode | None:
+        result = None
+        if root is None:
+            return result
+
+        if left := self.increasingBST(root.left):
+            result = left
+
+        current = TreeNode(root.val)
+        if not result:
+            pointer = result = current
+        else:
+            pointer = result
+            while pointer.right:
+                pointer = pointer.right
+            pointer.right = current
+            pointer = pointer.right
+
+        if right := self.increasingBST(root.right):
+            pointer.right = right
+
+        return result
 ```

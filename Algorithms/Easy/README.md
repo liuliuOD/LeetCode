@@ -70,7 +70,7 @@
 |[Valid Anagram](ValidAnagram.md)|[Maximum Product Difference Between Two Pairs](MaximumProductDifferenceBetweenTwoPairs.md)|[Image Smoother](ImageSmoother.md)|[Maximum Score After Splitting A String](MaximumScoreAfterSplittingAString.md)|[Path Crossing](PathCrossing.md)|
 |[Minimum Changes To Make Alternating Binary String](MinimumChangesToMakeAlternatingBinaryString.md)|[Pascal's Triangle](PascalsTriangle.md)|[Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)|[Reverse Linked List](ReverseLinkedList.md)|[Isomorphic Strings](IsomorphicStrings.md)|
 |[Maximum Nesting Depth Of The Parentheses](MaximumNestingDepthOfTheParentheses.md)|[Make The String Great](MakeTheStringGreat.md)|[Number Of Students Unable To Eat Lunch](NumberOfStudentsUnableToEatLunch.md)|[Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)|[Sum Of Left Leaves](SumOfLeftLeaves.md)|
-|[Island Perimeter](IslandPerimeter.md)|||||
+|[Island Perimeter](IslandPerimeter.md)|[Increasing Order Search Tree](IncreasingOrderSearchTree.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
