@@ -90,3 +90,23 @@ func numberOfSpecialChars(word string) int {
     return result
 }
 ```
+
+Method 2 (Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func numberOfSpecialChars(word string) int {
+    var exists map[rune]bool = make(map[rune]bool)
+    for _, char := range word {
+        exists[char] = true
+    }
+
+    var result int
+    for offset := 0; offset < 26; offset++ {
+        _, ok_lower := exists['a' + rune(offset)]
+        _, ok_upper := exists['A' + rune(offset)]
+        if ok_lower && ok_upper {
+            result += 1
+        }
+    }
+    return result
+}
+```
