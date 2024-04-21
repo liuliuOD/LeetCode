@@ -137,7 +137,6 @@ class Solution:
 ### Solution :
 
 Method 1 (Greedy, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
-```rust
 ```go
 func findFarmland(land [][]int) [][]int {
     var result [][]int
