@@ -6,8 +6,44 @@
 
 ### Solution :
 
-Method 1 :
+Method 1 (Union Find, Time Complexity: $O(V+E)$ (V: amount of vertices = `n`, E: amount of linked edges = `edges`), Space Complexity: $O(V+E)$) :
 ```rust
+struct UnionFind {
+    items: Vec<i32>
+}
+
+impl UnionFind {
+    pub fn new(n: i32) -> Self {
+        return Self{items: Vec::from_iter(0..n)}
+    }
+
+    pub fn find(&self, mut target: i32) -> i32 {
+        if self.items[target as usize] != target {
+            target = Self::find(self, self.items[target as usize]);
+        }
+        return target
+    }
+
+    pub fn union(&mut self, a: i32, b: i32) {
+        let root_a: i32 = Self::find(self, a);
+        let root_b: i32 = Self::find(self, b);
+        if root_a == root_b {
+            return
+        }
+        self.items[root_a as usize] = root_b;
+    }
+}
+
+impl Solution {
+    pub fn valid_path(n: i32, edges: Vec<Vec<i32>>, source: i32, destination: i32) -> bool {
+        let mut union_find: UnionFind = UnionFind::new(n);
+        for item in edges {
+            union_find.union(item[0], item[1]);
+        }
+
+        return union_find.find(source) == union_find.find(destination)
+    }
+}
 ```
 
 ### Solution :
