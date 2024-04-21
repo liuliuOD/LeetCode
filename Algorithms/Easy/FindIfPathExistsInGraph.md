@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 1971. [Find If Path Exists In Graph](https://leetcode.com/problems/find-if-path-exists-in-graph)
@@ -101,4 +102,41 @@ class Solution:
             uf.union(u, v)
 
         return uf.find(source) == uf.find(destination)
+```
+
+### Solution :
+
+Method 1 (Union Find, Time Complexity: $O(V+E)$ (V: amount of vertices = `n`, E: amount of linked edges = `edges`), Space Complexity: $O(V+E)$) :
+```go
+type UnionFind struct {
+    items []int
+}
+
+func (uf UnionFind) Find(target int) int {
+    if uf.items[target] != target {
+        target = uf.Find(uf.items[target])
+    }
+    return target
+}
+func (uf UnionFind) Union(a int, b int) {
+    root_a, root_b := uf.Find(a), uf.Find(b)
+    if root_a == root_b {
+        return
+    }
+
+    uf.items[root_a] = root_b
+}
+
+func validPath(n int, edges [][]int, source int, destination int) bool {
+    var items []int
+    for value := 0; value < n; value++ {
+        items = append(items, value)
+    }
+    var union_find UnionFind = UnionFind{items: items}
+    for _, edge := range edges {
+        union_find.Union(edge[0], edge[1])
+    }
+
+    return union_find.Find(source) == union_find.Find(destination)
+}
 ```
