@@ -91,19 +91,9 @@
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ## Go
 
-- [Minimum Common Value](MinimumCommonValue.md)
-- [Intersection Of Two Arrays](IntersectionOfTwoArrays.md)
-- [Find The Pivot Integer](FindThePivotInteger.md)
-- [Palindrome Linked List](PalindromeLinkedList.md)
-- [Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)
-- [Reverse Linked List](ReverseLinkedList.md)
-- [Length Of Last Word](LengthOfLastWord.md)
-- [Isomorphic Strings](IsomorphicStrings.md)
-- [Maximum Nesting Depth Of The Parentheses](MaximumNestingDepthOfTheParentheses.md)
-- [Make The String Great](MakeTheStringGreat.md)
-- [Number Of Students Unable To Eat Lunch](NumberOfStudentsUnableToEatLunch.md)
-- [Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)
-- [Sum Of Left Leaves](SumOfLeftLeaves.md)
-- [Range Sum Of BST](RangeSumOfBST.md)
-- [Merge Two Binary Trees](MergeTwoBinaryTrees.md)
-- [Find If Path Exists In Graph](FindIfPathExistsInGraph.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Minimum Common Value](MinimumCommonValue.md)|[Intersection Of Two Arrays](IntersectionOfTwoArrays.md)|[Find The Pivot Integer](FindThePivotInteger.md)|[Palindrome Linked List](PalindromeLinkedList.md)|[Count Elements With Maximum Frequency](CountElementsWithMaximumFrequency.md)|
+|[Reverse Linked List](ReverseLinkedList.md)|[Length Of Last Word](LengthOfLastWord.md)|[Isomorphic Strings](IsomorphicStrings.md)|[Maximum Nesting Depth Of The Parentheses](MaximumNestingDepthOfTheParentheses.md)|[Make The String Great](MakeTheStringGreat.md)|
+|[Number Of Students Unable To Eat Lunch](NumberOfStudentsUnableToEatLunch.md)|[Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)|[Sum Of Left Leaves](SumOfLeftLeaves.md)|[Range Sum Of BST](RangeSumOfBST.md)|[Merge Two Binary Trees](MergeTwoBinaryTrees.md)|
+|[Find If Path Exists In Graph](FindIfPathExistsInGraph.md)|||||
