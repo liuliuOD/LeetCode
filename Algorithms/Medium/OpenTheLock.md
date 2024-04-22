@@ -1,8 +1,71 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 752. [Open The Lock](https://leetcode.com/problems/open-the-lock)
+
+### Solution :
+
+Method 1 (BFS, Time Complexity: $O(4*(N+10^4))$ (N: length of `deadends`), Space Complexity: $O(4*(N+10^4))$) :
+```rust
+use std::collections::{HashSet, VecDeque};
+
+impl Solution {
+    pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {
+        let BASE: String = String::from("0000");
+        let mut visited: HashSet<String> = HashSet::from_iter(deadends);
+        if visited.contains(&BASE) {
+            return -1
+        }
+
+        let mut queue: VecDeque<String> = VecDeque::from([BASE]);
+        let mut result: i32 = 0;
+        while queue.len() > 0 {
+            let n: usize = queue.len();
+            for _ in 0..n {
+                let current = queue.pop_front().unwrap();
+                if visited.contains(&current) {
+                    continue;
+                }
+                if current == target {
+                    return result
+                }
+                visited.insert(current.clone());
+
+                for index_slot in 0..4 {
+                    let mut current_temp: String = current.clone();
+                    let current_char: char = current_temp.chars().nth(index_slot).unwrap();
+                    // next
+                    current_temp.replace_range(index_slot..index_slot+1, &Self::move_next(current_char));
+                    queue.push_back(current_temp.clone());
+                    // previous
+                    current_temp.replace_range(index_slot..index_slot+1, &Self::move_previous(current_char));
+                    queue.push_back(current_temp);
+                }
+            }
+
+            result += 1;
+        }
+
+        return -1
+    }
+
+    fn move_next(slot: char) -> String {
+        if slot < '9' {
+            return char::from_u32(slot as u32 + 1).unwrap().to_string()
+        }
+        return "0".to_string()
+    }
+
+    fn move_previous(slot: char) -> String {
+        if slot > '0' {
+            return char::from_u32(slot as u32 - 1).unwrap().to_string()
+        }
+        return "9".to_string()
+    }
+}
+```
 
 ### Solution :
 

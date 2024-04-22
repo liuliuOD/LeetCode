@@ -30,7 +30,7 @@
 |[Double Modular Exponentiation](DoubleModularExponentiation.md)|[Difference Between Ones And Zeros In Row And Column](DifferenceBetweenOnesAndZerosInRowAndColumn.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|[Widest Vertical Area Between Two Points Containing No Points](WidestVerticalAreaBetweenTwoPointsContainingNoPoints.md)|[Number Of Dice Rolls With Target Sum](NumberOfDiceRollsWithTargetSum.md)|
 |[Minimum Time To Make Rope Colorful](MinimumTimeToMakeRopeColorful.md)|[Maximum Number Of Moves In A Grid](MaximumNumberOfMovesInAGrid.md)|[Kth Largest Element In An Array](KthLargestElementInAnArray.md)|[Group The People Given The Group Size They Belong To](GroupThePeopleGivenTheGroupSizeTheyBelongTo.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|
 |[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|[Maximal Square](MaximalSquare.md)|[Sum Root To Leaf Numbers](SumRootToLeafNumbers.md)|[Add One Row To Tree](AddOneRowToTree.md)|[Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)|
-|[Number Of Islands](NumberOfIslands.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)||||
+|[Number Of Islands](NumberOfIslands.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)|[Open The Lock](OpenTheLock.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
