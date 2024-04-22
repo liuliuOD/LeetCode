@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 752. [Open The Lock](https://leetcode.com/problems/open-the-lock)
@@ -69,4 +70,72 @@ class Solution:
 
         # can't open the lock
         return -1
+```
+
+### Solution :
+
+Method 1 (BFS, Time Complexity: $O(4*(N+10^4))$ (N: length of `deadends`), Space Complexity: $O(4*(N+10^4))$) :
+```go
+import "container/list"
+
+const BASE string = "0000"
+func openLock(deadends []string, target string) int {
+    var visited map[string]bool = make(map[string]bool)
+    for _, item := range deadends {
+        visited[item] = true
+    }
+
+    _, ok := visited[BASE]
+    if ok {
+        return -1
+    }
+
+    queue := list.New()
+    queue.PushBack(BASE)
+    visited[BASE] = true
+    for result := 0; queue.Len() > 0; result++ {
+        amount := queue.Len()
+        for index := 0; index < amount; index++ {
+            current := queue.Front()
+            queue.Remove(current)
+            current_val := current.Value.(string)
+            if current_val == target {
+                return result
+            }
+
+            for index_slot := 0; index_slot < 4; index_slot++ {
+                current_next := current_val
+                current_next = current_next[:index_slot] + move_next(current_next[index_slot]) + current_next[index_slot+1:]
+                _, ok := visited[current_next]
+                if !ok {
+                    queue.PushBack(current_next)
+                }
+                visited[current_next] = true
+
+                current_previous := current_val
+                current_previous = current_previous[:index_slot] + move_previous(current_previous[index_slot]) + current_previous[index_slot+1:]
+                _, ok = visited[current_previous]
+                if !ok {
+                    queue.PushBack(current_previous)
+                }
+                visited[current_previous] = true
+            }
+        }
+    }
+
+    return -1
+}
+
+func move_next(current byte) string {
+    if current + 1 <= '9' {
+        return string(current + 1)
+    }
+    return "0"
+}
+func move_previous(current byte) string {
+    if current - 1 >= '0' {
+        return string(current - 1)
+    }
+    return "9"
+}
 ```

@@ -127,3 +127,4 @@
 - [Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)
 - [Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)
 - [Minimum Number Of Operations To Satisfy Conditions](MinimumNumberOfOperationsToSatisfyConditions.md)
+- [Open The Lock](OpenTheLock.md)
