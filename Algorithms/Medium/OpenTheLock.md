@@ -67,6 +67,66 @@ impl Solution {
 }
 ```
 
+Method 2 (BFS, Time Complexity: $O(4*(N+10^4))$ (N: length of `deadends`), Space Complexity: $O(4*(N+10^4))$) :
+```rust
+use std::collections::{HashSet, VecDeque};
+
+impl Solution {
+    pub fn open_lock(deadends: Vec<String>, target: String) -> i32 {
+        let BASE: String = String::from("0000");
+        let mut visited: HashSet<String> = HashSet::from_iter(deadends);
+        if visited.contains(&BASE) {
+            return -1
+        }
+
+        let mut queue: VecDeque<String> = VecDeque::from([BASE]);
+        let mut result: i32 = 0;
+        while queue.len() > 0 {
+            let n: usize = queue.len();
+            for _ in 0..n {
+                let current = queue.pop_front().unwrap();
+                if visited.contains(&current) {
+                    continue;
+                }
+                if current == target {
+                    return result
+                }
+                visited.insert(current.clone());
+
+                for index_slot in 0..4 {
+                    let mut current_temp: Vec<char> = current.clone().chars().collect::<Vec<char>>();
+                    let current_char: char = current_temp[index_slot].clone();
+                    // next
+                    current_temp[index_slot] = Self::move_next(current_char);
+                    queue.push_back(current_temp.iter().collect::<String>());
+                    // previous
+                    current_temp[index_slot] = Self::move_previous(current_char);
+                    queue.push_back(current_temp.iter().collect::<String>());
+                }
+            }
+
+            result += 1;
+        }
+
+        return -1
+    }
+
+    fn move_next(slot: char) -> char {
+        if slot < '9' {
+            return char::from_u32(slot as u32 + 1).unwrap()
+        }
+        return '0'
+    }
+
+    fn move_previous(slot: char) -> char {
+        if slot > '0' {
+            return char::from_u32(slot as u32 - 1).unwrap()
+        }
+        return '9'
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (BFS, Time Complexity: $O(4*(N+10^4))$ (N: length of `deadends`), Space Complexity: $O(4*(N+10^4))$) :
