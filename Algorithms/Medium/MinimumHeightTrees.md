@@ -1,7 +1,55 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 310. [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)
+
+### Solution :
+
+Method 1 (Topological Sort variant, Time Complexity: $O(M+N)$ (M: length of `edges`, N: value of `n`)) :
+```rust
+use std::collections::VecDeque;
+impl Solution {
+    pub fn find_min_height_trees(n: i32, edges: Vec<Vec<i32>>) -> Vec<i32> {
+        let n: usize = n as usize;
+        let mut graph: Vec<Vec<usize>> = vec![vec![]; n];
+        let mut ingress: Vec<i32> = vec![0; n];
+        for edge in edges.into_iter() {
+            let a: usize = edge[0] as usize;
+            let b: usize = edge[1] as usize;
+            graph[a].push(b);
+            graph[b].push(a);
+
+            ingress[a] += 1;
+            ingress[b] += 1;
+        }
+
+        let mut queue: VecDeque<usize> = VecDeque::new();
+        for (index, &amount) in ingress.iter().enumerate() {
+            if amount == 0 || amount == 1 {
+                queue.push_back(index);
+            }
+        }
+
+        let mut result: Vec<i32> = vec![];
+        while queue.len() > 0 {
+            result = vec![];
+            let amount: usize = queue.len();
+            for _ in 0..amount {
+                let index: usize = queue.pop_front().unwrap();
+                result.push(index as i32);
+                for &index_next in graph[index].iter() {
+                    ingress[index_next] -= 1;
+                    if ingress[index_next] == 1 {
+                        queue.push_back(index_next);
+                    }
+                }
+            }
+        }
+        return result
+    }
+}
+```
 
 ### Solution :
 
@@ -91,6 +139,24 @@ class Solution:
             if len(temp) == 0:
                 break
             result = temp
+
+        return result
+        """
+        """
+        # Option 3
+
+        result = [index for index in range(n) if ingress[index] in [0, 1]]
+        removal = deque(result)
+        while removal:
+            result = []
+            amount = len(removal)
+            for _ in range(amount):
+                index = removal.popleft()
+                result.append(index)
+                for index_connected in graph[index]:
+                    ingress[index_connected] -= 1
+                    if ingress[index_connected] == 1:
+                        removal.append(index_connected)
 
         return result
         """
