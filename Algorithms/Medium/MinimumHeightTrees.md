@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 310. [Minimum Height Trees](https://leetcode.com/problems/minimum-height-trees)
@@ -160,4 +161,87 @@ class Solution:
 
         return result
         """
+```
+
+### Solution :
+
+Method 1 (Topological Sort variant + Built-In Queue, Time Complexity: $O(M+N)$ (M: length of `edges`, N: value of `n`)) :
+```go
+import "container/list"
+
+func findMinHeightTrees(n int, edges [][]int) []int {
+    var graph [][]int = make([][]int, n)
+    var ingress []int = make([]int, n)
+    for _, edge := range edges {
+        graph[edge[0]] = append(graph[edge[0]], edge[1])
+        graph[edge[1]] = append(graph[edge[1]], edge[0])
+
+        ingress[edge[0]]++
+        ingress[edge[1]]++
+    }
+
+    queue := list.New()
+    for index, amount := range ingress {
+        if amount == 0 || amount == 1 {
+            queue.PushBack(index)
+        }
+    }
+
+    var result []int
+    for queue.Len() > 0 {
+        result = []int{}
+        for amount := queue.Len(); amount > 0; amount-- {
+            node := queue.Front()
+            queue.Remove(node)
+            index := node.Value.(int)
+            result = append(result, index)
+            for _, index_next := range graph[index] {
+                ingress[index_next]--
+                if ingress[index_next] == 1 {
+                    queue.PushBack(index_next)
+                }
+            }
+        }
+    }
+    return result
+}
+```
+
+Method 2 (Topological Sort variant + Built-In Slice, Time Complexity: $O(M+N)$ (M: length of `edges`, N: value of `n`)) :
+```go
+func findMinHeightTrees(n int, edges [][]int) []int {
+    var graph [][]int = make([][]int, n)
+    var ingress []int = make([]int, n)
+    for _, edge := range edges {
+        graph[edge[0]] = append(graph[edge[0]], edge[1])
+        graph[edge[1]] = append(graph[edge[1]], edge[0])
+
+        ingress[edge[0]]++
+        ingress[edge[1]]++
+    }
+
+    queue := []int{}
+    for index, amount := range ingress {
+        if amount == 0 || amount == 1 {
+            queue = append(queue, index)
+        }
+    }
+
+    var result []int
+    for len(queue) > 0 {
+        result = []int{}
+        for amount := len(queue); amount > 0; amount-- {
+            index := queue[0]
+            queue = queue[1:]
+            result = append(result, index)
+            for _, index_next := range graph[index] {
+                ingress[index_next]--
+                if ingress[index_next] == 1 {
+                    queue = append(queue, index_next)
+                }
+            }
+        }
+    }
+    return result
+}
 ```
