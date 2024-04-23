@@ -45,3 +45,53 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Topological Sort variant, Time Complexity: $O(M+N)$ (M: length of `edges`, N: value of `n`)) :
+```python
+class Solution:
+    def findMinHeightTrees(self, n: int, edges: List[List[int]]) -> List[int]:
+        graph = [[] for _ in range(n)]
+        ingress = [0] * n
+        for a, b in edges:
+            graph[a].append(b)
+            graph[b].append(a)
+            ingress[a] += 1
+            ingress[b] += 1
+
+        # Option 1
+        removal = deque([index for index in range(n) if ingress[index] == 1])
+        result = set(range(n))
+        while len(result) > 2:
+            amount = len(removal)
+            for _ in range(amount):
+                index = removal.popleft()
+                result.remove(index)
+                for index_connected in graph[index]:
+                    ingress[index_connected] -= 1
+                    if ingress[index_connected] == 1:
+                        removal.append(index_connected)
+
+        return list(result)
+        """
+        # Option 2
+
+        result = [index for index in range(n) if ingress[index] in [0, 1]]
+        removal = deque(result)
+        while removal:
+            temp = []
+            amount = len(removal)
+            for _ in range(amount):
+                index = removal.popleft()
+                for index_connected in graph[index]:
+                    ingress[index_connected] -= 1
+                    if ingress[index_connected] == 1:
+                        temp.append(index_connected)
+                        removal.append(index_connected)
+
+            if len(temp) == 0:
+                break
+            result = temp
+
+        return result
+        """
+```
