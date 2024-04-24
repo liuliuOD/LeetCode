@@ -89,7 +89,7 @@
 |[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)|[Maximum Of Absolute Value Expression](MaximumOfAbsoluteValueExpression.md)|[Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)|
 |[Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)|[Valid Parenthesis String](ValidParenthesisString.md)|[Reveal Cards In Increasing Order](RevealCardsInIncreasingOrder.md)|[Remove K Digits](RemoveKDigits.md)|[Maximal Square](MaximalSquare.md)|
 |[Sum Root To Leaf Numbers](SumRootToLeafNumbers.md)|[Add One Row To Tree](AddOneRowToTree.md)|[Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)|[Minimum Number Of Operations To Satisfy Conditions](MinimumNumberOfOperationsToSatisfyConditions.md)|
-|[Open The Lock](OpenTheLock.md)|||||
+|[Open The Lock](OpenTheLock.md)|[Ugly Number III](UglyNumberIII.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
