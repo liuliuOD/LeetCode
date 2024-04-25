@@ -110,25 +110,10 @@
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ## Go
 
-- [Subarray Product Less Than K](SubarrayProductLessThanK.md)
-- [Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)
-- [Custom Sort String](CustomSortString.md)
-- [Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)
-- [Contiguous Array](ContiguousArray.md)
-- [Reorder List](ReorderList.md)
-- [Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)
-- [Find The Duplicate Number](FindTheDuplicateNumber.md)
-- [Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)
-- [Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)
-- [Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)
-- [Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)
-- [Remove K Digits](RemoveKDigits.md)
-- [Maximal Square](MaximalSquare.md)
-- [Sum Root To Leaf Numbers](SumRootToLeafNumbers.md)
-- [Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)
-- [Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)
-- [Minimum Number Of Operations To Satisfy Conditions](MinimumNumberOfOperationsToSatisfyConditions.md)
-- [Open The Lock](OpenTheLock.md)
-- [Minimum Height Trees](MinimumHeightTrees.md)
-- [Ugly Number III](UglyNumberIII.md)
-- [Longest Ideal Subsequence](LongestIdealSubsequence.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Subarray Product Less Than K](SubarrayProductLessThanK.md)|[Find The Largest Area Of Square Inside Two Rectangles](FindTheLargestAreaOfSquareInsideTwoRectangles.md)|[Custom Sort String](CustomSortString.md)|[Remove Zero Sum Consecutive Nodes From Linked List](RemoveZeroSumConsecutiveNodesFromLinkedList.md)|[Contiguous Array](ContiguousArray.md)|
+|[Reorder List](ReorderList.md)|[Find All Duplicates In An Array](FindAllDuplicatesInAnArray.md)|[Find The Duplicate Number](FindTheDuplicateNumber.md)|[Length Of Longest Subarray With At Most K Frequency](LengthOfLongestSubarrayWithAtMostKFrequency.md)|[Count Subarrays Where Max Element Appears At Least K Times](CountSubarraysWhereMaxElementAppearsAtLeastKTimes.md)|
+|[Maximum Nesting Depth Of Two Valid Parentheses Strings](MaximumNestingDepthOfTwoValidParenthesesStrings.md)|[Minimum Remove To Make Valid Parentheses](MinimumRemoveToMakeValidParentheses.md)|[Remove K Digits](RemoveKDigits.md)|[Maximal Square](MaximalSquare.md)|[Sum Root To Leaf Numbers](SumRootToLeafNumbers.md)|
+|[Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)|[Minimum Number Of Operations To Satisfy Conditions](MinimumNumberOfOperationsToSatisfyConditions.md)|[Open The Lock](OpenTheLock.md)|[Minimum Height Trees](MinimumHeightTrees.md)|
+|[Ugly Number III](UglyNumberIII.md)|[Longest Ideal Subsequence](LongestIdealSubsequence.md)||||
