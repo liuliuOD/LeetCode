@@ -1,6 +1,7 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 300. [Longest Increasing Subsequence](https://leetcode.com/problems/longest-increasing-subsequence)
@@ -169,5 +170,25 @@ class Solution {
 
         return max($dp);
     }
+}
+```
+
+### Solution :
+
+Method 1 (Dynamic Programming, Time Complexity: $O(M*N)$ (M: difference between maximum and minimum in `nums`, N: length of `nums`), Space Complexity: $O(M)$) :
+```go
+func lengthOfLIS(nums []int) int {
+    minimum := slices.Min(nums)
+    maximum := slices.Max(nums)
+    dp := make([]int, maximum - minimum + 1)
+    for _, num := range nums {
+        index := num - minimum
+        dp[index] = 1
+        if index > 0 {
+            dp[index] += slices.Max(dp[:index])
+        }
+    }
+
+    return slices.Max(dp)
 }
 ```
