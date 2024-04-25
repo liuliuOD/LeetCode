@@ -42,6 +42,23 @@ impl Solution {
 }
 ```
 
+Method 2 (Dynamic Programming, Time Complexity: $O(M*N)$ (M: difference between maximum and minimum in `nums`, N: length of `nums`), Space Complexity: $O(M)$) :
+```rust
+impl Solution {
+    pub fn length_of_lis(nums: Vec<i32>) -> i32 {
+        let minimum: i32 = *nums.iter().min().unwrap();
+        let maximum: i32 = *nums.iter().max().unwrap();
+        let mut counter: Vec<i32> = vec![0; (maximum - minimum + 1) as usize];
+        for num in nums.into_iter() {
+            let index: usize = (num - minimum) as usize;
+            counter[index] = 1 + counter[..index].to_vec().iter().max().unwrap_or(&0);
+        }
+
+        return counter.into_iter().max().unwrap()
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (DFS, ERROR: "Time Limit Exceeded", 22/54) :
