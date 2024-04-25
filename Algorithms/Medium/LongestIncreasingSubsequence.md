@@ -97,7 +97,7 @@ class Solution:
         return result
 ```
 
-Method 3 (Dynamic Programming) :
+Method 3 (Dynamic Programming, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
@@ -111,6 +111,20 @@ class Solution:
                 dp[index] = max(dp[index], 1 + dp[index_next])
 
         return max(dp)
+```
+
+Method 4 (Dynamic Programming, Time Complexity: $O(M*N)$ (M: difference between maximum and minimum in `nums`, N: length of `nums`), Space Complexity: $O(M)$) :
+```python
+class Solution:
+    def lengthOfLIS(self, nums: List[int]) -> int:
+        minimum = min(nums)
+        maximum = max(nums)
+        counter = [0] * (maximum - minimum + 1)
+        for num in nums:
+            index = num - minimum
+            counter[index] = 1 + (max(counter[:index]) if index else 0)
+
+        return max(counter)
 ```
 
 ### Solution :
