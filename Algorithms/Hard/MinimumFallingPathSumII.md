@@ -54,3 +54,33 @@ class Solution:
 
         return min(dp)
 ```
+
+Method 3 (Dynamic Programming + Space Optimization, Time Complexity: $O(N^2)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def minFallingPathSum(self, grid: List[List[int]]) -> int:
+        n = len(grid)
+        if n == 1:
+            return grid[0][0]
+
+        min_1, min_2 = (0, 0), (0, 0)
+        for row in grid:
+            temp_min_1, temp_min_2 = None, None
+            for index, column in enumerate(row):
+                current = column
+                if index == min_1[1]:
+                    current += min_2[0]
+                elif index == min_2[1]:
+                    current += min_1[0]
+                else:
+                    current += min(min_1[0], min_2[0])
+
+                if temp_min_1 is None or current < temp_min_1[0]:
+                    temp_min_1, temp_min_2 = (current, index), temp_min_1
+                elif temp_min_2 is None or current < temp_min_2[0]:
+                    temp_min_2 = (current, index)
+
+            min_1, min_2 = temp_min_1, temp_min_2
+
+        return min(min_1[0], min_2[0])
+```
