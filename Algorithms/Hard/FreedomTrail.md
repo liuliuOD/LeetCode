@@ -89,3 +89,30 @@ class Solution:
 
         return min(dfs(0, 0, 1), dfs(0, 0, -1))
 ```
+
+Method 4 (Dynamic Programming, Time Complexity: $O(M^2*N)$ (M: length of `ring`, N: length of `key`), Space Complexity: $O(M)$) :
+```python
+class Solution:
+    def findRotateSteps(self, ring: str, key: str) -> int:
+        m = len(ring)
+        n = len(key)
+        mapping = defaultdict(list)
+        for index, char in enumerate(ring):
+            mapping[char].append(index)
+
+        dp = [inf] * m
+        dp[0] = 0
+        for index_n in range(n):
+            temp = [inf] * m
+            for index_m in mapping[key[index_n]]:
+                for index_previous, move in enumerate(dp):
+                    # inf means we can't be there
+                    if move is inf:
+                        continue
+
+                    temp[index_m] = min(temp[index_m], 1 + move + min(abs(index_m-index_previous), m-abs(index_m-index_previous)))
+
+            dp = temp
+
+        return min(dp)
+```
