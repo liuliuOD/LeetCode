@@ -1,7 +1,47 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 514. [Freedom Trail](https://leetcode.com/problems/freedom-trail)
+
+### Solution :
+
+Method 1 (Dynamic Programming, Time Complexity: $O(M^2*N)$ (M: length of `ring`, N: length of `key`), Space Complexity: $O(M)$) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn find_rotate_steps(ring: String, key: String) -> i32 {
+        let ring: Vec<u8> = ring.bytes().collect::<Vec<u8>>();
+        let key: Vec<u8> = key.bytes().collect::<Vec<u8>>();
+        let m: i32 = ring.len() as i32;
+        let n: i32 = key.len() as i32;
+        let mut mapping: HashMap<u8, Vec<i32>> = HashMap::new();
+        for (index, &ascii) in ring.iter().enumerate() {
+            mapping.entry(ascii).or_default().push(index as i32);
+        }
+
+        let mut dp: Vec<i32> = vec![i32::MAX; m as usize];
+        dp[0] = 0;
+        for index_n in 0..n {
+            let mut temp: Vec<i32> = vec![i32::MAX; m as usize];
+            for &index_m in mapping.get(&key[index_n as usize]).unwrap() {
+                for (index_previous, &moves) in dp.iter().enumerate() {
+                    if moves == i32::MAX {
+                        continue;
+                    }
+
+                    temp[index_m as usize] = temp[index_m as usize].min(1 + moves + (index_m-index_previous as i32).abs().min((m-(index_m-index_previous as i32).abs())));
+                }
+            }
+
+            dp = temp;
+        }
+
+        return *dp.iter().min().unwrap()
+    }
+}
+```
 
 ### Solution :
 
