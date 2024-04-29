@@ -1,12 +1,13 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2997. [Minimum Number Of Operations To Make Array XOR Equal To K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k)
 
 ### Solution :
 
-Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```rust
 impl Solution {
     pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {
@@ -31,7 +32,7 @@ impl Solution {
 }
 ```
 
-Method 2 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 2 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```rust
 impl Solution {
     pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {
@@ -68,7 +69,7 @@ class Solution:
         return result
 ```
 
-Method 2 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 2 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
@@ -103,7 +104,7 @@ class Solution:
         return sum(current)
 ```
 
-Method 3 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 3 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def minOperations(self, nums: List[int], k: int) -> int:
@@ -119,4 +120,37 @@ class Solution:
 
         return current.bit_count()
         """
+```
+
+### Solution :
+
+Method 1 (Library, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+import "math/bits"
+
+func minOperations(nums []int, k int) int {
+    var current int = k
+    for _, num := range nums {
+        current ^= num
+    }
+
+    return bits.OnesCount(uint(current))
+}
+```
+
+Method 2 (Bitwise, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func minOperations(nums []int, k int) int {
+    var current int = k
+    for _, num := range nums {
+        current ^= num
+    }
+
+    var result int
+    for current > 0 {
+        result += current & 1
+        current >>= 1
+    }
+    return result
+}
 ```
