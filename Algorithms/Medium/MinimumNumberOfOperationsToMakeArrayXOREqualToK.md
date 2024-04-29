@@ -1,7 +1,44 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2997. [Minimum Number Of Operations To Make Array XOR Equal To K](https://leetcode.com/problems/minimum-number-of-operations-to-make-array-xor-equal-to-k)
+
+### Solution :
+
+Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {
+        let mut current: i32 = k;
+        for num in nums {
+            current ^= num;
+        }
+
+        /* Option 1 */
+        let mut result: i32 = 0;
+        while current > 0 {
+            result += current % 2;
+            current /= 2;
+        }
+
+        return result
+        /* Option 2
+
+        return current.count_ones() as i32
+        */
+    }
+}
+```
+
+Method 2 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn min_operations(nums: Vec<i32>, k: i32) -> i32 {
+        return nums.into_iter().fold(k, |a, b| a ^ b).count_ones() as i32
+    }
+}
+```
 
 ### Solution :
 
