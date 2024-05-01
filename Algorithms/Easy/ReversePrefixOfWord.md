@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def reversePrefix(self, word: str, ch: str) -> str:
@@ -22,4 +22,17 @@ class Solution:
             break
 
         return ''.join(word)
+```
+
+Method 2 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def reversePrefix(self, word: str, ch: str) -> str:
+        for index, char in enumerate(word):
+            if char != ch:
+                continue
+
+            return word[:index+1][::-1] + word[index+1:]
+
+        return word
 ```
