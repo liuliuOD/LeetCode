@@ -89,3 +89,24 @@ func reversePrefix(word string, ch byte) string {
     return word
 }
 ```
+
+Method 2 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func reversePrefix(word string, ch byte) string {
+    var result []byte = []byte(word)
+    for index, _ := range word {
+        if word[index] != ch {
+            continue
+        }
+
+        for index_left := 0; index_left < index; index_left++ {
+            result[index_left], result[index] = result[index], result[index_left]
+            index--
+        }
+
+        break
+    }
+
+    return string(result)
+}
+```
