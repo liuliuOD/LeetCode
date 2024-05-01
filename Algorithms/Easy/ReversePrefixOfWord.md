@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2000. [Reverse Prefix Of Word](https://leetcode.com/problems/reverse-prefix-of-word)
@@ -55,4 +56,36 @@ class Solution:
             return word[:index+1][::-1] + word[index+1:]
 
         return word
+```
+
+### Solution :
+
+Method 1 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func reversePrefix(word string, ch byte) string {
+    for index, _ := range word {
+        if word[index] != ch {
+            continue
+        }
+
+        /* Option 1 */
+        var prefix string
+        for index_reverse := index; index_reverse >= 0; index_reverse-- {
+            prefix += string(word[index_reverse])
+        }
+
+        return prefix + word[index+1:]
+        /* Option 2
+
+        var prefix []byte
+        for index_reverse := index; index_reverse >= 0; index_reverse-- {
+            prefix = append(prefix, word[index_reverse])
+        }
+
+        return string(prefix) + word[index+1:]
+        */
+    }
+
+    return word
+}
 ```
