@@ -1,7 +1,27 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2000. [Reverse Prefix Of Word](https://leetcode.com/problems/reverse-prefix-of-word)
+
+### Solution :
+
+Method 1 (Built-In method, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn reverse_prefix(word: String, ch: char) -> String {
+        for (index, ch_current) in word.chars().enumerate() {
+            if ch_current != ch {
+                continue;
+            }
+
+            return word[..index+1].chars().rev().collect::<String>() + &word[index+1..]
+        }
+
+        return word
+    }
+}
+```
 
 ### Solution :
 
