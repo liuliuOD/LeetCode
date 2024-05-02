@@ -7,7 +7,7 @@
 
 ### Solution :
 
-Method 1 (Hash Set, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(1)$) :
+Method 1 (Two Pointers, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(1)$) :
 ```rust
 use std::cmp::Ordering;
 impl Solution {
@@ -63,5 +63,27 @@ func findMaxK(nums []int) int {
     }
 
     return result
+}
+```
+
+Method 2 (Two Pointer, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(1)$) :
+```go
+import "sort"
+func findMaxK(nums []int) int {
+    sort.Ints(nums)
+    left := 0
+    right := len(nums) - 1
+    for left < right {
+        sum := nums[left] + nums[right]
+        if sum == 0 {
+            return nums[right]
+        } else if sum < 0 {
+            left++
+        } else {
+            right--
+        }
+    }
+
+    return -1
 }
 ```
