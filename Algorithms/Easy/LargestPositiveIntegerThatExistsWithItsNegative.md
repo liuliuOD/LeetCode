@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2441. [Largest Positive Integer That Exists With Its Negative](https://leetcode.com/problems/largest-positive-integer-that-exists-with-its-negative)
@@ -17,4 +18,26 @@ class Solution:
                 result = max(result, abs(num))
 
         return result
+```
+
+### Solution :
+
+Method 1 (Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func findMaxK(nums []int) int {
+    var result int = -1
+    var mapping map[int]bool = make(map[int]bool)
+    for _, num := range nums {
+        mapping[num] = true
+        _, ok := mapping[-num]
+        if num < 0 {
+            num = -num
+        }
+        if ok && num > result {
+            result = num
+        }
+    }
+
+    return result
+}
 ```
