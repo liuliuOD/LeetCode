@@ -27,7 +27,7 @@
 // }
 ```
 
-Method 1 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
+Method 1 (DFS, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
 ```rust
 use std::rc::Rc;
 use std::cell::RefCell;
@@ -54,7 +54,7 @@ impl Solution {
 }
 ```
 
-Method 2 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
+Method 2 (DFS, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
 ```rust
 use std::rc::Rc;
 use std::cell::RefCell;
@@ -96,7 +96,7 @@ impl Solution {
 #         self.right = right
 ```
 
-Method 1 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
+Method 1 (DFS, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
 ```python
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
@@ -113,4 +113,23 @@ class Solution:
 
         self.traverse(node1.left, node2.right)
         self.traverse(node1.right, node2.left)
+```
+
+Method 2 (BFS, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
+```python
+class Solution:
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        queue = deque([(root.left, root.right)])
+        while queue:
+            node1, node2 = queue.popleft()
+            if node1 is None and node2 is None:
+                continue
+
+            if node1 is None or node2 is None or node1.val != node2.val:
+                return False
+
+            queue.append((node1.left, node2.right))
+            queue.append((node1.right, node2.left))
+
+        return True
 ```
