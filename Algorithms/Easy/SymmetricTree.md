@@ -71,7 +71,12 @@ impl Solution {
             return true
         }
 
+        /* Option 1 */
         if (node1.is_none() && node2.is_some()) || (node1.is_some() && node2.is_none()) {
+        /* Option 2
+
+        if node1.is_none() || node2.is_none() {
+        */
             return false
         }
         let mut inner1 = node1.as_ref().unwrap().borrow_mut();
@@ -81,6 +86,41 @@ impl Solution {
         }
 
         return Self::traverse_and_compare(inner1.left.take(), inner2.right.take()) && Self::traverse_and_compare(inner1.right.take(), inner2.left.take())
+    }
+}
+```
+
+Method 3 (BFS, Time Complexity: $O(N)$, Space Complexity: $O(H)$ (H: height of the tree)) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+use std::collections::VecDeque;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn is_symmetric(root: Custom) -> bool {
+        let inner = root.as_ref().unwrap().borrow();
+        let mut queue: VecDeque<(Custom, Custom)> = VecDeque::from([(inner.left.clone(), inner.right.clone())]);
+        while queue.len() > 0 {
+            let mut is_false: bool = false;
+            match queue.pop_front().unwrap() {
+                (None, None) => (),
+                (Some(_), None) | (None, Some(_)) => is_false = true,
+                (Some(inner1), Some(inner2)) => {
+                    if inner1.borrow().val != inner2.borrow().val {
+                        is_false = true;
+                    }
+
+                    queue.push_back((inner1.borrow().left.clone(), inner2.borrow().right.clone()));
+                    queue.push_back((inner1.borrow().right.clone(), inner2.borrow().left.clone()));
+                },
+            }
+
+            if is_false {
+                return false
+            }
+        }
+
+        return true
     }
 }
 ```
