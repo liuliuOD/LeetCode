@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 881. [Boats To Save People](https://leetcode.com/problems/boats-to-save-people)
@@ -69,4 +70,34 @@ class Solution:
                 result[prefix_sum[weight]] = weight
 
         return result
+```
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N*Log(N))$ (N: length of `people`), Space Complexity: $O()$ (doesn't use any extra space, so the `SC` depends on the implementation of each programming language, eg: Java -> $O(Log(N))$, C++ -> $O(Log(N))$, Python -> $O(N)$, Go -> $O(1)$)) :
+```go
+func numRescueBoats(people []int, limit int) int {
+    /* Option 1 */
+    sort.Ints(people)
+    /* Option 2
+
+    slices.Sort(people)
+    */
+    left, right := 0, len(people)-1
+    var result int = 0
+    for left <= right {
+        weight := people[left]
+        if left != right {
+            weight += people[right]
+        }
+
+        if weight <= limit {
+            left++
+        }
+        right--
+        result++
+    }
+
+    return result
+}
 ```
