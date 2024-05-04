@@ -1,8 +1,38 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 881. [Boats To Save People](https://leetcode.com/problems/boats-to-save-people)
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N*Log(N))$ (N: length of `people`), Space Complexity: $O()$ (doesn't use any extra space, so the `SC` depends on the implementation of each programming language, eg: Java -> $O(Log(N))$, C++ -> $O(Log(N))$, Python -> $O(N)$)) :
+```rust
+impl Solution {
+    pub fn num_rescue_boats(mut people: Vec<i32>, limit: i32) -> i32 {
+        people.sort();
+        let n: usize = people.len();
+        let mut left: usize = 0;
+        let mut right: usize = n - 1;
+        let mut result: i32 = 0;
+        while left <= right && right < n {
+            let mut weight: i32 = people[right];
+            if left != right {
+                weight += people[left];
+            }
+
+            if weight <= limit {
+                left += 1;
+            }
+            right -= 1;
+            result += 1;
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
