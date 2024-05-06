@@ -1,9 +1,54 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2487. [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list)
+
+### Solution :
+
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+//
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+```
+
+Method 1 (Recursion, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn remove_nodes(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        Self::recursion(head.as_mut());
+        return head
+    }
+
+    fn recursion(node: Option<&mut Box<ListNode>>) -> i32 {
+        match node {
+            None => 0,
+            Some(inner) => {
+                if Self::recursion(inner.next.as_mut()) > inner.val {
+                    *inner = inner.next.take().unwrap();
+                }
+
+                return inner.val
+            },
+        }
+    }
+}
+```
 
 ### Solution :
 
