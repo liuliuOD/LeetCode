@@ -14,7 +14,7 @@
 #         self.next = next
 ```
 
-Method 1 (Monotonic Stack) :
+Method 1 (Monotonic Stack, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
@@ -33,6 +33,26 @@ class Solution:
             node = node.next
 
         return dummyNode.next
+```
+
+Method 2 (Monotonic Stack + Queue, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        monotonic = deque([])
+        while head:
+            while monotonic and monotonic[-1] < head.val:
+                monotonic.pop()
+            monotonic.append(head.val)
+            head = head.next
+
+        dummy = ListNode()
+        node = dummy
+        while monotonic:
+            node.next = ListNode(val=monotonic.popleft())
+            node = node.next
+
+        return dummy.next
 ```
 
 ### Solution :
