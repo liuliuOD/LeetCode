@@ -55,6 +55,22 @@ class Solution:
         return dummy.next
 ```
 
+Method 3 (Recursion, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head is None or head.next is None:
+            return head
+
+        node_next = self.removeNodes(head.next)
+
+        if head.val < node_next.val:
+            return node_next
+
+        head.next = node_next
+        return head
+```
+
 ### Solution :
 
 ```php
