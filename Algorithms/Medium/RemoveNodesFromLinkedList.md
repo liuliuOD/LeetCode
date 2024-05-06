@@ -1,5 +1,6 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2487. [Remove Nodes From Linked List](https://leetcode.com/problems/remove-nodes-from-linked-list)
@@ -153,5 +154,35 @@ class Solution {
 
         return $result->next;
     }
+}
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+```
+
+Method 1 (Recursion, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+func removeNodes(head *ListNode) *ListNode {
+    if head == nil || head.Next == nil {
+        return head
+    }
+
+    node_next := removeNodes(head.Next)
+
+    if head.Val < node_next.Val {
+        return node_next
+    }
+    head.Next = node_next
+
+    return head
 }
 ```
