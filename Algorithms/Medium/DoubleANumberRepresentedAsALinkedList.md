@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2816. [Double A Number Represented As A Linked List](https://leetcode.com/problems/double-a-number-represented-as-a-linked-list)
@@ -108,4 +109,37 @@ class Solution:
             node = node.next
 
         return dummy if dummy.val > 0 else dummy.next
+```
+
+### Solution :
+
+```go
+/**
+ * Definition for singly-linked list.
+ * type ListNode struct {
+ *     Val int
+ *     Next *ListNode
+ * }
+ */
+```
+
+Method 1 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func doubleIt(head *ListNode) *ListNode {
+    dummy := &ListNode{Val: 0, Next: head}
+    node := dummy
+    for node != nil {
+        node.Val = node.Val * 2 % 10
+        if node.Next != nil && node.Next.Val*2 >= 10 {
+            node.Val += 1
+        }
+
+        node = node.Next
+    }
+
+    if dummy.Val > 0 {
+        return dummy
+    }
+    return dummy.Next
+}
 ```
