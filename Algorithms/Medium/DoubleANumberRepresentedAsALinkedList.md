@@ -13,7 +13,7 @@
 //   pub val: i32,
 //   pub next: Option<Box<ListNode>>
 // }
-// 
+//
 // impl ListNode {
 //   #[inline]
 //   fn new(val: i32) -> Self {
@@ -92,4 +92,20 @@ class Solution:
             node = temp
 
         return root.next
+```
+
+Method 2 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def doubleIt(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        dummy = ListNode(val=0, next=head)
+        node = dummy
+        while node:
+            node.val = node.val * 2 % 10
+            if node.next and node.next.val * 2 >= 10:
+                node.val += 1
+
+            node = node.next
+
+        return dummy if dummy.val > 0 else dummy.next
 ```
