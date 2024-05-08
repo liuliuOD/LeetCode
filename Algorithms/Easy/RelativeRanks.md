@@ -1,7 +1,32 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 506. [Relative Ranks](https://leetcode.com/problems/relative-ranks)
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$):
+```rust
+impl Solution {
+    pub fn find_relative_ranks(score: Vec<i32>) -> Vec<String> {
+        let SPECIAL_RANK: [String; 3] = ["Gold Medal".to_string(), "Silver Medal".to_string(), "Bronze Medal".to_string()];
+        let n: usize = score.len();
+        let mut score_sort: Vec<(usize, &i32)> = score.iter().enumerate().collect();
+        score_sort.sort_by(|a, b| b.1.cmp(a.1));
+        let mut result: Vec<String> = vec!["".to_string(); n];
+        for (rank, &(index, _)) in score_sort.iter().enumerate() {
+            if rank < 3 {
+                result[index] = SPECIAL_RANK[rank].clone();
+            } else {
+                result[index] = (rank+1).to_string();
+            }
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
