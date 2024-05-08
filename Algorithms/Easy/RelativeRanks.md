@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 506. [Relative Ranks](https://leetcode.com/problems/relative-ranks)
@@ -69,4 +70,38 @@ class Solution:
             result[index] = BASE_MAP[place] if place <= 2 else str(place+1)
 
         return result
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$):
+```go
+import "fmt"
+
+var BASE_RANK = [3]string{"Gold Medal", "Silver Medal", "Bronze Medal"}
+func findRelativeRanks(score []int) []string {
+    n := len(score)
+    var sort_score = make([][]int, n)
+    for index, s := range score {
+        /* Option 1 */
+        sort_score[index] = append(sort_score[index], []int{index, s}...)
+        /* Option 2
+
+        sort_score[index] = append(sort_score[index], index, s)
+        */
+    }
+    slices.SortFunc(sort_score, func (a, b []int) int {
+        return cmp.Compare(b[1], a[1])
+    })
+
+    var result = make([]string, n)
+    for rank, item := range sort_score {
+        if rank < 3 {
+            result[item[0]] = BASE_RANK[rank]
+        } else {
+            result[item[0]] = fmt.Sprintf("%d", rank+1)
+        }
+    }
+    return result
+}
 ```
