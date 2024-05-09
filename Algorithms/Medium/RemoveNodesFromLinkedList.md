@@ -50,6 +50,37 @@ impl Solution {
 }
 ```
 
+Method 2 (Reverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+type Custom = Option<Box<ListNode>>;
+impl Solution {
+    pub fn remove_nodes(mut head: Custom) -> Custom {
+        let mut head_reverse: Custom = Self::reverse_nodes(head.take());
+        let mut maximum: i32 = 0;
+        while let Some(mut inner) = head_reverse {
+            head_reverse = inner.next.take();
+            if inner.val >= maximum {
+                maximum = inner.val;
+                inner.next = head;
+                head = Some(inner);
+            }
+        }
+
+        return head
+    }
+
+    fn reverse_nodes(mut head: Custom) -> Custom {
+        let mut head_reverse: Custom = None;
+        while let Some(mut inner) = head {
+            head = std::mem::replace(&mut inner.next, head_reverse.take());
+            head_reverse = Some(inner);
+        }
+
+        return head_reverse
+    }
+}
+```
+
 ### Solution :
 
 ```python
