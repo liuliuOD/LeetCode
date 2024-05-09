@@ -176,6 +176,40 @@ class Solution:
         return head
 ```
 
+Method 5 (Reverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def removeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        head_reverse = None
+        while head:
+            temp = head.next
+            head.next = head_reverse
+            head_reverse, head = head, temp
+
+        maximum = 0
+        node = head_reverse
+        head = None
+        while node:
+            # Option 1
+            current = node
+            node = node.next
+            if current.val >= maximum:
+                maximum = current.val
+                current.next = head
+                head = current
+            """
+            # Option 2
+
+            if node.val >= maximum:
+                maximum = node.val
+                node.next, head, node = head, node, node.next
+            else:
+                node = node.next
+            """
+
+        return head
+```
+
 ### Solution :
 
 ```php
