@@ -34,7 +34,7 @@
 |[Minimum Number Of Taps To Open To Water A Garden](MinimumNumberOfTapsToOpenToWaterAGarden.md)|[Merge K Sorted Lists](MergeKSortedLists.md)|[Candy](Candy.md)|[Reverse Nodes In K Group](ReverseNodesInKGroup.md)|[Median Of Two Sorted Arrays](MedianOfTwoSortedArrays.md)|
 |[Binary Tree Maximum Path Sum](BinaryTreeMaximumPathSum.md)|[Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)|[Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)|[Patching Array](PatchingArray.md)|[Count Complete Substrings](CountCompleteSubstrings.md)|
 |[Subarrays With K Different Integers](SubarraysWithKDifferentIntegers.md)|[Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)|[Trapping Rain Water](TrappingRainWater.md)|[Largest Rectangle In Histogram](LargestRectangleInHistogram.md)|[Maximal Rectangle](MaximalRectangle.md)|
-|[Minimum Sum Of Values By Dividing Array](MinimumSumOfValuesByDividingArray.md)|[Minimum Falling Path Sum II](MinimumFallingPathSumII.md)|[Freedom Trail](FreedomTrail.md)|[Sum Of Distances In Tree](SumOfDistancesInTree.md)||
+|[Minimum Sum Of Values By Dividing Array](MinimumSumOfValuesByDividingArray.md)|[Minimum Falling Path Sum II](MinimumFallingPathSumII.md)|[Freedom Trail](FreedomTrail.md)|[Sum Of Distances In Tree](SumOfDistancesInTree.md)|[Minimum Cost To Hire K Workers](MinimumCostToHireKWorkers.md)|
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
