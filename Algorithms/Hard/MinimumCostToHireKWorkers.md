@@ -67,6 +67,104 @@ impl Solution {
 }
 ```
 
+Method 2 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N+K)$) :
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
+        let k: usize = k as usize;
+        let n: usize = quality.len();
+        let mut fractions: Vec<(f64, i32)> = vec![];
+        for index in 0..n {
+            fractions.push((wage[index] as f64 / quality[index] as f64, quality[index]));
+        }
+        fractions.sort_by(|(a, _), (b, _)| a.partial_cmp(&b).unwrap());
+
+        let mut result: f64 = f64::MAX;
+        let mut heap: BinaryHeap<i32> = BinaryHeap::new();
+        let mut sum_quality: i32 = 0;
+        for index in 0..n {
+            let current: &(f64, i32) = &fractions[index];
+            heap.push(current.1);
+            sum_quality += current.1;
+            if heap.len() > k {
+                sum_quality -= heap.pop().unwrap();
+            }
+            if heap.len() == k {
+                result = result.min(fractions[index].0 * sum_quality as f64);
+            }
+        }
+
+        return result
+    }
+}
+```
+
+Method 3 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N+K)$) :
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
+        let k: usize = k as usize;
+        let n: usize = quality.len();
+        let mut fractions: Vec<(f64, i32)> = quality.iter().enumerate().map(|(index, &q)| (wage[index] as f64 / q as f64, q)).collect();
+        fractions.sort_by(|(a, _), (b, _)| a.partial_cmp(&b).unwrap());
+
+        let mut result: f64 = f64::MAX;
+        let mut heap: BinaryHeap<i32> = BinaryHeap::new();
+        let mut sum_quality: i32 = 0;
+        for index in 0..n {
+            let current: &(f64, i32) = &fractions[index];
+            heap.push(current.1);
+            sum_quality += current.1;
+            if heap.len() > k {
+                sum_quality -= heap.pop().unwrap();
+            }
+            if heap.len() == k {
+                result = result.min(fractions[index].0 * sum_quality as f64);
+            }
+        }
+
+        return result
+    }
+}
+```
+
+Method 4 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N+K)$) :
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn mincost_to_hire_workers(quality: Vec<i32>, wage: Vec<i32>, k: i32) -> f64 {
+        let k: usize = k as usize;
+        let n: usize = quality.len();
+        let mut fractions: Vec<(f64, i32)> = quality.iter().enumerate().map(|(index, &q)| (wage[index] as f64 / q as f64, q)).collect();
+        /* Option 1 */
+        fractions.sort_unstable_by(|(a, _), (b, _)| a.partial_cmp(&b).unwrap());
+        /* Option 2
+
+        fractions.sort_by(|(a, _), (b, _)| a.partial_cmp(&b).unwrap());
+        */
+
+        let mut heap: BinaryHeap<i32> = BinaryHeap::new();
+        let mut sum_quality: i32 = 0;
+        return fractions.iter().fold(f64::MAX, |result, &(cost, q)| {
+            heap.push(q);
+            sum_quality += q;
+            if heap.len() > k {
+                sum_quality -= heap.pop().unwrap();
+            }
+            if heap.len() == k {
+                return result.min(cost * sum_quality as f64);
+            }
+            return result
+        })
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Brute Force, ERROR: "Time Limit Exceeded", 41/46, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$) :
