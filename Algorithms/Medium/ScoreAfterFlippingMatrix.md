@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Greedy, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+Method 1 (Greedy + Modify Input, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def matrixScore(self, grid: List[List[int]]) -> int:
@@ -27,6 +27,27 @@ class Solution:
             for bit in row:
                 score = (score<<1) | bit
             result += score
+
+        return result
+```
+
+Method 2 (Greedy + Without Modify Input, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def matrixScore(self, grid: List[List[int]]) -> int:
+        m, n = len(grid), len(grid[0])
+        result = m * (1<<(n-1))
+        for index_n in range(1, n):
+            count_one = 0
+            for index_m in range(m):
+                current = grid[index_m][index_n]
+                if (current == 0 and grid[index_m][0] == 0) or (current == 1 and grid[index_m][0] == 1):
+                    count_one += 1
+
+            if count_one <= m//2:
+                count_one = m - count_one
+
+            result += count_one * (1<<(n-index_n-1))
 
         return result
 ```
