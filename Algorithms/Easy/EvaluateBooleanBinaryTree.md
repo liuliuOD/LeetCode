@@ -1,7 +1,53 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2331. [Evaluate Boolean Binary Tree](https://leetcode.com/problems/evaluate-boolean-binary-tree)
+
+### Solution :
+
+```rust
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+```
+
+Method 1 (Recursive DFS, Time Complexity: $O(N)$, Space Complexity: $O(D)$ (D: depth of the tree, in worst case it is equal to `N`)) :
+```rust
+use std::rc::Rc;
+use std::cell::{Ref, RefCell};
+impl Solution {
+    pub fn evaluate_tree(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
+        let current: Ref<'_, TreeNode> = root.as_ref().unwrap().borrow();
+        if current.left.is_none() && current.right.is_none() {
+            return current.val == 1
+        }
+
+        let left: bool = Self::evaluate_tree(current.left.clone());
+        let right: bool = Self::evaluate_tree(current.right.clone());
+        return match current.val {
+            2 => left || right,
+            3 => left && right,
+            _ => false
+        }
+    }
+}
+```
 
 ### Solution :
 
