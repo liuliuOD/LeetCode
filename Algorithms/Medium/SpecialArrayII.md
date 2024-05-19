@@ -29,3 +29,22 @@ class Solution:
             result[index] = is_special
         return result
 ```
+
+Method 2 (Prefix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def isArraySpecial(self, nums: List[int], queries: List[List[int]]) -> List[bool]:
+        n = len(nums)
+        prefix_sum = [1]
+        for index in range(1, n):
+            current = prefix_sum[-1]
+            if nums[index]%2 != nums[index-1]%2:
+                current += 1
+            prefix_sum.append(current)
+
+        result = []
+        for index_start, index_end in queries:
+            result.append(True if prefix_sum[index_end] - prefix_sum[index_start] == index_end-index_start else False)
+
+        return result
+```
