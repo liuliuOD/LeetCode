@@ -1,7 +1,36 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 3152. [Special Array II](https://leetcode.com/problems/special-array-ii)
+
+### Solution :
+
+Method 1 (Prefix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn is_array_special(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<bool> {
+        let n: usize = nums.len();
+        let mut prefix_sum: Vec<i32> = vec![1];
+        for index in 1..n {
+            let mut current: i32 = prefix_sum[index-1];
+            if nums[index]%2 != nums[index-1]%2 {
+                current += 1;
+            }
+            prefix_sum.push(current);
+        }
+
+        let mut result: Vec<bool> = vec![];
+        for query in queries.iter() {
+            let current: bool = prefix_sum[query[1] as usize]-prefix_sum[query[0] as usize] == query[1]-query[0];
+
+            result.push(current);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
