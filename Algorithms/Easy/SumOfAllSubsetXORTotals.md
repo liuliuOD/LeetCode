@@ -17,3 +17,16 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Backtracking, Time Complexity: $O(2^N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def subsetXORSum(self, nums: List[int]) -> int:
+        return self.backtracking(0, 0, nums)
+
+    def backtracking(self, index: int, current: int, nums: list[int]) -> int:
+        if index >= len(nums):
+            return current
+
+        return self.backtracking(index+1, current^nums[index], nums) + self.backtracking(index+1, current, nums)
+```
