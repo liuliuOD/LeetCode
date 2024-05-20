@@ -30,3 +30,20 @@ class Solution:
 
         return self.backtracking(index+1, current^nums[index], nums) + self.backtracking(index+1, current, nums)
 ```
+
+Method 3 ([Mathematic](https://leetcode.com/problems/sum-of-all-subset-xor-totals/editorial/?envType=daily-question&envId=2024-05-20#approach-3-bit-manipulation), Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def subsetXORSum(self, nums: List[int]) -> int:
+        # Option 1
+        result = 0
+        for num in nums:
+            result |= num
+
+        return result << (len(nums)-1)
+        """
+        # Option 2
+
+        return reduce(lambda a, b: a|b, nums) << (len(nums)-1)
+        """
+```
