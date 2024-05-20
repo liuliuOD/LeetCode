@@ -1,7 +1,19 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1863. [Sum Of All Subset XOR Totals](https://leetcode.com/problems/sum-of-all-subset-xor-totals)
+
+### Solution :
+
+Method 1 ([Mathematic](https://leetcode.com/problems/sum-of-all-subset-xor-totals/editorial/?envType=daily-question&envId=2024-05-20#approach-3-bit-manipulation), Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn subset_xor_sum(nums: Vec<i32>) -> i32 {
+        return nums.iter().fold(0, |a, b| a | b) << (nums.len()-1)
+    }
+}
+```
 
 ### Solution :
 
