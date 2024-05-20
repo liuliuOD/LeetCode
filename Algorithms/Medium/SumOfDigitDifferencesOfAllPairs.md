@@ -6,6 +6,38 @@
 
 ### Solution :
 
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn sum_digit_differences(nums: Vec<i32>) -> i64 {
+        let d: usize = nums[0].to_string().len();
+        let mut counter: Vec<[i32; 10]> = vec![[0; 10]; d];
+        for &num in nums.iter() {
+            let mut num: i32 = num;
+            let mut index: usize = 0;
+            while num > 0 {
+                counter[index][(num%10) as usize] += 1;
+                num /= 10;
+                index += 1;
+            }
+        }
+
+        let n: i64 = nums.len() as i64;
+        let mut result: i64 = 0;
+        for index in 0..d {
+            for digit in 0..=9 {
+                let current: i64 = counter[index][digit] as i64;
+                result += current * (n - current);
+            }
+        }
+
+        return result / 2
+    }
+}
+```
+
+### Solution :
+
 Method 1 (In weekly contest 398, Time Complexity: $O(N*D)$ (N: length of `nums`, D: the number of digits, since it is bounded by a constant (at most 10), we can say it is $O(N)$), Space Complexity: $O(N*D)$ (same with the time complexity, $O(N)$)) :
 ```python
 class Solution:
