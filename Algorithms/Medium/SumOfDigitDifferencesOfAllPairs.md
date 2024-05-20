@@ -74,14 +74,20 @@ class Solution:
                 num //= 10
                 index_digit += 1
 
-        result = 0
         n = len(counter)
+        # Option 1
+        result = 0
         for index_digit in range(n):
             counter_current = counter[index_digit]
             for number in counter_current.keys():
                 result += counter_current[number] * (len(nums)-counter_current[number])
 
         return result // 2
+        """
+        # Option 2
+
+        return sum(reduce(lambda amount, digit: amount + counter[index_digit][digit]*(len(nums) - counter[index_digit][digit]), counter[index_digit].keys(), 0) for index_digit in range(n)) // 2
+        """
 ```
 
 ### Solution :
