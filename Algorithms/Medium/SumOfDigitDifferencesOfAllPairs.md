@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 3153. [Sum Of Digit Differences Of All Pairs](https://leetcode.com/problems/sum-of-digit-differences-of-all-pairs)
@@ -28,6 +29,7 @@ class Solution:
 
         return result
 ```
+
 Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
@@ -48,4 +50,31 @@ class Solution:
                 result += counter_current[number] * (len(nums)-counter_current[number])
 
         return result // 2
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```go
+import "strconv"
+func sumDigitDifferences(nums []int) int64 {
+    var d int = len(strconv.Itoa(nums[0]))
+    var counter = make([][10]int, d)
+    for _, num := range nums {
+        for i := 0;num > 0; num /= 10 {
+            counter[i][num%10] += 1
+            i++
+        }
+    }
+
+    var n int = len(nums)
+    var result int64
+    for i := 0; i < d; i++ {
+        for _, amount := range counter[i] {
+            result += int64((n-amount) * amount)
+        }
+    }
+
+    return result / 2
+}
 ```
