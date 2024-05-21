@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 78. [Subsets](https://leetcode.com/problems/subsets)
@@ -105,4 +106,30 @@ class Solution:
             result.append(subset)
 
         return result
+```
+
+### Solution :
+
+Method 1 (Backtracking, Time Complexity: $O(2^N)$, Space Complexity: $O(N)$) :
+```go
+func subsets(nums []int) [][]int {
+    var result [][]int
+    var subset = make([]int, 0)
+    backtracking(0, &subset, &nums, &result)
+    return result
+}
+
+func backtracking(index int, subset *[]int, nums *[]int, result *[][]int) {
+    if index >= len(*nums) {
+        var temp = make([]int, len(*subset))
+        copy(temp, *subset)
+        *result = append(*result, temp)
+        return
+    }
+
+    backtracking(index+1, subset, nums, result)
+    *subset = append(*subset, (*nums)[index])
+    backtracking(index+1, subset, nums, result)
+    *subset = (*subset)[:len(*subset)-1]
+}
 ```
