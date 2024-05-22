@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Build-In Function) :
+Method 1 (Built-In Function) :
 ```python
 class Solution:
     def myPow(self, x: float, n: int) -> float:

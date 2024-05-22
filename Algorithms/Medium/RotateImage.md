@@ -24,7 +24,7 @@ class Solution:
                 matrix[index_row][index_column], matrix[index_row][n-1-index_column] = matrix[index_row][n-1-index_column], matrix[index_row][index_column]
 ```
 
-Method 2 (Using Build-In Method) :
+Method 2 (Using Built-In Method) :
 ```python
 class Solution:
     def rotate(self, matrix: List[List[int]]) -> None:
