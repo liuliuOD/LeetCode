@@ -95,7 +95,7 @@
 |[Open The Lock](OpenTheLock.md)|[Ugly Number III](UglyNumberIII.md)|[Longest Ideal Subsequence](LongestIdealSubsequence.md)|[Minimum Number Of Operations To Make Array XOR Equal To K](MinimumNumberOfOperationsToMakeArrayXOREqualToK.md)|[Number Of Wonderful Substrings](NumberOfWonderfulSubstrings.md)|
 |[Compare Version Numbers](CompareVersionNumbers.md)|[Boats To Save People](BoatsToSavePeople.md)|[Double A Number Represented As A Linked List](DoubleANumberRepresentedAsALinkedList.md)|[Maximize Happiness Of Selected Children](MaximizeHappinessOfSelectedChildren.md)|[K-th Smallest Prime Fraction](KthSmallestPrimeFraction.md)|
 |[Score After Flipping Matrix](ScoreAfterFlippingMatrix.md)|[Path With Maximum Gold](PathWithMaximumGold.md)|[Find The Safest Path In A Grid](FindTheSafestPathInAGrid.md)|[Distribute Coins In Binary Tree](DistributeCoinsInBinaryTree.md)|[Special Array II](SpecialArrayII.md)|
-|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[Palindrome Partitioning](PalindromePartitioning.md)|||
+|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[Palindrome Partitioning](PalindromePartitioning.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
