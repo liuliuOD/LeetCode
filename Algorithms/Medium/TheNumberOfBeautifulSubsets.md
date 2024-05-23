@@ -1,7 +1,43 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2597. [The Number Of Beautiful Subsets](https://leetcode.com/problems/the-number-of-beautiful-subsets)
+
+### Solution :
+
+Method 1 (backtracking, Time Complexity: $O(2^N)$, Space Complexity: $O(N)$) :
+```rust
+use std::collections::HashMap;
+impl Solution {
+    pub fn beautiful_subsets(nums: Vec<i32>, k: i32) -> i32 {
+        let mut memoization: HashMap<i32, i32> = HashMap::new();
+        let mut result: i32 = 0;
+        Self::backtracking(0, &mut result, &mut memoization, &nums, k);
+        return result - 1
+    }
+
+    fn backtracking(index: usize, result: &mut i32, memoization: &mut HashMap<i32, i32>, nums: &Vec<i32>, k: i32) {
+        let n: usize = nums.len();
+        if index >= n {
+            *result += 1;
+            return
+        }
+
+        let num: i32 = nums[index];
+        Self::backtracking(index+1, result, memoization, nums, k);
+        if *memoization.entry(num).or_default() == 0 {
+            *memoization.entry(num-k).or_default() += 1;
+            *memoization.entry(num+k).or_default() += 1;
+
+            Self::backtracking(index+1, result, memoization, nums, k);
+
+            *memoization.entry(num-k).or_default() -= 1;
+            *memoization.entry(num+k).or_default() -= 1;
+        }
+    }
+}
+```
 
 ### Solution :
 
