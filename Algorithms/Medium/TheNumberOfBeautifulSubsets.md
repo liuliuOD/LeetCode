@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Bit Mask + Brute Force, ERROR: "Time Limit Exceeded", 56 / 1307) :
+Method 1 (Bitmask + Brute Force, ERROR: "Time Limit Exceeded", 56 / 1307) :
 ```python
 class Solution:
     def beautifulSubsets(self, nums: List[int], k: int) -> int:
@@ -25,6 +25,29 @@ class Solution:
                     continue
 
                 break
+            else:
+                result += 1
+        return result
+```
+
+Method 2 (Bitmask + Hash Set) :
+```python
+class Solution:
+    def beautifulSubsets(self, nums: List[int], k: int) -> int:
+        n = len(nums)
+        result = 0
+        for bitwise in range(1, 1 << n):
+            may_non_beautiful: set[int] = set()
+            for index in range(n):
+                if ((1 << index) & bitwise) == 0:
+                    continue
+
+                current = nums[index]
+                if current in may_non_beautiful:
+                    break
+
+                may_non_beautiful.add(current - k)
+                may_non_beautiful.add(current + k)
             else:
                 result += 1
         return result
