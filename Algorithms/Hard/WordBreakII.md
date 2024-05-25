@@ -33,3 +33,33 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Backtracking + Hash Set) :
+```python
+class Solution:
+    def wordBreak(self, s: str, word_dict: List[str]) -> List[str]:
+        n = len(s)
+        candidates: set[str] = set(word_dict)
+        self.result: list[str] = []
+
+        self.backtracking(0, 0, [], candidates, s)
+        return self.result
+
+    def backtracking(self, index_start: int, index_end: int, words: list[str], candidates: set[str], s: str):
+        n = len(s)
+        if index_end >= n:
+            current: str = s[index_start:]
+            if current in candidates:
+                words.append(current)
+                self.result.append(" ".join(words))
+                words.pop()
+            return
+
+        self.backtracking(index_start, index_end+1, words, candidates, s)
+
+        current: str = s[index_start:index_end+1]
+        if current in candidates:
+            words.append(current)
+            self.backtracking(index_end+1, index_end+1, words, candidates, s)
+            words.pop()
+```
