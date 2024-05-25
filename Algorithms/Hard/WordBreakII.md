@@ -1,0 +1,35 @@
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+---
+
+## 140. [Word Break II](https://leetcode.com/problems/word-break-ii)
+
+### Solution :
+
+Method 1 (Bitmask + Hash Set) :
+```python
+class Solution:
+    def wordBreak(self, s: str, word_dict: List[str]) -> List[str]:
+        n = len(s)
+        word_dict: set[str] = set(word_dict)
+        result: list[str] = []
+        for bitmask in range(1<<(n-1)):
+            elements: list[str] = []
+            index_start = 0
+            for index_end in range(n):
+                if (1<<index_end) & bitmask == 0:
+                    continue
+
+                if s[index_start:index_end+1] not in word_dict:
+                    break
+
+                elements.append(s[index_start:index_end+1])
+                index_start = index_end + 1
+            else:
+                if index_start < n and s[index_start:] not in word_dict:
+                    continue
+
+                elements.append(s[index_start:])
+                result.append(" ".join(elements))
+
+        return result
+```
