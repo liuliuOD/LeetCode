@@ -63,3 +63,34 @@ class Solution:
             self.backtracking(index_end+1, index_end+1, words, candidates, s)
             words.pop()
 ```
+
+Method 3 (DFS + Memoization + Hash Map) :
+```python
+class Solution:
+    def wordBreak(self, s: str, word_dict: List[str]) -> List[str]:
+        n = len(s)
+        candidates: set[str] = set(word_dict)
+        memoization: dict[int, list[str]] = defaultdict(list)
+
+        return self.dfs(0, memoization, candidates, s)
+
+    def dfs(self, index_start: int, memoization: dict[int, list[str]], candidates: set[str], s: str) -> list[str]:
+        if index_start in memoization:
+            return memoization[index_start]
+
+        n = len(s)
+        if index_start >= n:
+            return [""]
+
+        result: list[str] = []
+        for index_end in range(index_start, n):
+            current = s[index_start:index_end+1]
+            if current not in candidates:
+                continue
+
+            for words in self.dfs(index_end+1, memoization, candidates, s):
+                result.append(f"{current}{' ' if words else ''}{words}")
+
+        memoization[index_start] = result
+        return result
+```

@@ -35,7 +35,7 @@ class Solution:
         return result
 ```
 
-Method 2 (DFS + Hash Map, Time Complexity: $O(M*N*2^N)$ (M: maximum length of each element in `words`, N: length of `words`), Space Complexity; $O(1)$):
+Method 2 (Backtracking + Hash Map, Time Complexity: $O(M*N*2^N)$ (M: maximum length of each element in `words`, N: length of `words`), Space Complexity; $O(1)$):
 ```python
 BASE = ord('a')
 
@@ -44,11 +44,11 @@ class Solution:
         counter = Counter(letters)
         self.result = 0
 
-        self.dfs(0, defaultdict(int), counter, words, score)
+        self.backtracking(0, defaultdict(int), counter, words, score)
 
         return self.result
 
-    def dfs(self, index: int, counter_cumulative: dict[str, int], counter_target: dict[str, int], words, score):
+    def backtracking(self, index: int, counter_cumulative: dict[str, int], counter_target: dict[str, int], words, score):
         n = len(words)
         if index >= n:
             score_current = 0
@@ -65,7 +65,7 @@ class Solution:
 
             return
 
-        self.dfs(index+1, counter_cumulative, counter_target, words, score)
+        self.backtracking(index+1, counter_cumulative, counter_target, words, score)
 
         counter_temp = defaultdict(int)
         for char in words[index]:
@@ -74,13 +74,13 @@ class Solution:
             for char in counter_temp.keys():
                 counter_cumulative[char] += counter_temp[char]
 
-            self.dfs(index+1, counter_cumulative, counter_target, words, score)
+            self.backtracking(index+1, counter_cumulative, counter_target, words, score)
 
             for char in counter_temp.keys():
                 counter_cumulative[char] -= counter_temp[char]
 ```
 
-Method 3 (DFS + Hash Map, Time Complexity: $O(M*N*2^N)$ (M: maximum length of each element in `words`, N: length of `words`), Space Complexity; $O(1)$):
+Method 3 (Backtracking + Hash Map, Time Complexity: $O(M*N*2^N)$ (M: maximum length of each element in `words`, N: length of `words`), Space Complexity; $O(1)$):
 ```python
 BASE = ord('a')
 
@@ -89,11 +89,11 @@ class Solution:
         counter = Counter(letters)
         self.result = 0
 
-        self.dfs(0, defaultdict(int), counter, words, score)
+        self.backtracking(0, defaultdict(int), counter, words, score)
 
         return self.result
 
-    def dfs(self, index: int, counter_cumulative: dict[str, int], counter_target: dict[str, int], words, score):
+    def backtracking(self, index: int, counter_cumulative: dict[str, int], counter_target: dict[str, int], words, score):
         n = len(words)
         if index >= n:
             score_current = 0
@@ -110,7 +110,7 @@ class Solution:
 
             return
 
-        self.dfs(index+1, counter_cumulative, counter_target, words, score)
+        self.backtracking(index+1, counter_cumulative, counter_target, words, score)
 
         counter_temp = defaultdict(int)
         for char in words[index]:
@@ -121,7 +121,7 @@ class Solution:
             for char in counter_temp.keys():
                 counter_cumulative[char] += counter_temp[char]
 
-            self.dfs(index+1, counter_cumulative, counter_target, words, score)
+            self.backtracking(index+1, counter_cumulative, counter_target, words, score)
 
             for char in counter_temp.keys():
                 counter_cumulative[char] -= counter_temp[char]
