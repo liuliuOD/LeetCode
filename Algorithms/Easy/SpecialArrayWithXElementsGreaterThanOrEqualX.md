@@ -46,3 +46,43 @@ class Solution:
 
         return -1
 ```
+
+Method 3 (Prefix Sum, Time Complexity: $O(N)$ (N: maximum value in `nums`), Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+        maximum = max(nums)
+        n = len(nums)
+        frequencies = [0] * (maximum + 1)
+        for num in nums:
+            frequencies[num] += 1
+
+        prefix_sum = [0] * (maximum + 1)
+        for num in reversed(range(maximum+1)):
+            prefix_sum[num] = frequencies[num]
+            if num < maximum:
+                prefix_sum[num] += prefix_sum[num+1]
+
+            if prefix_sum[num] == num:
+                return num
+
+        return -1
+```
+
+Method 4 (Prefix Sum, Time Complexity: $O(N)$ (N: length of `nums`), Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+        n = len(nums)
+        frequencies = [0] * (n + 1)
+        for num in nums:
+            frequencies[min(n, num)] += 1
+
+        prefix_sum = 0
+        for num in reversed(range(n+1)):
+            prefix_sum += frequencies[num]
+            if prefix_sum == num:
+                return num
+
+        return -1
+```
