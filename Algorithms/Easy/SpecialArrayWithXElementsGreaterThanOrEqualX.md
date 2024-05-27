@@ -24,3 +24,25 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Binary Search, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def specialArray(self, nums: List[int]) -> int:
+        nums.sort()
+        n = len(nums)
+
+        for candidate in range(1, nums[-1]+1):
+            left, right = 0, n - 1
+            while left <= right:
+                middle = left + (right - left)//2
+                if nums[middle] >= candidate:
+                    right = middle - 1
+                else:
+                    left = middle + 1
+
+            if n - left == candidate:
+                return candidate
+
+        return -1
+```
