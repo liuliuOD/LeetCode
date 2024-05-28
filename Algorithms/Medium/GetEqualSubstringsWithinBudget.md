@@ -1,4 +1,5 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 1208. [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget)
@@ -64,4 +65,66 @@ class Solution:
 
     def get_cost(self, index: int, s: str, t: str) -> int:
         return abs(ord(s[index])-ord(t[index]))
+```
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func equalSubstring(s string, t string, costMax int) int {
+    var result int
+    var costSum int
+    var indexStart int
+    for indexEnd := 0; indexEnd < len(s); indexEnd++ {
+        cost := int(s[indexEnd]) - int(t[indexEnd])
+        if cost < 0 {
+            cost *= -1
+        }
+        costSum += cost
+        if costSum <= costMax {
+            result = max(result, indexEnd - indexStart + 1)
+        } else {
+            for costSum > costMax {
+                cost := int(s[indexStart]) - int(t[indexStart])
+                if cost < 0 {
+                    cost *= -1
+                }
+                costSum -= cost
+                indexStart++
+            }
+        }
+    }
+
+    return result
+}
+```
+
+Method 2 (Two Pointer + Refactoring, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```go
+func equalSubstring(s string, t string, costMax int) int {
+    var result int
+    var costSum int
+    var indexStart int
+    for indexEnd := 0; indexEnd < len(s); indexEnd++ {
+        costSum += abs(int(s[indexEnd]) - int(t[indexEnd]))
+        if costSum <= costMax {
+            result = max(result, indexEnd - indexStart + 1)
+        } else {
+            for costSum > costMax {
+                costSum -= abs(int(s[indexStart]) - int(t[indexStart]))
+                indexStart++
+            }
+        }
+    }
+
+    return result
+}
+
+func abs(num int) int {
+    if num < 0 {
+        return -num
+    }
+
+    return num
+}
 ```
