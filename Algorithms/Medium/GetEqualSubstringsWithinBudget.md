@@ -1,8 +1,65 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 1208. [Get Equal Substrings Within Budget](https://leetcode.com/problems/get-equal-substrings-within-budget)
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn equal_substring(s: String, t: String, max_cost: i32) -> i32 {
+        let n: usize = s.len();
+        let s_ascii: Vec<i32> = s.bytes().map(|ascii| ascii as i32).collect::<Vec<i32>>();
+        let t_ascii: Vec<i32> = t.bytes().map(|ascii| ascii as i32).collect::<Vec<i32>>();
+        let mut index_start: usize = 0;
+        let mut cost_sum: i32 = 0;
+        let mut result: i32 = 0;
+        for index_end in 0..n {
+            cost_sum += (s_ascii[index_end] - t_ascii[index_end]).abs();
+            while cost_sum > max_cost {
+                cost_sum -= (s_ascii[index_start] - t_ascii[index_start]).abs();
+                index_start += 1;
+            }
+
+            result = result.max((index_end - index_start + 1) as i32);
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn equal_substring(s: String, t: String, mut max_cost: i32) -> i32 {
+        let n: usize = s.len();
+        let s_ascii: Vec<u8> = s.into_bytes();
+        let t_ascii: Vec<u8> = t.into_bytes();
+        let mut index_start: usize = 0;
+        let mut result: i32 = 0;
+        for index_end in 0..n {
+            max_cost -= u8::abs_diff(s_ascii[index_end], t_ascii[index_end]) as i32;
+            while max_cost < 0 {
+                max_cost += u8::abs_diff(s_ascii[index_start], t_ascii[index_start]) as i32;
+                index_start += 1;
+            }
+
+            /* Option 1 */
+            result = result.max((index_end - index_start + 1) as i32);
+            /* Option 2
+
+            result = i32::max(result, (index_end - index_start + 1) as i32);
+            */
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
