@@ -24,3 +24,44 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def equalSubstring(self, s: str, t: str, max_cost: int) -> int:
+        result = 0
+        cost_sum = 0
+        index_start = 0
+        for index_end in range(len(s)):
+            cost_sum += abs(ord(s[index_end])-ord(t[index_end]))
+            if cost_sum <= max_cost:
+                result = max(result, index_end - index_start + 1)
+            else:
+                while cost_sum > max_cost:
+                    cost_sum -= abs(ord(s[index_start])-ord(t[index_start]))
+                    index_start += 1
+
+        return result
+```
+
+Method 3 (Two Pointer + Refactoring, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def equalSubstring(self, s: str, t: str, max_cost: int) -> int:
+        result = 0
+        cost_sum = 0
+        index_start = 0
+        for index_end in range(len(s)):
+            cost_sum += self.get_cost(index_end, s, t)
+            if cost_sum <= max_cost:
+                result = max(result, index_end - index_start + 1)
+            else:
+                while cost_sum > max_cost:
+                    cost_sum -= self.get_cost(index_start, s, t)
+                    index_start += 1
+
+        return result
+
+    def get_cost(self, index: int, s: str, t: str) -> int:
+        return abs(ord(s[index])-ord(t[index]))
+```
