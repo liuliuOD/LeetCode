@@ -33,7 +33,7 @@
 |[Number Of Islands](NumberOfIslands.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)|[Open The Lock](OpenTheLock.md)|[Minimum Height Trees](MinimumHeightTrees.md)|[Ugly Number III](UglyNumberIII.md)|
 |[Longest Ideal Subsequence](LongestIdealSubsequence.md)|[Minimum Number Of Operations To Make Array XOR Equal To K](MinimumNumberOfOperationsToMakeArrayXOREqualToK.md)|[Compare Version Numbers](CompareVersionNumbers.md)|[Boats To Save People](BoatsToSavePeople.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|
 |[Double A Number Represented As A Linked List](DoubleANumberRepresentedAsALinkedList.md)|[Maximize Happiness Of Selected Children](MaximizeHappinessOfSelectedChildren.md)|[K-th Smallest Prime Fraction](KthSmallestPrimeFraction.md)|[Distribute Coins In Binary Tree](DistributeCoinsInBinaryTree.md)|[Special Array II](SpecialArrayII.md)|
-|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)||
+|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -124,4 +124,4 @@
 |[Smallest String Starting From Leaf](SmallestStringStartingFromLeaf.md)|[Find All Groups Of Farmland](FindAllGroupsOfFarmland.md)|[Minimum Number Of Operations To Satisfy Conditions](MinimumNumberOfOperationsToSatisfyConditions.md)|[Open The Lock](OpenTheLock.md)|[Minimum Height Trees](MinimumHeightTrees.md)|
 |[Ugly Number III](UglyNumberIII.md)|[Longest Ideal Subsequence](LongestIdealSubsequence.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Minimum Number Of Operations To Make Array XOR Equal To K](MinimumNumberOfOperationsToMakeArrayXOREqualToK.md)|[Boats To Save People](BoatsToSavePeople.md)|
 |[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|[Double A Number Represented As A Linked List](DoubleANumberRepresentedAsALinkedList.md)|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|
-|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|||||
+|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)||||
