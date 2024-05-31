@@ -23,3 +23,21 @@ class Solution:
 
         return result
 ```
+
+Method 2 (Prefix Sum + XOR, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def countTriplets(self, arr: List[int]) -> int:
+        n = len(arr)
+        prefix_sum = [0]
+        for index in range(n):
+            prefix_sum.append(prefix_sum[-1] ^ arr[index])
+
+        result = 0
+        for index_k in range(n):
+            for index_i in range(index_k):
+                if prefix_sum[index_k+1] == prefix_sum[index_i]:
+                    result += index_k - index_i
+
+        return result
+```
