@@ -18,3 +18,22 @@ class Solution:
 
         return list(result)
 ```
+
+Method 2 (XOR, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def singleNumber(self, nums: List[int]) -> List[int]:
+        xor_all = reduce(lambda a, b: a^b, nums)
+        position = 0
+        while xor_all & (1 << position) == 0:
+            position += 1
+
+        xor_group_0, xor_group_1 = 0, 0
+        for num in nums:
+            if num & (1 << position) == 0:
+                xor_group_0 ^= num
+            else:
+                xor_group_1 ^= num
+
+        return [xor_group_0, xor_group_1]
+```
