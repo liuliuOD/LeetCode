@@ -41,3 +41,43 @@ class Solution:
 
         return result
 ```
+
+Method 3 ([Prefix Sum + Hash Map](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/editorial), Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def countTriplets(self, arr: List[int]) -> int:
+        n = len(arr)
+        prefix_xor = [0]
+        for index in range(n):
+            prefix_xor.append(prefix_xor[-1] ^ arr[index])
+
+        xor_frequency, xor_amount_triplet = defaultdict(int), defaultdict(int)
+        result = 0
+        for index, xor_prefix in enumerate(prefix_xor):
+            result += xor_frequency[xor_prefix]*(index - 1) - xor_amount_triplet[xor_prefix]
+
+            xor_frequency[xor_prefix] += 1
+            xor_amount_triplet[xor_prefix] += index
+
+        return result
+```
+
+Method 4 ([Prefix Sum + Hash Map](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/editorial), Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def countTriplets(self, arr: List[int]) -> int:
+        n = len(arr)
+        xor_frequency, xor_amount_triplet = defaultdict(int), defaultdict(int)
+        xor_frequency[0] = 1
+        prefix_xor = [0]
+        result = 0
+        for index in range(n):
+            prefix_xor.append(prefix_xor[-1] ^ arr[index])
+            prefix_xor_current = prefix_xor[-1]
+            result += xor_frequency[prefix_xor_current]*index - xor_amount_triplet[prefix_xor_current]
+
+            xor_frequency[prefix_xor_current] += 1
+            xor_amount_triplet[prefix_xor_current] += index + 1
+
+        return result
+```
