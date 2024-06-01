@@ -141,3 +141,34 @@ class Solution:
         memoization: list[list[list[int]]] = [[[-1]*3 for _ in range(2)] for _ in range(n+1)]
         return dfs(n, 0, 0)
 ```
+
+Method 6 (Dynamic Programming, Time Complexity: $O(N)$, Space Complexity; $O(N)$) :
+```python
+MODULO = 1_000_000_007
+
+class Solution:
+    def checkRecord(self, n: int) -> int:
+        dp = [[[0]*3 for _ in range(2)] for _ in range(n+1)]
+        dp[0][0][0] = 1
+        for length in range(n):
+            for a in range(2):
+                for l in range(3):
+                    dp[length+1][a][0] += dp[length][a][l]
+                    dp[length+1][a][0] %= MODULO
+
+                    if a < 1:
+                        dp[length+1][a+1][0] += dp[length][a][l]
+                        dp[length+1][a+1][0] %= MODULO
+
+                    if l < 2:
+                        dp[length+1][a][l+1] += dp[length][a][l]
+                        dp[length+1][a][l+1] %= MODULO
+
+        result = 0
+        for a in range(2):
+            for l in range(3):
+                result += dp[n][a][l]
+                result %= MODULO
+
+        return result
+```
