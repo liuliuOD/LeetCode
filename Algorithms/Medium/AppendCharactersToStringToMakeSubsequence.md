@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 2486. [Append Characters To String To Make Subsequence](https://leetcode.com/problems/append-characters-to-string-to-make-subsequence)
@@ -44,4 +45,23 @@ class Solution:
             index_s += 1
 
         return n_t - index_t
+```
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(M or N)$ (M: length of `s`, N: length of `t`), Space Complexity: $O(1)$) :
+```golang
+func appendCharacters(s string, t string) int {
+    var index_s, index_t int = 0, 0
+    var n_s, n_t int = len(s), len(t)
+    for index_s < n_s && index_t < n_t {
+        if s[index_s] == t[index_t] {
+            index_t++
+        }
+
+        index_s++
+    }
+
+    return n_t - index_t
+}
 ```
