@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
 ---
 
 ## 409. [Longest Palindrome](https://leetcode.com/problems/longest-palindrome)
@@ -72,4 +73,29 @@ class Solution:
             result += 1
 
         return result
+```
+
+### Solution :
+
+Method 1 (Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```golang
+func longestPalindrome(s string) int {
+    var result int
+    var table = make(map[rune]bool)
+    for _, char := range s {
+        _, ok := table[char]
+        if ok {
+            result += 2
+            delete(table, char)
+        } else {
+            table[char] = true
+        }
+    }
+
+    if len(table) > 0 {
+        result++
+    }
+
+    return result
+}
 ```
