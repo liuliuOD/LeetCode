@@ -31,6 +31,7 @@
 |[Island Perimeter](IslandPerimeter.md)|[Flood Fill](FloodFill.md)|[Find If Path Exists In Graph](FindIfPathExistsInGraph.md)|[Count The Number Of Special Characters I](CountTheNumberOfSpecialCharactersI.md)|[Reverse Prefix Of Word](ReversePrefixOfWord.md)|
 |[Largest Positive Integer That Exists With Its Negative](LargestPositiveIntegerThatExistsWithItsNegative.md)|[Symmetric Tree](SymmetricTree.md)|[Relative Ranks](RelativeRanks.md)|[Evaluate Boolean Binary Tree](EvaluateBooleanBinaryTree.md)|[Delete Leaves With A Given Value](DeleteLeavesWithAGivenValue.md)|
 |[Sum Of All Subset XOR Totals](SumOfAllSubsetXORTotals.md)|[Perfect Number](PerfectNumber.md)|[Score Of A String](ScoreOfAString.md)|[Reverse String](ReverseString.md)|[Longest Palindrome](LongestPalindrome.md)|
+|[Find Common Characters](FindCommonCharacters.md)|||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
