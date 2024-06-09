@@ -1,7 +1,43 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 974. [Subarray Sums Divisible By K](https://leetcode.com/problems/subarray-sums-divisible-by-k)
+
+### Solution :
+
+Method 1 (Prefix Sum + Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn subarrays_div_by_k(nums: Vec<i32>, k: i32) -> i32 {
+        let mut result: i32 = 0;
+        let mut mapping: HashMap<i32, i32> = HashMap::new();
+        let mut prefix_sum: i32 = 0;
+        mapping.entry(0).or_insert(1);
+        for num in nums {
+            /* Option 1 */
+            prefix_sum = (prefix_sum + num);
+            if prefix_sum < 0 {
+                while prefix_sum < 0 {
+                    prefix_sum += k;
+                }
+            }
+            prefix_sum %= k;
+            /* Option 2
+
+            prefix_sum = ((prefix_sum + num) % k + k) % k;
+            */
+
+            result += *mapping.entry(prefix_sum).or_default();
+            mapping.entry(prefix_sum).and_modify(|value| *value += 1);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
