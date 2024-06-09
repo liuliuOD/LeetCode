@@ -25,7 +25,7 @@ class Solution:
         return result
 ```
 
-Method 2 (Prefix Sum + Hash Map, Space Complexity: $O(N)$) :
+Method 2 (Prefix Sum + Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def subarraysDivByK(self, nums: List[int], k: int) -> int:
@@ -57,7 +57,7 @@ class Solution:
         return result
 ```
 
-Method 3 (Prefix Sum + Hash Map, Space Complexity: $O(N)$) :
+Method 3 (Prefix Sum + Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def subarraysDivByK(self, nums: List[int], k: int) -> int:
@@ -70,6 +70,30 @@ class Solution:
             remainder = prefix_sum % k
             result += mapping[remainder] + (remainder == 0)
             mapping[remainder] += 1
+
+        return result
+```
+
+Method 4 (Prefix Sum + Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def subarraysDivByK(self, nums: List[int], k: int) -> int:
+        result = 0
+        mapping = defaultdict(int)
+        mapping[0] = 1
+        prefix_sum = 0
+        for num in nums:
+            prefix_sum = (prefix_sum + num) % k
+            # Option 1
+            if prefix_sum in mapping.keys():
+                result += mapping[prefix_sum]
+            """
+            # Option 2
+
+            result += mapping[prefix_sum]
+            """
+
+            mapping[prefix_sum] += 1
 
         return result
 ```
