@@ -1,7 +1,66 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2037. [Minimum Number Of Moves To Seat Everyone](https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone)
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn min_moves_to_seat(mut seats: Vec<i32>, mut students: Vec<i32>) -> i32 {
+        seats.sort();
+        students.sort();
+        let mut result: i32 = 0;
+        for index in 0..seats.len() {
+            result += (seats[index] - students[index]).abs();
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 (Radix Sort, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+impl Solution {
+    pub fn min_moves_to_seat(seats: Vec<i32>, students: Vec<i32>) -> i32 {
+        let seats = Self::radix_sort(&seats);
+        let students = Self::radix_sort(&students);
+        let mut result: i32 = 0;
+        for index in 0..seats.len() {
+            result += (seats[index] - students[index]).abs();
+        }
+
+        return result
+    }
+
+    fn radix_sort(nums: &Vec<i32>) -> Vec<i32> {
+        let mut result: Vec<i32> = nums.clone();
+        for bit in 0..7 {
+            Self::bucket_sort(&mut result, bit);
+        }
+
+        return result
+    }
+
+    fn bucket_sort(mut nums: &mut Vec<i32>, bit: usize) {
+        let mut buckets: Vec<Vec<i32>> = vec![vec![]; 2];
+        for num in nums.iter() {
+            buckets[((*num >> bit)&1) as usize].push(*num);
+        }
+
+        let mut index: usize = 0;
+        for group in buckets {
+            for num in group {
+                nums[index] = num;
+                index += 1;
+            }
+        }
+    }
+}
+```
 
 ### Solution :
 
