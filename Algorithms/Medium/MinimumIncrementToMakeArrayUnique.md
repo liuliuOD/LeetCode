@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Built-In Sort, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+Method 1 (Built-In Sort + Hash Map + Hash Set, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def minIncrementForUnique(self, nums: List[int]) -> int:
@@ -29,7 +29,7 @@ class Solution:
         return result
 ```
 
-Method 2 (Radix Sort, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 2 (Radix Sort + Hash Map + Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def minIncrementForUnique(self, nums: List[int]) -> int:
@@ -70,4 +70,53 @@ class Solution:
                 index += 1
 
         return nums
+```
+
+Method 3 (Built-In Sort + Greedy, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def minIncrementForUnique(self, nums: List[int]) -> int:
+        nums.sort()
+        current = -1
+        result = 0
+        for num in nums:
+            if num <= current:
+                current += 1
+                result += current - num
+            else:
+                current = num
+
+        return result
+```
+
+Method 4 (Radix Sort + Greedy, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def minIncrementForUnique(self, nums: List[int]) -> int:
+        self.radix_sort(nums)
+        current = -1
+        result = 0
+        for num in nums:
+            if num <= current:
+                current += 1
+                result += current - num
+            else:
+                current = num
+
+        return result
+
+    def radix_sort(self, nums: list[int]):
+        for bit in range(len(str(max(nums)))):
+            self.bucket_sort(nums, bit)
+
+    def bucket_sort(self, nums: list[int], bit: int):
+        buckets = [[] for _ in range(10)]
+        for num in nums:
+            buckets[num // (10**bit) % 10].append(num)
+
+        index = 0
+        for bucket in buckets:
+            for num in bucket:
+                nums[index] = num
+                index += 1
 ```
