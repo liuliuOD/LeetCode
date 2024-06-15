@@ -19,6 +19,7 @@
 - [Minimum Falling Path Sum II](MinimumFallingPathSumII.md)
 - [Freedom Trail](FreedomTrail.md)
 - [Minimum Cost To Hire K Workers](MinimumCostToHireKWorkers.md)
+- [IPO](IPO.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
