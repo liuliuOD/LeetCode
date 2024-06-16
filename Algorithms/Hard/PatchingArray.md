@@ -31,7 +31,7 @@ impl Solution {
 
 ### Solution :
 
-Method 1 :
+Method 1 (Time Complexity: $O(N)$ (N: value of `n`), Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def minPatches(self, nums: List[int], target: int) -> int:
@@ -45,6 +45,24 @@ class Solution:
                 index += 1
             else:
                 miss += miss
+                result += 1
+
+        return result
+```
+
+Method 2 (Prefix Sum, Time Complexity: $O(N)$ (N: value of `n`), Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def minPatches(self, nums: List[int], n: int) -> int:
+        index = 0
+        prefix_sum = 0
+        result = 0
+        while prefix_sum < n:
+            if index < len(nums) and nums[index] <= prefix_sum+1:
+                prefix_sum += nums[index]
+                index += 1
+            else:
+                prefix_sum = prefix_sum*2 + 1
                 result += 1
 
         return result
