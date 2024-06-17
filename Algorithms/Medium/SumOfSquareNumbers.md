@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Pre-Calculate + Binary Search + Hash Map + Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Pre-Calculate + Binary Search + Hash Map + Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(MAX(N, 5*10^4))$) :
 ```python
 MAPPING: set[int] = set()
 CANDIDATES: list[int] = []
@@ -19,6 +19,23 @@ class Solution:
         for i in range(index+1):
             if c - CANDIDATES[i] in MAPPING:
                 return True
+
+        return False
+```
+
+Method 2 (Two Pointer, Time Complexity: $O(\sqrt{N})$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def judgeSquareSum(self, c: int) -> bool:
+        left, right = 0, int(c**0.5) + 1
+        while left <= right:
+            temp = left**2 + right**2
+            if temp == c:
+                return True
+            elif temp < c:
+                left += 1
+            elif temp > c:
+                right -= 1
 
         return False
 ```
