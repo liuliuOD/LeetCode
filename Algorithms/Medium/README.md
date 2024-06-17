@@ -99,7 +99,7 @@
 |[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[Palindrome Partitioning](PalindromePartitioning.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|
 |[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|[Count Triplets That Can Form Two Arrays Of Equal XOR](CountTripletsThatCanFormTwoArraysOfEqualXOR.md)|[Single Number III](SingleNumberIII.md)|[Find The Number Of Good Pairs II](FindTheNumberOfGoodPairsII.md)|[Lexicographically Minimum String After Removing Stars](LexicographicallyMinimumStringAfterRemovingStars.md)|
 |[Append Characters To String To Make Subsequence](AppendCharactersToStringToMakeSubsequence.md)|[Hand Of Straights](HandOfStraights.md)|[Replace Words](ReplaceWords.md)|[Continuous Subarray Sum](ContinuousSubarraySum.md)|[Sort Colors](SortColors.md)|
-|[Minimum Increment To Make Array Unique](MinimumIncrementToMakeArrayUnique.md)|||||
+|[Minimum Increment To Make Array Unique](MinimumIncrementToMakeArrayUnique.md)|[Sum Of Square Numbers](SumOfSquareNumbers.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
