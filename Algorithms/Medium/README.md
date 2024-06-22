@@ -35,7 +35,7 @@
 |[Double A Number Represented As A Linked List](DoubleANumberRepresentedAsALinkedList.md)|[Maximize Happiness Of Selected Children](MaximizeHappinessOfSelectedChildren.md)|[K-th Smallest Prime Fraction](KthSmallestPrimeFraction.md)|[Distribute Coins In Binary Tree](DistributeCoinsInBinaryTree.md)|[Special Array II](SpecialArrayII.md)|
 |[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|
 |[Append Characters To String To Make Subsequence](AppendCharactersToStringToMakeSubsequence.md)|[Subarray Sums Divisible By K](SubarraySumsDivisibleByK.md)|[Sort Colors](SortColors.md)|[Sum Of Square Numbers](SumOfSquareNumbers.md)|[Most Profit Assigning Work](MostProfitAssigningWork.md)|
-|[Magnetic Force Between Two Balls](MagneticForceBetweenTwoBalls.md)|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)||||
+|[Magnetic Force Between Two Balls](MagneticForceBetweenTwoBalls.md)|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|[Minimize The Difference Between Target And Chosen Elements](MinimizeTheDifferenceBetweenTargetAndChosenElements.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -101,7 +101,7 @@
 |[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|[Count Triplets That Can Form Two Arrays Of Equal XOR](CountTripletsThatCanFormTwoArraysOfEqualXOR.md)|[Single Number III](SingleNumberIII.md)|[Find The Number Of Good Pairs II](FindTheNumberOfGoodPairsII.md)|[Lexicographically Minimum String After Removing Stars](LexicographicallyMinimumStringAfterRemovingStars.md)|
 |[Append Characters To String To Make Subsequence](AppendCharactersToStringToMakeSubsequence.md)|[Hand Of Straights](HandOfStraights.md)|[Replace Words](ReplaceWords.md)|[Continuous Subarray Sum](ContinuousSubarraySum.md)|[Sort Colors](SortColors.md)|
 |[Minimum Increment To Make Array Unique](MinimumIncrementToMakeArrayUnique.md)|[Sum Of Square Numbers](SumOfSquareNumbers.md)|[Most Profit Assigning Work](MostProfitAssigningWork.md)|[Minimum Number Of Days To Make M Bouquets](MinimumNumberOfDaysToMakeMBouquets.md)|[Magnetic Force Between Two Balls](MagneticForceBetweenTwoBalls.md)|
-|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|||||
+|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|[Minimize The Difference Between Target And Chosen Elements](MinimizeTheDifferenceBetweenTargetAndChosenElements.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
