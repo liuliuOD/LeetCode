@@ -66,3 +66,28 @@ class Solution:
 
         return right
 ```
+
+Method 3 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def longestSubarray(self, nums: List[int], limit: int) -> int:
+        n = len(nums)
+        heap_max = []
+        heap_min = []
+        result = 0
+        left = 0
+        for right in range(n):
+            heapq.heappush(heap_max, (-nums[right], right))
+            heapq.heappush(heap_min, (nums[right], right))
+
+            while -heap_max[0][0]-heap_min[0][0] > limit:
+                left = min(heap_max[0][1], heap_min[0][1]) + 1
+                while heap_max[0][1] < left:
+                    heapq.heappop(heap_max)
+                while heap_min[0][1] < left:
+                    heapq.heappop(heap_min)
+
+            result = max(result, right - left + 1)
+
+        return result
+```
