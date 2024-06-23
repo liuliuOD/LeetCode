@@ -1,7 +1,24 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 3196. [Maximize Total Cost Of Alternating Subarrays](https://leetcode.com/problems/maximize-total-cost-of-alternating-subarrays)
+
+### Solution :
+
+Method 1 (Dynamic Programming + Space Optimization, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn maximum_total_cost(nums: Vec<i32>) -> i64 {
+        let (mut positive, mut negative) = (nums[0] as i64, nums[0] as i64);
+        for index in 1..nums.len() {
+            (positive, negative) = (nums[index] as i64 + i64::max(positive, negative), -nums[index] as i64 + positive);
+        }
+
+        return i64::max(positive, negative)
+    }
+}
+```
 
 ### Solution :
 
