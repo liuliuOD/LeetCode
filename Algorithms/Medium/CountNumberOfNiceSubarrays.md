@@ -70,3 +70,24 @@ class Solution:
 
         return result
 ```
+
+Method 4 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def numberOfSubarrays(self, nums: List[int], k: int) -> int:
+        return self.calculate_nice_subarrays(k, nums) - self.calculate_nice_subarrays(k-1, nums)
+
+    def calculate_nice_subarrays(self, k: int, nums: list[int]) -> int:
+        left = 0
+        count_ones = 0
+        result = 0
+        for right in range(len(nums)):
+            count_ones += nums[right] % 2
+            while count_ones > k:
+                count_ones -= nums[left] % 2
+                left += 1
+
+            result += right - left + 1
+
+        return result
+```
