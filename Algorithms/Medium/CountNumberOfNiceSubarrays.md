@@ -1,7 +1,36 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1248. [Count Number Of Nice Subarrays](https://leetcode.com/problems/count-number-of-nice-subarrays)
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn number_of_subarrays(nums: Vec<i32>, k: i32) -> i32 {
+        return Self::get_number_of_nice_subarrays(k, &nums) - Self::get_number_of_nice_subarrays(k-1, &nums)
+    }
+
+    fn get_number_of_nice_subarrays(k: i32, nums: &Vec<i32>) -> i32 {
+        let mut result: i32 = 0;
+        let mut amount_ones: i32 = 0;
+        let mut left: usize = 0;
+        for right in 0..nums.len() {
+            amount_ones += nums[right] % 2;
+            while amount_ones > k {
+                amount_ones -= nums[left] % 2;
+                left += 1;
+            }
+
+            result += (right - left) as i32 + 1;
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
