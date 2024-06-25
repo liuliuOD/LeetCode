@@ -1,7 +1,70 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1038. [Binary Search Tree To Greater Sum Tree](https://leetcode.com/problems/binary-search-tree-to-greater-sum-tree)
+
+### Solution :
+
+```rust
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+// 
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+```
+
+Method 1 (In-Order DFS, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree)) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn bst_to_gst(root: Custom) -> Custom {
+        Self::traverse(root.clone(), 0);
+        return root
+    }
+
+    fn traverse(mut node: Custom, mut sum_current: i32) -> i32 {
+        match node {
+            None => 0,
+            Some(node) => {
+                let mut inner = node.borrow_mut();
+                if inner.left.is_none() && inner.right.is_none() {
+                    inner.val += sum_current;
+                    return inner.val
+                }
+
+                if inner.right.is_some() {
+                    sum_current = Self::traverse(inner.right.clone(), sum_current);
+                }
+
+                inner.val += sum_current;
+                sum_current = inner.val;
+
+                if inner.left.is_some() {
+                    sum_current = Self::traverse(inner.left.clone(), sum_current);
+                }
+
+                return sum_current
+            }
+        }
+    }
+}
+```
 
 ### Solution :
 
