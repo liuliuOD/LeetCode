@@ -2,7 +2,7 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
-## [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
+## 94. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)
 
 ### Solution :
 
@@ -134,4 +134,23 @@ class Solution:
             return [root.val]
 
         return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
+```
+
+Method 2 (Iterative DFS, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree))
+```python
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        stack = []
+        node = root
+        while node or stack:
+            while node:
+                stack.append(node)
+                node = node.left
+
+            node = stack.pop()
+            result.append(node.val)
+            node = node.right
+
+        return result
 ```
