@@ -124,7 +124,7 @@ impl Solution {
 #         self.right = right
 ```
 
-Method 1 :
+Method 1 (Recursive DFS, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree)) :
 ```python
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
@@ -136,7 +136,7 @@ class Solution:
         return self.inorderTraversal(root.left) + [root.val] + self.inorderTraversal(root.right)
 ```
 
-Method 2 (Iterative DFS, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree))
+Method 2 (Iterative DFS, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree)) :
 ```python
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
@@ -151,6 +151,29 @@ class Solution:
             node = stack.pop()
             result.append(node.val)
             node = node.right
+
+        return result
+```
+
+Method 3 (Morris Traversal, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        result = []
+        node = root
+        while node:
+            if node.left:
+                node_current = node.left
+                while node_current.right:
+                    node_current = node_current.right
+
+                node_current.right = node
+                temp = node
+                node = node.left
+                temp.left = None
+            else:
+                result.append(node.val)
+                node = node.right
 
         return result
 ```

@@ -14,7 +14,7 @@
 #         self.right = right
 ```
 
-Method 1 (Recursively DFS + Array, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(D)$ (D: depth of the tree)) :
+Method 1 (Recursive DFS + Array, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(N)$) :
 ```python
 class Solution:
     def balanceBST(self, root: TreeNode) -> TreeNode:
