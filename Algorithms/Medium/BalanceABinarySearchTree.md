@@ -1,7 +1,83 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1382. [Balance A Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree)
+
+### Solution :
+
+```rust
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+//
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+```
+
+Method 1 (Iterative DFS + Array, Time Complexity: $O(N)$ (N: number of the nodes in the tree), Space Complexity: $O(N)$) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn balance_bst(root: Custom) -> Custom {
+        let ordered: Vec<i32> = Self::traverse(root.clone());
+
+        return Self::build_tree(0, ordered.len()-1, &ordered)
+    }
+
+    fn traverse(node: Custom) -> Vec<i32> {
+        let mut result: Vec<i32> = vec![];
+        let mut stack: Vec<Custom> = vec![];
+        let mut current: Custom = node.clone();
+        while current.is_some() || stack.len() > 0 {
+            let mut node_move = current.clone();
+            while node_move.is_some() {
+                stack.push(node_move.clone());
+                node_move = node_move.unwrap().borrow().left.clone();
+            }
+
+            node_move = stack.pop().unwrap();
+            if let Some(inner) = node_move {
+                result.push(inner.borrow().val);
+                current = inner.borrow().right.clone();
+            }
+        }
+
+        return result
+    }
+
+    fn build_tree(index_left: usize, index_right: usize, ordered: &Vec<i32>) -> Custom {
+        if index_left > index_right {
+            return None
+        }
+
+        let index_middle: usize = index_left + (index_right - index_left)/2;
+        let mut result = TreeNode::new(ordered[index_middle]);
+        if index_middle < ordered.len()-1 {
+            result.right = Self::build_tree(index_middle+1, index_right, ordered);
+        }
+        if index_middle > 0 {
+            result.left = Self::build_tree(index_left, index_middle-1, ordered);
+        }
+
+        return Some(Rc::new(RefCell::new(result)))
+    }
+}
+```
 
 ### Solution :
 
