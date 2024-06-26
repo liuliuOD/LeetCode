@@ -1,7 +1,43 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1438. [Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit](https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit)
+
+### Solution :
+
+Method 1 (Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$) :
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn longest_subarray(nums: Vec<i32>, limit: i32) -> i32 {
+        let mut result: i32 = 0;
+        let mut heap_min: BinaryHeap<(i32, usize)> = BinaryHeap::new();
+        let mut heap_max: BinaryHeap<(i32, usize)> = BinaryHeap::new();
+        let mut left: usize = 0;
+        let mut right: usize = nums.len() - 1;
+        for right in 0..nums.len() {
+            heap_min.push((-nums[right], right));
+            heap_max.push((nums[right], right));
+
+            while (*heap_max.peek().unwrap()).0 + (*heap_min.peek().unwrap()).0 > limit {
+                left = usize::min((*heap_max.peek().unwrap()).1, (*heap_min.peek().unwrap()).1) + 1;
+                while (*heap_max.peek().unwrap()).1 < left {
+                    heap_max.pop();
+                }
+                while (*heap_min.peek().unwrap()).1 < left {
+                    heap_min.pop();
+                }
+            }
+
+            result = i32::max(result, (right - left + 1) as i32);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 

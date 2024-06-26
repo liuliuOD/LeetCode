@@ -36,7 +36,7 @@
 |[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|[The Number Of Beautiful Subsets](TheNumberOfBeautifulSubsets.md)|[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|
 |[Append Characters To String To Make Subsequence](AppendCharactersToStringToMakeSubsequence.md)|[Subarray Sums Divisible By K](SubarraySumsDivisibleByK.md)|[Sort Colors](SortColors.md)|[Sum Of Square Numbers](SumOfSquareNumbers.md)|[Most Profit Assigning Work](MostProfitAssigningWork.md)|
 |[Magnetic Force Between Two Balls](MagneticForceBetweenTwoBalls.md)|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|[Minimize The Difference Between Target And Chosen Elements](MinimizeTheDifferenceBetweenTargetAndChosenElements.md)|[Maximize Total Cost Of Alternating Subarrays](MaximizeTotalCostOfAlternatingSubarrays.md)|[Count Number Of Nice Subarrays](CountNumberOfNiceSubarrays.md)|
-|[Binary Search Tree To Greater Sum Tree](BinarySearchTreeToGreaterSumTree.md)|[Balance A Binary Search Tree](BalanceABinarySearchTree.md)||||
+|[Binary Search Tree To Greater Sum Tree](BinarySearchTreeToGreaterSumTree.md)|[Balance A Binary Search Tree](BalanceABinarySearchTree.md)|[Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit](LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
