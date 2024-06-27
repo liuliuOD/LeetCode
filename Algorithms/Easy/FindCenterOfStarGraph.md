@@ -1,7 +1,22 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1791. [Find Center Of Star Graph](https://leetcode.com/problems/find-center-of-star-graph)
+
+### Solution :
+
+Method 1 (Greedy, Time Complexity: $O(1)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn find_center(edges: Vec<Vec<i32>>) -> i32 {
+        return match edges[1].contains(&edges[0][0]) {
+            true => edges[0][0],
+            false => edges[0][1],
+        }
+    }
+}
+```
 
 ### Solution :
 
@@ -37,7 +52,7 @@ class Solution:
         return -1
 ```
 
-Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+Method 2 (Greedy, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
 ```python
 class Solution:
     def findCenter(self, edges: List[List[int]]) -> int:
@@ -48,4 +63,13 @@ class Solution:
                 return edges[index-1][1]
 
         return -1
+```
+
+Method 3 (Greedy, Time Complexity: $O(1)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def findCenter(self, edges: List[List[int]]) -> int:
+        if edges[0][0] in edges[1]:
+            return edges[0][0]
+        return edges[0][1]
 ```
