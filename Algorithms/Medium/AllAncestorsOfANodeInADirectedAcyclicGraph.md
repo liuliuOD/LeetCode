@@ -70,3 +70,39 @@ class Solution:
         bisect.insort(parents_sorted, index)
         return parents_sorted
 ```
+
+Method 3 (BFS + Topological Sort, Time Complexity: $O(M+N*Log(N))$, Space Complexity: $O(M+N)$) :
+```python
+class Solution:
+    def getAncestors(self, n: int, edges: List[List[int]]) -> List[List[int]]:
+        indegree = [0] * n
+        graph = [[] for _ in range(n)]
+        for n_from, n_to in edges:
+            graph[n_from].append(n_to)
+            indegree[n_to] += 1
+
+        stack = []
+        for index, amount_in in enumerate(indegree):
+            if amount_in == 0:
+                stack.append(index)
+
+        topological_order = []
+        while stack:
+            index = stack.pop()
+            topological_order.append(index)
+            for index_child in graph[index]:
+                indegree[index_child] -= 1
+                if indegree[index_child] == 0:
+                    stack.append(index_child)
+
+        parents: list[set[int]] = [set() for _ in range(n)]
+        for index in topological_order:
+            for index_child in graph[index]:
+                parents[index_child].update(set([index]) | parents[index])
+
+        result: list[list[int]] = [[] for _ in range(n)]
+        for index, children in enumerate(parents):
+            result[index] = sorted(list(children))
+
+        return result
+```
