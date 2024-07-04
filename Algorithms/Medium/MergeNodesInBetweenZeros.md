@@ -39,3 +39,27 @@ class Solution:
 
         return head
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```python
+class Solution:
+    def mergeNodes(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head is None:
+            return head
+
+        node_remaining = head
+        node = head.next
+        while node:
+            node_remaining.val += node.val
+            if node.val == 0 and node_remaining.val > 0:
+                if node.next:
+                    node_remaining.next = node
+                else:
+                    node_remaining.next = None
+
+                node_remaining = node
+
+            node = node.next
+
+        return head
+```
