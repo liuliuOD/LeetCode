@@ -1,7 +1,59 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2181. [Merge Nodes In Between Zeros](https://leetcode.com/problems/merge-nodes-in-between-zeros)
+
+### Solution :
+
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+// 
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+```
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn merge_nodes(mut head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        if head.is_none() {
+            return head
+        }
+
+        let mut node: Option<&mut ListNode> = head.as_deref_mut();
+        while let Some(inner) = node.take() {
+            match inner.next.take() {
+                None => break,
+                Some(mut inner_next) => {
+                    if inner_next.val == 0 {
+                        inner.next = inner_next.next.take();
+                        node = inner.next.as_deref_mut();
+                    } else {
+                        inner.val += inner_next.val;
+                        inner.next = inner_next.next;
+                        node = Some(inner);
+                    }
+                },
+            };
+        }
+
+        return head
+    }
+}
+```
 
 ### Solution :
 
