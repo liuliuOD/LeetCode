@@ -31,3 +31,24 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Simulation + Queue, Time Complexity: $O(N*K)$, Space Complexity: $O(N)$ (N: value of `n`, K: value of `k`)) :
+```rust
+use std::collections::VecDeque;
+
+impl Solution {
+    pub fn find_the_winner(n: i32, k: i32) -> i32 {
+        let mut queue: VecDeque<i32> = VecDeque::from_iter((1..=n).into_iter());
+        while (queue.len() as i32) > 1 {
+            for _ in 0..k-1 {
+                let first: i32 = queue.pop_front().unwrap();
+                queue.push_back(first);
+            }
+
+            queue.pop_front();
+        }
+
+        return queue.pop_front().unwrap()
+    }
+}
+```
