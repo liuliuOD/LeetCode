@@ -25,3 +25,21 @@ class Solution:
 
         return ''.join(filter(lambda char: char not in ['(', ')'], result))
 ```
+
+Method 2 (Stack, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: length of `s`)) :
+```python
+class Solution:
+    def reverseParentheses(self, s: str) -> str:
+        stack = []
+        result = []
+        for index, char in enumerate(s):
+            if char == "(":
+                stack.append(len(result))
+            elif char == ")":
+                index_start = stack.pop()
+                result[index_start:] = reversed(result[index_start:])
+            else:
+                result.append(char)
+
+        return ''.join(result)
+```
