@@ -117,3 +117,37 @@ class Solution:
 
         return None if left >= n else left
 ```
+
+Method 3 (Sorted + Stack, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: number of the elements in `positions`)) :
+```python
+class Solution:
+    def survivedRobotsHealths(self, positions: List[int], healths: List[int], directions: str) -> List[int]:
+        n = len(positions)
+        positions_sorted = sorted(enumerate(positions), key=lambda item: item[1])
+
+        stack_right = []
+        for index in range(n):
+            index_current = positions_sorted[index][0]
+            if directions[index_current] == 'R':
+                stack_right.append(index_current)
+            elif directions[index_current] == 'L':
+                while stack_right:
+                    index_right = stack_right[-1]
+                    health_right = healths[index_right]
+                    health_left = healths[index_current]
+                    if health_right > health_left:
+                        healths[index_right] -= 1
+                        healths[index_current] = 0
+                        break
+                    elif health_right == health_left:
+                        healths[index_right] = 0
+                        stack_right.pop()
+                        healths[index_current] = 0
+                        break
+                    else:
+                        healths[index_right] = 0
+                        stack_right.pop()
+                        healths[index_current] -= 1
+
+        return list(filter(lambda health: health > 0, healths))
+```
