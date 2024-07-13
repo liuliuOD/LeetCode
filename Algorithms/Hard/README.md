@@ -21,6 +21,7 @@
 - [Minimum Cost To Hire K Workers](MinimumCostToHireKWorkers.md)
 - [IPO](IPO.md)
 - [Construct String With Minimum Cost](ConstructStringWithMinimumCost.md)
+- [Robot Collisions](RobotCollisions.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3

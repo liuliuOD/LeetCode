@@ -1,7 +1,62 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2751. [Robot Collisions](https://leetcode.com/problems/robot-collisions)
+
+### Solution :
+
+Method 1 (Sorted + Stack, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: number of the elements in `positions`)) :
+```rust
+use std::cmp::Ordering;
+
+impl Solution {
+    pub fn survived_robots_healths(
+        positions: Vec<i32>,
+        mut healths: Vec<i32>,
+        directions: String,
+    ) -> Vec<i32> {
+        let n = positions.len();
+        let mut positions_sorted: Vec<(usize, i32)> = positions.into_iter().enumerate().collect();
+        positions_sorted.sort_by(|a, b| a.1.cmp(&b.1));
+        let directions_vec: Vec<char> = directions.chars().collect();
+
+        let mut stack_right: Vec<usize> = vec![];
+        for index in 0..n {
+            let index_current = positions_sorted[index].0;
+            match directions_vec[index_current] {
+                'R' => stack_right.push(index_current),
+                'L' | _ => {
+                    while let Some(&index_right) = stack_right.last() {
+                        let health_right = healths[index_right];
+                        let health_left = healths[index_current];
+                        match health_right.cmp(&health_left) {
+                            Ordering::Greater | Ordering::Equal => {
+                                if health_right == health_left {
+                                    healths[index_right] = 0;
+                                    stack_right.pop();
+                                } else {
+                                    healths[index_right] -= 1;
+                                }
+
+                                healths[index_current] = 0;
+                                break;
+                            }
+                            Ordering::Less => {
+                                healths[index_right] = 0;
+                                stack_right.pop();
+                                healths[index_current] -= 1;
+                            }
+                        };
+                    }
+                },
+            };
+        }
+
+        return healths.into_iter().filter(|&health| health > 0).collect()
+    }
+}
+```
 
 ### Solution :
 
