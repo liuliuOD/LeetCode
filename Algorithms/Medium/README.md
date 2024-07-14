@@ -38,7 +38,7 @@
 |[Magnetic Force Between Two Balls](MagneticForceBetweenTwoBalls.md)|[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|[Minimize The Difference Between Target And Chosen Elements](MinimizeTheDifferenceBetweenTargetAndChosenElements.md)|[Maximize Total Cost Of Alternating Subarrays](MaximizeTotalCostOfAlternatingSubarrays.md)|[Count Number Of Nice Subarrays](CountNumberOfNiceSubarrays.md)|
 |[Binary Search Tree To Greater Sum Tree](BinarySearchTreeToGreaterSumTree.md)|[Balance A Binary Search Tree](BalanceABinarySearchTree.md)|[Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit](LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.md)|[Merge Nodes In Between Zeros](MergeNodesInBetweenZeros.md)|[Find The Minimum And Maximum Number Of Nodes Between Critical Points](FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.md)|
 |[Generate Binary Strings Without Adjacent Zeros](GenerateBinaryStringsWithoutAdjacentZeros.md)|[Count Submatrices With Equal Frequency Of X And Y](CountSubmatricesWithEqualFrequencyOfXAndY.md)|[Find The Winner Of The Circular Game](FindTheWinnerOfTheCircularGame.md)|[Average Waiting Time](AverageWaitingTime.md)|[Delete Nodes From Linked List Present In Array](DeleteNodesFromLinkedListPresentInArray.md)|
-|[Minimum Cost For Cutting Cake I](MinimumCostForCuttingCakeI.md)|||||
+|[Minimum Cost For Cutting Cake I](MinimumCostForCuttingCakeI.md)|[Valid Parenthesis String](ValidParenthesisString.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
