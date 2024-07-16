@@ -107,7 +107,7 @@
 |[Grumpy Bookstore Owner](GrumpyBookstoreOwner.md)|[Minimize The Difference Between Target And Chosen Elements](MinimizeTheDifferenceBetweenTargetAndChosenElements.md)|[Count Number Of Nice Subarrays](CountNumberOfNiceSubarrays.md)|[Longest Continuous Subarray With Absolute Diff Less Than Or Equal To Limit](LongestContinuousSubarrayWithAbsoluteDiffLessThanOrEqualToLimit.md)|[Maximize Total Cost Of Alternating Subarrays](MaximizeTotalCostOfAlternatingSubarrays.md)|
 |[Binary Search Tree To Greater Sum Tree](BinarySearchTreeToGreaterSumTree.md)|[Balance A Binary Search Tree](BalanceABinarySearchTree.md)|[Maximum Total Importance Of Roads](MaximumTotalImportanceOfRoads.md)|[All Ancestors Of A Node In A Directed Acyclic Graph](AllAncestorsOfANodeInADirectedAcyclicGraph.md)|[Find The Maximum Length Of Valid Subsequence II](FindTheMaximumLengthOfValidSubsequenceII.md)|
 |[Minimum Difference Between Largest And Smallest Value In Three Moves](MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.md)|[Merge Nodes In Between Zeros](MergeNodesInBetweenZeros.md)|[Find The Minimum And Maximum Number Of Nodes Between Critical Points](FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.md)|[Reverse Substrings Between Each Pair Of Parentheses](ReverseSubstringsBetweenEachPairOfParentheses.md)|[Maximum Score From Removing Substrings](MaximumScoreFromRemovingSubstrings.md)|
-|[Create Binary Tree From Descriptions](CreateBinaryTreeFromDescriptions.md)|||||
+|[Create Binary Tree From Descriptions](CreateBinaryTreeFromDescriptions.md)|[Step-By-Step Directions From A Binary Tree Node To Another](StepByStepDirectionsFromABinaryTreeNodeToAnother.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
