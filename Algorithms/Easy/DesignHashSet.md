@@ -30,15 +30,15 @@ impl MyHashSet {
             set: [false; SET_LENGTH],
         }
     }
-    
+
     fn add(&mut self, key: i32) {
         self.set[key as usize] = true;
     }
-    
+
     fn remove(&mut self, key: i32) {
         self.set[key as usize] = false;
     }
-    
+
     fn contains(&self, key: i32) -> bool {
         return self.set[key as usize]
     }

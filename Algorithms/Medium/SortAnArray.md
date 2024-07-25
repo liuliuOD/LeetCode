@@ -42,3 +42,96 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Heap Sort, Time Complexity: $(N*Log(N))$, Space Complexity: $O(Log(N))$) :
+```rust
+impl Solution {
+    pub fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
+        Self::heap_sort(&mut nums);
+        return nums
+    }
+
+    fn heap_sort(mut nums: &mut Vec<i32>) {
+        let n: usize = nums.len();
+        for index_root in (0..n/2).rev() {
+            Self::heapify(index_root, nums, n);
+        }
+
+        for m in (1..n).rev() {
+            nums.swap(0, m);
+            Self::heapify(0, nums, m);
+        }
+    }
+
+    fn heapify(index: usize, mut nums: &mut Vec<i32>, n: usize) {
+        let mut index_root: usize = index;
+        let index_left: usize = 2*index_root + 1;
+        let index_right: usize = 2*index_root + 2;
+
+        if index_left < n && nums[index_left] > nums[index_root] {
+            index_root = index_left;
+        }
+        if index_right < n && nums[index_right] > nums[index_root] {
+            index_root = index_right;
+        }
+
+        if index_root != index {
+            nums.swap(index_root, index);
+            Self::heapify(index_root, nums, n);
+        }
+    }
+}
+```
+
+Method 3 (Heap Sort, Time Complexity: $(N*Log(N))$, Space Complexity: $O(Log(N))$) :
+```rust
+struct Heap<'a> {
+    nums: &'a mut Vec<i32>,
+}
+
+impl<'a> Heap<'a> {
+
+    fn new(nums: &'a mut Vec<i32>) -> Self {
+        return Self {
+            nums: nums,
+        }
+    }
+
+    pub fn sort(&mut self) {
+        let n: usize = self.nums.len();
+        for index_root in (0..n/2).rev() {
+            self.heapify(index_root, n);
+        }
+
+        for m in (1..n).rev() {
+            self.nums.swap(0, m);
+            self.heapify(0, m);
+        }
+    }
+
+    fn heapify(&mut self, index: usize, n: usize) {
+        let mut index_root: usize = index;
+        let index_left: usize = 2*index_root + 1;
+        let index_right: usize = 2*index_root + 2;
+
+        if index_left < n && self.nums[index_left] > self.nums[index_root] {
+            index_root = index_left;
+        }
+        if index_right < n && self.nums[index_right] > self.nums[index_root] {
+            index_root = index_right;
+        }
+
+        if index_root != index {
+            self.nums.swap(index_root, index);
+            self.heapify(index_root, n);
+        }
+    }
+}
+
+impl Solution {
+    pub fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
+        Heap::new(&mut nums).sort();
+        return nums
+    }
+}
+```
