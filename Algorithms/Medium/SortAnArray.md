@@ -135,3 +135,76 @@ impl Solution {
     }
 }
 ```
+
+Method 4 (Merge Sort, Time Complexity: $(N*Log(N))$, Space Complexity: $O(N)$) :
+```rust
+struct Merge<'a> {
+    nums: &'a mut Vec<i32>,
+}
+
+impl<'a> Merge<'a> {
+
+    fn new(nums: &'a mut Vec<i32>) -> Self {
+        return Self {
+            nums: nums,
+        }
+    }
+
+    pub fn sort(&mut self, left: usize, right: usize) {
+        if left >= right {
+            return
+        }
+
+        let middle: usize = left + (right - left)/2;
+        self.sort(left, middle);
+        self.sort(middle+1, right);
+        self.merge(left, right);
+    }
+
+    fn merge(&mut self, mut index_left: usize, index_right: usize) {
+        if index_left >= index_right {
+            return
+        }
+
+        let index_middle: usize = index_left + (index_right - index_left)/2;
+        let nums_subleft: Vec<i32> = self.nums[index_left..=index_middle].to_vec();
+        let nums_subright: Vec<i32> = self.nums[index_middle+1..=index_right].to_vec();
+
+        let mut index_subleft: usize = 0;
+        let mut index_subright: usize = 0;
+        while index_subleft < nums_subleft.len() && index_subright < nums_subright.len() {
+            if nums_subleft[index_subleft] < nums_subright[index_subright] {
+                self.nums[index_left] = nums_subleft[index_subleft];
+                index_subleft += 1;
+            } else {
+                self.nums[index_left] = nums_subright[index_subright];
+                index_subright += 1;
+            }
+            index_left += 1;
+        }
+
+        while index_subleft < nums_subleft.len() {
+            self.nums[index_left] = nums_subleft[index_subleft];
+            index_subleft += 1;
+            index_left += 1;
+        }
+
+        while index_subright < nums_subright.len() {
+            self.nums[index_left] = nums_subright[index_subright];
+            index_subright += 1;
+            index_left += 1;
+        }
+    }
+}
+
+impl Solution {
+    pub fn sort_array(mut nums: Vec<i32>) -> Vec<i32> {
+        if !nums.is_empty() {
+            let n: usize = nums.len();
+            Merge::new(&mut nums).sort(0, n-1);
+        }
+
+        return nums
+    }
+}
+```
