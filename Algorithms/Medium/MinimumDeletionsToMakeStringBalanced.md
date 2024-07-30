@@ -33,3 +33,41 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $(N)$, Space Complexity: $O(1)$ (N: length of `s`)) :
+```rust
+impl Solution {
+    pub fn minimum_deletions(s: String) -> i32 {
+        if s.len() <= 1 {
+            return 0
+        }
+
+        let mut amount_a: usize = 0;
+        let mut amount_b: usize = 0;
+        for ch in s.bytes() {
+            if ch == b'a' {
+                amount_a += 1;
+            } else if ch == b'b' {
+                amount_b += 1;
+            }
+        }
+
+        let mut result: i32 = i32::MAX;
+        let mut amount_a_current: usize = 0;
+        let mut amount_b_current: usize = 0;
+        for ch in s.bytes() {
+            if ch == b'a' {
+                amount_a_current += 1;
+            }
+
+            result = result.min((amount_b_current+amount_a-amount_a_current) as i32);
+
+            if ch == b'b' {
+                amount_b_current += 1;
+            }
+        }
+
+        return result
+    }
+}
+```
