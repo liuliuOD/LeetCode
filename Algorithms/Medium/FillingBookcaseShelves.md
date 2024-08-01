@@ -51,3 +51,30 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Dynamic Programming, Time Complexity: $(M*N)$, Space Complexity: $O(M)$ (M: numbers of the elements in `books`, N: value of `shelf_width`)) :
+```rust
+impl Solution {
+    pub fn min_height_shelves(books: Vec<Vec<i32>>, shelf_width: i32) -> i32 {
+        let n: usize = books.len();
+        let mut dp: Vec<i32> = vec![0; n+1];
+        dp[1] = books[0][1];
+
+        for index_last in 1..n {
+            let mut sum_width: i32 = books[index_last][0];
+            let mut maximum_height: i32 = books[index_last][1];
+            dp[index_last+1] = maximum_height + dp[index_last];
+            let mut index_previous: usize = index_last - 1;
+            while index_previous >= 0 && index_previous < n && sum_width+books[index_previous][0] <= shelf_width {
+                sum_width += books[index_previous][0];
+                maximum_height = maximum_height.max(books[index_previous][1]);
+                dp[index_last+1] = dp[index_last+1].min(dp[index_previous] + maximum_height);
+
+                index_previous -= 1;
+            }
+        }
+
+        return *dp.last().unwrap()
+    }
+}
+```
