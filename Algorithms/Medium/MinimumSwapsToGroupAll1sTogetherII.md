@@ -1,7 +1,44 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2134. [Minimum Swaps To Group All 1's Together II](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together-ii)
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(M+N)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn min_swaps(nums: Vec<i32>) -> i32 {
+        let n: usize = nums.len();
+        let window: usize = nums.iter().filter(|&value| *value == 1).count();
+        let mut result: i32 = i32::MAX;
+        let mut index_left: usize = 0;
+        let mut amount_zeros: i32 = 0;
+        for index_right in 0..n+window {
+            if nums[index_right%n] == 0 {
+                amount_zeros += 1;
+            }
+
+            if index_right >= window-1 || window == 0 {
+                if index_right >= window {
+                    if nums[index_left%n] == 0 {
+                        amount_zeros -= 1;
+                    }
+
+                    index_left += 1;
+                }
+
+                if result > amount_zeros {
+                    result = amount_zeros;
+                }
+            }
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
