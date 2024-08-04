@@ -19,3 +19,22 @@ class Solution:
         array.sort()
         return sum(array[left-1:right]) % 1_000_000_007
 ```
+
+Method 2 (Binary Heap, Time Complexity: $O(N^2*Log(N))$, Space Complexity: $O(N)$) :
+```python
+class Solution:
+    def rangeSum(self, nums: List[int], n: int, left: int, right: int) -> int:
+        heap = [(num, index) for index, num in enumerate(nums)]
+        heapq.heapify(heap)
+
+        result = 0
+        for amount_pop in range(1, right+1):
+            num, index = heapq.heappop(heap)
+            if amount_pop >= left:
+                result = (result + num) % 1_000_000_007
+
+            if index < n-1:
+                heapq.heappush(heap, (num+nums[index+1], index+1))
+
+        return result
+```
