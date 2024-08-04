@@ -110,7 +110,7 @@
 |[Binary Search Tree To Greater Sum Tree](BinarySearchTreeToGreaterSumTree.md)|[Balance A Binary Search Tree](BalanceABinarySearchTree.md)|[Maximum Total Importance Of Roads](MaximumTotalImportanceOfRoads.md)|[All Ancestors Of A Node In A Directed Acyclic Graph](AllAncestorsOfANodeInADirectedAcyclicGraph.md)|[Find The Maximum Length Of Valid Subsequence II](FindTheMaximumLengthOfValidSubsequenceII.md)|
 |[Minimum Difference Between Largest And Smallest Value In Three Moves](MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.md)|[Merge Nodes In Between Zeros](MergeNodesInBetweenZeros.md)|[Find The Minimum And Maximum Number Of Nodes Between Critical Points](FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.md)|[Reverse Substrings Between Each Pair Of Parentheses](ReverseSubstringsBetweenEachPairOfParentheses.md)|[Maximum Score From Removing Substrings](MaximumScoreFromRemovingSubstrings.md)|
 |[Create Binary Tree From Descriptions](CreateBinaryTreeFromDescriptions.md)|[Step-By-Step Directions From A Binary Tree Node To Another](StepByStepDirectionsFromABinaryTreeNodeToAnother.md)|[Number Of Good Leaf Nodes Pairs](NumberOfGoodLeafNodesPairs.md)|[Find Valid Matrix Given Row And Column Sums](FindValidMatrixGivenRowAndColumnSums.md)|[Minimum Swaps To Group All 1's Together II](MinimumSwapsToGroupAll1sTogetherII.md)|
-|[Count The Number Of Substrings With Dominant Ones](CountTheNumberOfSubstringsWithDominantOnes.md)|||||
+|[Count The Number Of Substrings With Dominant Ones](CountTheNumberOfSubstringsWithDominantOnes.md)|[Range Sum Of Sorted Subarray Sums](RangeSumOfSortedSubarraySums.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
