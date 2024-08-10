@@ -17,6 +17,7 @@ class Solution:
             for index_n in range(n):
                 value = grid[index_m][index_n]
                 match value:
+                    # Option 1
                     case "/":
                         graph[index_m*MULTIPLIER][index_n*MULTIPLIER+2] = 1
                         graph[index_m*MULTIPLIER+1][index_n*MULTIPLIER+1] = 1
@@ -25,6 +26,16 @@ class Solution:
                         graph[index_m*MULTIPLIER][index_n*MULTIPLIER] = 1
                         graph[index_m*MULTIPLIER+1][index_n*MULTIPLIER+1] = 1
                         graph[index_m*MULTIPLIER+2][index_n*MULTIPLIER+2] = 1
+                    """
+                    # Option 2
+
+                    case "/":
+                        for offset in range(MULTIPLIER):
+                            graph[index_m*MULTIPLIER+offset][index_n*MULTIPLIER+MULTIPLIER-offset-1] = 1
+                    case "\\":
+                        for offset in range(MULTIPLIER):
+                            graph[index_m*MULTIPLIER+offset][index_n*MULTIPLIER+offset] = 1
+                    """
 
         result = 0
         for index_m in range(len(graph)):
