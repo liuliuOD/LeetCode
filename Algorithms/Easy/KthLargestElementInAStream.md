@@ -94,6 +94,45 @@ impl KthLargest {
 }
 ```
 
+Method 3 (Minimum Heap) :
+```rust
+use std::collections::BinaryHeap;
+use std::cmp::Reverse;
+
+struct KthLargest {
+    k: usize,
+    items: BinaryHeap<Reverse<i32>>,
+}
+
+
+/**
+ * `&self` means the method takes an immutable reference.
+ * If you need a mutable reference, change it to `&mut self` instead.
+ */
+impl KthLargest {
+
+    fn new(k: i32, nums: Vec<i32>) -> Self {
+        return Self {
+            k: k as usize,
+            items: nums.into_iter().map(|value| Reverse(value)).collect::<BinaryHeap<Reverse<i32>>>(),
+        }
+    }
+
+    fn add(&mut self, val: i32) -> i32 {
+        self.items.push(Reverse(val));
+
+        while self.items.len() > self.k {
+            self.items.pop();
+        }
+
+        return match self.items.peek() {
+            Some(Reverse(val)) => *val,
+            None => 0,
+        }
+    }
+}
+```
+
 ### Solution :
 
 ```python
