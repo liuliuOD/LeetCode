@@ -136,3 +136,16 @@ class KthLargest:
 
         return self.min_heap[0]
 ```
+
+Method 3 (Binary Search) :
+```python
+class KthLargest:
+
+    def __init__(self, k: int, nums: List[int]):
+        self.items = sorted(nums)
+        self.k = k
+
+    def add(self, val: int) -> int:
+        bisect.insort_left(self.items, val)
+        return self.items[-self.k]
+```
