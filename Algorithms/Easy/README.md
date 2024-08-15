@@ -34,7 +34,7 @@
 |[Find Common Characters](FindCommonCharacters.md)|[Relative Sort Array](RelativeSortArray.md)|[Minimum Number Of Moves To Seat Everyone](MinimumNumberOfMovesToSeatEveryone.md)|[Find Center Of Star Graph](FindCenterOfStarGraph.md)|[Three Consecutive Odds](ThreeConsecutiveOdds.md)|
 |[Intersection Of Two Arrays II](IntersectionOfTwoArraysII.md)|[Pass The Pillow](PassThePillow.md)|[Water Bottles](WaterBottles.md)|[Find The Encrypted String](FindTheEncryptedString.md)|[Crawler Log Folder](CrawlerLogFolder.md)|
 |[Lexicographically Smallest String After A Swap](LexicographicallySmallestStringAfterASwap.md)|[Find The Pivot Integer](FindThePivotInteger.md)|[Lucky Numbers In A Matrix](LuckyNumbersInAMatrix.md)|[Sort The People](SortThePeople.md)|[Sort Array By Increasing Frequency](SortArrayByIncreasingFrequency.md)|
-|[Make Two Arrays Equal By Reversing Subarrays](MakeTwoArraysEqualByReversingSubarrays.md)|[Kth Distinct String In An Array](KthDistinctStringInAnArray.md)||||
+|[Make Two Arrays Equal By Reversing Subarrays](MakeTwoArraysEqualByReversingSubarrays.md)|[Kth Distinct String In An Array](KthDistinctStringInAnArray.md)|[Lemonade Change](LemonadeChange.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
