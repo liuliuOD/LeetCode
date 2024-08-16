@@ -43,3 +43,40 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: number of the elements in `bills`)) :
+```rust
+impl Solution {
+    pub fn lemonade_change(bills: Vec<i32>) -> bool {
+        let mut amount_5_dollar: usize = 0;
+        let mut amount_10_dollar: usize = 0;
+        for bill in bills {
+            if bill == 5 {
+                amount_5_dollar += 1;
+            } else if bill == 10 {
+                if amount_5_dollar == 0 {
+                    return false
+                }
+
+                amount_5_dollar -= 1;
+                amount_10_dollar += 1;
+            } else if bill == 20 {
+                if amount_5_dollar == 0 {
+                    return false
+                } else if amount_10_dollar > 0 {
+                    amount_5_dollar -= 1;
+                    amount_10_dollar -= 1;
+                    continue;
+                } else if amount_5_dollar >= 3 {
+                    amount_5_dollar -= 3;
+                    continue;
+                }
+
+                return false
+            }
+        }
+
+        return true
+    }
+}
+```
