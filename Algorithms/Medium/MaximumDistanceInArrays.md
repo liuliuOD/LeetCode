@@ -76,3 +76,29 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Greedy) :
+```rust
+impl Solution {
+    pub fn max_distance(arrays: Vec<Vec<i32>>) -> i32 {
+        let mut minimum: i32 = arrays[0][0];
+        let mut maximum: i32 = *arrays[0].last().unwrap();
+        let mut result: i32 = 0;
+        for array in arrays.iter().skip(1) {
+            let minimum_current: i32 = array[0];
+            let maximum_current: i32 = *array.last().unwrap();
+            /* Option 1 */
+            result = *[result, (maximum-minimum_current).abs(), (maximum_current-minimum).abs()].iter().max().unwrap();
+            /* Option 2
+
+            result = result.max((maximum-minimum_current).abs().max((maximum_current-minimum).abs()));
+            */
+
+            minimum = minimum.min(minimum_current);
+            maximum = maximum.max(maximum_current);
+        }
+
+        return result
+    }
+}
+```
