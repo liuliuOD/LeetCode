@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 1937. [Ugly Number II](https://leetcode.com/problems/ugly-number-ii)
@@ -14,4 +15,75 @@ impl Solution {
         return UGLY_NUMBERS[n as usize-1]
     }
 }
+```
+
+Method 2 (Binary Heap + Hash Set, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(M)$) :
+```rust
+use std::cmp::Reverse;
+use std::collections::{BinaryHeap, HashSet};
+
+impl Solution {
+    pub fn nth_ugly_number(n: i32) -> i32 {
+        let mut result: i64 = 1;
+        let mut heap: BinaryHeap<Reverse<i64>> = BinaryHeap::from([Reverse(result)]);
+        let mut visited: HashSet<i64> = HashSet::from([result]);
+        for _ in 0..n {
+            if let Reverse(value) = heap.pop().unwrap() {
+                result = value;
+
+                    for prime in [2, 3, 5] {
+                        let value_multiple: i64 = result * prime;
+                        if visited.contains(&value_multiple) {
+                            continue;
+                        }
+
+                        heap.push(Reverse(value_multiple));
+                        visited.insert(value_multiple);
+                    }
+            }
+        }
+
+        return result as i32
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Hash Set, Time Complexity: $O(M*N)$, Space Complexity: $O(M)$) :
+```python
+class Solution:
+    def nthUglyNumber(self, n: int) -> int:
+        result = 1
+        ugly_numbers = set([result])
+        for _ in range(n):
+            result = min(ugly_numbers)
+            ugly_numbers.remove(result)
+
+            ugly_numbers.add(2*result)
+            ugly_numbers.add(3*result)
+            ugly_numbers.add(5*result)
+
+        return result
+```
+
+Method 2 (Binary Heap + Hash Set, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(M)$) :
+```python
+class Solution:
+    def nthUglyNumber(self, n: int) -> int:
+        result = 1
+        visited = set()
+        heap = [1]
+        for _ in range(n):
+            result = heapq.heappop(heap)
+            visited.add(result)
+
+            for prime in [2, 3, 5]:
+                value = result * prime
+                if value in visited:
+                    continue
+                heapq.heappush(heap, value)
+                visited.add(value)
+
+        return result
 ```
