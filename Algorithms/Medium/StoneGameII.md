@@ -39,3 +39,33 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Dynamic Programming, Time Complexity: $O(N^3)$, Space Complexity: $O(N^2)$ (N: the number of the elements in `piles`)) :
+```rust
+impl Solution {
+    pub fn stone_game_ii(piles: Vec<i32>) -> i32 {
+        let n: usize = piles.len();
+        let mut dp: Vec<Vec<i32>> = vec![vec![0; n+1]; n];
+        let mut suffix_sum: Vec<i32> = vec![0; n];
+        suffix_sum[n-1] = piles[n-1];
+        for index in (0..n-1).rev() {
+            suffix_sum[index] = suffix_sum[index+1] + piles[index];
+        }
+
+        for index in (0..n).rev() {
+            for M in 1..=n {
+                if index+2*M >= n {
+                    dp[index][M] = suffix_sum[index];
+                    continue;
+                }
+
+                for amount in 1..=2*M {
+                    dp[index][M] = i32::max(dp[index][M], suffix_sum[index]-dp[index+amount][usize::max(amount, M)]);
+                }
+            }
+        }
+
+        return dp[0][1]
+    }
+}
+```
