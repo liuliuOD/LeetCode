@@ -41,3 +41,36 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Dynamic Programming, Time Complexity: $O(N^3)$, Space Complexity: $O(N^2)$ (N: the number of the elements in `s`)) :
+```rust
+impl Solution {
+    pub fn strange_printer(s: String) -> i32 {
+        let mut s_bytes: Vec<u8> = s.into_bytes();
+        s_bytes.dedup();
+        let n: usize = s_bytes.len();
+        let mut dp: Vec<Vec<i32>> = vec![vec![0; n]; n];
+        for index in 0..n {
+            dp[index][index] = 1;
+        }
+
+        for window in 2..=n {
+            for index_start in 0..=n-window {
+                let index_end: usize = index_start + window - 1;
+                dp[index_start][index_end] = window as i32;
+
+                for index_split in index_start..index_end {
+                    let mut turns: i32 = dp[index_start][index_split] + dp[index_split+1][index_end];
+                    if s_bytes[index_split] == s_bytes[index_end] {
+                        turns -= 1;
+                    }
+
+                    dp[index_start][index_end] = i32::min(dp[index_start][index_end], turns);
+                }
+            }
+        }
+
+        return dp[0][n-1]
+    }
+}
+```
