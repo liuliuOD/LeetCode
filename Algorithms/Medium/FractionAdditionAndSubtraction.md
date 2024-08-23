@@ -78,3 +78,72 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Simulation + Greatest common divisor, Time Complexity: $O(N)$, Space Complexity: $O(Log(MIN(A, B)))$ (N: length of `expression`, A: value of `result_numerator`, B: value of `result_denominator`)) :
+```rust
+const BASE: i32 = 2*3*4*5*6*7*8*9*10;
+impl Solution {
+    pub fn fraction_addition(expression: String) -> String {
+        let mut denominators: [i32; 11] = [0; 11];
+        let mut numerator: i32 = 0;
+        let mut denominator: usize = 0;
+        let mut is_positive: bool = true;
+        for charactor in expression.into_bytes() {
+            if charactor == b'/' {
+                numerator = denominator as i32;
+                denominator = 0;
+            } else if charactor == b'+' {
+                if is_positive {
+                    denominators[denominator] += numerator;
+                } else {
+                    denominators[denominator] -= numerator;
+                }
+
+                denominator = 0;
+                numerator = 0;
+                is_positive = true;
+            } else if charactor == b'-' {
+                if is_positive {
+                    denominators[denominator] += numerator;
+                } else {
+                    denominators[denominator] -= numerator;
+                }
+
+                denominator = 0;
+                numerator = 0;
+                is_positive = false;
+            } else {
+                let value: usize = (charactor - b'0') as usize;
+                denominator = denominator*10 + value;
+            }
+        }
+        if is_positive {
+            denominators[denominator] += numerator;
+        } else {
+            denominators[denominator] -= numerator;
+        }
+
+        let mut result_numerator: i32 = 0;
+        let mut result_denominator: i32 = BASE;
+        for index in 0..=10 {
+            let mut numerator: i32 = denominators[index] * BASE;
+            if index > 0 {
+                numerator /= index as i32;
+            }
+            result_numerator += numerator;
+        }
+
+        let gcd: i32 = Self::find_gcd(result_numerator.abs(), result_denominator.abs());
+
+        return format!("{}/{}", result_numerator/gcd, result_denominator/gcd)
+    }
+
+    fn find_gcd(a: i32, b: i32) -> i32 {
+        if a == 0 {
+            return b
+        }
+
+        return Self::find_gcd(b % a, a)
+    }
+}
+```
