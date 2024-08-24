@@ -1,7 +1,85 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 564. [Find The Closest Palindrome](https://leetcode.com/problems/find-the-closest-palindrome)
+
+### Solution :
+
+Method 1 :
+```rust
+impl Solution {
+    pub fn nearest_palindromic(num: String) -> String {
+        let n: usize = num.len();
+        let mut base: i64 = 0;
+        for character in num.into_bytes() {
+            base = base*10 + (character-b'0') as i64;
+        }
+
+        let mut candidates: [i64; 5] = [i64::MAX; 5];
+        let mut first: i64 = 0;
+        for _ in 0..n-1 {
+            first = first*10 + 9;
+        }
+        candidates[0] = first;
+
+        let mut second: i64 = 10_i64.pow(n as u32) + 1;
+        candidates[1] = second;
+
+        let n_half: usize = n / 2;
+        let first_half: i64 = base / 10_i64.pow(n_half as u32);
+
+        let mut base_half: i64 = first_half;
+        let mut third: i64 = base_half;
+        if n%2 == 1 {
+            base_half /= 10;
+        }
+        for _ in 0..n_half {
+            third = third*10 + (base_half % 10);
+            base_half /= 10;
+        }
+        candidates[2] = third;
+
+        let mut base_half: i64 = first_half + 1;
+        let mut fourth: i64 = base_half;
+        if base_half.to_string().len() != (n-n_half) {
+            base_half /= 10;
+        }
+        if n%2 == 1 {
+            base_half /= 10;
+        }
+        for _ in 0..n_half {
+            fourth = fourth*10 + (base_half % 10);
+            base_half /= 10;
+        }
+        candidates[3] = fourth;
+
+        let mut base_half: i64 = first_half - 1;
+        let mut fifth: i64 = base_half;
+        if n%2 == 1 {
+            base_half /= 10;
+        }
+        for _ in 0..n_half {
+            fifth = fifth*10 + (base_half % 10);
+            base_half /= 10;
+        }
+        candidates[4] = fifth;
+
+        candidates.sort();
+
+        let mut closest: [i64; 2] = [i64::MAX; 2];
+        for value in candidates {
+            let distance: i64 = (base - value).abs();
+            if value != base && distance < closest[0] {
+                closest[0] = distance;
+                closest[1] = value;
+            }
+        }
+
+        return closest[1].to_string()
+    }
+}
+```
 
 ### Solution :
 
