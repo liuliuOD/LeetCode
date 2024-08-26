@@ -75,6 +75,7 @@
 |[Delete Leaves With A Given Value](DeleteLeavesWithAGivenValue.md)|[Sum Of All Subset XOR Totals](SumOfAllSubsetXORTotals.md)|[Special Array With X Elements Greater Than Or Equal X](SpecialArrayWithXElementsGreaterThanOrEqualX.md)|[Perfect Number](PerfectNumber.md)|[Score Of A String](ScoreOfAString.md)|
 |[Reverse String](ReverseString.md)|[Longest Palindrome](LongestPalindrome.md)|[Find Common Characters](FindCommonCharacters.md)|[Height Checker](HeightChecker.md)|[Relative Sort Array](RelativeSortArray.md)|
 |[Minimum Number Of Moves To Seat Everyone](MinimumNumberOfMovesToSeatEveryone.md)|[Find Center Of Star Graph](FindCenterOfStarGraph.md)|[Three Consecutive Odds](ThreeConsecutiveOdds.md)|[Intersection Of Two Arrays II](IntersectionOfTwoArraysII.md)|[Sort The People](SortThePeople.md)|
+|[N-ary Tree Postorder Traversal](NAryTreePostorderTraversal.md)|||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
