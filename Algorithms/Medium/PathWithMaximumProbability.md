@@ -1,7 +1,8 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
-## [Path With Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability)
+## 1514. [Path With Maximum Probability](https://leetcode.com/problems/path-with-maximum-probability)
 
 ### Solution :
 
@@ -71,6 +72,40 @@ impl Solution {
             f64::MIN => 0.0,
             value => value,
         }
+    }
+}
+```
+
+Method 3 (Bellman-Ford Algorithm, Time Complexity: $O(M*N)$, Space Complexity: $O(N)$ (M: the number of the elements in `edges`, N: the value of `n`)) :
+```rust
+impl Solution {
+    pub fn max_probability(n: i32, edges: Vec<Vec<i32>>, succ_prob: Vec<f64>, start_node: i32, end_node: i32) -> f64 {
+        let n: usize = n as usize;
+        let mut memoization: Vec<f64> = vec![0.0; n];
+        memoization[start_node as usize] = 1.0;
+
+        for _ in 0..n {
+            let mut is_updated: bool = false;
+            for index_edge in 0..edges.len() {
+                let a: usize = edges[index_edge][0] as usize;
+                let b: usize = edges[index_edge][1] as usize;
+                let probability: f64 = succ_prob[index_edge];
+                if memoization[a]*probability > memoization[b] {
+                    memoization[b] = memoization[a] * probability;
+                    is_updated = true;
+                }
+                if memoization[b]*probability > memoization[a] {
+                    memoization[a] = memoization[b] * probability;
+                    is_updated = true;
+                }
+            }
+
+            if is_updated == false {
+                break;
+            }
+        }
+
+        return memoization[end_node as usize]
     }
 }
 ```
