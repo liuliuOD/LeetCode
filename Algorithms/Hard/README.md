@@ -25,6 +25,7 @@
 - [Minimum Cost For Cutting Cake II](MinimumCostForCuttingCakeII.md)
 - [Strange Printer](StrangePrinter.md)
 - [Find The Closest Palindrome](FindTheClosestPalindrome.md)
+- [Modify Graph Edge Weights](ModifyGraphEdgeWeights.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
