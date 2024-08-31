@@ -110,6 +110,44 @@ impl Solution {
 }
 ```
 
+Method 4 (BFS, Time Complexity: $O(M*N)$, Space Complexity: $O(M+N)$ (M: the number of the elements in `edges`, N: the value of `n`)) :
+```rust
+use std::collections::VecDeque;
+
+impl Solution {
+    pub fn max_probability(n: i32, edges: Vec<Vec<i32>>, succ_prob: Vec<f64>, start_node: i32, end_node: i32) -> f64 {
+        let n: usize = n as usize;
+        let mut graph: Vec<Vec<(usize, f64)>> = vec![vec![]; n];
+        for index_edge in 0..edges.len() {
+            let a: usize = edges[index_edge][0] as usize;
+            let b: usize = edges[index_edge][1] as usize;
+            let probability: f64 = succ_prob[index_edge];
+            graph[a].push((b, probability));
+            graph[b].push((a, probability));
+        }
+
+        let mut max_probability: Vec<f64> = vec![0.0; n];
+        let mut queue: VecDeque<(usize, f64)> = VecDeque::from([(start_node as usize, 1.0)]);
+        while !queue.is_empty() {
+            let node: (usize, f64) = queue.pop_front().unwrap();
+
+            for &node_next in graph[node.0].iter() {
+                let index_next: usize = node_next.0;
+                let probability_next: f64 = node.1 * node_next.1;
+                if probability_next <= max_probability[index_next] {
+                    continue;
+                }
+                max_probability[index_next] = probability_next;
+
+                queue.push_back((index_next, probability_next));
+            }
+        }
+
+        return max_probability[end_node as usize]
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Dijkstra) :
