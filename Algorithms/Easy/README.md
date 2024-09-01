@@ -35,7 +35,7 @@
 |[Intersection Of Two Arrays II](IntersectionOfTwoArraysII.md)|[Pass The Pillow](PassThePillow.md)|[Water Bottles](WaterBottles.md)|[Find The Encrypted String](FindTheEncryptedString.md)|[Crawler Log Folder](CrawlerLogFolder.md)|
 |[Lexicographically Smallest String After A Swap](LexicographicallySmallestStringAfterASwap.md)|[Find The Pivot Integer](FindThePivotInteger.md)|[Lucky Numbers In A Matrix](LuckyNumbersInAMatrix.md)|[Sort The People](SortThePeople.md)|[Sort Array By Increasing Frequency](SortArrayByIncreasingFrequency.md)|
 |[Make Two Arrays Equal By Reversing Subarrays](MakeTwoArraysEqualByReversingSubarrays.md)|[Kth Distinct String In An Array](KthDistinctStringInAnArray.md)|[Lemonade Change](LemonadeChange.md)|[Count Substrings That Satisfy K-Constraint I](CountSubstringsThatSatisfyKConstraintI.md)|[Number Complement](NumberComplement.md)|
-|[Binary Tree Postorder Traversal](BinaryTreePostorderTraversal.md)|||||
+|[Binary Tree Postorder Traversal](BinaryTreePostorderTraversal.md)|[Convert 1D Array Into 2D Array](Convert1DArrayInto2DArray.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -75,7 +75,7 @@
 |[Delete Leaves With A Given Value](DeleteLeavesWithAGivenValue.md)|[Sum Of All Subset XOR Totals](SumOfAllSubsetXORTotals.md)|[Special Array With X Elements Greater Than Or Equal X](SpecialArrayWithXElementsGreaterThanOrEqualX.md)|[Perfect Number](PerfectNumber.md)|[Score Of A String](ScoreOfAString.md)|
 |[Reverse String](ReverseString.md)|[Longest Palindrome](LongestPalindrome.md)|[Find Common Characters](FindCommonCharacters.md)|[Height Checker](HeightChecker.md)|[Relative Sort Array](RelativeSortArray.md)|
 |[Minimum Number Of Moves To Seat Everyone](MinimumNumberOfMovesToSeatEveryone.md)|[Find Center Of Star Graph](FindCenterOfStarGraph.md)|[Three Consecutive Odds](ThreeConsecutiveOdds.md)|[Intersection Of Two Arrays II](IntersectionOfTwoArraysII.md)|[Sort The People](SortThePeople.md)|
-|[N-ary Tree Postorder Traversal](NAryTreePostorderTraversal.md)|||||
+|[N-ary Tree Postorder Traversal](NAryTreePostorderTraversal.md)|[Convert 1D Array Into 2D Array](Convert1DArrayInto2DArray.md)||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
