@@ -52,3 +52,27 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Hash Set, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: amount of the nodes in the tree, N: number of the elements in `nums`)) :
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn modified_list(nums: Vec<i32>, head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
+        let removes: HashSet<i32> = HashSet::from_iter(nums.into_iter());
+        let mut dummy: ListNode = ListNode::new(0);
+        dummy.next = head;
+        let mut next: &mut ListNode = &mut dummy;
+        while next.next.is_some() {
+            let value: i32 = next.next.as_ref().unwrap().val;
+            if removes.contains(&value) {
+                next.next = next.next.as_mut().unwrap().next.take();
+            } else {
+                next = next.next.as_mut().unwrap();
+            }
+        }
+
+        return dummy.next
+    }
+}
+```
