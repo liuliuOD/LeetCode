@@ -6,6 +6,75 @@
 
 ### Solution :
 
+```rust
+// Definition for singly-linked list.
+// #[derive(PartialEq, Eq, Clone, Debug)]
+// pub struct ListNode {
+//   pub val: i32,
+//   pub next: Option<Box<ListNode>>
+// }
+//
+// impl ListNode {
+//   #[inline]
+//   fn new(val: i32) -> Self {
+//     ListNode {
+//       next: None,
+//       val
+//     }
+//   }
+// }
+```
+
+Method 1 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in the linked list)) :
+```rust
+type Custom = Box<ListNode>;
+impl Solution {
+    pub fn split_list_to_parts(mut head: Option<Custom>, k: i32) -> Vec<Option<Custom>> {
+        let mut n: usize = 0;
+        Self::traverse(&head, &mut n);
+
+        let k: usize = k as usize;
+        let mut n_each: usize = n / k;
+        let mut n_remaining: usize = n % k;
+        let mut result: Vec<Option<Custom>> = Vec::new();
+        for index in 0..k {
+            if head.is_none() {
+                result.push(None);
+            } else {
+                result.push(head.take());
+                let mut amount: usize = 1;
+                if index < n_remaining {
+                    amount -= 1;
+                }
+                let mut current: &mut Custom = result[index].as_mut().unwrap();
+                while let Some(inner) = current.next.take() {
+                    if amount == n_each {
+                        head = Some(inner);
+                    } else {
+                        amount += 1;
+                        current.next = Some(inner);
+                        current = current.next.as_mut().unwrap();
+                    }
+                }
+            }
+        }
+
+        return result
+    }
+
+    fn traverse(head: &Option<Custom>, n: &mut usize) {
+        if head.is_none() {
+            return
+        }
+
+        *n += 1;
+        return Self::traverse(&head.as_ref().unwrap().next, n)
+    }
+}
+```
+
+### Solution :
+
 ```python
 # Definition for singly-linked list.
 # class ListNode:
