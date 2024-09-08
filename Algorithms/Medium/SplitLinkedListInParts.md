@@ -1,3 +1,4 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
@@ -56,6 +57,51 @@ impl Solution {
                         current = current.next.as_mut().unwrap();
                     }
                 }
+            }
+        }
+
+        return result
+    }
+
+    fn traverse(head: &Option<Custom>, n: &mut usize) {
+        if head.is_none() {
+            return
+        }
+
+        *n += 1;
+        return Self::traverse(&head.as_ref().unwrap().next, n)
+    }
+}
+```
+
+Method 2 (Traverse, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in the linked list)) :
+```rust
+type Custom = Box<ListNode>;
+impl Solution {
+    pub fn split_list_to_parts(mut head: Option<Custom>, k: i32) -> Vec<Option<Custom>> {
+        let mut n: usize = 0;
+        Self::traverse(&head, &mut n);
+
+        let k: usize = k as usize;
+        let mut n_each: usize = n / k;
+        let mut n_remaining: usize = n % k;
+        let mut result: Vec<Option<Custom>> = Vec::new();
+        for index in 0..k {
+            match head {
+                None => result.push(None),
+                _ => {
+                    result.push(head.take());
+                    let mut amount: usize = (index >= n_remaining) as usize;
+                    let mut current: &mut Custom = result[index].as_mut().unwrap();
+                    while current.next.is_some() {
+                        if amount == n_each {
+                            head = current.next.take();
+                        } else {
+                            amount += 1;
+                            current = current.next.as_mut().unwrap();
+                        }
+                    }
+                },
             }
         }
 
