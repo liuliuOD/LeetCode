@@ -52,3 +52,39 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Iterative GCD, Time Complexity: $O(M*Log(N))$, Space Complexity: $O(Log(N))$ (M: the number of the elements in the linked list, N: the averageof the elements' value in the linked list)) :
+```rust
+type Custom = Box<ListNode>;
+
+impl Solution {
+    pub fn insert_greatest_common_divisors(mut head: Option<Custom>) -> Option<Custom> {
+        let mut current: &mut Custom = head.as_mut().unwrap();
+        while current.next.is_some() {
+            let a: i32 = i32::max(current.val, current.next.as_ref().unwrap().val);
+            let b: i32 = i32::min(current.val, current.next.as_ref().unwrap().val);
+            let mut node: ListNode = ListNode::new(Self::find_greatest_common_divisor(a, b));
+            node.next = current.next.take();
+            current.next = Some(Box::new(node));
+            current = current.next.as_mut().unwrap().next.as_mut().unwrap();
+        }
+
+        return head
+    }
+
+    fn find_greatest_common_divisor(mut a: i32, mut b: i32) -> i32 {
+        while a > 0 && b > 0 {
+            if a > b {
+                a %= b;
+            } else {
+                b %= a;
+            }
+        }
+
+        if a == 0 {
+            return b
+        }
+        return a
+    }
+}
+```
