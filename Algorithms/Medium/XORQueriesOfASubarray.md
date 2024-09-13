@@ -26,3 +26,27 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the number of the elements in `arr`, N: the number of the elements in `queries`)) :
+```rust
+impl Solution {
+    pub fn xor_queries(mut arr: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
+        let n: usize = arr.len();
+        for index in 1..n {
+            arr[index] ^= arr[index-1];
+        }
+
+        let m: usize = queries.len();
+        let mut result: Vec<i32> = Vec::with_capacity(m);
+        for query in queries {
+            if query[0] == 0 {
+                result.push(arr[query[1] as usize]);
+            } else {
+                result.push(arr[query[1] as usize]^arr[(query[0] as usize)-1]);
+            }
+        }
+
+        return result
+    }
+}
+```
