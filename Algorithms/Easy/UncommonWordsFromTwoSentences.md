@@ -46,3 +46,22 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(M+N)$, Space Complexity: $O(M+N)$ (M: number of the elements in `s1`, N: number of the elements in `s2`)) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn uncommon_from_sentences(s1: String, s2: String) -> Vec<String> {
+        let mut counter: HashMap<String, i32> = HashMap::new();
+        for word in format!("{} {}", s1, s2).split_whitespace() {
+            counter.entry(String::from(word)).and_modify(|value| *value += 1).or_insert(1);
+        }
+
+        return counter.into_iter()
+            .filter(|&(_, value)| value == 1)
+            .map(|(key, _)| key)
+            .collect()
+    }
+}
+```
