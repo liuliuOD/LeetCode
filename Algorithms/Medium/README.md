@@ -45,6 +45,7 @@
 |[Fraction Addition And Subtraction](FractionAdditionAndSubtraction.md)|[Path With Maximum Probability](PathWithMaximumProbability.md)|[Count Sub Islands](CountSubIslands.md)|[Most Stones Removed With Same Row Or Column](MostStonesRemovedWithSameRowOrColumn.md)|[Find The Student That Will Replace The Chalk](FindTheStudentThatWillReplaceTheChalk.md)|
 |[Walking Robot Simulation](WalkingRobotSimulation.md)|[Find Missing Observations](FindMissingObservations.md)|[Linked List In Binary Tree](LinkedListInBinaryTree.md)|[Split Linked List In Parts](SplitLinkedListInParts.md)|[Spiral Matrix IV](SpiralMatrixIV.md)|
 |[Insert Greatest Common Divisors In Linked List](InsertGreatestCommonDivisorsInLinkedList.md)|[XOR Queries Of A Subarray](XORQueriesOfASubarray.md)|[Longest Subarray With Maximum Bitwise AND](LongestSubarrayWithMaximumBitwiseAND.md)|[Find The Longest Substring Containing Vowels In Even Counts](FindTheLongestSubstringContainingVowelsInEvenCounts.md)|[Minimum Time Difference](MinimumTimeDifference.md)|
+|[Largest Number](LargestNumber.md)|||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
@@ -115,7 +116,7 @@
 |[Minimum Difference Between Largest And Smallest Value In Three Moves](MinimumDifferenceBetweenLargestAndSmallestValueInThreeMoves.md)|[Merge Nodes In Between Zeros](MergeNodesInBetweenZeros.md)|[Find The Minimum And Maximum Number Of Nodes Between Critical Points](FindTheMinimumAndMaximumNumberOfNodesBetweenCriticalPoints.md)|[Reverse Substrings Between Each Pair Of Parentheses](ReverseSubstringsBetweenEachPairOfParentheses.md)|[Maximum Score From Removing Substrings](MaximumScoreFromRemovingSubstrings.md)|
 |[Create Binary Tree From Descriptions](CreateBinaryTreeFromDescriptions.md)|[Step-By-Step Directions From A Binary Tree Node To Another](StepByStepDirectionsFromABinaryTreeNodeToAnother.md)|[Number Of Good Leaf Nodes Pairs](NumberOfGoodLeafNodesPairs.md)|[Find Valid Matrix Given Row And Column Sums](FindValidMatrixGivenRowAndColumnSums.md)|[Minimum Swaps To Group All 1's Together II](MinimumSwapsToGroupAll1sTogetherII.md)|
 |[Count The Number Of Substrings With Dominant Ones](CountTheNumberOfSubstringsWithDominantOnes.md)|[Range Sum Of Sorted Subarray Sums](RangeSumOfSortedSubarraySums.md)|[Minimum Number Of Pushes To Type Word II](MinimumNumberOfPushesToTypeWordII.md)|[Spiral Matrix III](SpiralMatrixIII.md)|[Magic Squares In Grid](MagicSquaresInGrid.md)|
-|[Regions Cut By Slashes](RegionsCutBySlashes.md)|[Combination Sum II](CombinationSumII.md)|[Ugly Number II](UglyNumberII.md)|||
+|[Regions Cut By Slashes](RegionsCutBySlashes.md)|[Combination Sum II](CombinationSumII.md)|[Ugly Number II](UglyNumberII.md)|[Largest Number](LargestNumber.md)||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
