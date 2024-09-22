@@ -72,3 +72,37 @@ impl Solution {
     }
 }
 ```
+
+Method 3 (Prefix Tree, Time Complexity: $O(Log(N)^2)$, Space Complexity: $O(Log(N))$) :
+```rust
+impl Solution {
+    pub fn find_kth_number(n: i32, mut k: i32) -> i32 {
+        let mut result: i64 = 1;
+        k -= 1;
+        while k > 0 {
+            let amount: i32 = Self::amount_subtree(result, result+1, n as i64);
+
+            if amount <= k {
+                k -= amount;
+                result += 1;
+            } else {
+                k -= 1;
+                result *= 10;
+            }
+        }
+
+        return result as i32
+    }
+
+    fn amount_subtree(mut value: i64, mut maximum: i64, n: i64) -> i32 {
+        let mut result: i64 = 0;
+        while value <= n {
+            result += i64::min(n+1, maximum) - value;
+            value *= 10;
+            maximum *= 10;
+        }
+
+        return result as i32
+    }
+}
+```
