@@ -1,8 +1,47 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ---
 
 ## 2707. [Extra Characters In A String](https://leetcode.com/problems/extra-characters-in-a-string)
+
+### Solution :
+
+Method 1 (DFS, Time Complexity: $O(M+N^2)$, Space Complexity: $O(M+N)$ (M: the number of the elements in `dictionary`, N: the length of `s`, K: the average length of the strings in `dictionary`)) :
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn min_extra_char(s: String, dictionary: Vec<String>) -> i32 {
+        let n: usize = s.len();
+        let mut set: HashSet<&String> = HashSet::from_iter(dictionary.iter());
+        let mut memoization: Vec<i32> = vec![-1; n];
+
+        return Self::dfs(0, &mut memoization, &set, &s)
+    }
+
+    fn dfs(index: usize, memoization: &mut Vec<i32>, set: &HashSet<&String>, s: &String) -> i32 {
+        let n: usize = s.len();
+        if index >= n {
+            return 0
+        }
+        if memoization[index] >= 0 {
+            return memoization[index]
+        }
+
+        let mut result: i32 = 1 + Self::dfs(index+1, memoization, set, s);;
+        for index_next in index..n {
+            let substring: String = s[index..=index_next].to_string();
+            if set.contains(&&substring) {
+                result = i32::min(result, Self::dfs(index_next+1, memoization, set, s));
+            }
+        }
+
+        memoization[index] = result;
+        return result
+    }
+}
+```
 
 ### Solution :
 
