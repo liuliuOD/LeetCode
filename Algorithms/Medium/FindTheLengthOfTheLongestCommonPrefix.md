@@ -44,3 +44,33 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Hash Set, Time Complexity: $O((M+N)*K)$, Space Complexity: $O(M*K)$ (M: the number of the elements in `arr1`, N: the number of the elements in `arr2`, K: the average digits of each element in `arr1` and `arr2`)) :
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn longest_common_prefix(arr1: Vec<i32>, arr2: Vec<i32>) -> i32 {
+        let mut set: HashSet<i32> = HashSet::new();
+        for mut element in arr1 {
+            while element > 0 {
+                set.insert(element);
+                element /= 10;
+            }
+        }
+
+        let mut result: i32 = 0;
+        for mut element in arr2 {
+            while element > 0 {
+                if set.contains(&element) {
+                    result = i32::max(result, element.to_string().len() as i32);
+                }
+
+                element /= 10;
+            }
+        }
+
+        return result
+    }
+}
+```
