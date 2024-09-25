@@ -49,7 +49,7 @@
 |[Maximum Score Words Formed By Letters](MaximumScoreWordsFormedByLetters.md)|[Word Break II](WordBreakII.md)|[Student Attendance Record II](StudentAttendanceRecordII.md)|[Find Subarray With Bitwise AND Closest To K](FindSubarrayWithBitwiseANDClosestToK.md)|[IPO](IPO.md)|
 |[Minimum Number Of K Consecutive Bit Flips](MinimumNumberOfKConsecutiveBitFlips.md)|[Remove Max Number Of Edges To Keep Graph Fully Traversable](RemoveMaxNumberOfEdgesToKeepGraphFullyTraversable.md)|[Construct String With Minimum Cost](ConstructStringWithMinimumCost.md)|[Robot Collisions](RobotCollisions.md)|[Number Of Atoms](NumberOfAtoms.md)|
 |[Build A Matrix With Conditions](BuildAMatrixWithConditions.md)|[Second Minimum Time To Reach Destination](SecondMinimumTimeToReachDestination.md)|[Integer To English Words](IntegerToEnglishWords.md)|[Find The Count Of Monotonic Pairs I](FindTheCountOfMonotonicPairsI.md)|[Minimum Number Of Days To Disconnect Island](MinimumNumberOfDaysToDisconnectIsland.md)|
-|[Find K-th Smallest Pair Distance](FindKthSmallestPairDistance.md)|[Shortest Palindrome](ShortestPalindrome.md)||||
+|[Find K-th Smallest Pair Distance](FindKthSmallestPairDistance.md)|[Shortest Palindrome](ShortestPalindrome.md)|[Sum Of Prefix Scores Of Strings](SumOfPrefixScoresOfStrings.md)|||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
