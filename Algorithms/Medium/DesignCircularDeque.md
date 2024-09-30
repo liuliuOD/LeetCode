@@ -22,7 +22,6 @@
 
 Method 1 (Linked List, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of total calls)) :
 ```rust
-
 use std::rc::Rc;
 use std::cell::RefCell;
 
