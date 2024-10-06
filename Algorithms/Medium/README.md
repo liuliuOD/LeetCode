@@ -119,6 +119,7 @@
 |[Create Binary Tree From Descriptions](CreateBinaryTreeFromDescriptions.md)|[Step-By-Step Directions From A Binary Tree Node To Another](StepByStepDirectionsFromABinaryTreeNodeToAnother.md)|[Number Of Good Leaf Nodes Pairs](NumberOfGoodLeafNodesPairs.md)|[Find Valid Matrix Given Row And Column Sums](FindValidMatrixGivenRowAndColumnSums.md)|[Minimum Swaps To Group All 1's Together II](MinimumSwapsToGroupAll1sTogetherII.md)|
 |[Count The Number Of Substrings With Dominant Ones](CountTheNumberOfSubstringsWithDominantOnes.md)|[Range Sum Of Sorted Subarray Sums](RangeSumOfSortedSubarraySums.md)|[Minimum Number Of Pushes To Type Word II](MinimumNumberOfPushesToTypeWordII.md)|[Spiral Matrix III](SpiralMatrixIII.md)|[Magic Squares In Grid](MagicSquaresInGrid.md)|
 |[Regions Cut By Slashes](RegionsCutBySlashes.md)|[Combination Sum II](CombinationSumII.md)|[Ugly Number II](UglyNumberII.md)|[Largest Number](LargestNumber.md)|[Different Ways To Add Parentheses](DifferentWaysToAddParentheses.md)|
+|[Sentence Similarity III](SentenceSimilarityIII.md)|||||
 
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ## PHP
