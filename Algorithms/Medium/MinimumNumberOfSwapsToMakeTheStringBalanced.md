@@ -25,3 +25,21 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the length of `s`)) :
+```rust
+impl Solution {
+    pub fn min_swaps(s: String) -> i32 {
+        let mut left: i32 = 0;
+        for ascii in s.bytes() {
+            if ascii == b'[' {
+                left += 1;
+            } else if left > 0 {
+                left -= 1;
+            }
+        }
+
+        return (left + 1) / 2
+    }
+}
+```
