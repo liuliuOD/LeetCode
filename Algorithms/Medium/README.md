@@ -48,6 +48,7 @@
 |[Largest Number](LargestNumber.md)|[Different Ways To Add Parentheses](DifferentWaysToAddParentheses.md)|[Lexicographical Numbers](LexicographicalNumbers.md)|[Extra Characters In A String](ExtraCharactersInAString.md)|[Find The Length Of The Longest Common Prefix](FindTheLengthOfTheLongestCommonPrefix.md)|
 |[My Calendar I](MyCalendarI.md)|[My Calendar II](MyCalendarII.md)|[Design Circular Deque](DesignCircularDeque.md)|[Design A Stack With Increment Operation](DesignAStackWithIncrementOperation.md)|[Check If Array Pairs Are Divisible By K](CheckIfArrayPairsAreDivisibleByK.md)|
 |[Make Sum Divisible By P](MakeSumDivisibleByP.md)|[Divide Players Into Teams Of Equal Skill](DividePlayersIntoTeamsOfEqualSkill.md)|[Permutation In String](PermutationInString.md)|[Sentence Similarity III](SentenceSimilarityIII.md)|[Minimum Number Of Swaps To Make The String Balanced](MinimumNumberOfSwapsToMakeTheStringBalanced.md)|
+|[Minimum Add To Make Parentheses Valid](MinimumAddToMakeParenthesesValid.md)|||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
