@@ -30,6 +30,7 @@
 - [K-th Smallest In Lexicographical Order](KthSmallestInLexicographicalOrder.md)
 - [Sum Of Prefix Scores Of Strings](SumOfPrefixScoresOfStrings.md)
 - [All O`one Data Structure](AllOOneDataStructure.md)
+- [Smallest Range Covering Elements From K Lists](SmallestRangeCoveringElementsFromKLists.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
