@@ -31,3 +31,22 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Dynamic Programming, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$ (M: the maximum possible OR value, N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn count_max_or_subsets(nums: Vec<i32>) -> i32 {
+        let mut counter: [i32; 1<<17] = [0; 1<<17];
+        counter[0] = 1;
+        let mut maximum_num_or: i32 = 0;
+        for num in nums {
+            for index in (0..=maximum_num_or).rev() {
+                counter[(index | num) as usize] += counter[index as usize];
+            }
+            maximum_num_or |= num;
+        }
+
+        return counter[maximum_num_or as usize]
+    }
+}
+```
