@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Bitmask, Time Complexity: $O(2^N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+Method 1 (Bitmask, Time Complexity: $O(N*2^N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
 ```rust
 impl Solution {
     pub fn count_max_or_subsets(nums: Vec<i32>) -> i32 {
