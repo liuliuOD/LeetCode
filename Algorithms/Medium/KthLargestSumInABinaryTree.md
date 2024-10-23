@@ -26,7 +26,7 @@
 // }
 ```
 
-Method 1 (Hash Map, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in the tree)) :
+Method 1 (DFS, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in the tree)) :
 ```rust
 use std::rc::Rc;
 use std::cell::RefCell;
