@@ -6,7 +6,35 @@
 
 ### Solution :
 
-Method 1 (In weekly contest 345) :
+Method 1 (DFS, ERROR: "Time Limit Exceeded") :
+```rust
+impl Solution {
+    pub fn max_moves(grid: Vec<Vec<i32>>) -> i32 {
+        return (0..grid.len()).map(|index_m| Self::dfs(index_m, 0, &grid)).max().unwrap()
+    }
+
+    fn dfs(index_m: usize, index_n: usize, grid: &Vec<Vec<i32>>) -> i32 {
+        if index_m >= grid.len() || index_n >= grid[0].len()-1 {
+            return 0
+        }
+
+        let mut result: i32 = 0;
+        if index_m > 0 && grid[index_m][index_n] < grid[index_m-1][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m-1, index_n+1, grid));
+        }
+        if index_m < grid.len()-1 && grid[index_m][index_n] < grid[index_m+1][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m+1, index_n+1, grid));
+        }
+        if grid[index_m][index_n] < grid[index_m][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m, index_n+1, grid));
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 (In weekly contest 345, DFS + Memoization) :
 ```rust
 use std::cmp::max;
 use std::collections::HashMap;
@@ -41,6 +69,43 @@ impl Solution {
         hm.insert((i, j), temp);
         
         return temp + 1
+    }
+}
+```
+
+Method 3 (DFS + Memoization, Time Complexity: $O(M*N)$, Space Complexity: $O(M*N)$ (M: the number of the elements in `grid`, N: the number of the elements in `grid[0]`)) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn max_moves(grid: Vec<Vec<i32>>) -> i32 {
+        let mut memoization: HashMap<(usize, usize), i32> = HashMap::new();
+        return (0..grid.len()).map(|index_m| Self::dfs(index_m, 0, &grid, &mut memoization)).max().unwrap()
+    }
+
+    fn dfs(index_m: usize, index_n: usize, grid: &Vec<Vec<i32>>, memoization: &mut HashMap<(usize, usize), i32>) -> i32 {
+        if index_m >= grid.len() || index_n >= grid[0].len()-1 {
+            return 0
+        }
+
+        if memoization.contains_key(&(index_m, index_n)) {
+            return memoization[&(index_m, index_n)]
+        }
+
+        let mut result: i32 = 0;
+        if index_m > 0 && grid[index_m][index_n] < grid[index_m-1][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m-1, index_n+1, grid, memoization));
+        }
+        if index_m < grid.len()-1 && grid[index_m][index_n] < grid[index_m+1][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m+1, index_n+1, grid, memoization));
+        }
+        if grid[index_m][index_n] < grid[index_m][index_n+1] {
+            result = i32::max(result, 1 + Self::dfs(index_m, index_n+1, grid, memoization));
+        }
+
+        memoization.entry((index_m, index_n)).or_insert(result);
+
+        return result
     }
 }
 ```
