@@ -110,6 +110,41 @@ impl Solution {
 }
 ```
 
+Method 4 (Dynamic Programming + Optimization, Time Complexity: $O(M*N)$, Space Complexity: $O(M)$ (M: the number of the elements in `grid`, N: the number of the elements in `grid[0]`)) :
+```rust
+impl Solution {
+    pub fn max_moves(grid: Vec<Vec<i32>>) -> i32 {
+        let m: usize = grid.len();
+        let n: usize = grid[0].len();
+        let mut dp: Vec<i32> = vec![0; m];
+        let mut result: i32 = 0;
+        for index_n in 0..n-1 {
+            let mut dp_current: Vec<i32> = vec![0; m];
+            for index_m in 0..m {
+                if index_n > 0 && dp[index_m] == 0 {
+                    continue;
+                }
+
+                if grid[index_m][index_n] < grid[index_m][index_n+1] {
+                    dp_current[index_m] = dp[index_m] + 1;
+                }
+                if index_m > 0 && grid[index_m][index_n] < grid[index_m-1][index_n+1] {
+                    dp_current[index_m-1] = i32::max(dp_current[index_m-1], dp[index_m]+1);
+                }
+                if index_m < m-1 && grid[index_m][index_n] < grid[index_m+1][index_n+1] {
+                    dp_current[index_m+1] = i32::max(dp_current[index_m+1], dp[index_m]+1);
+                }
+            }
+
+            dp = dp_current;
+            result = i32::max(result, *dp.iter().max().unwrap());
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (DFS + Memoization) :
