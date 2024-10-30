@@ -2,6 +2,7 @@
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
 ![language-Go](https://img.shields.io/badge/Go-00add8?style=for-the-badge&logo=GO&logoColor=white)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 # Algorithm - Hard
@@ -78,3 +79,8 @@
 - [Trapping Rain Water](TrappingRainWater.md)
 - [Largest Rectangle In Histogram](LargestRectangleInHistogram.md)
 - [Minimum Falling Path Sum II](MinimumFallingPathSumII.md)
+
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
+## Java
+
+- [Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)
