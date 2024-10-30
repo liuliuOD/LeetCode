@@ -33,6 +33,7 @@
 - [Smallest Range Covering Elements From K Lists](SmallestRangeCoveringElementsFromKLists.md)
 - [Parsing A Boolean Expression](ParsingABooleanExpression.md)
 - [Height Of Binary Tree After Subtree Removal Queries](HeightOfBinaryTreeAfterSubtreeRemovalQueries.md)
+- [Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
