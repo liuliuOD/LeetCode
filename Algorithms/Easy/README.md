@@ -104,3 +104,10 @@
 |[Number Of Students Unable To Eat Lunch](NumberOfStudentsUnableToEatLunch.md)|[Time Needed To Buy Tickets](TimeNeededToBuyTickets.md)|[Sum Of Left Leaves](SumOfLeftLeaves.md)|[Range Sum Of BST](RangeSumOfBST.md)|[Merge Two Binary Trees](MergeTwoBinaryTrees.md)|
 |[Find If Path Exists In Graph](FindIfPathExistsInGraph.md)|[Count The Number Of Special Characters I](CountTheNumberOfSpecialCharactersI.md)|[Nth Tribonacci Number](NthTribonacciNumber.md)|[Reverse Prefix Of Word](ReversePrefixOfWord.md)|[Largest Positive Integer That Exists With Its Negative](LargestPositiveIntegerThatExistsWithItsNegative.md)|
 |[Relative Ranks](RelativeRanks.md)|[Longest Palindrome](LongestPalindrome.md)||||
+
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
+## Java
+
+||||||
+| :- | :- | :- | :- | :- |
+|[Delete Characters To Make Fancy String](DeleteCharactersToMakeFancyString.md)|||||
