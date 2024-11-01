@@ -104,3 +104,30 @@ class Solution {
     }
 }
 ```
+
+Method 3 (String Builder + Character, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in `s`)) :
+```java
+class Solution {
+    public String makeFancyString(String s) {
+        int n = s.length();
+        char char_previous = '?';
+        StringBuilder result = new StringBuilder();
+        int cumulative_times = 1;
+        for (char character: s.toCharArray()) {
+            if (character == char_previous) {
+                cumulative_times += 1;
+                if (cumulative_times >= 3) {
+                    continue;
+                }
+            } else {
+                char_previous = character;
+                cumulative_times = 1;
+            }
+
+            result.append(char_previous);
+        }
+
+        return result.toString();
+    }
+}
+```
