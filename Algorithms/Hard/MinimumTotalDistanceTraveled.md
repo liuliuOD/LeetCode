@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2463. [Minimum Total Distance Traveled](https://leetcode.com/problems/minimum-total-distance-traveled)
@@ -79,6 +80,131 @@ impl Solution {
         memoization.insert(key, result);
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (DFS+Memoization, ERROR: "Time Limit Exceeded", 28/40, Time Complexity: $O(M*N+M*Log(M)+N*Log(N))$, Space Complexity: $O(M*N)$ (M: the number of the elements in `robot`, N: the number of the elements in `factory`)) :
+```java
+class Solution {
+    public long minimumTotalDistance(List<Integer> robot, int[][] factory) {
+        robot.sort(Comparator.naturalOrder());
+        Arrays.sort(factory, (a, b) -> Integer.compare(a[0], b[0]));
+        ArrayList<Integer> factory_mapping = new ArrayList<Integer>();
+        for (int[] item: factory) {
+            for (int _unused=0; _unused<item[1]; _unused++) {
+                factory_mapping.add(item[0]);
+            }
+        }
+        Map<String, Long> memoization = new HashMap<String, Long>();
+        return this.dfs(0, 0, robot, factory_mapping, memoization);
+    }
+
+    private long dfs(int index_robot, int index_factory, List<Integer> robot, List<Integer> factory_mapping, Map<String, Long> memoization) {
+        if (index_robot >= robot.size()) {
+            return 0;
+        }
+        if (index_factory >= factory_mapping.size()) {
+            return Long.MAX_VALUE;
+        }
+
+        String key = String.format("%s-%s", index_robot, index_factory);
+        if (memoization.containsKey(key)) {
+            return memoization.get(key);
+        }
+
+        long result = this.dfs(index_robot, index_factory+1, robot, factory_mapping, memoization);
+        long choose_current = this.dfs(index_robot+1, index_factory+1, robot, factory_mapping, memoization);
+        if (choose_current < Long.MAX_VALUE) {
+            result = Math.min(result, Math.abs(robot.get(index_robot)-factory_mapping.get(index_factory)) + choose_current);
+        }
+
+        memoization.put(key, result);
+        return result;
+    }
+}
+```
+
+Method 2 (DFS+Memoization, ERROR: "Time Limit Exceeded", 36/40, Time Complexity: $O(M*N+M*Log(M)+N*Log(N))$, Space Complexity: $O(M*N)$ (M: the number of the elements in `robot`, N: the number of the elements in `factory`)) :
+```java
+class Solution {
+    public long minimumTotalDistance(List<Integer> robot, int[][] factory) {
+        robot.sort(Comparator.naturalOrder());
+        Arrays.sort(factory, (a, b) -> Integer.compare(a[0], b[0]));
+        ArrayList<Integer> factory_mapping = new ArrayList<Integer>();
+        for (int[] item: factory) {
+            for (int _unused=0; _unused<item[1]; _unused++) {
+                factory_mapping.add(item[0]);
+            }
+        }
+        Map<String, Long> memoization = new HashMap<String, Long>();
+        return this.dfs(0, 0, robot, factory_mapping, memoization);
+    }
+
+    private long dfs(int index_robot, int index_factory, List<Integer> robot, List<Integer> factory_mapping, Map<String, Long> memoization) {
+        if (index_robot >= robot.size()) {
+            return 0;
+        }
+        if (index_factory >= factory_mapping.size()) {
+            return Long.MAX_VALUE;
+        }
+
+        String key = index_robot + "-" + index_factory;
+        if (memoization.containsKey(key)) {
+            return memoization.get(key);
+        }
+
+        long result = this.dfs(index_robot, index_factory+1, robot, factory_mapping, memoization);
+        long choose_current = this.dfs(index_robot+1, index_factory+1, robot, factory_mapping, memoization);
+        if (choose_current < Long.MAX_VALUE) {
+            result = Math.min(result, Math.abs(robot.get(index_robot)-factory_mapping.get(index_factory)) + choose_current);
+        }
+
+        memoization.put(key, result);
+        return result;
+    }
+}
+```
+
+Method 3 (DFS+Memoization, ERROR: "Time Limit Exceeded", 39/40, Time Complexity: $O(M*N+M*Log(M)+N*Log(N))$, Space Complexity: $O(M*N)$ (M: the number of the elements in `robot`, N: the number of the elements in `factory`)) :
+```java
+class Solution {
+    public long minimumTotalDistance(List<Integer> robot, int[][] factory) {
+        robot.sort(Comparator.naturalOrder());
+        Arrays.sort(factory, (a, b) -> Integer.compare(a[0], b[0]));
+        ArrayList<Integer> factory_mapping = new ArrayList<>();
+        for (int[] item: factory) {
+            for (int _unused=0; _unused<item[1]; _unused++) {
+                factory_mapping.add(item[0]);
+            }
+        }
+        Map<String, Long> memoization = new HashMap<>();
+        return this.dfs(0, 0, robot, factory_mapping, memoization);
+    }
+
+    private long dfs(int index_robot, int index_factory, List<Integer> robot, List<Integer> factory_mapping, Map<String, Long> memoization) {
+        if (index_robot >= robot.size()) {
+            return 0;
+        }
+        if (index_factory >= factory_mapping.size()) {
+            return Long.MAX_VALUE;
+        }
+
+        String key = index_robot + "-" + index_factory;
+        if (memoization.containsKey(key)) {
+            return memoization.get(key);
+        }
+
+        long result = this.dfs(index_robot, index_factory+1, robot, factory_mapping, memoization);
+        long choose_current = this.dfs(index_robot+1, index_factory+1, robot, factory_mapping, memoization);
+        if (choose_current < Long.MAX_VALUE) {
+            result = Math.min(result, Math.abs(robot.get(index_robot)-factory_mapping.get(index_factory)) + choose_current);
+        }
+
+        memoization.put(key, result);
+        return result;
     }
 }
 ```

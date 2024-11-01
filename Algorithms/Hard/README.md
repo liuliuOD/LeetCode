@@ -85,3 +85,4 @@
 ## Java
 
 - [Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)
+- [Minimum Total Distance Traveled](MinimumTotalDistanceTraveled.md)
