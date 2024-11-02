@@ -113,7 +113,12 @@ class Solution {
         char char_previous = '?';
         StringBuilder result = new StringBuilder();
         int cumulative_times = 1;
+        // Option 1
         for (char character: s.toCharArray()) {
+        /* Option 2
+        for (int index=0; index<n; index++) {
+            char character = s.charAt(index);
+        */
             if (character == char_previous) {
                 cumulative_times += 1;
                 if (cumulative_times >= 3) {
