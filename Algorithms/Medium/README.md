@@ -51,7 +51,7 @@
 |[Minimum Add To Make Parentheses Valid](MinimumAddToMakeParenthesesValid.md)|[Maximum Width Ramp](MaximumWidthRamp.md)|[The Number Of The Smallest Unoccupied Chair](TheNumberOfTheSmallestUnoccupiedChair.md)|[Divide Intervals Into Minimum Number Of Groups](DivideIntervalsIntoMinimumNumberOfGroups.md)|[Maximal Score After Applying K Operations](MaximalScoreAfterApplyingKOperations.md)|
 |[Separate Black And White Balls](SeparateBlackAndWhiteBalls.md)|[Longest Happy String](LongestHappyString.md)|[Maximum Swap](MaximumSwap.md)|[Count Number Of Maximum Bitwise-OR Subsets](CountNumberOfMaximumBitwiseORSubsets.md)|[Find Kth Bit In Nth Binary String](FindKthBitInNthBinaryString.md)|
 |[Split A String Into The Max Number Of Unique Substrings](SplitAStringIntoTheMaxNumberOfUniqueSubstrings.md)|[Kth Largest Sum In A Binary Tree](KthLargestSumInABinaryTree.md)|[Cousins In Binary Tree II](CousinsInBinaryTreeII.md)|[Flip Equivalent Binary Trees](FlipEquivalentBinaryTrees.md)|[Remove Sub-Folders From The Filesystem](RemoveSubFoldersFromTheFilesystem.md)|
-|[Count Square Submatrices With All Ones](CountSquareSubmatricesWithAllOnes.md)|[Longest Square Streak In An Array](LongestSquareStreakInAnArray.md)||||
+|[Count Square Submatrices With All Ones](CountSquareSubmatricesWithAllOnes.md)|[Longest Square Streak In An Array](LongestSquareStreakInAnArray.md)|[String Compression III](StringCompressionIII.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
