@@ -134,3 +134,67 @@ impl Solution {
     }
 }
 ```
+
+### Solution :
+
+Method 1 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the length of `word`)) :
+```java
+class Solution {
+    public String compressedString(String word) {
+        word += "?";
+        StringBuilder result = new StringBuilder();
+        char char_previous = word.charAt(0);
+        int times = 1;
+        for (int index=1; index<word.length(); index++) {
+            char char_current = word.charAt(index);
+            if (times == 9 || char_previous != char_current) {
+                /* option 1 */
+                result.append((char) (times+'0'));
+                /* Option 2
+
+                result.append(times);
+                */
+                result.append(char_previous);
+
+                times = 0;
+                char_previous = char_current;
+            }
+
+            times += 1;
+        }
+
+        return result.toString();
+    }
+}
+```
+
+Method 2 (Brute Force, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the length of `word`)) :
+```java
+class Solution {
+    public String compressedString(String word) {
+        word += "?";
+        StringBuilder result = new StringBuilder();
+        char char_previous = word.charAt(0);
+        int times = 1;
+        for (int index=1; index<word.length(); index++) {
+            char char_current = word.charAt(index);
+            if (times == 9 || char_previous != char_current) {
+                char[] temp = {(char) (times+'0'), char_previous};
+                /* Option 1 */
+                result.append(new String(temp));
+                /* Option 2
+
+                result.append(String.valueOf(temp));
+                */
+
+                times = 0;
+                char_previous = char_current;
+            }
+
+            times += 1;
+        }
+
+        return result.toString();
+    }
+}
+```

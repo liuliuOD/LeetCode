@@ -152,3 +152,10 @@
 |[Ugly Number III](UglyNumberIII.md)|[Longest Ideal Subsequence](LongestIdealSubsequence.md)|[Longest Increasing Subsequence](LongestIncreasingSubsequence.md)|[Minimum Number Of Operations To Make Array XOR Equal To K](MinimumNumberOfOperationsToMakeArrayXOREqualToK.md)|[Boats To Save People](BoatsToSavePeople.md)|
 |[Delete Node In A Linked List](DeleteNodeInALinkedList.md)|[Remove Nodes From Linked List](RemoveNodesFromLinkedList.md)|[Double A Number Represented As A Linked List](DoubleANumberRepresentedAsALinkedList.md)|[Sum Of Digit Differences Of All Pairs](SumOfDigitDifferencesOfAllPairs.md)|[Subsets](Subsets.md)|
 |[Get Equal Substrings Within Budget](GetEqualSubstringsWithinBudget.md)|[Number Of Steps To Reduce A Number In Binary Representation To One](NumberOfStepsToReduceANumberInBinaryRepresentationToOne.md)|[Append Characters To String To Make Subsequence](AppendCharactersToStringToMakeSubsequence.md)|||
+
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
+## Java
+
+||||||
+| :- | :- | :- | :- | :- |
+|[String Compression III](StringCompressionIII.md)|||||
