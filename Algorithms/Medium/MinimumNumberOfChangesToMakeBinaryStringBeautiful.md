@@ -186,3 +186,25 @@ class Solution {
     }
 }
 ```
+
+Method 2 (Greedy, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the length of `s`)) :
+```java
+class Solution {
+    public int minChanges(String s) {
+        int result = 0;
+        /* Option 1 */
+        for (int index=0; index<s.length()/2; index++) {
+            if (s.charAt(index*2) != s.charAt(index*2+1)) {
+        /* Option 2
+
+        for (int index=0; index<s.length(); index+=2) {
+            if (s.charAt(index) != s.charAt(index+1)) {
+        */
+                result++;
+            }
+        }
+
+        return result;
+    }
+}
+```
