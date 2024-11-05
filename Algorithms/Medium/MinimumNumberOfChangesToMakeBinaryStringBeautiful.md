@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2914. [Minimum Number Of Changes To Make Binary String Beautiful](https://leetcode.com/problems/minimum-number-of-changes-to-make-binary-string-beautiful)
@@ -140,6 +141,48 @@ impl Solution {
         }
 
         return *dp.iter().min().unwrap()
+    }
+}
+```
+
+Method 4 (Greedy, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the length of `s`)) :
+```rust
+impl Solution {
+    pub fn min_changes(s: String) -> i32 {
+        let s_char: Vec<char> = s.chars().collect();
+        return (0..s.len()).step_by(2)
+            .map(|index| {
+                return match s_char[index] == s_char[index+1] {
+                    true => 0,
+                    false => 1,
+                }
+            })
+            .sum()
+    }
+}
+```
+
+Method 5 (Greedy, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the length of `s`)) :
+```rust
+impl Solution {
+    pub fn min_changes(s: String) -> i32 {
+        return s.as_bytes()
+            .chunks_exact(2)
+            .filter(|items| items[0] != items[1])
+            .count() as _
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Greedy + Stream API, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the length of `s`)) :
+```java
+class Solution {
+    public int minChanges(String s) {
+        return (int) IntStream.range(0, s.length()/2)
+            .filter(index -> s.charAt(index*2) != s.charAt(index*2+1))
+            .count();
     }
 }
 ```

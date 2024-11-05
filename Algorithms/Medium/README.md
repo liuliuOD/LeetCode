@@ -158,4 +158,4 @@
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[String Compression III](StringCompressionIII.md)|||||
+|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)||||
