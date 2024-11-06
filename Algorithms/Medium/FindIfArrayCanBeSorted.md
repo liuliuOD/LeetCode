@@ -72,7 +72,7 @@ impl Solution {
 }
 ```
 
-Method 3 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+Method 3 (Minimum + Maximum, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
 ```rust
 impl Solution {
     pub fn can_sort_array(mut nums: Vec<i32>) -> bool {
@@ -93,6 +93,32 @@ impl Solution {
         }
 
         return maximum_previous <= minimum
+    }
+}
+```
+
+Method 4 (Only Maximum, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn can_sort_array(mut nums: Vec<i32>) -> bool {
+        let mut maximum: i32 = nums[0];
+        let mut maximum_previous: i32 = i32::MIN;
+        for index in 1..nums.len() {
+            if nums[index].count_ones() == nums[index-1].count_ones() {
+                if nums[index] < maximum_previous {
+                    return false
+                }
+
+                maximum = i32::max(maximum, nums[index]);
+            } else if maximum <= nums[index] {
+                maximum_previous = maximum;
+                maximum = nums[index];
+            } else {
+                return false
+            }
+        }
+
+        return true
     }
 }
 ```
