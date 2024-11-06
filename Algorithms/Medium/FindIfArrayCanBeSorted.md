@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 3011. [Find If Array Can Be Sorted](https://leetcode.com/problems/find-if-array-can-be-sorted)
@@ -119,6 +120,34 @@ impl Solution {
         }
 
         return true
+    }
+}
+```
+
+Method 1 (Only Maximum, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+```java
+class Solution {
+    public boolean canSortArray(int[] nums) {
+        int maximum = nums[0];
+        int maximum_previous = Integer.MIN_VALUE;
+        for (int index=1; index<nums.length; index++) {
+            if (Integer.bitCount(nums[index]) == Integer.bitCount(nums[index-1])) {
+                if (maximum_previous > nums[index]) {
+                    return false;
+                }
+
+                maximum = Math.max(maximum, nums[index]);
+            }
+            else if (maximum <= nums[index]) {
+                maximum_previous = maximum;
+                maximum = nums[index];
+            }
+            else {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
 ```

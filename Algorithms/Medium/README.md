@@ -158,4 +158,4 @@
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)||||
+|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)|[Find If Array Can Be Sorted](FindIfArrayCanBeSorted.md)|||
