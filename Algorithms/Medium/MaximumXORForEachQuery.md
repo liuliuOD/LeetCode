@@ -13,6 +13,7 @@ impl Solution {
         let mut xor: i32 = nums.iter().fold(0, |a, b| a^b);
         let mut result: Vec<i32> = vec![0; n];
         for index in 0..n {
+            /* Option 1 */
             for bit in 0..maximum_bit {
                 if xor & (1<<bit) != 0 {
                     continue;
@@ -20,6 +21,11 @@ impl Solution {
 
                 result[index] |= 1 << bit;
             }
+            /* Option 2
+
+            let maximum: i32 = (1<<maximum_bit) - 1;
+            result[index] = xor ^ maximum;
+            */
             xor ^= nums[n-index-1];
         }
 
