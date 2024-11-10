@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 3097. [Shortest Subarray With OR At Least K II](https://leetcode.com/problems/shortest-subarray-with-or-at-least-k-ii)
@@ -101,6 +102,63 @@ impl Solution {
         for bit in 0..BIT_MAXIMUM {
             if nums[index] & 1<<bit > 0 {
                 prefix_sum[bit] += 1;
+            }
+        }
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the element in `nums`)) :
+```java
+class Solution {
+    public int minimumSubarrayLength(int[] nums, int k) {
+        int[] counter = new int[30];
+        int result = Integer.MAX_VALUE;
+        int amount_remove = 0;
+        for (int amount_all=1; amount_all<=nums.length; amount_all++) {
+            this.addCounter(counter, nums[amount_all-1]);
+
+            while (amount_remove < amount_all) {
+                int or = 0;
+                for (int bit=0; bit<30; bit++) {
+                    if (counter[bit] > 0) {
+                        or |= 1 << bit;
+                    }
+                }
+
+                if (or >= k) {
+                    result = Integer.min(result, amount_all - amount_remove);
+                    this.removeCounter(counter, nums[amount_remove]);
+                    amount_remove += 1;
+                } else {
+                    break;
+                }
+            }
+
+            if (amount_remove >= amount_all) {
+                break;
+            }
+        }
+
+        if (result == Integer.MAX_VALUE)
+            return -1;
+        return result;
+    }
+
+    void addCounter(int[] counter, int num) {
+        for (int bit=0; bit<30; bit++) {
+            if ((1<<bit & num) > 0) {
+                counter[bit] += 1;
+            }
+        }
+    }
+
+    void removeCounter(int[] counter, int num) {
+        for (int bit=0; bit<30; bit++) {
+            if ((1<<bit & num) > 0) {
+                counter[bit] -= 1;
             }
         }
     }
