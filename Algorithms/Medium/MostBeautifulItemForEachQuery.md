@@ -34,3 +34,29 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(M*Log(M)+N*Log(N))$, Space Complexity: $O(M+N)$ (M: the number of the elements in `queries`, N: the number of the elements in `items`)) :
+```rust
+impl Solution {
+    pub fn maximum_beauty(mut items: Vec<Vec<i32>>, queries: Vec<i32>) -> Vec<i32> {
+        let m: usize = queries.len();
+        let n: usize = items.len();
+        items.sort();
+        let mut queries_sorted: Vec<usize> = (0..m).collect();
+        queries_sorted.sort_by_key(|index| queries[*index]);
+        let mut most_beautiful: i32 = 0;
+        let mut index_items: usize = 0;
+        let mut result: Vec<i32> = vec![0; m];
+        for index in queries_sorted.into_iter() {
+            while index_items < n && items[index_items][0] <= queries[index] {
+                most_beautiful = i32::max(most_beautiful, items[index_items][1]);
+                index_items += 1;
+            }
+
+            result[index] = most_beautiful;
+        }
+
+        return result
+    }
+}
+```
