@@ -160,4 +160,4 @@
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)|[Find If Array Can Be Sorted](FindIfArrayCanBeSorted.md)|[Shortest Subarray With OR At Least K II](ShortestSubarrayWithORAtLeastKII.md)||
+|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)|[Find If Array Can Be Sorted](FindIfArrayCanBeSorted.md)|[Shortest Subarray With OR At Least K II](ShortestSubarrayWithORAtLeastKII.md)|[Count The Number Of Fair Pairs](CountTheNumberOfFairPairs.md)|

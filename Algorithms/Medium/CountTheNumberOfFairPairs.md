@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2563. [Count The Number Of Fair Pairs](https://leetcode.com/problems/count-the-number-of-fair-pairs)
@@ -56,6 +57,36 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Two Pointer, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
+```java
+class Solution {
+    public long countFairPairs(int[] nums, int lower, int upper) {
+        Arrays.sort(nums);
+
+        return this.amountPairs(nums, upper+1) - this.amountPairs(nums, lower);
+    }
+
+    long amountPairs(int[] nums, int upper) {
+        long result = 0;
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            if (nums[left]+nums[right] < upper) {
+                result += right - left;
+                left += 1;
+                continue;
+            }
+
+            right -= 1;
+        }
+
+        return result;
     }
 }
 ```
