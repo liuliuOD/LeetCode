@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1574. [Shortest Subarray To Be Removed To Make Array Sorted](https://leetcode.com/problems/shortest-subarray-to-be-removed-to-make-array-sorted)
@@ -27,6 +28,34 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+```java
+class Solution {
+    public int findLengthOfShortestSubarray(int[] nums) {
+        int n = nums.length;
+        int right = n - 1;
+        while (right > 0 && nums[right-1] <= nums[right]) {
+            right--;
+        }
+
+        int result = right;
+        int left = 0;
+        while (left < right && (left == 0 || nums[left-1] <= nums[left])) {
+            while (right < n && nums[left] > nums[right]) {
+                right++;
+            }
+
+            result = Integer.min(result, right - left - 1);
+            left++;
+        }
+
+        return result;
     }
 }
 ```
