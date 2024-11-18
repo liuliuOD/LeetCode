@@ -111,4 +111,4 @@
 
 ||||||
 | :- | :- | :- | :- | :- |
-|[Delete Characters To Make Fancy String](DeleteCharactersToMakeFancyString.md)|[Circular Sentence](CircularSentence.md)|[Rotate String](RotateString.md)|||
+|[Delete Characters To Make Fancy String](DeleteCharactersToMakeFancyString.md)|[Circular Sentence](CircularSentence.md)|[Rotate String](RotateString.md)|[Defuse The Bomb](DefuseTheBomb.md)||

@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1652. [Defuse The Bomb](https://leetcode.com/problems/defuse-the-bomb)
@@ -25,6 +26,32 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N*K)$, Space Complexity: $O(1)$ (N: the number of the elements in `code`, K: the value of `k`)) :
+```java
+class Solution {
+    public int[] decrypt(int[] code, int k) {
+        int n = code.length;
+        int[] result = new int[n];
+        for (int index=0; index<n; index++) {
+            int sum = 0;
+            for (int offset=1; offset<=Math.abs(k); offset++) {
+                if (k < 0) {
+                    sum += code[(n+index-offset)%n];
+                } else {
+                    sum += code[(index+offset)%n];
+                }
+            }
+
+            result[index] = sum;
+        }
+
+        return result;
     }
 }
 ```
