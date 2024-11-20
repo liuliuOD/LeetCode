@@ -54,7 +54,7 @@
 |[Count Square Submatrices With All Ones](CountSquareSubmatricesWithAllOnes.md)|[Longest Square Streak In An Array](LongestSquareStreakInAnArray.md)|[String Compression III](StringCompressionIII.md)|[Minimum Number Of Changes To Make Binary String Beautiful](MinimumNumberOfChangesToMakeBinaryStringBeautiful.md)|[Find If Array Can Be Sorted](FindIfArrayCanBeSorted.md)|
 |[Largest Combination With Bitwise AND Greater Than Zero](LargestCombinationWithBitwiseANDGreaterThanZero.md)|[Maximum XOR For Each Query](MaximumXORForEachQuery.md)|[Minimum Array End](MinimumArrayEnd.md)|[Shortest Subarray With OR At Least K II](ShortestSubarrayWithORAtLeastKII.md)|[Prime Subtraction Operation](PrimeSubtractionOperation.md)|
 |[Most Beautiful Item For Each Query](MostBeautifulItemForEachQuery.md)|[Count The Number Of Fair Pairs](CountTheNumberOfFairPairs.md)|[Minimized Maximum Of Products Distributed To Any Store](MinimizedMaximumOfProductsDistributedToAnyStore.md)|[Shortest Subarray To Be Removed To Make Array Sorted](ShortestSubarrayToBeRemovedToMakeArraySorted.md)|[Find The Power Of K-Size Subarrays I](FindThePowerOfKSizeSubarraysI.md)|
-|[Maximum Sum Of Distinct Subarrays With Length K](MaximumSumOfDistinctSubarraysWithLengthK.md)|||||
+|[Maximum Sum Of Distinct Subarrays With Length K](MaximumSumOfDistinctSubarraysWithLengthK.md)|[Take K Of Each Character From Left And Right](TakeKOfEachCharacterFromLeftAndRight.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
