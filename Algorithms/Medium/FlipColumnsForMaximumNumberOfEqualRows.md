@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1072. [Flip Columns For Maximum Number Of Equal Rows](https://leetcode.com/problems/flip-columns-for-maximum-number-of-equal-rows)
@@ -64,6 +65,42 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Hash Map, Time Complexity: $O(M*N)$, Space Complexity: $O(M)$ (M: the number of the elements in `matrix`, N: the number of the elements in `matrix[0]`)) :
+```java
+import java.util.HashMap;
+
+class Solution {
+    public int maxEqualRowsAfterFlips(int[][] matrix) {
+        int n = matrix[0].length;
+        HashMap<String, Integer> counter = new HashMap();
+        int result = 0;
+        for (int[] row: matrix) {
+            StringBuilder key_builder = new StringBuilder();
+            for (int index=1; index<n; index++) {
+                if (row[index] != row[index-1]) {
+                    key_builder.append('1');
+                } else {
+                    key_builder.append('0');
+                }
+            }
+
+            String key = key_builder.toString();
+            if (!counter.containsKey(key)) {
+                counter.put(key, 1);
+            } else {
+                counter.replace(key, counter.get(key) + 1);
+            }
+
+            result = Math.max(result, counter.get(key));
+        }
+
+        return result;
     }
 }
 ```
