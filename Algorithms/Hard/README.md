@@ -39,6 +39,7 @@
 - [Shortest Subarray With Sum At Least K](ShortestSubarrayWithSumAtLeastK.md)
 - [Sliding Puzzle](SlidingPuzzle.md)
 - [Minimum Obstacle Removal To Reach Corner](MinimumObstacleRemovalToReachCorner.md)
+- [Minimum Time To Visit A Cell In A Grid](MinimumTimeToVisitACellInAGrid.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
