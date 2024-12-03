@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2109. [Adding Spaces To A String](https://leetcode.com/problems/adding-spaces-to-a-string)
@@ -49,6 +50,30 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the length of `s`, N: the length of `spaces`)) :
+```java
+class Solution {
+    public String addSpaces(String s, int[] spaces) {
+        int m = s.length();
+        int n = spaces.length;
+        int index_spaces = 0;
+        StringBuilder result = new StringBuilder();
+        for (int index_s=0; index_s<m; index_s++) {
+            if (index_spaces < n && index_s == spaces[index_spaces]) {
+                result.append(" ");
+                index_spaces++;
+            }
+
+            result.append(s.charAt(index_s));
+        }
+
+        return result.toString();
     }
 }
 ```
