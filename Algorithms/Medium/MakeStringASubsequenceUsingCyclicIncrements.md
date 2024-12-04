@@ -1,6 +1,7 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ![language-PHP](https://img.shields.io/badge/PHP-acb1f9?style=for-the-badge&logo=PHP)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2825. [Make String A Subsequence Using Cyclic Increments](https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments)
@@ -50,6 +51,39 @@ impl Solution {
         let str2_char: Vec<char> = str2.chars().collect::<Vec<char>>();
         while index1 < m {
             if str1_char[index1] == str2_char[index2] || (str1_char[index1] == 'z' && str2_char[index2] == 'a') || (str1_char[index1] as u8-BASE+1 == str2_char[index2] as u8-BASE) {
+                index2 += 1;
+            }
+
+            if index2 >= n {
+                return true
+            }
+
+            index1 += 1;
+        }
+
+        return false
+    }
+}
+```
+
+Method 3 (Two Pointers, Time Complexity: $O(M)$, Space Complexity: $O(M+N)$ (M: the length of `str1`, N: the length of `str2`)) :
+```rust
+impl Solution {
+    pub fn can_make_subsequence(str1: String, str2: String) -> bool {
+        let m: usize = str1.len();
+        let n: usize = str2.len();
+        if m < n {
+            return false
+        }
+
+        let mut index1: usize = 0;
+        let mut index2: usize = 0;
+        let str1_char: Vec<char> = str1.chars().collect::<Vec<char>>();
+        let str2_char: Vec<char> = str2.chars().collect::<Vec<char>>();
+        while index1 < m {
+            let ascii1: u8 = str1_char[index1] as u8;
+            let ascii2: u8 = str2_char[index2] as u8;
+            if ascii1 == ascii2 || (ascii1-ascii2 == 25) || (ascii1+1 == ascii2) {
                 index2 += 1;
             }
 
@@ -143,6 +177,37 @@ class Solution {
         }
 
         return $pointer2 >= $len2;
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Two Pointers, Time Complexity: $O(M)$, Space Complexity: $O(M+N)$ (M: the length of `str1`, N: the length of `str2`)) :
+```java
+class Solution {
+    public boolean canMakeSubsequence(String str1, String str2) {
+        int m = str1.length();
+        int n = str2.length();
+        if (m < n) {
+            return false;
+        }
+
+        int index1 = 0;
+        int index2 = 0;
+        while (index1 < m) {
+            if ((str1.charAt(index1) == str2.charAt(index2)) || (str2.charAt(index2)-str1.charAt(index1)==1) || (str1.charAt(index1)-str2.charAt(index2)==25)) {
+                index2++;
+            }
+
+            if (index2 >= n) {
+                return true;
+            }
+
+            index1++;
+        }
+
+        return false;
     }
 }
 ```
