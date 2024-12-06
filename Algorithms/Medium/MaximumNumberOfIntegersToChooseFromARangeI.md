@@ -47,6 +47,39 @@ impl Solution {
 }
 ```
 
+Method 2 (Array, Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the number of the elements in `banned`, N: the value of `n`)) :
+```rust
+impl Solution {
+    pub fn max_count(banned: Vec<i32>, n: i32, max_sum: i32) -> i32 {
+        let mut invalid: [bool; 10001] = [false; 10001];
+        for num in banned {
+            invalid[num as usize] = true;
+        }
+
+        let mut sum: i64 = 0;
+        let mut result: i32 = 0;
+        for num in 1..=n {
+            if invalid[num as usize] {
+                continue;
+            }
+
+            sum += num as i64;
+            result += 1;
+            if sum < max_sum as i64 {
+                continue;
+            }
+
+            if sum > max_sum as i64 {
+                result -= 1;
+            }
+            break;
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Hash Set, Time Complexity: $O(M+N)$, Space Complexity: $O(M)$ (M: the number of the elements in `banned`, N: the value of `n`)) :
@@ -80,7 +113,7 @@ class Solution {
 }
 ```
 
-Method 2 (Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the number of the elements in `banned`, N: the value of `n`)) :
+Method 2 (Array, Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the number of the elements in `banned`, N: the value of `n`)) :
 ```java
 class Solution {
     public int maxCount(int[] banned, int n, int maxSum) {
