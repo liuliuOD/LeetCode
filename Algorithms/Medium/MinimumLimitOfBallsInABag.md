@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1760. [Minimum Limit Of Balls In A Bag](https://leetcode.com/problems/minimum-limit-of-balls-in-a-bag)
@@ -58,6 +59,66 @@ impl Solution {
         }
 
         return left
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Binary Search, Time Complexity: $O(N*Log(M))$, Space Complexity: $O(1)$ (M: the maximum element in `nums`, N: the number of the elements in `nums`):
+```java
+class Solution {
+    public int minimumSize(int[] nums, int maxOperations) {
+        int left = 1;
+        int right = IntStream.of(nums)
+                            .max()
+                            .orElseThrow(() -> new IllegalArgumentException("Array must not be empty"));
+        while (left <= right) {
+            int middle = left + (right-left)/2;
+            int count = 0;
+            for (int num: nums) {
+                count += num / middle;
+                if (num % middle == 0) {
+                    count--;
+                }
+            }
+
+            if (count <= maxOperations) {
+                right = middle - 1;
+            } else {
+                left = middle + 1;
+            }
+        }
+
+        return left;
+    }
+}
+```
+
+Method 2 (Binary Search, Time Complexity: $O(N*Log(M))$, Space Complexity: $O(1)$ (M: the maximum element in `nums`, N: the number of the elements in `nums`):
+```java
+class Solution {
+    public int minimumSize(int[] nums, int maxOperations) {
+        int left = 1;
+        int right = 0;
+        for (int num: nums) {
+            right = Math.max(right, num);
+        }
+        while (left <= right) {
+            int middle = left + (right-left)/2;
+            int count = 0;
+            for (int num: nums) {
+                count += (num-1) / middle;
+            }
+
+            if (count <= maxOperations) {
+                right = middle - 1;
+            } else {
+                left = middle + 1;
+            }
+        }
+
+        return left;
     }
 }
 ```
