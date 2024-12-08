@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2054. [Two Best Non-Overlapping Events](https://leetcode.com/problems/two-best-non-overlapping-events)
@@ -44,6 +45,30 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Array Sorted + Binary Heap, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in `events`)) :
+```java
+class Solution {
+    public int maxTwoEvents(int[][] events) {
+        Arrays.sort(events, (a, b) -> Integer.compare(a[0], b[0]));
+        PriorityQueue<int[]> heap = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
+        int maximum = 0;
+        int result = 0;
+        for (int[] event: events) {
+            while (!heap.isEmpty() && heap.peek()[0] < event[0]) {
+                maximum = Math.max(maximum, heap.poll()[1]);
+            }
+            heap.add(new int[]{event[1], event[2]});
+
+            result = Math.max(result, event[2] + maximum);
+        }
+
+        return result;
     }
 }
 ```
