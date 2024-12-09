@@ -6,7 +6,7 @@
 
 ### Solution :
 
-Method 1 (Prefix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `queries`, N: the number of the elements in `nums`)) :
 ```rust
 impl Solution {
     pub fn is_array_special(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<bool> {
@@ -25,6 +25,61 @@ impl Solution {
             let current: bool = prefix_sum[query[1] as usize]-prefix_sum[query[0] as usize] == query[1]-query[0];
 
             result.push(current);
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `queries`, N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn is_array_special(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<bool> {
+        let n: usize = nums.len();
+        let mut counter: Vec<i32> = Vec::with_capacity(n);
+        counter.push(0);
+        for index in 1..n {
+            if nums[index]%2 == nums[index-1]%2 {
+                counter.push(*counter.last().unwrap() + 1);
+            } else {
+                counter.push(*counter.last().unwrap());
+            }
+        }
+
+        let mut result: Vec<bool> = Vec::with_capacity(n);
+        for query in queries {
+            if counter[query[1] as usize]-counter[query[0] as usize] == 0 {
+                result.push(true);
+            } else {
+                result.push(false);
+            }
+        }
+
+        return result
+    }
+}
+```
+
+Method 3 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `queries`, N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn is_array_special(nums: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<bool> {
+        let n: usize = nums.len();
+        let mut current: i32 = 0;
+        let mut counter: Vec<i32> = Vec::with_capacity(n);
+        counter.push(current);
+        for index in 1..n {
+            if nums[index]%2 == nums[index-1]%2 {
+                current += 1;
+            }
+
+            counter.push(current);
+        }
+
+        let mut result: Vec<bool> = Vec::with_capacity(n);
+        for query in queries {
+            result.push(counter[query[1] as usize]-counter[query[0] as usize] == 0);
         }
 
         return result
