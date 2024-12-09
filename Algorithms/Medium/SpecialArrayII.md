@@ -1,5 +1,6 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 3152. [Special Array II](https://leetcode.com/problems/special-array-ii)
@@ -131,4 +132,41 @@ class Solution:
             result.append(True if prefix_sum[index_end] - prefix_sum[index_start] == index_end-index_start else False)
 
         return result
+```
+
+### Solution :
+
+Method 1 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `queries`, N: the number of the elements in `nums`)) :
+```java
+class Solution {
+    public boolean[] isArraySpecial(int[] nums, int[][] queries) {
+        int n = nums.length;
+        int[] prefixSum = new int[n];
+        prefixSum[0] = 0;
+        int current = 0;
+        for (int index=1; index<n; index++) {
+            if (nums[index]%2 == nums[index-1]%2) {
+                current++;
+            }
+
+            prefixSum[index] = current;
+        }
+
+        int m = queries.length;
+        boolean[] result = new boolean[m];
+        for (int index=0; index<m; index++) {
+            int[] query = queries[index];
+            /* Option 1 */
+            result[index] = prefixSum[query[1]]-prefixSum[query[0]] == 0;
+            /* Option 2
+
+            if (prefixSum[query[1]]-prefixSum[query[0]] == 0) {
+                result[index] = true;
+            }
+            */
+        }
+
+        return result;
+    }
+}
 ```
