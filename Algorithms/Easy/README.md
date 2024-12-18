@@ -38,7 +38,7 @@
 |[Binary Tree Postorder Traversal](BinaryTreePostorderTraversal.md)|[Convert 1D Array Into 2D Array](Convert1DArrayInto2DArray.md)|[Sum Of Digits Of String After Convert](SumOfDigitsOfStringAfterConvert.md)|[Minimum Bit Flips To Convert Number](MinimumBitFlipsToConvertNumber.md)|[Count The Number Of Consistent Strings](CountTheNumberOfConsistentStrings.md)|
 |[Uncommon Words From Two Sentences](UncommonWordsFromTwoSentences.md)|[Rank Transform Of An Array](RankTransformOfAnArray.md)|[Minimum String Length After Removing Substrings](MinimumStringLengthAfterRemovingSubstrings.md)|[Delete Characters To Make Fancy String](DeleteCharactersToMakeFancyString.md)|[Circular Sentence](CircularSentence.md)|
 |[Rotate String](RotateString.md)|[Defuse The Bomb](DefuseTheBomb.md)|[Check If N And Its Double Exist](CheckIfNAndItsDoubleExist.md)|[Check If A Word Occurs As A Prefix Of Any Word In A Sentence](CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.md)|[Take Gifts From The Richest Pile](TakeGiftsFromTheRichestPile.md)|
-|[Final Array State After K Multiplication Operations I](FinalArrayStateAfterKMultiplicationOperationsI.md)|||||
+|[Final Array State After K Multiplication Operations I](FinalArrayStateAfterKMultiplicationOperationsI.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3

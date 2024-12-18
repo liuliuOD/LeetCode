@@ -1,62 +1,31 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
-## [Final Prices With A Special Discount In A Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop)
+## 1475. [Final Prices With A Special Discount In A Shop](https://leetcode.com/problems/final-prices-with-a-special-discount-in-a-shop)
 
 ### Solution :
 
-Method 1 (Monotomic Stack) :
+Method 1 (Brute Force, Time Complexity: $O(N^2)$, Space Complexity: $O(1)$ (N: the number of the elements in `prices`)) :
 ```rust
 impl Solution {
     pub fn final_prices(prices: Vec<i32>) -> Vec<i32> {
-        let mut discounts = vec![];
-        let mut stack = vec![];
-        for index in (0..prices.len()).rev() {
-            while !stack.is_empty() {
-                if let Some(&price) = stack.last() {
-                    if price <= prices[index] {
-                        discounts.push(price);
-                        break;
-                    }
-                    stack.pop();
+        let n: usize = prices.len();
+        let mut result: Vec<i32> = Vec::new();
+        for index in 0..n {
+            let price: i32 = prices[index];
+            for index_discount in index+1..n {
+                if prices[index_discount] <= price {
+                    result.push(price - prices[index_discount]);
+                    break;
                 }
             }
-            if stack.is_empty() {
-                discounts.push(0);
+
+            if result.len() == index {
+                result.push(price);
             }
-
-            stack.push(prices[index]);
         }
-        discounts.reverse();
 
-        prices.iter().zip(discounts).map(|(price, discount)| price - discount).collect()
-    }
-}
-```
-
-Method 2 (Monotonic Stack, without additional subtraction) :
-```rust
-impl Solution {
-    pub fn final_prices(prices: Vec<i32>) -> Vec<i32> {
-        let mut ans = vec![];
-        let mut stack = vec![];
-        for index in (0..prices.len()).rev() {
-            let mut discount = 0;
-            while !stack.is_empty() {
-                if let Some(&price) = stack.last() {
-                    if price <= prices[index] {
-                        discount = price;
-                        break;
-                    }
-                    stack.pop();
-                }
-            }
-            ans.push(prices[index] - discount);
-
-            stack.push(prices[index]);
-        }
-        ans.reverse();
-        ans
+        return result
     }
 }
 ```
