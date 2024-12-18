@@ -29,3 +29,22 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Stack, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `prices`)) :
+```rust
+impl Solution {
+    pub fn final_prices(prices: Vec<i32>) -> Vec<i32> {
+        let mut result: Vec<i32> = prices.clone();
+        let mut stack: Vec<usize> = Vec::new();
+        for index in 0..prices.len() {
+            let price: i32 = prices[index];
+            while stack.len() > 0 && price <= prices[*stack.last().unwrap()] {
+                result[stack.pop().unwrap()] -= price;
+            }
+            stack.push(index);
+        }
+
+        return result
+    }
+}
+```
