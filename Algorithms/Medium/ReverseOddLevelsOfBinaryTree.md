@@ -61,3 +61,43 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (BFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in the tree)) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+use std::collections::VecDeque;
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn reverse_odd_levels(root: Custom) -> Custom {
+        let mut stack: Vec<i32> = Vec::new();
+        let mut queue: VecDeque<Custom> = VecDeque::from([root.clone()]);
+        let mut level: usize = 0;
+        while queue.len() > 0 {
+            for _ in 0..queue.len() {
+                let item = queue.pop_front().unwrap();
+                let mut node = item.as_ref().unwrap().borrow_mut();
+                if level % 2 == 1 {
+                    node.val = stack.pop().unwrap();
+                }
+
+                if node.left.is_none() || node.right.is_none() {
+                    continue;
+                }
+
+                if level % 2 == 0 {
+                    stack.push(node.left.as_ref().unwrap().borrow().val);
+                    stack.push(node.right.as_ref().unwrap().borrow().val);
+                }
+
+                queue.push_back(node.left.clone());
+                queue.push_back(node.right.clone());
+            }
+
+            level += 1;
+        }
+
+        return root
+    }
+}
+```
