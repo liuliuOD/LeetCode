@@ -1,40 +1,65 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
-## 2872. [Maximum Number Of K-Divisible Components](https://leetcode.com/problems/maximum-number-of-k-divisible-components)
+## 2940. [Find Building Where Alice And Bob Can Meet](https://leetcode.com/problems/find-building-where-alice-and-bob-can-meet)
 
 ### Solution :
 
-Method 1 (DFS, Time Complexity: $O(M+N)$, Space Complexity: $O(M+N)$ (M: the number of the elements in `edges`, N: the value of `n`)) :
+Method 1 (Monotonic decreasing stack, Time Complexity: $O(N*Log(M))$, Space Complexity: $O(M)$ (M: the number of the elements in `heights`, N: the number of the elements in `queries`)) :
 ```rust
 impl Solution {
-    pub fn max_k_divisible_components(n: i32, edges: Vec<Vec<i32>>, values: Vec<i32>, k: i32) -> i32 {
-        let mut adjust_list: Vec<Vec<usize>> = vec![vec![]; n as usize];
-        for edge in edges {
-            adjust_list[edge[0] as usize].push(edge[1] as usize);
-            adjust_list[edge[1] as usize].push(edge[0] as usize);
+    pub fn leftmost_building_queries(heights: Vec<i32>, queries: Vec<Vec<i32>>) -> Vec<i32> {
+        let m: usize = heights.len();
+        let n: usize = queries.len();
+        let mut queries_reformat: Vec<Vec<(i32, usize)>> = vec![vec![]; m];
+        let mut result: Vec<i32> = vec![-1; n];
+        for index_query in 0..n {
+            let mut a: usize = queries[index_query][0] as usize;
+            let mut b: usize = queries[index_query][1] as usize;
+            if a > b {
+                std::mem::swap(&mut a, &mut b);
+            }
+
+            if (heights[a] < heights[b]) || (a == b) {
+                result[index_query] = b as i32;
+                continue;
+            }
+
+            queries_reformat[b].push((heights[a], index_query));
         }
 
-        let mut result: i32 = 0;
-        Self::dfs(0, 0, &mut result, &adjust_list, &values, k);
+        let mut mono_stack: Vec<(i32, usize)> = Vec::new();
+        for b in (0..m).rev() {
+            for &(height_a, index_query) in &queries_reformat[b] {
+                let index_stack: usize = Self::binary_search(height_a, &mono_stack);
+                if index_stack < mono_stack.len() && mono_stack[index_stack].0 > height_a {
+                    result[index_query] = mono_stack[index_stack].1 as i32;
+                }
+            }
+
+            while mono_stack.len() > 0 && mono_stack.last().unwrap().0 <= heights[b] {
+                mono_stack.pop();
+            }
+            mono_stack.push((heights[b], b));
+        }
 
         return result
     }
 
-    fn dfs(current: usize, previous: usize, result: &mut i32, adjust_list: &Vec<Vec<usize>>, values: &Vec<i32>, k: i32) -> i32 {
-        let mut sum: i32 = values[current] % k;
-        for &next in &adjust_list[current] {
-            if next == previous {
-                continue;
+    fn binary_search(target: i32, mono_stack: &Vec<(i32, usize)>) -> usize {
+        let n: usize = mono_stack.len();
+        let mut left = 0;
+        let mut right = n - 1;
+        while left <= right && right < n {
+            let middle = left + (right-left)/2;
+            if mono_stack[middle].0 > target {
+                left = middle + 1;
+            } else {
+                right = middle - 1;
             }
-
-            sum = (sum+Self::dfs(next, current, result, adjust_list, values, k)) % k;
         }
 
-        if sum == 0 {
-            *result += 1;
-        }
-        return sum
+        return right
     }
 }
 ```
