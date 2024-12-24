@@ -42,6 +42,7 @@
 - [Minimum Time To Visit A Cell In A Grid](MinimumTimeToVisitACellInAGrid.md)
 - [Maximum Number Of K-Divisible Components](MaximumNumberOfKDivisibleComponents.md)
 - [Find Building Where Alice And Bob Can Meet](FindBuildingWhereAliceAndBobCanMeet.md)
+- [Find Minimum Diameter After Merging Two Trees](FindMinimumDiameterAfterMergingTwoTrees.md)
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
