@@ -1,7 +1,73 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 515. [Find Largest Value In Each Tree Row](https://leetcode.com/problems/find-largest-value-in-each-tree-row)
+
+### Solution :
+
+```rust
+// Definition for a binary tree node.
+// #[derive(Debug, PartialEq, Eq)]
+// pub struct TreeNode {
+//   pub val: i32,
+//   pub left: Option<Rc<RefCell<TreeNode>>>,
+//   pub right: Option<Rc<RefCell<TreeNode>>>,
+// }
+//
+// impl TreeNode {
+//   #[inline]
+//   pub fn new(val: i32) -> Self {
+//     TreeNode {
+//       val,
+//       left: None,
+//       right: None
+//     }
+//   }
+// }
+```
+
+Method 1 (BFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of nodes in the tree)) :
+```rust
+
+use std::rc::Rc;
+use std::cell::RefCell;
+use std::collections::VecDeque;
+
+type Custom = Option<Rc<RefCell<TreeNode>>>;
+impl Solution {
+    pub fn largest_values(root: Custom) -> Vec<i32> {
+        let mut result: Vec<i32> = Vec::new();
+        if root.is_none() {
+            return result
+        }
+
+        let mut queue: VecDeque<Custom> = VecDeque::from([root.clone()]);
+        while queue.len() > 0 {
+            let mut maximum: i32 = i32::MIN;
+            for _ in 0..queue.len() {
+                let node: Custom = queue.pop_front().unwrap();
+                if node.is_none() {
+                    continue;
+                }
+
+                let inner = node.as_ref().unwrap();
+                maximum = i32::max(maximum, inner.borrow().val);
+                if inner.borrow().left.is_some() {
+                    queue.push_back(inner.borrow().left.clone());
+                }
+                if inner.borrow().right.is_some() {
+                    queue.push_back(inner.borrow().right.clone());
+                }
+            }
+
+            result.push(maximum);
+        }
+
+        return result
+    }
+}
+```
 
 ### Solution :
 
