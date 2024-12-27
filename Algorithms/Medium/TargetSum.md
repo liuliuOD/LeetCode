@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (Hash Map, Time Complexity: $O(N^2)$, Space Complexity: $O(N^)$ (N: the number of the elements in `nums`)) :
+Method 1 (Hash Map, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
 ```rust
 use std::collections::HashMap;
 
