@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1014. [Best Sightseeing Pair](https://leetcode.com/problems/best-sightseeing-pair)
@@ -40,6 +41,25 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `values`)) :
+```java
+class Solution {
+    public int maxScoreSightseeingPair(int[] values) {
+        int result = Integer.MIN_VALUE;
+        int maximum = values[0];
+        for (int index=1; index<values.length; index++) {
+            int value = values[index];
+            result = Integer.max(result, maximum+value-index);
+            maximum = Integer.max(maximum, value+index);
+        }
+
+        return result;
     }
 }
 ```
