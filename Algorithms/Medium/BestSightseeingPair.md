@@ -26,3 +26,20 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `values`)) :
+```rust
+impl Solution {
+    pub fn max_score_sightseeing_pair(values: Vec<i32>) -> i32 {
+        let mut result: i32 = i32::MIN;
+        let mut maximum: i32 = values[0];
+        for index in 1..values.len() {
+            let num: i32 = values[index];
+            result = i32::max(result, num + maximum - index as i32);
+            maximum = i32::max(maximum, num+index as i32);
+        }
+
+        return result
+    }
+}
+```
