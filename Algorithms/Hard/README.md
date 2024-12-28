@@ -10,39 +10,15 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ## Rust
 
-- [Find The Longest Valid Obstacle Course At Each Position](FindTheLongestValidObstacleCourseAtEachPosition.md)
-- [Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)
-- [Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)
-- [Patching Array](PatchingArray.md)
-- [Count Complete Substrings](CountCompleteSubstrings.md)
-- [Trapping Rain Water](TrappingRainWater.md)
-- [Largest Rectangle In Histogram](LargestRectangleInHistogram.md)
-- [Minimum Falling Path Sum II](MinimumFallingPathSumII.md)
-- [Freedom Trail](FreedomTrail.md)
-- [Minimum Cost To Hire K Workers](MinimumCostToHireKWorkers.md)
-- [IPO](IPO.md)
-- [Construct String With Minimum Cost](ConstructStringWithMinimumCost.md)
-- [Robot Collisions](RobotCollisions.md)
-- [Minimum Cost For Cutting Cake II](MinimumCostForCuttingCakeII.md)
-- [Strange Printer](StrangePrinter.md)
-- [Find The Closest Palindrome](FindTheClosestPalindrome.md)
-- [Modify Graph Edge Weights](ModifyGraphEdgeWeights.md)
-- [Shortest Palindrome](ShortestPalindrome.md)
-- [K-th Smallest In Lexicographical Order](KthSmallestInLexicographicalOrder.md)
-- [Sum Of Prefix Scores Of Strings](SumOfPrefixScoresOfStrings.md)
-- [All O`one Data Structure](AllOOneDataStructure.md)
-- [Smallest Range Covering Elements From K Lists](SmallestRangeCoveringElementsFromKLists.md)
-- [Parsing A Boolean Expression](ParsingABooleanExpression.md)
-- [Height Of Binary Tree After Subtree Removal Queries](HeightOfBinaryTreeAfterSubtreeRemovalQueries.md)
-- [Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)
-- [Minimum Total Distance Traveled](MinimumTotalDistanceTraveled.md)
-- [Shortest Subarray With Sum At Least K](ShortestSubarrayWithSumAtLeastK.md)
-- [Sliding Puzzle](SlidingPuzzle.md)
-- [Minimum Obstacle Removal To Reach Corner](MinimumObstacleRemovalToReachCorner.md)
-- [Minimum Time To Visit A Cell In A Grid](MinimumTimeToVisitACellInAGrid.md)
-- [Maximum Number Of K-Divisible Components](MaximumNumberOfKDivisibleComponents.md)
-- [Find Building Where Alice And Bob Can Meet](FindBuildingWhereAliceAndBobCanMeet.md)
-- [Find Minimum Diameter After Merging Two Trees](FindMinimumDiameterAfterMergingTwoTrees.md)
+||||||
+| :- | :- | :- | :- | :- |
+|[Find The Longest Valid Obstacle Course At Each Position](FindTheLongestValidObstacleCourseAtEachPosition.md)|[Minimum Cost To Make Array Equal](MinimumCostToMakeArrayEqual.md)|[Design Graph With Shortest Path Calculator](DesignGraphWithShortestPathCalculator.md)|[Patching Array](PatchingArray.md)|[Count Complete Substrings](CountCompleteSubstrings.md)|
+|[Trapping Rain Water](TrappingRainWater.md)|[Largest Rectangle In Histogram](LargestRectangleInHistogram.md)|[Minimum Falling Path Sum II](MinimumFallingPathSumII.md)|[Freedom Trail](FreedomTrail.md)|[Minimum Cost To Hire K Workers](MinimumCostToHireKWorkers.md)|
+|[IPO](IPO.md)|[Construct String With Minimum Cost](ConstructStringWithMinimumCost.md)|[Robot Collisions](RobotCollisions.md)|[Minimum Cost For Cutting Cake II](MinimumCostForCuttingCakeII.md)|[Strange Printer](StrangePrinter.md)|
+|[Find The Closest Palindrome](FindTheClosestPalindrome.md)|[Modify Graph Edge Weights](ModifyGraphEdgeWeights.md)|[Shortest Palindrome](ShortestPalindrome.md)|[K-th Smallest In Lexicographical Order](KthSmallestInLexicographicalOrder.md)|[Sum Of Prefix Scores Of Strings](SumOfPrefixScoresOfStrings.md)|
+|[All O`one Data Structure](AllOOneDataStructure.md)|[Smallest Range Covering Elements From K Lists](SmallestRangeCoveringElementsFromKLists.md)|[Parsing A Boolean Expression](ParsingABooleanExpression.md)|[Height Of Binary Tree After Subtree Removal Queries](HeightOfBinaryTreeAfterSubtreeRemovalQueries.md)|[Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)|
+|[Minimum Total Distance Traveled](MinimumTotalDistanceTraveled.md)|[Shortest Subarray With Sum At Least K](ShortestSubarrayWithSumAtLeastK.md)|[Sliding Puzzle](SlidingPuzzle.md)|[Minimum Obstacle Removal To Reach Corner](MinimumObstacleRemovalToReachCorner.md)|[Minimum Time To Visit A Cell In A Grid](MinimumTimeToVisitACellInAGrid.md)|
+|[Maximum Number Of K-Divisible Components](MaximumNumberOfKDivisibleComponents.md)|[Find Building Where Alice And Bob Can Meet](FindBuildingWhereAliceAndBobCanMeet.md)|[Find Minimum Diameter After Merging Two Trees](FindMinimumDiameterAfterMergingTwoTrees.md)|[Maximum Sum Of 3 Non-Overlapping Subarrays](MaximumSumOf3NonOverlappingSubarrays.md)||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
