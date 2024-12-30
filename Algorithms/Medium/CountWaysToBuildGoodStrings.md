@@ -124,3 +124,57 @@ impl Solution {
     }
 }
 ```
+
+Method 5 (DFS + Memoization, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the value of `high`)) :
+```rust
+const MODULO: i32 = 1_000_000_007;
+impl Solution {
+    pub fn count_good_strings(low: i32, high: i32, zero: i32, one: i32) -> i32 {
+        let mut memoization: Vec<i32> = vec![-1; high as usize + 1];
+        let mut result: i32 = 0;
+        for amount in low..=high {
+            result = (result + Self::dfs(amount, &mut memoization, zero, one)) % MODULO;
+        }
+
+        return result
+    }
+
+    fn dfs(amount_remaining: i32, memoization: &mut Vec<i32>, zero: i32, one: i32) -> i32 {
+        if amount_remaining == 0 {
+            return 1
+        }
+        if amount_remaining < 0 {
+            return 0
+        }
+
+        if memoization[amount_remaining as usize] != -1 {
+            return memoization[amount_remaining as usize]
+        }
+        let choose_zero = Self::dfs(amount_remaining-zero, memoization, zero, one);
+        let choose_one = Self::dfs(amount_remaining-one, memoization, zero, one);
+        memoization[amount_remaining as usize] = (choose_zero + choose_one) % MODULO;
+        return memoization[amount_remaining as usize]
+    }
+}
+```
+
+Method 6 (Dynamic Programming, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the value of `high`)) :
+```rust
+const MODULO: i32 = 1_000_000_007;
+impl Solution {
+    pub fn count_good_strings(low: i32, high: i32, zero: i32, one: i32) -> i32 {
+        let mut dp: Vec<i32> = vec![0; high as usize + 1];
+        dp[0] = 1;
+        for index in 1..=high {
+            if index-zero >= 0 {
+                dp[index as usize] = (dp[index as usize] + dp[(index-zero) as usize]) % MODULO;
+            }
+            if index-one >= 0 {
+                dp[index as usize] = (dp[index as usize] + dp[(index-one) as usize]) % MODULO;
+            }
+        }
+
+        return dp[low as usize..=high as usize].into_iter().fold(0, |sum, num| (sum+num) % MODULO)
+    }
+}
+```
