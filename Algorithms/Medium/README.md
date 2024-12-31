@@ -59,7 +59,7 @@
 |[Move Pieces To Obtain A String](MovePiecesToObtainAString.md)|[Maximum Number Of Integers To Choose From A Range I](MaximumNumberOfIntegersToChooseFromARangeI.md)|[Minimum Limit Of Balls In A Bag](MinimumLimitOfBallsInABag.md)|[Two Best Non-Overlapping Events](TwoBestNonOverlappingEvents.md)|[Find Longest Special Substring That Occurs Thrice I](FindLongestSpecialSubstringThatOccursThriceI.md)|
 |[Maximum Beauty Of An Array After Applying Operation](MaximumBeautyOfAnArrayAfterApplyingOperation.md)|[Find Score Of An Array After Marking All Elements](FindScoreOfAnArrayAfterMarkingAllElements.md)|[Continuous Subarrays](ContinuousSubarrays.md)|[Maximum Average Pass Ratio](MaximumAveragePassRatio.md)|[Construct String With Repeat Limit](ConstructStringWithRepeatLimit.md)|
 |[Max Chunks To Make Sorted](MaxChunksToMakeSorted.md)|[Reverse Odd Levels Of Binary Tree](ReverseOddLevelsOfBinaryTree.md)|[Minimum Number Of Operations To Sort A Binary Tree By Level](MinimumNumberOfOperationsToSortABinaryTreeByLevel.md)|[Find Largest Value In Each Tree Row](FindLargestValueInEachTreeRow.md)|[Target Sum](TargetSum.md)|
-|[Best Sightseeing Pair](BestSightseeingPair.md)|||||
+|[Best Sightseeing Pair](BestSightseeingPair.md)|[Minimum Cost For Tickets](MinimumCostForTickets.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
