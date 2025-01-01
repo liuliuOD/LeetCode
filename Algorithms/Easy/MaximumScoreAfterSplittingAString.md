@@ -37,6 +37,31 @@ impl Solution {
 }
 ```
 
+Method 2 (Time Complexity: $(N)$, Space Complexity: $O(1)$ (N: the length of `s`)) :
+```rust
+const BASE: u8 = b'0';
+
+impl Solution {
+    pub fn max_score(s: String) -> i32 {
+        let s_bytes: &[u8] = s.as_bytes();
+        let mut amount_0: i32 = 0;
+        let mut amount_1: i32 = s_bytes.iter().filter(|ascii| *ascii-BASE == 1).count() as i32;
+        let mut result: i32 = 0;
+        for ascii in s_bytes.into_iter().take(s_bytes.len()-1) {
+            if ascii-BASE == 0 {
+                amount_0 += 1;
+            } else {
+                amount_1 -= 1;
+            }
+
+            result = i32::max(result, amount_0+amount_1);
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
