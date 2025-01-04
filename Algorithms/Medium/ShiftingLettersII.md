@@ -31,3 +31,40 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `shifts`, N: the length of `s`)) :
+```rust
+const BASE: u8 = b'a';
+
+impl Solution {
+    pub fn shifting_letters(s: String, shifts: Vec<Vec<i32>>) -> String {
+        let n: usize = s.len();
+        let mut target_shifts: Vec<i32> = vec![0; n];
+        for shift in &shifts {
+            let start: usize = shift[0] as usize;
+            let end: usize = shift[1] as usize;
+            let direction = shift[2];
+            if direction == 0 {
+                target_shifts[start] -= 1;
+                if end < n-1 {
+                    target_shifts[end+1] += 1;
+                }
+                continue;
+            }
+
+            target_shifts[start] += 1;
+            if end < n-1 {
+                target_shifts[end+1] -= 1;
+            }
+        }
+
+        let mut result: Vec<u8> = s.as_bytes().to_vec();
+        let mut offset_current: i32 = 0;
+        for (index, offset) in target_shifts.iter().enumerate() {
+            offset_current = (offset_current+offset) % 26;
+            result[index] = BASE + ((((result[index]-BASE) as i32+offset_current)%26 + 26) % 26) as u8;
+        }
+        return String::from_utf8_lossy(&result).to_string()
+    }
+}
+```
