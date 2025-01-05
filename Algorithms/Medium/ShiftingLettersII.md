@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 2381. [Shifting Letters II](https://leetcode.com/problems/shifting-letters-ii)
@@ -65,6 +66,50 @@ impl Solution {
             result[index] = BASE + ((((result[index]-BASE) as i32+offset_current)%26 + 26) % 26) as u8;
         }
         return String::from_utf8_lossy(&result).to_string()
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Prefix Sum, Time Complexity: $O(M+N)$, Space Complexity: $O(N)$ (M: the number of the elements in `shifts`, N: the length of `s`)) :
+```java
+class Solution {
+    private static final char BASE = 'a';
+    public String shiftingLetters(String s, int[][] shifts) {
+        int n = s.length();
+        int[] prefixSum = new int[n];
+        Arrays.fill(prefixSum, 0);
+        for (int[] shift: shifts) {
+            int start = shift[0];
+            int end = shift[1];
+            int direction = shift[2];
+            switch (direction) {
+                case 0:
+                    prefixSum[start] -= 1;
+                    if (end < n-1) {
+                        prefixSum[end+1] += 1;
+                    }
+                    break;
+                case 1:
+                    prefixSum[start] += 1;
+                    if (end < n-1) {
+                        prefixSum[end+1] -= 1;
+                    }
+                    break;
+                default:
+            }
+        }
+
+        StringBuilder builder = new StringBuilder();
+        int offset = 0;
+        for (int index=0; index<n; index++) {
+            char current = s.charAt(index);
+            offset += prefixSum[index];
+            builder.append((char) (((current-BASE+offset)%26 + 26)%26 + BASE));
+        }
+
+        return builder.toString();
     }
 }
 ```
