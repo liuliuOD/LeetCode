@@ -1,11 +1,12 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 1408. [String Matching In An Array](https://leetcode.com/problems/string-matching-in-an-array)
 
 ### Solution :
 
-Method 1 (Binary Heap, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `words`)) :
+Method 1 (Brute Force, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `words`)) :
 ```rust
 use std::collections::HashSet;
 
@@ -24,6 +25,28 @@ impl Solution {
         }
 
         return Vec::from_iter(substrings)
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Brute Force, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `words`)) :
+```java
+class Solution {
+    public List<String> stringMatching(String[] words) {
+        int n = words.length;
+        List<String> result = new ArrayList<>();
+        for (int index=0; index<n; index++) {
+            for (int index_next=0; index_next<n; index_next++) {
+                if (index != index_next && words[index_next].contains(words[index])) {
+                    result.add(words[index]);
+                    break;
+                }
+            }
+        }
+
+        return result;
     }
 }
 ```

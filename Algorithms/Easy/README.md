@@ -113,4 +113,4 @@
 ||||||
 | :- | :- | :- | :- | :- |
 |[Delete Characters To Make Fancy String](DeleteCharactersToMakeFancyString.md)|[Circular Sentence](CircularSentence.md)|[Rotate String](RotateString.md)|[Defuse The Bomb](DefuseTheBomb.md)|[Check If N And Its Double Exist](CheckIfNAndItsDoubleExist.md)|
-|[Take Gifts From The Richest Pile](TakeGiftsFromTheRichestPile.md)|||||
+|[Take Gifts From The Richest Pile](TakeGiftsFromTheRichestPile.md)|[String Matching In An Array](StringMatchingInAnArray.md)||||
