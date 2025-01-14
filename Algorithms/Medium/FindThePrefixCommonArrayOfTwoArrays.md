@@ -30,3 +30,31 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in `a`)) :
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn find_the_prefix_common_array(a: Vec<i32>, b: Vec<i32>) -> Vec<i32> {
+        let n: usize = a.len();
+        let mut visited: HashSet<i32> = HashSet::new();
+        let mut amount: i32 = 0;
+        let mut result: Vec<i32> = vec![0; n];
+        for index in 0..n {
+            if visited.contains(&a[index]) {
+                amount += 1;
+            }
+            visited.insert(a[index]);
+            if visited.contains(&b[index]) {
+                amount += 1;
+            }
+            visited.insert(b[index]);
+
+            result[index] = amount;
+        }
+
+        return result
+    }
+}
+```
