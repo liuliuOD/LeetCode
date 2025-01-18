@@ -19,6 +19,7 @@
 |[All O`one Data Structure](AllOOneDataStructure.md)|[Smallest Range Covering Elements From K Lists](SmallestRangeCoveringElementsFromKLists.md)|[Parsing A Boolean Expression](ParsingABooleanExpression.md)|[Height Of Binary Tree After Subtree Removal Queries](HeightOfBinaryTreeAfterSubtreeRemovalQueries.md)|[Minimum Number Of Removals To Make Mountain Array](MinimumNumberOfRemovalsToMakeMountainArray.md)|
 |[Minimum Total Distance Traveled](MinimumTotalDistanceTraveled.md)|[Shortest Subarray With Sum At Least K](ShortestSubarrayWithSumAtLeastK.md)|[Sliding Puzzle](SlidingPuzzle.md)|[Minimum Obstacle Removal To Reach Corner](MinimumObstacleRemovalToReachCorner.md)|[Minimum Time To Visit A Cell In A Grid](MinimumTimeToVisitACellInAGrid.md)|
 |[Maximum Number Of K-Divisible Components](MaximumNumberOfKDivisibleComponents.md)|[Find Building Where Alice And Bob Can Meet](FindBuildingWhereAliceAndBobCanMeet.md)|[Find Minimum Diameter After Merging Two Trees](FindMinimumDiameterAfterMergingTwoTrees.md)|[Maximum Sum Of 3 Non-Overlapping Subarrays](MaximumSumOf3NonOverlappingSubarrays.md)|[Number Of Ways To Form A Target String Given A Dictionary](NumberOfWaysToFormATargetStringGivenADictionary.md)|
+|[Minimum Cost To Make At Least One Valid Path In A Grid](MinimumCostToMakeAtLeastOneValidPathInAGrid.md)|||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
