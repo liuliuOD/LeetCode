@@ -61,7 +61,7 @@
 |[Max Chunks To Make Sorted](MaxChunksToMakeSorted.md)|[Reverse Odd Levels Of Binary Tree](ReverseOddLevelsOfBinaryTree.md)|[Minimum Number Of Operations To Sort A Binary Tree By Level](MinimumNumberOfOperationsToSortABinaryTreeByLevel.md)|[Find Largest Value In Each Tree Row](FindLargestValueInEachTreeRow.md)|[Target Sum](TargetSum.md)|
 |[Best Sightseeing Pair](BestSightseeingPair.md)|[Minimum Cost For Tickets](MinimumCostForTickets.md)|[Count Vowel Strings In Ranges](CountVowelStringsInRanges.md)|[Shifting Letters II](ShiftingLettersII.md)|[Minimum Number Of Operations To Move All Balls To Each Box](MinimumNumberOfOperationsToMoveAllBallsToEachBox.md)|
 |[Word Subsets](WordSubsets.md)|[Construct K Palindrome Strings](ConstructKPalindromeStrings.md)|[Check If A Parentheses String Can Be Valid](CheckIfAParenthesesStringCanBeValid.md)|[Minimum Length Of String After Operations](MinimumLengthOfStringAfterOperations.md)|[Find The Prefix Common Array Of Two Arrays](FindThePrefixCommonArrayOfTwoArrays.md)|
-|[Minimize XOR](MinimizeXOR.md)|[Bitwise XOR Of All Pairings](BitwiseXOROfAllPairings.md)|[First Completely Painted Row Or Column](FirstCompletelyPaintedRowOrColumn.md)|[Grid Game](GridGame.md)||
+|[Minimize XOR](MinimizeXOR.md)|[Bitwise XOR Of All Pairings](BitwiseXOROfAllPairings.md)|[First Completely Painted Row Or Column](FirstCompletelyPaintedRowOrColumn.md)|[Grid Game](GridGame.md)|[Map Of Highest Peak](MapOfHighestPeak.md)|
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
