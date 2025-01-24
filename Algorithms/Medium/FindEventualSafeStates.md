@@ -1,7 +1,52 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 802. [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states)
+
+### Solution :
+
+Method 1 (Hash Set) :
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn eventual_safe_nodes(graph: Vec<Vec<i32>>) -> Vec<i32> {
+        let n: usize = graph.len();
+        let mut graph_inverse: Vec<Vec<usize>> = vec![vec![]; n];
+        let mut ingoing: Vec<i32> = vec![0; n];
+        let mut stack: Vec<usize> = Vec::new();
+        for (index, neighbors) in graph.iter().enumerate() {
+            if neighbors.len() == 0 {
+                stack.push(index);
+                continue;
+            }
+
+            ingoing[index] += neighbors.len() as i32;
+            for &index_neighbor in neighbors {
+                graph_inverse[index_neighbor as usize].push(index);
+            }
+        }
+
+        let mut safe_nodes: HashSet<i32> = HashSet::new();
+        while stack.len() > 0 {
+            let index: usize = stack.pop().unwrap();
+            safe_nodes.insert(index as i32);
+            for &index_neighbor in graph_inverse[index].iter() {
+                ingoing[index_neighbor] -= 1;
+                if ingoing[index_neighbor] == 0 {
+                    stack.push(index_neighbor);
+                    safe_nodes.insert(index_neighbor as i32);
+                }
+            }
+        }
+
+        let mut result: Vec<i32> = safe_nodes.into_iter().collect::<Vec<i32>>();
+        result.sort();
+        return result
+    }
+}
+```
 
 ### Solution :
 
