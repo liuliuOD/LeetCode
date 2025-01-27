@@ -38,7 +38,7 @@ impl Solution {
 }
 ```
 
-Method 2 (Graph, Time Complexity: $O(M+N^2)$, Space Complexity: $O(N^2)$ (M: the number of the elements in `queries`, N: the number of the elements in `num_courses`)) :
+Method 2 (DFS + Memoization, Time Complexity: $O(M+N^2)$, Space Complexity: $O(N^2)$ (M: the number of the elements in `queries`, N: the number of the elements in `num_courses`)) :
 ```rust
 use std::collections::HashMap;
 
@@ -71,11 +71,37 @@ impl Solution {
 
         let mut result: bool = false;
         for &index_next in &graph[start] {
+            memoization.entry((start, index_next)).or_insert(true);
             result |= Self::is_prerequisite(index_next, end, memoization, graph);
         }
 
         memoization.entry(key).or_insert(result);
         return result
+    }
+}
+```
+
+Method 3 (Floyd Warshall, Time Complexity: $O(M+N^3)$, Space Complexity: $O(N^2)$ (M: the number of the elements in `queries`, N: the number of the elements in `num_courses`)) :
+```rust
+impl Solution {
+    pub fn check_if_prerequisite(num_courses: i32, prerequisites: Vec<Vec<i32>>, queries: Vec<Vec<i32>>) -> Vec<bool> {
+        let n: usize = num_courses as usize;
+        let mut dp: Vec<Vec<bool>> = vec![vec![false; n]; n];
+        for pair in prerequisites {
+            dp[pair[0] as usize][pair[1] as usize] = true;
+        }
+
+        for pivot in 0..n {
+            for start in 0..n {
+                for end in 0..n {
+                    dp[start][end] |= dp[start][pivot] && dp[pivot][end];
+                }
+            }
+        }
+
+        return queries.into_iter()
+            .map(|pair| dp[pair[0] as usize][pair[1] as usize])
+            .collect::<Vec<bool>>()
     }
 }
 ```
