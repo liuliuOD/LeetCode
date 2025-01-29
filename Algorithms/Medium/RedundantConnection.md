@@ -51,7 +51,61 @@ impl Solution {
 }
 ```
 
-Method 2 (BFS, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `edges`)):
+Method 2 (DFS + Cycle, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in `edges`)):
+```rust
+use std::collections::HashSet;
+
+impl Solution {
+    pub fn find_redundant_connection(edges: Vec<Vec<i32>>) -> Vec<i32> {
+        let n: usize = edges.len();
+        let mut graph: Vec<Vec<usize>> = vec![vec![]; n+1];
+        for edge in &edges {
+            let a: usize = edge[0] as usize;
+            let b: usize = edge[1] as usize;
+            graph[a].push(b);
+            graph[b].push(a);
+        }
+
+        let mut cycle_start: i32 = -1;
+        let mut parents: Vec<i32> = vec![-1; n+1];
+        let mut visited: Vec<bool> = vec![false; n+1];
+        Self::dfs(1, &mut cycle_start, &mut parents, &mut visited, &graph);
+
+        let mut nodes_cycle: HashSet<i32> = HashSet::new();
+        let mut node: i32 = cycle_start;
+        loop {
+            nodes_cycle.insert(node);
+            node = parents[node as usize];
+            if node == cycle_start {
+                break;
+            }
+        }
+
+        for edge in edges.into_iter().rev() {
+            if nodes_cycle.contains(&edge[0]) && nodes_cycle.contains(&edge[1]) {
+                return edge
+            }
+        }
+
+        unreachable![];
+    }
+
+    fn dfs(node: usize, cycle_start: &mut i32, parents: &mut Vec<i32>, visited: &mut Vec<bool>, graph: &Vec<Vec<usize>>) {
+        visited[node] = true;
+        for &node_next in &graph[node] {
+            if !visited[node_next] {
+                parents[node_next] = node as i32;
+                Self::dfs(node_next, cycle_start, parents, visited, graph);
+            } else if *cycle_start == -1 && node_next as i32 != parents[node] {
+                parents[node_next] = node as i32;
+                *cycle_start = node_next as i32;
+            }
+        }
+    }
+}
+```
+
+Method 3 (BFS, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the number of the elements in `edges`)):
 ```rust
 use std::collections::VecDeque;
 
@@ -66,6 +120,7 @@ impl Solution {
             graph[b].push(a);
         }
 
+        /* Option 1 */
         let mut result: Vec<i32> = vec![0; 2];
         for edge in edges {
             let a: usize = edge[0] as usize;
@@ -76,6 +131,18 @@ impl Solution {
         }
 
         return result
+        /* Option 2: early return
+
+        for edge in edges.into_iter().rev() {
+            let a: usize = edge[0] as usize;
+            let b: usize = edge[1] as usize;
+            if Self::bfs(a, b, &graph) {
+                return Vec::from([a as i32, b as i32])
+            }
+        }
+
+        unreachable![];
+        */
     }
 
     fn bfs(a: usize, b: usize, graph: &Vec<Vec<usize>>) -> bool {
