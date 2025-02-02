@@ -34,3 +34,27 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn check(nums: Vec<i32>) -> bool {
+        let n: usize = nums.len();
+        let mut is_rotated: bool = false;
+        for index in 1..n {
+            if nums[index-1] > nums[index] {
+                if is_rotated {
+                    return false
+                }
+                is_rotated = true;
+            }
+
+            if index == n-1 && is_rotated && nums[index] > nums[0] {
+                return false
+            }
+        }
+
+        return true
+    }
+}
+```
