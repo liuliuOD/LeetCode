@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 3105. [Longest Strictly Increasing Or Strictly Decreasing Subarray](https://leetcode.com/problems/longest-strictly-increasing-or-strictly-decreasing-subarray)
@@ -61,6 +62,55 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of elements in `nums`)) :
+```java
+class Solution {
+    public int longestMonotonicSubarray(int[] nums) {
+        int n = nums.length;
+        int result = 1;
+        for (int right=1, leftIncreasing=0, leftDecreasing=0; right<=n; right++) {
+            result = Math.max(result, Math.max(right-leftIncreasing, right-leftDecreasing));
+            if (right == n) {
+                break;
+            }
+
+            if (nums[right-1] >= nums[right]) {
+                leftIncreasing = right;
+            }
+            if (nums[right-1] <= nums[right]) {
+                leftDecreasing = right;
+            }
+        }
+
+        return result;
+    }
+}
+```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of elements in `nums`)) :
+```java
+class Solution {
+    public int longestMonotonicSubarray(int[] nums) {
+        int n = nums.length;
+        int result = 1;
+        for (int right=1, leftIncreasing=0, leftDecreasing=0; right<n; right++) {
+            if (right > 0 && nums[right-1] >= nums[right]) {
+                leftIncreasing = right;
+            }
+            if (right > 0 && nums[right-1] <= nums[right]) {
+                leftDecreasing = right;
+            }
+
+            result = Math.max(result, Math.max(right-leftIncreasing+1, right-leftDecreasing+1));
+        }
+
+        return result;
     }
 }
 ```
