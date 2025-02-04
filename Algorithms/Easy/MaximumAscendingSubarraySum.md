@@ -13,11 +13,19 @@ impl Solution {
         let mut sum: i32 = nums[0];
         let mut result: i32 = sum;
         for index in 0..n-1 {
+            /* Option 1 */
             if nums[index] < nums[index+1] {
                 sum += nums[index+1];
             } else {
                 sum = nums[index+1];
             }
+            /* Option 2
+
+            if nums[index] >= nums[index+1] {
+                sum = 0;
+            }
+            sum += nums[index+1];
+            */
 
             result = i32::max(result, sum);
         }
