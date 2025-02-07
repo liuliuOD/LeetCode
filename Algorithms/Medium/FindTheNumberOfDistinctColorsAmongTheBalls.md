@@ -1,4 +1,5 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
+![language-JAVA](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk)
 ---
 
 ## 3160. [Find The Number Of Distinct Colors Among The Balls](https://leetcode.com/problems/find-the-number-of-distinct-colors-among-the-balls)
@@ -31,6 +32,46 @@ impl Solution {
         }
 
         return result
+    }
+}
+```
+
+### Solution :
+
+Method 1 (Hash Map, Time Complexity: $O(M)$, Space Complexity: $O(N)$ (M: the number of elements in `queries`, N: the value of `limit`)) :
+```java
+class Solution {
+    public int[] queryResults(int limit, int[][] queries) {
+        int m = queries.length;
+        int[] result = new int[m];
+        Map<Integer, Integer> groups = new HashMap<>();
+        Map<Integer, Integer> colors = new HashMap<>();
+        for (int index=0; index<m; index++) {
+            int[] query = queries[index];
+            Integer ball = query[0];
+            Integer color = query[1];
+            if (colors.containsKey(ball)) {
+                Integer colorOld = colors.get(ball);
+                groups.replace(colorOld, groups.get(colorOld) - 1);
+                if (groups.get(colorOld) <= 0) {
+                    groups.remove(colorOld);
+                }
+            }
+            /* Option 1 */
+            colors.computeIfAbsent(ball, key -> 0);
+            colors.replace(ball, color);
+            groups.computeIfAbsent(color, key -> 0);
+            groups.replace(color, groups.get(color) + 1);
+            /* Option 2
+
+            colors.put(ball, color);
+            groups.put(color, groups.getOrDefault(color, 0) + 1);
+            */
+
+            result[index] = groups.size();
+        }
+
+        return result;
     }
 }
 ```
