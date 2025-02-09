@@ -14,7 +14,28 @@ j - nums[j] != i - nums[i]
 
 ### Solution :
 
-Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 1 (Time Complexity: $O(N^2)$, Space Complexity: $O(1)$ (N: the number of elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn count_bad_pairs(nums: Vec<i32>) -> i64 {
+        let n: usize = nums.len();
+        let mut result: i64 = 0;
+        for index_right in 1..n {
+            for index_left in 0..index_right {
+                if nums[index_right]-nums[index_left] == (index_right-index_left) as i32 {
+                    continue;
+                }
+
+                result += 1;
+            }
+        }
+
+        return result
+    }
+}
+```
+
+Method 2 (Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```rust
 use std::collections::HashMap;
 
@@ -35,7 +56,7 @@ impl Solution {
 }
 ```
 
-Method 2 (total amount of pairs minus amount of good pairs, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+Method 3 (total amount of pairs minus amount of good pairs, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
 ```rust
 use std::collections::HashMap;
 
@@ -53,6 +74,30 @@ impl Solution {
 
         let n: i64 = nums.len() as i64;
         return n*(n-1)/2 - amount_good_pair
+    }
+}
+```
+
+Method 4 (total amount of pairs minus amount of good pairs, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn count_bad_pairs(nums: Vec<i32>) -> i64 {
+        let n: usize = nums.len();
+        let mut counter: HashMap<i32, i64> = HashMap::new();
+        let mut result: i64 = 0;
+        for index in 0..n {
+            let good: i32 = index as i32 - nums[index];
+            result += index as i64 - match counter.get(&good) {
+                Some(value) => *value,
+                _ => 0,
+            };
+
+            *counter.entry(good).or_insert(0) += 1;
+        }
+
+        return result
     }
 }
 ```
