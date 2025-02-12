@@ -75,3 +75,31 @@ impl Solution {
     }
 }
 ```
+
+Method 3 (Hash Map, Time Complexity: $O(N)$, Space Complexity: $O(Log(M))$ (M: the maximum number in `nums`, N: the number of elements in `nums`)) :
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn maximum_sum(nums: Vec<i32>) -> i32 {
+        let mut result: i32 = -1;
+        let mut mapping: HashMap<i32, i32> = HashMap::new();
+        for num in nums {
+            let mut sum_of_digits: i32 = 0;
+            let mut temp: i32 = num;
+            while temp > 0 {
+                sum_of_digits += temp % 10;
+                temp /= 10;
+            }
+            mapping.entry(sum_of_digits).and_modify(|current| {
+                result = i32::max(result, *current + num);
+                if num > *current {
+                    *current = num;
+                }
+            }).or_insert(num);
+        }
+
+        return result
+    }
+}
+```
