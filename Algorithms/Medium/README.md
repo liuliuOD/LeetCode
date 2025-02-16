@@ -64,7 +64,7 @@
 |[Minimize XOR](MinimizeXOR.md)|[Bitwise XOR Of All Pairings](BitwiseXOROfAllPairings.md)|[First Completely Painted Row Or Column](FirstCompletelyPaintedRowOrColumn.md)|[Grid Game](GridGame.md)|[Map Of Highest Peak](MapOfHighestPeak.md)|
 |[Count Servers That Communicate](CountServersThatCommunicate.md)|[Find Eventual Safe States](FindEventualSafeStates.md)|[Make Lexicographically Smallest Array By Swapping Elements](MakeLexicographicallySmallestArrayBySwappingElements.md)|[Course Schedule IV](CourseScheduleIV.md)|[Redundant Connection](RedundantConnection.md)|
 |[Tuple With Same Product](TupleWithSameProduct.md)|[Find The Number Of Distinct Colors Among The Balls](FindTheNumberOfDistinctColorsAmongTheBalls.md)|[Design A Number Container System](DesignANumberContainerSystem.md)|[Remove All Occurrences Of A Substring](RemoveAllOccurrencesOfASubstring.md)|[Max Sum Of A Pair With Equal Sum Of Digits](MaxSumOfAPairWithEqualSumOfDigits.md)|
-|[Minimum Operations To Exceed Threshold Value II](MinimumOperationsToExceedThresholdValueII.md)|[Product Of The Last K Numbers](ProductOfTheLastKNumbers.md)|[Find The Punishment Number Of An Integer](FindThePunishmentNumberOfAnInteger.md)|||
+|[Minimum Operations To Exceed Threshold Value II](MinimumOperationsToExceedThresholdValueII.md)|[Product Of The Last K Numbers](ProductOfTheLastKNumbers.md)|[Find The Punishment Number Of An Integer](FindThePunishmentNumberOfAnInteger.md)|[Construct The Lexicographically Largest Valid Sequence](ConstructTheLexicographicallyLargestValidSequence.md)||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
