@@ -123,3 +123,27 @@ impl Solution {
     }
 }
 ```
+
+Method 3 (Greedy, Time Complexity: $O(N^2)$, Space Complexity: $O(N)$ (N: the length of `pattern`)) :
+```rust
+const BASE: u8 = b'0';
+
+impl Solution {
+    pub fn smallest_number(pattern: String) -> String {
+        let n: usize = pattern.len();
+        let pattern: Vec<char> = pattern.chars().into_iter().collect::<Vec<char>>();
+        let mut result: Vec<u8> = Vec::new();
+        let mut index_previous: usize = 0;
+        for index in 0..n+1 {
+            result.push(BASE+index as u8+1);
+
+            if index == n || pattern[index] == 'I' {
+                result[index_previous..=index].reverse();
+                index_previous = index + 1;
+            }
+        }
+
+        return String::from_utf8(result).unwrap()
+    }
+}
+```
