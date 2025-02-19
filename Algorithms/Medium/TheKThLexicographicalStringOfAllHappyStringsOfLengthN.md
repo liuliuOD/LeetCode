@@ -40,3 +40,44 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Backtracking + Binary Heap, Time Complexity: $O(N*2^N)$, Space Complexity: $O(Min(K, Log(N)))$ (N: the value of `n`, K: the value of `k`)) :
+```rust
+use std::collections::BinaryHeap;
+
+impl Solution {
+    pub fn get_happy_string(n: i32, k: i32) -> String {
+        let mut candidates: BinaryHeap<String> = BinaryHeap::new();
+        let mut happy: Vec<u8> = Vec::new();
+        Self::backtracking(&mut happy, &mut candidates, n, k as usize);
+
+        return match candidates.len() < k as usize {
+            true => String::new(),
+            false => {
+                return candidates.pop().unwrap()
+            },
+        }
+    }
+
+    fn backtracking(happy: &mut Vec<u8>, candidates: &mut BinaryHeap<String>, n: i32, k: usize) {
+        if n == 0 {
+            candidates.push(String::from_utf8(happy.to_vec()).unwrap());
+            if candidates.len() > k {
+                candidates.pop();
+            }
+
+            return
+        }
+
+        for char_next in ['a', 'b', 'c'] {
+            if happy.len() > 0 && happy[happy.len()-1] == char_next as u8 {
+                continue;
+            }
+
+            happy.push(char_next as u8);
+            Self::backtracking(happy, candidates, n-1, k);
+            happy.pop();
+        }
+    }
+}
+```
