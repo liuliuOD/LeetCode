@@ -23,6 +23,7 @@ impl Solution {
             return !visited.contains(result)
         }
 
+        /* Option 1 */
         result.push('0');
         if Self::backtracking(result, visited, nums) {
             return true
@@ -34,8 +35,37 @@ impl Solution {
             return true
         }
         result.pop();
+        /* Option 2
+
+        for ch in ['0', '1'] {
+            result.push(ch);
+            if Self::backtracking(result, visited, nums) {
+                return true
+            }
+
+            result.pop();
+        }
+        */
 
         return false
+    }
+}
+```
+
+Method 2 (Cantor's Diagonal Argument, Time Complexity: $O(N^2)$, Space Complexity: $O(1)$ (N: the number of elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn find_different_binary_string(nums: Vec<String>) -> String {
+        let mut result: String = String::new();
+        for index in 0..nums.len() {
+            let num: Vec<char> = nums[index].chars().collect::<Vec<char>>();
+            result.push(match num[index] {
+                '0' => '1',
+                _ => '0',
+            });
+        }
+
+        return result
     }
 }
 ```
