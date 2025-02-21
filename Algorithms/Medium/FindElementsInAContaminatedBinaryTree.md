@@ -32,6 +32,7 @@
  * let ret_1: bool = obj.find(target);
  */
 ```
+
 Method 1 (Traverse, Time Complexity: $O(M*N)$, Space Complexity: $O(1)$ (M: the number of invocation times, N: the number of nodes in the tree)) :
 ```rust
 use std::rc::Rc;
@@ -43,7 +44,7 @@ struct FindElements {
 }
 
 
-/** 
+/**
  * `&self` means the method takes an immutable reference.
  * If you need a mutable reference, change it to `&mut self` instead.
  */
@@ -73,7 +74,7 @@ impl FindElements {
             Self::traverse_build(inner.right.clone(), value*2 + 2);
         }
     }
-    
+
     fn find(&self, target: i32) -> bool {
         return Self::traverse_find(self.root.clone(), target)
     }
@@ -96,6 +97,57 @@ impl FindElements {
         }
 
         return false
+    }
+}
+```
+
+Method 2 (Traverse + Hash Set, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of nodes in the tree)) :
+```rust
+
+use std::rc::Rc;
+use std::cell::{RefCell, Ref};
+use std::collections::HashSet;
+
+type Custom = Rc<RefCell<TreeNode>>;
+struct FindElements {
+    visited: HashSet<i32>,
+}
+
+
+/**
+ * `&self` means the method takes an immutable reference.
+ * If you need a mutable reference, change it to `&mut self` instead.
+ */
+impl FindElements {
+
+    fn new(root: Option<Custom>) -> Self {
+        let mut visited: HashSet<i32> = HashSet::new();
+        if root.is_some() {
+            Self::traverse_build(&mut visited, root.clone(), 0);
+        }
+
+        return Self{
+            visited: visited
+        }
+    }
+
+    fn traverse_build(visited: &mut HashSet<i32>, node: Option<Custom>, value: i32) {
+        if node.is_none() {
+            return
+        }
+
+        let inner: Ref<'_, TreeNode> = node.as_ref().unwrap().borrow();
+        visited.insert(value);
+        if inner.left.is_some() {
+            Self::traverse_build(visited, inner.left.clone(), value*2 + 1);
+        }
+        if inner.right.is_some() {
+            Self::traverse_build(visited, inner.right.clone(), value*2 + 2);
+        }
+    }
+
+    fn find(&self, target: i32) -> bool {
+        return self.visited.contains(&target)
     }
 }
 ```
