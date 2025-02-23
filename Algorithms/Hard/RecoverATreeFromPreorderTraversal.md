@@ -148,3 +148,63 @@ impl Solution {
     }
 }
 ```
+
+Method 3 (DFS, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of elements in the tree)) :
+```rust
+use std::rc::Rc;
+use std::cell::RefCell;
+type Custom = Rc<RefCell<TreeNode>>;
+const BASE: u8 = b'0';
+
+impl Solution {
+    pub fn recover_from_preorder(traversal: String) -> Option<Custom> {
+        let n: usize = traversal.len();
+        let traversal_bytes: &[u8] = traversal.as_bytes();
+        let index_and_value = Self::get_index_and_value(0, traversal_bytes);
+        let mut index_current: usize = index_and_value.0;
+        let mut root: Custom = Rc::new(RefCell::new(TreeNode::new(index_and_value.1)));
+        if traversal_bytes.len() > 1 {
+            Self::traverse(root.clone(), 0, &mut index_current, traversal_bytes);
+        }
+
+        return Some(root)
+    }
+
+    fn traverse(node: Custom, depth: usize, index_traversal: &mut usize, traversal_bytes: &[u8]) {
+        let n: usize = traversal_bytes.len();
+
+        if depth+1 > n-*index_traversal {
+            return
+        }
+        if &traversal_bytes[*index_traversal..=*index_traversal+depth] == "-".repeat(depth+1).as_bytes() {
+            let index_and_value = Self::get_index_and_value(*index_traversal+depth+1, traversal_bytes);
+
+            node.borrow_mut().left = Some(Rc::new(RefCell::new(TreeNode::new(index_and_value.1))));
+            *index_traversal = index_and_value.0;
+            Self::traverse(node.borrow_mut().left.clone().unwrap(), depth+1, index_traversal, traversal_bytes);
+        }
+
+        if depth+1 > n-*index_traversal {
+            return
+        }
+        if &traversal_bytes[*index_traversal..=*index_traversal+depth] == "-".repeat(depth+1).as_bytes() {
+            let index_and_value = Self::get_index_and_value(*index_traversal+depth+1, traversal_bytes);
+
+            node.borrow_mut().right = Some(Rc::new(RefCell::new(TreeNode::new(index_and_value.1))));
+            *index_traversal = index_and_value.0;
+            Self::traverse(node.borrow_mut().right.clone().unwrap(), depth+1, index_traversal, traversal_bytes);
+        }
+    }
+
+    fn get_index_and_value(mut index: usize, traversal_bytes: &[u8]) -> (usize, i32) {
+        let n: usize = traversal_bytes.len();
+        let mut value: i32 = 0;
+        while index < n && traversal_bytes[index] - BASE < 10 {
+            value = value*10 + (traversal_bytes[index] - BASE) as i32;
+            index += 1;
+        }
+
+        return (index, value)
+    }
+}
+```
