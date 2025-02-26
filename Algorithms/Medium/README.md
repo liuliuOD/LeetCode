@@ -66,7 +66,7 @@
 |[Tuple With Same Product](TupleWithSameProduct.md)|[Find The Number Of Distinct Colors Among The Balls](FindTheNumberOfDistinctColorsAmongTheBalls.md)|[Design A Number Container System](DesignANumberContainerSystem.md)|[Remove All Occurrences Of A Substring](RemoveAllOccurrencesOfASubstring.md)|[Max Sum Of A Pair With Equal Sum Of Digits](MaxSumOfAPairWithEqualSumOfDigits.md)|
 |[Minimum Operations To Exceed Threshold Value II](MinimumOperationsToExceedThresholdValueII.md)|[Product Of The Last K Numbers](ProductOfTheLastKNumbers.md)|[Find The Punishment Number Of An Integer](FindThePunishmentNumberOfAnInteger.md)|[Construct The Lexicographically Largest Valid Sequence](ConstructTheLexicographicallyLargestValidSequence.md)|[Letter Tile Possibilities](LetterTilePossibilities.md)|
 |[Construct Smallest Number From DI String](ConstructSmallestNumberFromDIString.md)|[The k-th Lexicographical String Of All Happy Strings Of Length N](TheKThLexicographicalStringOfAllHappyStringsOfLengthN.md)|[Find Unique Binary String](FindUniqueBinaryString.md)|[Find Elements In A Contaminated Binary Tree](FindElementsInAContaminatedBinaryTree.md)|[Construct Binary Tree From Preorder And Postorder Traversal](ConstructBinaryTreeFromPreorderAndPostorderTraversal.md)|
-|[Most Profitable Path In A Tree](MostProfitablePathInATree.md)|[Number Of Sub-Arrays With Odd Sum](NumberOfSubArraysWithOddSum.md)||||
+|[Most Profitable Path In A Tree](MostProfitablePathInATree.md)|[Number Of Sub-Arrays With Odd Sum](NumberOfSubArraysWithOddSum.md)|[Maximum Absolute Sum Of Any Subarray](MaximumAbsoluteSumOfAnySubarray.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
