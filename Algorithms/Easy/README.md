@@ -40,7 +40,7 @@
 |[Rotate String](RotateString.md)|[Defuse The Bomb](DefuseTheBomb.md)|[Check If N And Its Double Exist](CheckIfNAndItsDoubleExist.md)|[Check If A Word Occurs As A Prefix Of Any Word In A Sentence](CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.md)|[Take Gifts From The Richest Pile](TakeGiftsFromTheRichestPile.md)|
 |[Final Array State After K Multiplication Operations I](FinalArrayStateAfterKMultiplicationOperationsI.md)|[Final Prices With A Special Discount In A Shop](FinalPricesWithASpecialDiscountInAShop.md)|[String Matching In An Array](StringMatchingInAnArray.md)|[Count Prefix And Suffix Pairs I](CountPrefixAndSuffixPairsI.md)|[Counting Words With A Given Prefix](CountingWordsWithAGivenPrefix.md)|
 |[Special Array I](SpecialArrayI.md)|[Check If Array Is Sorted And Rotated](CheckIfArrayIsSortedAndRotated.md)|[Longest Strictly Increasing Or Strictly Decreasing Subarray](LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.md)|[Maximum Ascending Subarray Sum](MaximumAscendingSubarraySum.md)|[Check If One String Swap Can Make Strings Equal](CheckIfOneStringSwapCanMakeStringsEqual.md)|
-|[Clear Digits](ClearDigits.md)|[Apply Operations To An Array](ApplyOperationsToAnArray.md)||||
+|[Clear Digits](ClearDigits.md)|[Apply Operations To An Array](ApplyOperationsToAnArray.md)|[Merge Two 2D Arrays By Summing Values](MergeTwo2DArraysBySummingValues.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
