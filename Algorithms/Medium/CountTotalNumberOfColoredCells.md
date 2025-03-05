@@ -18,3 +18,13 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Mathematics, Time Complexity: $O(1)$, Space Complexity: $O(1)$) :
+```rust
+impl Solution {
+    pub fn colored_cells(n: i32) -> i64 {
+        let n: i64 = n as i64;
+        return 1 + 4 * (n - 1) * n / 2
+    }
+}
+```
