@@ -68,7 +68,7 @@
 |[Construct Smallest Number From DI String](ConstructSmallestNumberFromDIString.md)|[The k-th Lexicographical String Of All Happy Strings Of Length N](TheKThLexicographicalStringOfAllHappyStringsOfLengthN.md)|[Find Unique Binary String](FindUniqueBinaryString.md)|[Find Elements In A Contaminated Binary Tree](FindElementsInAContaminatedBinaryTree.md)|[Construct Binary Tree From Preorder And Postorder Traversal](ConstructBinaryTreeFromPreorderAndPostorderTraversal.md)|
 |[Most Profitable Path In A Tree](MostProfitablePathInATree.md)|[Number Of Sub-Arrays With Odd Sum](NumberOfSubArraysWithOddSum.md)|[Maximum Absolute Sum Of Any Subarray](MaximumAbsoluteSumOfAnySubarray.md)|[Length Of Longest Fibonacci Subsequence](LengthOfLongestFibonacciSubsequence.md)|[Partition Array According To Given Pivot](PartitionArrayAccordingToGivenPivot.md)|
 |[Check If Number Is A Sum Of Powers Of Three](CheckIfNumberIsASumOfPowersOfThree.md)|[Count Total Number Of Colored Cells](CountTotalNumberOfColoredCells.md)|[Closest Prime Numbers In Range](ClosestPrimeNumbersInRange.md)|[Alternating Groups II](AlternatingGroupsII.md)|[Count Of Substrings Containing Every Vowel And K Consonants II](CountOfSubstringsContainingEveryVowelAndKConsonantsII.md)|
-|[Number Of Substrings Containing All Three Characters](NumberOfSubstringsContainingAllThreeCharacters.md)|||||
+|[Number Of Substrings Containing All Three Characters](NumberOfSubstringsContainingAllThreeCharacters.md)|[Zero Array Transformation II](ZeroArrayTransformationII.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
