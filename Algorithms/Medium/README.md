@@ -69,7 +69,7 @@
 |[Most Profitable Path In A Tree](MostProfitablePathInATree.md)|[Number Of Sub-Arrays With Odd Sum](NumberOfSubArraysWithOddSum.md)|[Maximum Absolute Sum Of Any Subarray](MaximumAbsoluteSumOfAnySubarray.md)|[Length Of Longest Fibonacci Subsequence](LengthOfLongestFibonacciSubsequence.md)|[Partition Array According To Given Pivot](PartitionArrayAccordingToGivenPivot.md)|
 |[Check If Number Is A Sum Of Powers Of Three](CheckIfNumberIsASumOfPowersOfThree.md)|[Count Total Number Of Colored Cells](CountTotalNumberOfColoredCells.md)|[Closest Prime Numbers In Range](ClosestPrimeNumbersInRange.md)|[Alternating Groups II](AlternatingGroupsII.md)|[Count Of Substrings Containing Every Vowel And K Consonants II](CountOfSubstringsContainingEveryVowelAndKConsonantsII.md)|
 |[Number Of Substrings Containing All Three Characters](NumberOfSubstringsContainingAllThreeCharacters.md)|[Zero Array Transformation II](ZeroArrayTransformationII.md)|[Maximum Candies Allocated To K Children](MaximumCandiesAllocatedToKChildren.md)|[House Robber IV](HouseRobberIV.md)|[Minimum Time To Repair Cars](MinimumTimeToRepairCars.md)|
-|[Longest Nice Subarray](LongestNiceSubarray.md)|[Minimum Operations To Make Binary Array Elements Equal To One I](MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.md)||||
+|[Longest Nice Subarray](LongestNiceSubarray.md)|[Minimum Operations To Make Binary Array Elements Equal To One I](MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.md)|[Find All Possible Recipes From Given Supplies](FindAllPossibleRecipesFromGivenSupplies.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
