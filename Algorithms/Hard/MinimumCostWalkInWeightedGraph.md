@@ -5,7 +5,7 @@
 
 ### Solution :
 
-Method 1 (AI by Grok3, Union Set, Time Complexity: $O(M+N+Q)$, Space Complexity: $O(N)$ (M: the number of elements in `edges`, N: the value of `n`, Q: the number of elements in `query`)) :
+Method 1 (AI by Grok3, Union Find, Time Complexity: $O(M+N+Q)$, Space Complexity: $O(N)$ (M: the number of elements in `edges`, N: the value of `n`, Q: the number of elements in `query`)) :
 ```rust
 struct UnionFind {
     parent: Vec<usize>,
