@@ -43,3 +43,37 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Sort, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of elements in `grid`)) :
+```rust
+impl Solution {
+    pub fn min_operations(grid: Vec<Vec<i32>>, x: i32) -> i32 {
+        let mut nums: Vec<i32> = grid.into_iter().flat_map(|row| row).collect();
+        nums.sort_unstable(); // Sort the flattened array
+
+        let n = nums.len();
+        if n == 1 {
+            return 0; // Single element is already uniform
+        }
+
+        // Check if all differences from the first element are divisible by x
+        for i in 1..n {
+            let diff = (nums[i] - nums[0]).abs();
+            if diff % x != 0 {
+                return -1; // Impossible if any difference isn't a multiple of x
+            }
+        }
+
+        // Use median as target to minimize operations
+        let median = nums[n / 2]; // Middle element after sorting
+        let mut operations: i64 = 0;
+
+        // Calculate total operations to reach median
+        for &num in &nums {
+            operations += ((num - median).abs() / x) as i64;
+        }
+
+        return operations as i32
+    }
+}
+```
