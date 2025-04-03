@@ -1,59 +1,45 @@
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ---
 
 ## 2874. [Maximum Value Of An Ordered Triplet II](https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii)
 
 ### Solution :
 
-Method 1 (Monotonic Stack, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
-```python
-class Solution:
-    def maximumTripletValue(self, nums: List[int]) -> int:
-        result = 0
-        stack = []
-        i_minus_j = 0
-        for num in nums:
-            result = max(result, i_minus_j * num)
+Method 1 (Prefix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn maximum_triplet_value(nums: Vec<i32>) -> i64 {
+        let n: usize = nums.len();
+        let mut maximum_left: Vec<i64> = vec![-1; n+1];
+        let mut maximum: i64 = 0;
+        for index in 0..n {
+            if nums[index] as i64 > maximum {
+                maximum = nums[index] as i64;
+            }
 
-            while stack and stack[-1] <= num:
-                stack.pop()
+            maximum_left[index+1] = maximum;
+        }
 
-            i_minus_j = max(i_minus_j, (stack[0] - num) if stack else 0)
+        let mut maximum_right: Vec<i64> = vec![-1; n+1];
+        maximum = 0;
+        for index in (1..n).rev() {
+            if nums[index] as i64 > maximum {
+                maximum = nums[index] as i64;
+            }
 
-            stack.append(num)
+            maximum_right[index-1] = maximum;
+        }
 
-        return result
-```
+        let mut result: i64 = 0;
+        for index in 1..n-1 {
+            if maximum_left[index] <= nums[index] as i64 {
+                continue;
+            }
 
-Method 2 (Prefix & Suffix Sum, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
-```python
-class Solution:
-    def maximumTripletValue(self, nums: List[int]) -> int:
-        n = len(nums)
-        maximumLeft = [float('-inf')] * (n+1)
-        for index, num in enumerate(nums):
-            maximumLeft[index+1] = max(num, maximumLeft[index])
-
-        maximumRight = [float('-inf')] * (n+1)
-        for index in reversed(range(n)):
-            maximumRight[index] = max(nums[index], maximumRight[index+1])
-
-        result = float('-inf')
-        for index in range(1, n-1):
-            result = max(result, (maximumLeft[index]-nums[index])*maximumRight[index+1])
-
-        return result if result > 0 else 0
-```
-
-Method 3 (Loop, Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
-```python
-class Solution:
-    def maximumTripletValue(self, nums: List[int]) -> int:
-        result = maximum_minus = maximum_num = 0
-        for num in nums:
-            result = max(result, maximum_minus * num)
-            maximum_minus = max(maximum_minus, maximum_num - num)
-            maximum_num = max(maximum_num, num)
+            result = i64::max(result, (maximum_left[index]-nums[index] as i64) * maximum_right[index]);
+        }
 
         return result
+    }
+}
 ```
