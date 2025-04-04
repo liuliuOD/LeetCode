@@ -71,7 +71,7 @@
 |[Number Of Substrings Containing All Three Characters](NumberOfSubstringsContainingAllThreeCharacters.md)|[Zero Array Transformation II](ZeroArrayTransformationII.md)|[Maximum Candies Allocated To K Children](MaximumCandiesAllocatedToKChildren.md)|[House Robber IV](HouseRobberIV.md)|[Minimum Time To Repair Cars](MinimumTimeToRepairCars.md)|
 |[Longest Nice Subarray](LongestNiceSubarray.md)|[Minimum Operations To Make Binary Array Elements Equal To One I](MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.md)|[Find All Possible Recipes From Given Supplies](FindAllPossibleRecipesFromGivenSupplies.md)|[Count The Number Of Complete Components](CountTheNumberOfCompleteComponents.md)|[Count Days Without Meetings](CountDaysWithoutMeetings.md)|
 |[Check If Grid Can Be Cut Into Sections](CheckIfGridCanBeCutIntoSections.md)|[Minimum Operations To Make A Uni-Value Grid](MinimumOperationsToMakeAUniValueGrid.md)|[Minimum Index Of A Valid Split](MinimumIndexOfAValidSplit.md)|[Partition Labels](PartitionLabels.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
-|[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|||||
+|[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Lowest Common Ancestor Of Deepest Leaves](LowestCommonAncestorOfDeepestLeaves.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
