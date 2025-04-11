@@ -36,3 +36,38 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Time Complexity: $O((H-L)*D)$, Space Complexity: $O(1)$ (H: the value of `high`, L: the value of `low`, D: the number of digits in `high`)) :
+```rust
+impl Solution {
+    pub fn count_symmetric_integers(low: i32, high: i32) -> i32 {
+        let mut result: i32 = 0;
+        for mut num in low..=high {
+            let n: usize = num.to_string().len();
+            if n%2 == 1 {
+                continue;
+            }
+
+            let mut number_digits: usize = 0;
+            let mut left: i32 = 0;
+            let mut right: i32 = 0;
+            while num > 0 {
+                if number_digits < n/2 {
+                    left += num % 10;
+                } else {
+                    right += num % 10;
+                }
+
+                num /= 10;
+                number_digits += 1;
+            }
+
+            if left == right {
+                result += 1;
+            }
+        }
+
+        return result
+    }
+}
+```
