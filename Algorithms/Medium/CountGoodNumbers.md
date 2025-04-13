@@ -26,3 +26,29 @@ impl Solution {
     }
 }
 ```
+
+Method 2 (Fast Exponentiation, Time Complexity: $O(Log(N))$, Space Complexity: $O(1)$ (N: the value of `n`)) :
+```rust
+impl Solution {
+    const MOD: i64 = 1_000_000_007;
+
+    pub fn count_good_numbers(n: i64) -> i32 {
+        return (Self::quick_multiply(5, (n+1)/2) * Self::quick_multiply(4, n/2) % Self::MOD) as i32
+    }
+
+    fn quick_multiply(x: i32, mut y: i64) -> i64 {
+        let mut result: i64 = 1;
+        let mut multiply: i64 = x as i64;
+        while y > 0 {
+            if y%2 == 1 {
+                result = result * multiply % Self::MOD;
+            }
+
+            multiply = multiply * multiply % Self::MOD;
+            y /= 2;
+        }
+
+        return result
+    }
+}
+```
