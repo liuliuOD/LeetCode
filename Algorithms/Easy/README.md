@@ -42,7 +42,7 @@
 |[Special Array I](SpecialArrayI.md)|[Check If Array Is Sorted And Rotated](CheckIfArrayIsSortedAndRotated.md)|[Longest Strictly Increasing Or Strictly Decreasing Subarray](LongestStrictlyIncreasingOrStrictlyDecreasingSubarray.md)|[Maximum Ascending Subarray Sum](MaximumAscendingSubarraySum.md)|[Check If One String Swap Can Make Strings Equal](CheckIfOneStringSwapCanMakeStringsEqual.md)|
 |[Clear Digits](ClearDigits.md)|[Apply Operations To An Array](ApplyOperationsToAnArray.md)|[Merge Two 2D Arrays By Summing Values](MergeTwo2DArraysBySummingValues.md)|[Find Missing And Repeated Values](FindMissingAndRepeatedValues.md)|[Minimum Recolors To Get K Consecutive Black Blocks](MinimumRecolorsToGetKConsecutiveBlackBlocks.md)|
 |[Maximum Count Of Positive Integer And Negative Integer](MaximumCountOfPositiveIntegerAndNegativeInteger.md)|[Divide Array Into Equal Pairs](DivideArrayIntoEqualPairs.md)|[Maximum Value Of An Ordered Triplet I](MaximumValueOfAnOrderedTripletI.md)|[Sum Of All Subset XOR Totals](SumOfAllSubsetXORTotals.md)|[Minimum Number Of Operations To Make Elements In Array Distinct](MinimumNumberOfOperationsToMakeElementsInArrayDistinct.md)|
-|[Minimum Operations To Make Array Values Equal To K](MinimumOperationsToMakeArrayValuesEqualToK.md)|[Count Symmetric Integers](CountSymmetricIntegers.md)|[Count Good Triplets](CountGoodTriplets.md)|||
+|[Minimum Operations To Make Array Values Equal To K](MinimumOperationsToMakeArrayValuesEqualToK.md)|[Count Symmetric Integers](CountSymmetricIntegers.md)|[Count Good Triplets](CountGoodTriplets.md)|[Count Equal And Divisible Pairs In An Array](CountEqualAndDivisiblePairsInAnArray.md)||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
