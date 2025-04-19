@@ -61,6 +61,34 @@ impl Solution {
 }
 ```
 
+Method 3 (Two Pointer, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn count_fair_pairs(mut nums: Vec<i32>, lower: i32, upper: i32) -> i64 {
+        nums.sort();
+
+        return Self::amount_fair_pairs(&nums, upper) - Self::amount_fair_pairs(&nums, lower-1)
+    }
+
+    fn amount_fair_pairs(nums: &Vec<i32>, maximum: i32) -> i64 {
+        let mut result: i64 = 0;
+        let mut left: usize = 0;
+        let mut right: usize = nums.len() - 1;
+        while left < right {
+            if nums[left]+nums[right] > maximum {
+                right -= 1;
+                continue;
+            }
+
+            result += (right-left) as i64;
+            left += 1;
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Two Pointer, Time Complexity: $O(N*Log(N))$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
