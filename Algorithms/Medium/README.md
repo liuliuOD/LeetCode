@@ -72,7 +72,7 @@
 |[Longest Nice Subarray](LongestNiceSubarray.md)|[Minimum Operations To Make Binary Array Elements Equal To One I](MinimumOperationsToMakeBinaryArrayElementsEqualToOneI.md)|[Find All Possible Recipes From Given Supplies](FindAllPossibleRecipesFromGivenSupplies.md)|[Count The Number Of Complete Components](CountTheNumberOfCompleteComponents.md)|[Count Days Without Meetings](CountDaysWithoutMeetings.md)|
 |[Check If Grid Can Be Cut Into Sections](CheckIfGridCanBeCutIntoSections.md)|[Minimum Operations To Make A Uni-Value Grid](MinimumOperationsToMakeAUniValueGrid.md)|[Minimum Index Of A Valid Split](MinimumIndexOfAValidSplit.md)|[Partition Labels](PartitionLabels.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
 |[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Lowest Common Ancestor Of Deepest Leaves](LowestCommonAncestorOfDeepestLeaves.md)|[Largest Divisible Subset](LargestDivisibleSubset.md)|[Partition Equal Subset Sum](PartitionEqualSubsetSum.md)|[Count Good Numbers](CountGoodNumbers.md)|
-|[Count The Number Of Good Subarrays](CountTheNumberOfGoodSubarrays.md)|[Count And Say](CountAndSay.md)||||
+|[Count The Number Of Good Subarrays](CountTheNumberOfGoodSubarrays.md)|[Count And Say](CountAndSay.md)|[Rabbits In Forest](RabbitsInForest.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
