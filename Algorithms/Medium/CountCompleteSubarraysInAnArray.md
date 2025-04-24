@@ -1,57 +1,41 @@
 ![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
-![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2799. [Count Complete Subarrays In An Array](https://leetcode.com/problems/count-complete-subarrays-in-an-array)
 
 ### Solution :
 
-Method 1 (HashSet) :
+Method 1 (Two Pointer, Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: the number of the elements in `nums`)) :
 ```rust
-use std::collections::HashSet;
-use std::iter::FromIterator;
+use std::collections::{HashMap, HashSet};
+
 impl Solution {
     pub fn count_complete_subarrays(nums: Vec<i32>) -> i32 {
         let n: usize = nums.len();
-        let mut distinct: HashSet<i32> = HashSet::from_iter(nums.iter().cloned());
+        let unique_nums: HashSet<i32> = HashSet::from_iter(nums.iter().map(|num| *num));
+        let amount_unique: usize = unique_nums.len();
+        let mut counter: HashMap<i32, i32> = HashMap::new();
+        let mut left: usize = 0;
+        let mut right: usize = 0;
         let mut result: i32 = 0;
+        while right < n {
+            counter.entry(nums[right]).and_modify(|amount| *amount += 1).or_insert(1);
 
-        for index in 0..n {
-            let mut subarray: HashSet<i32> = HashSet::new();
-            for index_next in index..n {
-                subarray.insert(nums[index_next]);
+            while counter.len() == amount_unique {
+                result += (n-right) as i32;
 
-                if subarray.len() != distinct.len() {
-                    continue;
+                counter.entry(nums[left]).and_modify(|amount| *amount -= 1);
+                if *counter.get(&nums[left]).unwrap() == 0 {
+                    counter.remove(&nums[left]);
                 }
 
-                result += (n - index_next) as i32;
-                break;
+                left += 1;
             }
+
+            right += 1;
         }
 
         return result
     }
 }
-```
-
-### Solution :
-
-Method 1 (Set) :
-```python
-class Solution:
-    def countCompleteSubarrays(self, nums: List[int]) -> int:
-        n = len(nums)
-        distinct = set(nums)
-        result = 0
-
-        for left in range(n):
-            temp = set([nums[left]])
-            for right in range(left, n):
-                temp.add(nums[right])
-                if len(temp) == len(distinct):
-                    result += n - right
-                    break
-
-        return result
 ```
