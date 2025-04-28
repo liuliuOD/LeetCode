@@ -22,7 +22,7 @@
 |[Minimum Cost To Make At Least One Valid Path In A Grid](MinimumCostToMakeAtLeastOneValidPathInAGrid.md)|[Trapping Rain Water II](TrappingRainWaterII.md)|[Maximum Employees To Be Invited To A Meeting](MaximumEmployeesToBeInvitedToAMeeting.md)|[Divide Nodes Into The Maximum Number Of Groups](DivideNodesIntoTheMaximumNumberOfGroups.md)|[Making A Large Island](MakingALargeIsland.md)|
 |[Recover A Tree From Preorder Traversal](RecoverATreeFromPreorderTraversal.md)|[Shortest Common Supersequence](ShortestCommonSupersequence.md)|[Minimum Cost Walk In Weighted Graph](MinimumCostWalkInWeightedGraph.md)|[Maximum Number Of Points From Grid Queries](MaximumNumberOfPointsFromGridQueries.md)|[Apply Operations To Maximize Score](ApplyOperationsToMaximizeScore.md)|
 |[Put Marbles In Bags](PutMarblesInBags.md)|[Count The Number Of Powerful Integers](CountTheNumberOfPowerfulIntegers.md)|[Find The Count of Good Integers](FindTheCountOfGoodIntegers.md)|[Count Good Triplets In An Array](CountGoodTripletsInAnArray.md)|[Count The Number Of Ideal Arrays](CountTheNumberOfIdealArrays.md)|
-|[Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)|||||
+|[Count Subarrays With Fixed Bounds](CountSubarraysWithFixedBounds.md)|[Count Subarrays With Score Less Than K](CountSubarraysWithScoreLessThanK.md)||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
