@@ -71,6 +71,29 @@ impl Solution {
 }
 ```
 
+Method 3 (Time Complexity: $O(N)$, Space Complexity: $O(N)$ (N: number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn count_subarrays(nums: Vec<i32>, k: i32) -> i64 {
+        let n: usize = nums.len();
+        let maximum: i32 = *nums.iter().max().unwrap();
+        let mut mapping: Vec<usize> = Vec::new();
+        let mut result: i64 = 0;
+        for index in 0..n {
+            if nums[index] == maximum {
+                mapping.push(index);
+            }
+
+            if mapping.len() >= k as usize {
+                result += 1 + mapping[mapping.len()-k as usize] as i64;
+            }
+        }
+
+        return result
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (In weekly contest 375, Time Complexity: $O(N)$, Space Complexity: $O(N)$) :
