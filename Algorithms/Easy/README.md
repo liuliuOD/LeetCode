@@ -43,7 +43,7 @@
 |[Clear Digits](ClearDigits.md)|[Apply Operations To An Array](ApplyOperationsToAnArray.md)|[Merge Two 2D Arrays By Summing Values](MergeTwo2DArraysBySummingValues.md)|[Find Missing And Repeated Values](FindMissingAndRepeatedValues.md)|[Minimum Recolors To Get K Consecutive Black Blocks](MinimumRecolorsToGetKConsecutiveBlackBlocks.md)|
 |[Maximum Count Of Positive Integer And Negative Integer](MaximumCountOfPositiveIntegerAndNegativeInteger.md)|[Divide Array Into Equal Pairs](DivideArrayIntoEqualPairs.md)|[Maximum Value Of An Ordered Triplet I](MaximumValueOfAnOrderedTripletI.md)|[Sum Of All Subset XOR Totals](SumOfAllSubsetXORTotals.md)|[Minimum Number Of Operations To Make Elements In Array Distinct](MinimumNumberOfOperationsToMakeElementsInArrayDistinct.md)|
 |[Minimum Operations To Make Array Values Equal To K](MinimumOperationsToMakeArrayValuesEqualToK.md)|[Count Symmetric Integers](CountSymmetricIntegers.md)|[Count Good Triplets](CountGoodTriplets.md)|[Count Equal And Divisible Pairs In An Array](CountEqualAndDivisiblePairsInAnArray.md)|[Count Largest Group](CountLargestGroup.md)|
-|[Count Subarrays Of Length Three With A Condition](CountSubarraysOfLengthThreeWithACondition.md)|[Find Numbers With Even Number Of Digits](FindNumbersWithEvenNumberOfDigits.md)||||
+|[Count Subarrays Of Length Three With A Condition](CountSubarraysOfLengthThreeWithACondition.md)|[Find Numbers With Even Number Of Digits](FindNumbersWithEvenNumberOfDigits.md)|[Number Of Equivalent Domino Pairs](NumberOfEquivalentDominoPairs.md)|||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
