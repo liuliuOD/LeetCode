@@ -73,7 +73,7 @@
 |[Check If Grid Can Be Cut Into Sections](CheckIfGridCanBeCutIntoSections.md)|[Minimum Operations To Make A Uni-Value Grid](MinimumOperationsToMakeAUniValueGrid.md)|[Minimum Index Of A Valid Split](MinimumIndexOfAValidSplit.md)|[Partition Labels](PartitionLabels.md)|[Solving Questions With Brainpower](SolvingQuestionsWithBrainpower.md)|
 |[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Lowest Common Ancestor Of Deepest Leaves](LowestCommonAncestorOfDeepestLeaves.md)|[Largest Divisible Subset](LargestDivisibleSubset.md)|[Partition Equal Subset Sum](PartitionEqualSubsetSum.md)|[Count Good Numbers](CountGoodNumbers.md)|
 |[Count The Number Of Good Subarrays](CountTheNumberOfGoodSubarrays.md)|[Count And Say](CountAndSay.md)|[Rabbits In Forest](RabbitsInForest.md)|[Count The Hidden Sequences](CountTheHiddenSequences.md)|[Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)|
-|[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Push Dominoes](PushDominoes.md)|[Minimum Domino Rotations For Equal Row](MinimumDominoRotationsForEqualRow.md)|[Domino And Tromino Tiling](DominoAndTrominoTiling.md)||
+|[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Push Dominoes](PushDominoes.md)|[Minimum Domino Rotations For Equal Row](MinimumDominoRotationsForEqualRow.md)|[Domino And Tromino Tiling](DominoAndTrominoTiling.md)|[Find Minimum Time To Reach Last Room I](FindMinimumTimeToReachLastRoomI.md)|
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
