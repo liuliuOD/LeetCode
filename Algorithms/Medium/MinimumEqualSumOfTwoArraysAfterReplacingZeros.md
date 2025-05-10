@@ -1,7 +1,32 @@
+![language-RUST](https://img.shields.io/badge/RUST-8d4004?style=for-the-badge&logo=RUST)
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ---
 
 ## 2918. [Minimum Equal Sum Of Two Arrays After Replacing Zeros](https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros)
+
+### Solution :
+
+Method 1 (Greedy, Time Complexity: $O(M+N)$, Space Complexity: $O(1)$ (M: the number of elements in `nums1`, N: the number of elements in `nums2`)) :
+```rust
+impl Solution {
+    pub fn min_sum(nums1: Vec<i32>, nums2: Vec<i32>) -> i64 {
+        let mut sum_1: i64 = nums1.iter().map(|num| *num as i64).sum();
+        let mut sum_2: i64 = nums2.iter().map(|num| *num as i64).sum();
+        let amount_zero_1: i64 = nums1.iter().filter(|&num| *num == 0).count() as i64;
+        let amount_zero_2: i64 = nums2.iter().filter(|&num| *num == 0).count() as i64;
+        sum_1 += amount_zero_1;
+        sum_2 += amount_zero_2;
+
+        if (sum_1 < sum_2 && amount_zero_1 > 0) ||
+            (sum_1 == sum_2) {
+            return sum_2
+        } else if sum_1 > sum_2 && amount_zero_2 > 0 {
+            return sum_1
+        }
+        return -1
+    }
+}
+```
 
 ### Solution :
 
