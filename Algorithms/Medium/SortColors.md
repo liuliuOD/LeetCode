@@ -41,6 +41,26 @@ impl Solution {
 }
 ```
 
+Method 2 (In Place, Time Complexity: $O(N)$, Space Complexity: $O(1)$ (N: the number of the elements in `nums`)) :
+```rust
+impl Solution {
+    pub fn sort_colors(nums: &mut Vec<i32>) {
+        let amount_red: usize = nums.iter().filter(|&num| *num == 0).count();
+        let amount_white: usize = nums.iter().filter(|&num| *num == 1).count();
+        for i in 0..amount_red {
+            nums[i] = 0;
+        }
+        for i in amount_red..(amount_red+amount_white) {
+            nums[i] = 1;
+        }
+        let n: usize = nums.len();
+        for i in (amount_red+amount_white)..n {
+            nums[i] = 2;
+        }
+    }
+}
+```
+
 ### Solution :
 
 Method 1 (Time Complexity: $O(N)$, Space Complexity: $O(1)$) :
