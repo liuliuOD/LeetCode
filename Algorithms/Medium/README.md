@@ -74,7 +74,7 @@
 |[Maximum Value Of An Ordered Triplet II](MaximumValueOfAnOrderedTripletII.md)|[Lowest Common Ancestor Of Deepest Leaves](LowestCommonAncestorOfDeepestLeaves.md)|[Largest Divisible Subset](LargestDivisibleSubset.md)|[Partition Equal Subset Sum](PartitionEqualSubsetSum.md)|[Count Good Numbers](CountGoodNumbers.md)|
 |[Count The Number Of Good Subarrays](CountTheNumberOfGoodSubarrays.md)|[Count And Say](CountAndSay.md)|[Rabbits In Forest](RabbitsInForest.md)|[Count The Hidden Sequences](CountTheHiddenSequences.md)|[Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)|
 |[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Push Dominoes](PushDominoes.md)|[Minimum Domino Rotations For Equal Row](MinimumDominoRotationsForEqualRow.md)|[Domino And Tromino Tiling](DominoAndTrominoTiling.md)|[Find Minimum Time To Reach Last Room I](FindMinimumTimeToReachLastRoomI.md)|
-|[Find Minimum Time To Reach Last Room II](FindMinimumTimeToReachLastRoomI.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Total Characters In String After Transformations I](TotalCharactersInStringAfterTransformationsI.md)|[Sort List](SortList.md)||
+|[Find Minimum Time To Reach Last Room II](FindMinimumTimeToReachLastRoomI.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Total Characters In String After Transformations I](TotalCharactersInStringAfterTransformationsI.md)|[Sort List](SortList.md)|[Reverse Integer](ReverseInteger.md)|
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
