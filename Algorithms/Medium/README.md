@@ -75,6 +75,7 @@
 |[Count The Number Of Good Subarrays](CountTheNumberOfGoodSubarrays.md)|[Count And Say](CountAndSay.md)|[Rabbits In Forest](RabbitsInForest.md)|[Count The Hidden Sequences](CountTheHiddenSequences.md)|[Count Complete Subarrays In An Array](CountCompleteSubarraysInAnArray.md)|
 |[Count Of Interesting Subarrays](CountOfInterestingSubarrays.md)|[Push Dominoes](PushDominoes.md)|[Minimum Domino Rotations For Equal Row](MinimumDominoRotationsForEqualRow.md)|[Domino And Tromino Tiling](DominoAndTrominoTiling.md)|[Find Minimum Time To Reach Last Room I](FindMinimumTimeToReachLastRoomI.md)|
 |[Find Minimum Time To Reach Last Room II](FindMinimumTimeToReachLastRoomI.md)|[Minimum Equal Sum Of Two Arrays After Replacing Zeros](MinimumEqualSumOfTwoArraysAfterReplacingZeros.md)|[Total Characters In String After Transformations I](TotalCharactersInStringAfterTransformationsI.md)|[Sort List](SortList.md)|[Reverse Integer](ReverseInteger.md)|
+|[Zero Array Transformation I](ZeroArrayTransformationI.md)|||||
 
 ![language-Python](https://img.shields.io/badge/Python-ffd43b?style=for-the-badge&logo=PYTHON)
 ## Python 3
